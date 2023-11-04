@@ -1,0 +1,144 @@
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.utils.log] Scrapy 2.11.0 started (bot: scrapybot)[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.utils.log] Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.addons] Enabled addons:
+[][0m
+[33m2023-11-01 03:37:45 WARNING (MainThread) [py.warnings] /home/js/.local/lib/python3.10/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+[0m
+[36m2023-11-01 03:37:45 DEBUG (MainThread) [scrapy.utils.log] Using reactor: twisted.internet.epollreactor.EPollReactor[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.extensions.telnet] Telnet Password: 1958369b451d4f25[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats'][0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.crawler] Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue'}[0m
+[33m2023-11-01 03:37:45 WARNING (MainThread) [scrapy.middleware] Disabled scrapy_selenium.SeleniumMiddleware: SELENIUM_DRIVER_NAME and SELENIUM_DRIVER_EXECUTABLE_PATH must be set[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'][0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'][0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.middleware] Enabled item pipelines:
+[][0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.core.engine] Spider opened[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [__main__] ----------download started-----------[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [__main__] Working on NBaxterEnnis->House->https://baxterennis.com[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [__main__] Working on ThomasATomGarrettJr->House->https://www.tomfordelegate.com[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [__main__] Working on JuanPabloSegura->Senate->https://jpsva.com[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [__main__] Working on JamesWWillMorefield->House->http://www.willmorefield.com[0m
+[32m2023-11-01 03:37:45 INFO (MainThread) [__main__] Working on EmilyMarieBrewer->Senate->https://www.brewerforva.com[0m
+[36m2023-11-01 03:37:45 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET http://www.willmorefield.com/robots.txt> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[36m2023-11-01 03:37:45 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://baxterennis.com/robots.txt> (referer: None)[0m
+[36m2023-11-01 03:37:45 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.tomfordelegate.com/robots.txt> (referer: None)[0m
+[36m2023-11-01 03:37:45 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.brewerforva.com/robots.txt> (referer: None)[0m
+[36m2023-11-01 03:37:46 DEBUG (MainThread) [scrapy.core.engine] Crawled (403) <GET https://www.brewerforva.com> (referer: None)[0m
+[36m2023-11-01 03:37:46 DEBUG (MainThread) [scrapy.core.engine] Crawled (403) <GET https://baxterennis.com> (referer: None)[0m
+[36m2023-11-01 03:37:46 DEBUG (MainThread) [scrapy.core.engine] Crawled (403) <GET https://www.tomfordelegate.com> (referer: None)[0m
+[32m2023-11-01 03:37:46 INFO (MainThread) [__main__] Logging error from the error handler[0m
+[31m2023-11-01 03:37:46 ERROR (MainThread) [__main__] <twisted.python.failure.Failure scrapy.spidermiddlewares.httperror.HttpError: Ignoring non-200 response>[0m
+[32m2023-11-01 03:37:46 INFO (MainThread) [__main__] Logging error from the error handler[0m
+[31m2023-11-01 03:37:46 ERROR (MainThread) [__main__] <twisted.python.failure.Failure scrapy.spidermiddlewares.httperror.HttpError: Ignoring non-200 response>[0m
+[32m2023-11-01 03:37:46 INFO (MainThread) [__main__] Logging error from the error handler[0m
+[31m2023-11-01 03:37:46 ERROR (MainThread) [__main__] <twisted.python.failure.Failure scrapy.spidermiddlewares.httperror.HttpError: Ignoring non-200 response>[0m
+[36m2023-11-01 03:37:46 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET http://www.willmorefield.com/robots.txt> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[31m2023-11-01 03:37:47 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET http://www.willmorefield.com/robots.txt> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[31m2023-11-01 03:37:47 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET http://www.willmorefield.com/robots.txt>: DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 1693, in _inlineCallbacks
+    result = context.run(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/python/failure.py", line 518, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/endpoints.py", line 1022, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.willmorefield.com.
+[36m2023-11-01 03:37:47 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET http://www.willmorefield.com> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[36m2023-11-01 03:37:48 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET http://www.willmorefield.com> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[31m2023-11-01 03:37:48 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET http://www.willmorefield.com> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[32m2023-11-01 03:37:49 INFO (MainThread) [__main__] Logging error from the error handler[0m
+[31m2023-11-01 03:37:49 ERROR (MainThread) [__main__] <twisted.python.failure.Failure twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.willmorefield.com.>[0m
+[36m2023-11-01 03:37:58 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://jpsva.com/robots.txt> (failed 1 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-11-01 03:38:10 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://jpsva.com/robots.txt> (failed 2 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-11-01 03:38:23 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://jpsva.com/robots.txt> (failed 3 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-11-01 03:38:23 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET https://jpsva.com/robots.txt>: Connection was refused by other side: 111: Connection refused.[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.
+[36m2023-11-01 03:38:36 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://jpsva.com> (failed 1 times): Connection was refused by other side: 111: Connection refused.[0m
+[32m2023-11-01 03:38:45 INFO (MainThread) [scrapy.extensions.logstats] Crawled 6 pages (at 6 pages/min), scraped 0 items (at 0 items/min)[0m
+[36m2023-11-01 03:38:48 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://jpsva.com> (failed 2 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-11-01 03:39:00 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://jpsva.com> (failed 3 times): Connection was refused by other side: 111: Connection refused.[0m
+[32m2023-11-01 03:39:01 INFO (MainThread) [__main__] Logging error from the error handler[0m
+[31m2023-11-01 03:39:01 ERROR (MainThread) [__main__] <twisted.python.failure.Failure twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.>[0m
+[32m2023-11-01 03:39:01 INFO (MainThread) [scrapy.core.engine] Closing spider (finished)[0m
+[32m2023-11-01 03:39:01 INFO (MainThread) [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/exception_count': 12,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 6,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 6,
+ 'downloader/request_bytes': 6907,
+ 'downloader/request_count': 18,
+ 'downloader/request_method_count/GET': 18,
+ 'downloader/response_bytes': 17319,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/403': 3,
+ 'elapsed_time_seconds': 75.686745,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 11, 1, 7, 39, 1, 185533, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 17728,
+ 'httpcompression/response_count': 6,
+ 'log_count/DEBUG': 15,
+ 'log_count/ERROR': 11,
+ 'log_count/INFO': 22,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 85127168,
+ 'memusage/startup': 85127168,
+ 'response_received_count': 6,
+ 'retry/count': 8,
+ 'retry/max_reached': 4,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 4,
+ 'retry/reason_count/twisted.internet.error.DNSLookupError': 4,
+ "robotstxt/exception_count/<class 'twisted.internet.error.ConnectionRefusedError'>": 1,
+ "robotstxt/exception_count/<class 'twisted.internet.error.DNSLookupError'>": 1,
+ 'robotstxt/request_count': 5,
+ 'robotstxt/response_count': 3,
+ 'robotstxt/response_status_count/200': 3,
+ 'scheduler/dequeued': 9,
+ 'scheduler/dequeued/memory': 9,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'start_time': datetime.datetime(2023, 11, 1, 7, 37, 45, 498788, tzinfo=datetime.timezone.utc)}[0m
+[32m2023-11-01 03:39:01 INFO (MainThread) [scrapy.core.engine] Spider closed (finished)[0m
+[32m2023-11-01 03:39:01 INFO (MainThread) [__main__] ----Time taken in seconds----:75.82995438575745[0m

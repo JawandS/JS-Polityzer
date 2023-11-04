@@ -1,0 +1,1234 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'mobile';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'https://www.timmyfrench.com/',
+        AccountUUID: 'e95376c425124be189daa0e81dd3dec7',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '8aa65406',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Thu Sep 07 14:08:49 UTC 2023',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'privacy-policy',
+        InitialPageUuid: 'f83bb888d21e48e88486661c95f012d8',
+        InitialPageId: '1121642513',
+        InitialEncodedPageAlias: 'cHJpdmFjeS1wb2xpY3k=',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '11040',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'timmyfrench',
+        HasCustomDomain: true,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'LEFT',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 5,
+            NavbarLiveHomePage: 'https://www.timmyfrench.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 22;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.timmyfrench.com/privacy-policy">
+
+<meta id="view" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="icon" type="image/x-icon" href="https://static.cdn-website.com/runtime/favicon_d1_res.ico"/>
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin />
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+    const defs={};
+    window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+    window.waitForDeferred = function (b, a, c) {
+      let d = window?.getDeferred?.(b);
+      d
+        ? d.promise.then(a)
+        : c && ["complete", "interactive"].includes(document.readyState)
+        ? setTimeout(a, 1)
+        : c
+        ? document.addEventListener("DOMContentLoaded", a)
+        : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Roboto+Slab:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Droid+Serif:ital,wght@0,400;0,700&amp;subset=latin-ext&amp;display=swap"  />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-mobile-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/3853/_dm/s/rt/dist/css/d-css-runtime-mobile-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/production_3853/f6377171d50eb945757003f1fa277da0.css" id="widgetCSS" />
+
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="privacy-policy"] #dm [data-show-on-page-only="privacy-policy"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/8aa65406/files/8aa65406_0.min.css?v=16" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody div.u_1087503147
+{
+	height:50px !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Slab Fallback";
+  src: local('Arial');
+  ascent-override: 97.7562%;
+  descent-override: 25.2818%;
+  size-adjust: 107.1903%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <title>
+    Timmy French
+  </title>
+  <meta name="description" content="Vote Timmy French"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Timmy French"/>
+  <meta name="twitter:description" content="Vote Timmy French"/>
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/8aa65406/dms3rep/multi/opt/TFrench_Headshot_04_4C-2ff61c49-1920w.jpg"/>
+  <meta property="og:description" content="Vote Timmy French"/>
+  <meta property="og:title" content="Timmy French"/>
+  <meta property="og:image" content="https://lirp.cdn-website.com/8aa65406/dms3rep/multi/opt/TFrench_Headshot_04_4C-2ff61c49-1920w.jpg"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="privacy-policy"  class="dmRoot dmMobileBody fix-mobile-scrolling addCanvasBorder dmResellerSite responsiveTablet " style="padding:0;margin:0;"
+      
+      >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper mobileHamburgerLayout-var5 null mobileHamburgerLayout">
+         <div dmwrapped="true" id="1937731319"> <div dmtemplateid="mobileHamburgerLayout" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations rows-1200 hasStickyHeader hamburger-reverse dmPageBody d-page-1695741742 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1695741742" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardMobile"> <div id="site_content"> <div class="p_hfcontainer"> <div id="mobile-hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e86e38bc9a3b4296b63d93d0db7db907===header" data-origin="top"> <div class="u_1126403696 dmRespRow middleDrawerRow" style="text-align: center;" id="1126403696"> <div class="dmRespColsWrapper" id="1732940104"> <div class="dmRespCol small-12 medium-12 large-12 empty-column" id="1013407811"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1710444360" style="text-align: center;" id="1710444360"> <div class="dmRespColsWrapper" id="1400945127"> <div class="u_1207217519 dmRespCol small-12 medium-12 large-12 content-removed" id="1207217519"> <nav class="u_1392265751 effect-bottom main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HIDE" id="1392265751" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/#About" class="unifiednav__item  dmUDNavigationItem_010101854190  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         About
+        " data-auto="page-text-style">About<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/issues" class="unifiednav__item  dmUDNavigationItem_010101481409  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Issues
+        " data-auto="page-text-style">Issues<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item  dmUDNavigationItem_010101943230  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/volunteer" class="unifiednav__item  dmUDNavigationItem_010101472067  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Volunteer
+        " data-auto="page-text-style">Volunteer<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+ <a data-display-type="block" class="u_1779557614 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1779557614 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="https://secure.winred.com/timmy-french-for-the-senate-of-virginia/donate-today" data-element-type="dButtonLinkId" id="1779557614" target="_blank" data-binding="W3siYmluZGluZ05hbWUiOiJsaW5rIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnNvY2lhbC5yc3MifV0=" data-diy-link=""> <span class="iconBg" id="1344426061"> <span class="icon hasFontIcon icon-star" id="1147986634"></span> 
+</span> 
+ <span class="text" id="1660255309" data-diy-text="">Donate</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1862570804" style="text-align: center;" id="1862570804"> <div class="dmRespColsWrapper" id="1964024555"> <div class="dmRespCol small-12 medium-12 large-12 u_1477754604" id="1477754604"> <div class="u_1149527800 align-center text-align-center dmSocialHub" id="1149527800" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://#" dm_dont_rewrite_url="true" aria-label="rss" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Rss&apos;)"> <span class="dmSocialRss icon-rss oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="hamburger-header-container p_hfcontainer"> <div id="mobile-hamburger-header" class="hamburger-header p_hfcontainer" layout="38670d8735c043ce93d94809f1715eac===header"> <div class="dmRespRow dmDefaultListContentRow u_1120371234 fullBleedChanged fullBleedMode" style="text-align:center" id="1120371234" mode="4"> <div class="dmRespColsWrapper" id="1092547868"> <div class="u_1857427606 dmRespCol medium-4 large-4 small-2 empty-column" id="1857427606"></div> 
+ <div class="u_1369990997 dmRespCol medium-4 large-4 small-8" id="1369990997" data-binding="W3siYmluZGluZ05hbWUiOiJiYWNrZ3JvdW5kIiwidmFsdWUiOiJzaXRlX2ltYWdlcy5sb2dvIn1d" style="background-image: url('https://lirp.cdn-website.com/8aa65406/dms3rep/multi/opt/TimmyFrenchLogo_FINAL-640w.jpg') !important;"> <div class="u_1265018392 dmNewParagraph" id="1265018392" style="transition:opacity 1s ease-in-out;line-height:initial;" data-version="5" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLmNvbXBhbnlfbmFtZSJ9XQ==" data-diy-text="">Timmy French</div></div> 
+ <div class="u_1735902752 dmRespCol medium-4 large-4 small-2 empty-column" id="1735902752"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="1937731319" class="dmBody u_dmStyle_template_privacy-policy"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1695741742"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1501767473"> <div class="dmRespRow dmDefaultListContentRow" style="text-align:center" id="1780943571"> <div class="dmRespColsWrapper" id="1116521366"> <div class="large-12 medium-12 small-12 dmRespCol" id="1724258602"> <div data-element-type="spacer" class="dmSpacer u_1087503147" id="1087503147"></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1264384579" style="transition: opacity 1s ease-in-out 0s;"> <h2 style="line-height: 1.5;"><span style="display: initial;">Privacy Policy</span></h2> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">This Privacy Policy explains how information about you is collected, used and disclosed by this website. This Privacy Policy applies to information we collect when you use our website and any other websites, mobile sites, applications and other online products and services that link to this Privacy Policy (collectively, the &ldquo;Site&rdquo;).</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at the top of the policy and, in some cases, we may provide you with additional notice (such as adding a statement to our homepage or sending you an email notification). We encourage you to review the Privacy Policy whenever you access the Site to stay informed about our information practices and the ways you can help protect your privacy.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h3><span style="display: initial;">Collection Of Information</span></h3> 
+ <h4><span style="display: initial;"><br/></span></h4> 
+ <h4><span style="display: initial;">Information You Provide to Us</span></h4> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">We collect information you provide directly to us. For example, we may collect information when you request information, fill out a form, send us an email, sign up to receive updates, or otherwise communicate with us. The types of information we collect may include your name, email address, postal address, phone number, mobile number, credit card information, and other information you choose to provide.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h4><span style="display: initial;">Information We Collect Automatically When You Use the Site</span></h4> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">When you access or use our Site, we automatically collect information about you, including:</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">Log Information: We log information about your use of the Site, including the type of browser you use, access times, pages viewed, your IP address and the page you visited before navigating to our Site.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">Device Information: We collect information about the computer or mobile device you use to access our Site, including the hardware model, operating system and version, device identifiers and mobile network information.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">Information Collected by Cookies and Other Tracking Technologies: We use various technologies to collect information, and this may include sending cookies to your computer or mobile device. Cookies are small data files stored on your hard drive or in device memory that helps us to improve our Site and your experience, see which areas and features of our Site are popular and count visits. We may also collect information using web beacons (also known as &ldquo;tracking pixels&rdquo;). Web beacons are electronic images that may be used in our Site or emails and help deliver cookies, count visits, understand usage and campaign effectiveness and determine whether an email has been opened and acted upon. For more information about cookies, and how to disable them, please see &ldquo;Your Choices&rdquo; below.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h3><span style="display: initial;">Use Of Information</span></h3> 
+<p><span style="display: initial;"><br/></span></p> <h4><span style="display: initial;">Information We Collect From Other Sources</span></h4> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">We may also obtain information from other sources and combine that with information we collect through our Site.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">We may use information about you for various purposes, including to: Provide, maintain, and improve our Site; Provide the information you request, and process and complete any transactions; Request feedback and otherwise contact you about your use of the Site; Respond to your emails, submissions, questions, comments, and requests; Send you updates and newsletters and otherwise provide you with information that we think will be of interest to you, such as sending you news and information to keep you informed about various issues, events, resources, promotions, products and services; Send you technical notices, updates, confirmations, security alerts and support and administrative messages and otherwise facilitate your use of, and our administration and operation of, the Site; Monitor and analyze trends, usage and activities in connection with our Site; Link or combine with information we get from others to help understand your needs and provide you with better information and Carry out any other purpose for which the information was collected.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">This Site is based in the United States and the information we collect is governed by U.S. law. By accessing or using the Site or otherwise providing information to us, you consent to the processing and transfer of information in and to the U.S. and other countries.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h3><span style="display: initial;">Sharing Of Information</span></h3> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">We may share information about you as follows or as otherwise described in this Privacy Policy: With vendors, consultants and other service providers or volunteers who need access to such information to carry out work on our behalf; In response to a request for information if we believe disclosure is in accordance with any applicable law, regulation or legal process, or as otherwise required by any applicable law, rule or regulation; If we believe your actions are inconsistent with the spirit or language of our user agreements or policies, or to protect the rights, property and safety of this Site or others; In connection with, or during negotiations of, any merger, reorganization, asset sale, financing or acquisition of all or a portion of our business to another company; and With your consent or at your direction, including if we notify you through our Site that the information you provide will be shared in a particular manner and you provide such information.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">We may also share aggregated or anonymized information that does not directly identify you.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h4><span style="display: initial;">Social Sharing Features</span></h4> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">The Site may offer social sharing features and other integrated tools (such as the Facebook &ldquo;Like&rdquo; button), which let you share actions you take on our Site with other media, and vice versa. The use of such features enables the sharing of information with your friends or the public, depending on the settings you establish with the entity that provides the social sharing feature. For more information about the purpose and scope of data collection and processing in connection with social sharing features, please visit the privacy policies of the entities that provide these features.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h4><span style="display: initial;">Analytics Services</span></h4> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">We may allow third parties to use cookies, web beacons, or other technologies or otherwise collect information about you in order to provide analytics services. These entities may collect or receive information about your use of the Site and other websites and mobile applications, including your IP address, browser, device information, pages viewed, time spent on pages, links clicked and conversion information. This information may be used by this Site and others to, among other things, analyze and track data, determine the popularity of certain content, and better understand your online activity.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h3><span style="display: initial;">Security</span></h3> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">This Site takes reasonable measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration and destruction.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h3><span style="display: initial;">Your Choices</span></h3> 
+<p><span style="display: initial;"><br/></span></p> <h4><span style="display: initial;">Cookies</span></h4> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">Most web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove or reject browser cookies. Removing or rejecting browser cookies does not necessarily affect third party flash cookies used in connection with our Site. Please note that if you choose to remove or reject cookies, this could affect the availability and functionality of our Site.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h4><span style="display: initial;">Updates and Other Communications</span></h4> 
+<p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p><p style="line-height: 1.5;"><span style="display: initial;">You may opt out of receiving updates from SITE by specifically opting out at the time you provide your contact information. You may also opt out of receiving text messages, updates and newsletters from SITE by following the instructions in those emails or text messages. If you opt out, we may still send you other types of emails, such as those about your use of the Site or transactions.</span></p><p style="line-height: 1.5;"><span style="display: initial;"><br/></span></p> <h3><span style="display: initial;">Contact Us</span></h3> 
+<p style="line-height: 1.5;"><br/></p><p style="line-height: 1.5;"><span style="display: initial;"><span class="ql-cursor">﻿</span>If you have any questions about this Privacy Policy, please contact us using the contact page.</span></p><p><span style="display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1885176994"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1824894450 dmRespRow" style="text-align: center;" id="1824894450"> <div class="dmRespColsWrapper" id="1089197514"> <div class="u_1095414372 dmRespCol small-12 medium-12 large-12" id="1095414372"> <span id="1502915977"></span> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1783564820" style="transition: opacity 1s ease-in-out 0s;" new-inline-bind-applied="true" data-diy-text=""> <h2 class="m-text-align-center text-align-center"><span style="display: initial;"><span class="inline-data-binding" data-encoded-value="Rm9sbG93IFVzIE9uIFNvY2lhbCBNZWRpYQ==" data-inline-binding="site_text.social-cta">Follow Timmy French</span></span></h2> 
+</div> 
+ <div class="align-center text-align-center u_1618902521 dmSocialHub" id="1618902521" dmle_extension="social_hub" data-element-type="social_hub" data-binding="W3siYmluZGluZ05hbWUiOiJzb2NpYWwiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwuc29jaWFsIn1d" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://facebook.com/timmyfrenchva" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://twitter.com/timmyfrenchva" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Twitter&apos;)"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://instagram.com/timmyfrenchva" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://secure.winred.com/timmy-french-for-the-senate-of-virginia/donate-today" target="_blank" dm_dont_rewrite_url="true" aria-label="rss" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Rss&apos;)"> <span class="dmSocialRss icon-rss oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1363571143" id="1363571143"> <div class="dmRespColsWrapper" id="1246901955"> <div class="dmRespCol small-12 u_1651714178 medium-12 large-12" id="1651714178"> <div class="u_1496439960 dmRespRow" id="1496439960"> <div class="dmRespColsWrapper" id="1035513258"> <div class="u_1895121289 dmRespCol small-12 medium-12 large-12" id="1895121289"> <div class="u_1276324518 dmNewParagraph" data-element-type="paragraph" id="1276324518" style="transition: none 0s ease 0s; display: block; text-align: right;" data-version="5" new-inline-bind-applied="true" data-diy-text=""> <h2 class="text-align-center m-text-align-center"><span style="color: rgb(255, 255, 255); display: initial;"><span class="inline-data-binding" data-encoded-value="U2lnbiBVcCBGb3IgVXBkYXRlcw==" data-inline-binding="site_text.newsletter-cta">Sign Up For Updates</span></span></h2> 
+</div> <div class="u_1837348934 dmform default native-inputs" data-element-type="dContactUsRespId" captcha="true" data-require-captcha="true" data-captcha-position="bottomleft" id="1837348934" data-layout="layout-4"> <h3 class="dmform-title dmwidget-title" id="1763519008">newsletter</h3> 
+ <div class="dmform-wrapper" id="1657746244" captcha-lang="en"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1847363745"> <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1306124382"> <label for="1159872235" id="1192023797" class="" hide="true" data-dm-for="dmform-0">Name:</label> 
+<input type="text" class="" name="dmform-0" id="1159872235" placeholder="Name" data-placeholder-original="Name"/><input type="hidden" name="label-dmform-0" value="Name" id="1372099587"/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1443790972"> <label for="1486987420" id="1604339654" class="" hide="true" data-dm-for="dmform-1">Email:</label> 
+<input type="email" class="" name="dmform-1" id="1486987420" placeholder="Email" data-placeholder-original="Email"/><input type="hidden" name="label-dmform-1" value="Email" id="1008195678"/></div> 
+ <span id="undefined_clear" class="dmWidgetClear"></span> 
+ <span id="undefined_clear_clear" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" id="1223280083"><input class="" name="submit" type="submit" value="SIGN UP" id="1963954138"/></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLucxVrQlF35CGUg7tLBduMisS7BMRMTz0QDEJCSlrMvBK5tTSDeMCtqZKiiOt24XmE=" id="1784948067" class="" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1994722645"/><input name="dmformsubject" type="hidden" value="New Newsletter Signup" id="1635402964" class="" data-email-subject="New Newsletter Signup"/><input name="dmformfrom" type="hidden" id="1121144403" class=""/><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrS5NYdk0POWQpGAzJsjF/is2vkgdLEQexTxNVAexsfANZrhpU2pYWFBc1R2UM4gKuX68/dPwIlm9+QDRtDq/+BN0tXYbGKZdVhldgaxI1CVTefrbWkVn8IVpyhvnYXxtpY6VDLNPQLAXr2oaHsKvp4ys2ITJj3mVQJDLcdxN/4Fs9K5ENL6KAq6KfgYQ8Fi+c43zJYKnfxyqk/YcbPq9+oGQg4dD3nztLYw==" data-dec="true"/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" id="1859039282">Thank you for contacting us.<br id="1216002135"/>We will get back to you as soon as possible.</div> 
+ <div class="dmform-error" style="display:none" id="1389156548">Oops, there was an error sending your message.<br id="1756071393"/>Please try again later.</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1355464176 dmRespRow" id="1355464176"> <div class="dmRespColsWrapper" id="1317662221"> <div class="u_1179898756 dmRespCol small-12 large-4 medium-4" id="1179898756"> <div class="dmRespRow u_1787216544" id="1787216544"> <div class="dmRespColsWrapper" id="1416217692"> <div class="dmRespCol small-12 medium-12 large-12" id="1161702952"> <div data-element-type="spacer" class="dmSpacer u_1994361649" id="1994361649"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1406374814 dmRespCol small-12 large-4 medium-4" id="1406374814"> <div data-element-type="spacer" class="dmSpacer u_1844289526" id="1844289526"></div> 
+ <div class="u_1857192519 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1857192519" style="transition: opacity 1s ease-in-out 0s; text-align: left; display: block;" new-inline-bind-applied="true" data-diy-text=""><p class="text-align-center"><span style="display: initial;"><span class="inline-data-binding" data-encoded-value="UGFpZCBmb3IgYnkgdGhlIGNvbW1pdHRlZS4=" data-inline-binding="site_text.disclaimer">Authorized and paid for by Timmy French for the Senate of Virginia</span></span></p></div> 
+ <nav class="u_1314025540 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_2" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" data-divider="DOT" id="1314025540" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/privacy-policy" class="unifiednav__item    " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Privacy Policy
+        " data-auto="page-text-style">Privacy Policy<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://ryvall.com" class="unifiednav__item    " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Powered by Ryvall" data-auto="page-text-style">Powered by Ryvall<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="dmRespCol large-4 medium-4 small-12 u_1228768776" id="1228768776"> <div data-element-type="spacer" class="dmSpacer u_1783821092" id="1783821092"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" role="button" aria-label="menu opener" tabindex="0"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+ <a class="dmBackToTop" id="dmBackToTop" aria-label="Scroll to top" href="#dmContent"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_3853";
+    var build = "2023-10-19T16_30_19";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2023-10-19T16_30_19";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+    <script type="text/javascript" id='d-js-jquery'
+            src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+    <!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "mobile";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/3853';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/3853';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+    rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtCommonProps["keyboard.navigation.enabled"] =true;
+    rtCommonProps["scripts.widgetCount.enabled"] =true;
+    rtCommonProps["run.imageCount.script.enabled"] =false;
+    rtCommonProps["maps.cookiebot.enabled"] =true;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+    rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+    rtCommonProps["new.store.accountPage.ecwid.resetPassword.fix"] =true;
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+    rtCommonProps["geocode.search.localize"] =false;
+    rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["contact.form.date.format.enabled"] = true;
+    rtCommonProps["filestack.uploadToTempBucket.enabled"] = true;
+    rtCommonProps["platform.monolith.loginBar.getUserLoggedIn.enabled"] = true;
+    rtCommonProps["platform.monolith.loginBar.layout.enabled"] = true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/3853/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-mobile.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/3853/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    $.layoutManager.initLayout();
+    
+});
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  </script>
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '8aa65406'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en"></div>
+<!-- Alias: 8aa65406 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<script>
+    jQuery(window).on('load', function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+    });
+</script>
+<script>
+    dmAPI.loadScript(
+        window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+        function () {
+            dmAPI.runOnReady('lozadInit', function () {
+                window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                    img.addEventListener('load', function (event) {
+                        var img = event.target;
+                        img.style.filter = 'blur(0)';
+                        setTimeout(function () {
+                            $(img).closest('.imageWidget').addClass('lazyLoaded');
+                        }, 250)
+                    });
+                });
+                lozad('.lazy', {
+                    threshold: 0.1,
+                    loaded: function (element) {
+                        if (element.getAttribute('data-background-image')) {
+                            element.style.setProperty(
+                                'background-image',
+                                "url('" + element.getAttribute('data-background-image') + "')",
+                                "important"
+                            );
+                        }
+                    }
+                }).observe();
+            });
+        }
+    );
+</script>
+<!--  End Script tags -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

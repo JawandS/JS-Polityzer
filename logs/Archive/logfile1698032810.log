@@ -1,0 +1,1143 @@
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.utils.log] Scrapy 2.11.0 started (bot: scrapybot)[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.utils.log] Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.addons] Enabled addons:
+[][0m
+[33m2023-10-22 23:46:50 WARNING (MainThread) [py.warnings] /home/js/.local/lib/python3.10/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+[0m
+[36m2023-10-22 23:46:50 DEBUG (MainThread) [scrapy.utils.log] Using reactor: twisted.internet.epollreactor.EPollReactor[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.extensions.telnet] Telnet Password: cc5a3716a65ebdcc[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats'][0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.crawler] Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue'}[0m
+[33m2023-10-22 23:46:50 WARNING (MainThread) [scrapy.middleware] Disabled scrapy_selenium.SeleniumMiddleware: SELENIUM_DRIVER_NAME and SELENIUM_DRIVER_EXECUTABLE_PATH must be set[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'][0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'][0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.middleware] Enabled item pipelines:
+[][0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.core.engine] Spider opened[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [website_downloader] ----------download started-----------[0m
+[32m2023-10-22 23:46:50 INFO (MainThread) [website_downloader] Working on CandiPatriceMundonKing->House->candikingforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LeonardBLacey->House->laceyfordelegate.org[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.dupefilters] Filtered duplicate request: <GET https://> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MikeLVanMeter->Senate->vanmeterforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on WilliamMBillStanleyJr->Senate->stanleyforsenate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on DavidAReid->House->delegatedavidreid.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LRileyShaia->House->rileyfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MarkDSickles->House->marksickles.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JDDannyDiggs->Senate->www.diggsforsenate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JuanPabloSegura->Senate->https://jpsva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LeePetersIII->House->petersforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SteveDHarvey->House->steveharveyvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MichaelBFeggans->House->michaelfeggans.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RandallKWolf->House->wolf4delegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on CatAPorterfield->House->catporterfield.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LashrecseDAird->Senate->lashrecseaird.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SiobhanSDunnavant->Senate->dunnavantdelivers.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on Michelle-AnnELopesMaldonado->House->michelle4va.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on BrianaDSewell->House->sewellfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on NadariusEClark->House->clarkfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KimberlyPopeAdams->House->kimadamsforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MarkLEarleyJr->House->markearleyforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JeremySMcPike->Senate->www.mcpike4va.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on PATrishWhite-Boyd->Senate->trishwhite-boyd.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RodneyTWillett->House->www.rodwillett.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on WilliamPDavis->House->davisfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on HOttoWachsmannJr->House->ottowachsmann.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on DonLScottJr->House->leaderdonscott.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SusannaSGibson->House->susannagibson.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on WilliamDBillWiley->House->electbillwiley.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JoelLGriffin->Senate->joelgriffinva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on DestinyLLevereBolling->House->destinyforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on CarrieEmersonCoyner->House->rudycoyner.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on EricFDitri->Senate->ericditri.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on TaraADurant->Senate->taradurant.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on DavidLOwen->House->votedavidowen.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JamesAJayLeftwichJr->House->www.jayleftwich.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MonicaLGary->Senate->www.monicagary.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MichaelACherry->House->mikecherryforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MichaelJWebert->House->michael-webert.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MarcusTEvans->House->marcusforva15.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RobertSBloxomJr->House->robbloxom100.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on WendellSWalker->House->www.wendellwalker.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on NBaxterEnnis->House->https://baxterennis.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SaddamAzlanSalim->Senate->salimforsenate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on StellaGPekarsky->Senate->stellapekarsky.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SchuylerTVanValkenburg->Senate->vanvalkenburg4va.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on CECliffHayesJr->House->cliffhayes.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on EmilyGScott->Senate->scottforstatesenate.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MarcusBSimon->House->www.marcussimon.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on PatrickAHope->House->hopeforvirginia.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on CharnieleLHerring->House->charnieleherring.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MichaelJDillender->House->mikedillenderva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LauraJaneHCohen->House->laurajanecohen.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on AngeliaWilliamsGraves->Senate->angeliawilliamsgraves.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JenniferDCarrollFoy->Senate->jennifercarrollfoy.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SaraHRatcliffe->House->saraforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RichardCRipSullivanJr->House->ripsullivan.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on GearyMHiggins->House->www.gearyhiggins.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ThomasATomGarrettJr->House->https://www.tomfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on GhazalaFHashmi->Senate->ghazalahashmi.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JosephPJoeMcNamara->House->joeforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on AndrewBAndyPittman->House->andyfornorfolk.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LamontBagby->Senate->lamontbagby.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JohnTStirrup->House->stirrupfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on DavidWMarsden->Senate->marsdenforsenate.nationbuilder.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on IsraelDO'Quinn->House->israeloquinn.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ScottASurovell->Senate->https://www.scottsurovell.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KarenAKeys-Gamarra->House->karenkeysgamarra.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on BetsyBCarr->House->betsycarr.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JasonSBallard->House->ballardfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on WilliamRBillDeSteph->Senate->www.billdesteph.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on GregoryJMoulthrop->Senate->gregmoulthrop.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ClintonLJenkins->Senate->clintonforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on TonyOWilt->House->https://www.wiltfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ChristopherTHead->Senate->chrisheadva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LesRAdams->House->lesadams.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on HollyMSeibold->House->www.hollyseibold.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RaeCCousins->House->www.raecousins.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KimATaylor->House->kimtaylorva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on BarryDKnight->House->www.barryknight.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on VivianEWatts->House->vivianwatts.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on AtoosaRReaser->House->atoosareaser.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JoshEThomas->House->jetforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ChrisKHarnisch->House->chris4va.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ShellyASimonds->House->www.simondsfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on TerryGKilgore->House->delegatekilgore.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RLeeWareJr->House->delegateleeware.net[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on DeborahIRenieGates->Senate->www.friendsofreniegates.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on AmandaEBatten->House->www.amandabatten.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RachelALevy->House->rachelfordelegate.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ToddEPillion->Senate->www.toddpillion.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MarkJPeake->Senate->peakeforsenate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on NikkiNRattrayBaldwin->Senate->nikkibaldwin.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on TravisSNembhard->House->nembhardforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RichardHStuart->Senate->www.stuartforsenate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MatthewJMattLang->Senate->www.langforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JamesVTully->House->tullyforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on HFBuddyFowlerJr->House->https:\\www.buddyfowler.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JackieHopeGlass->House->delegatejackieglass.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KennethDKenReid->Senate->kenreid.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KannanSrinivasan->House->kannanfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JeionAWard->House->jeionward.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on EmilyMarieBrewer->Senate->https://www.brewerforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on TimothyPGriffin->House->griffinforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on FrankMRuffJr->Senate->senatorfrankruff.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SuhasSubramanyam->Senate->suhasforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on FernandoJMartyMartinez->House->martyfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on DaveACranceJr->House->www.dave4va.com[0m
+[31m2023-10-22 23:46:51 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET https:///robots.txt>: Empty domain[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 1693, in _inlineCallbacks
+    result = context.run(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/python/failure.py", line 518, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/utils/defer.py", line 81, in mustbe_deferred
+    result = f(*args, **kw)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/__init__.py", line 86, in download_request
+    return cast(Deferred, handler.download_request(request, spider))
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/http11.py", line 72, in download_request
+    return agent.download_request(request)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/http11.py", line 375, in download_request
+    d = agent.request(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1148, in request
+    endpoint = self._getEndpoint(parsedURI)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1132, in _getEndpoint
+    return self._endpointFactory.endpointForURI(uri)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1003, in endpointForURI
+    connectionCreator = self._policyForHTTPS.creatorForNetloc(
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/contextfactory.py", line 105, in creatorForNetloc
+    return ScrapyClientTLSOptions(
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/tls.py", line 44, in __init__
+    super().__init__(hostname, ctx)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/_sslverify.py", line 1124, in __init__
+    self._hostnameBytes = _idnaBytes(hostname)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/_idna.py", line 31, in _idnaBytes
+    return idna.encode(text)
+  File "/home/js/.local/lib/python3.10/site-packages/idna/core.py", line 355, in encode
+    raise IDNAError('Empty domain')
+idna.core.IDNAError: Empty domain
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on NicholasSOlenik->House->olenik.us[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ChrisSRunion->House->chrisrunion.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on TMontyMason->Senate->masonforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on AnneFerrellTata->House->teamtata.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LillianVFranklin->House->lilyfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JChristianChrisObenshain->House->www.obenshainfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JessicaLAnderson->House->jessicaandersonforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KevinHAdams->Senate->kevinadamsforsenate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on AnthonyWTonyGoodwin->Senate->www.agoodwinforportsmouth.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JenniferBBoysko->Senate->jenniferboysko.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JadeDHarris->Senate->jadeharrisva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on AaronRRouse->Senate->rouseforsenate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JoshuaGCole->House->www.jgcole.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MajorMikeWebb->House->https://www.MajorMikeWebb.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on WrenMWilliams->House->wrenwilliamsva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JohnSitkaIII->House->sitkafordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RobertLRobBanseJr->House->robbanse.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KatrinaECallsen->House->katrinacallsen.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JohnJMcGuireIII->Senate->mcguireforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on GlenHSturtevantJr->Senate->glensturtevant.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on NickJFreitas->House->nickforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JamesWWillMorefield->House->http://www.willmorefield.com[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.majormikewebb.org/robots.txt> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://baxterennis.com/robots.txt> (referer: None)[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.tomfordelegate.com/robots.txt> (referer: None)[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MKeithHodges->House->keithhodges98.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on RyanTMcDougle->Senate->ryanmcdougle.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on PhilMHernandez->House->www.philforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on AlexQAskew->House->alexaskew.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on IanTravisLovejoy->House->votelovejoy.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on GraceEMorrison->House->gracefordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on VictoriaALuevanos->Senate->victorialuevanos.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on LukeETorian->House->www.delegatetorian.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MichaelJJones->House->mikejonesfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on ACCordoza->House->cordozaforvirginia.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MarkBVafiades->Senate->markforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KellyKConvirs-Fowler->House->delegatefowler.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on EllenHCampbell->House->https:\\www.campbellfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SharonEAshurst->House->sharon4vahd20.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on BonitaGraceAnthony->House->www.bonitaforva.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on CToddGilbert->House->delegatetoddgilbert.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on SSamRasoul->House->sam4va.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on JoliciaAWard->Senate->www.joliciaforva.org[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on MarkDObenshain->Senate->www.markobenshain.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on DavidLBulova->House->www.davidbulova.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on KathyKLTran->House->www.kathyfordelegate.com[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Working on NhanCHuynh->House->huynhforvirginia.com[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET http://www.willmorefield.com/robots.txt> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.brewerforva.com/robots.txt> (referer: None)[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.core.engine] Crawled (403) <GET https://baxterennis.com> (referer: None)[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:46:51 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure scrapy.spidermiddlewares.httperror.HttpError: Ignoring non-200 response>[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.core.engine] Crawled (403) <GET https://www.tomfordelegate.com> (referer: None)[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.majormikewebb.org/robots.txt> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:46:51 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure scrapy.spidermiddlewares.httperror.HttpError: Ignoring non-200 response>[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.core.engine] Crawled (403) <GET https://www.brewerforva.com> (referer: None)[0m
+[36m2023-10-22 23:46:51 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET http://www.willmorefield.com/robots.txt> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:46:51 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure idna.core.IDNAError: Empty domain>[0m
+[32m2023-10-22 23:46:51 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:46:51 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure scrapy.spidermiddlewares.httperror.HttpError: Ignoring non-200 response>[0m
+[31m2023-10-22 23:46:52 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://www.majormikewebb.org/robots.txt> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.[0m
+[31m2023-10-22 23:46:52 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET https://www.majormikewebb.org/robots.txt>: DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 1693, in _inlineCallbacks
+    result = context.run(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/python/failure.py", line 518, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/endpoints.py", line 1022, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.
+[31m2023-10-22 23:46:52 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET http://www.willmorefield.com/robots.txt> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[31m2023-10-22 23:46:52 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET http://www.willmorefield.com/robots.txt>: DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 1693, in _inlineCallbacks
+    result = context.run(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/python/failure.py", line 518, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/endpoints.py", line 1022, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.willmorefield.com.
+[36m2023-10-22 23:46:52 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.majormikewebb.org> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.[0m
+[36m2023-10-22 23:46:53 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET http://www.willmorefield.com> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[36m2023-10-22 23:46:53 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.majormikewebb.org> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.[0m
+[36m2023-10-22 23:46:53 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET http://www.willmorefield.com> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[31m2023-10-22 23:46:53 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://www.majormikewebb.org> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.[0m
+[32m2023-10-22 23:46:53 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:46:53 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.majormikewebb.org.>[0m
+[31m2023-10-22 23:46:54 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET http://www.willmorefield.com> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.willmorefield.com.[0m
+[32m2023-10-22 23:46:54 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:46:54 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.willmorefield.com.>[0m
+[36m2023-10-22 23:47:03 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://jpsva.com/robots.txt> (failed 1 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:03 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.wiltfordelegate.com/robots.txt> (failed 1 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:03 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.scottsurovell.com/robots.txt> (failed 1 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:15 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://jpsva.com/robots.txt> (failed 2 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:15 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.wiltfordelegate.com/robots.txt> (failed 2 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:15 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.scottsurovell.com/robots.txt> (failed 2 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-10-22 23:47:27 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://www.wiltfordelegate.com/robots.txt> (failed 3 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-10-22 23:47:27 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET https://www.wiltfordelegate.com/robots.txt>: Connection was refused by other side: 111: Connection refused.[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.
+[31m2023-10-22 23:47:27 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://jpsva.com/robots.txt> (failed 3 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-10-22 23:47:27 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET https://jpsva.com/robots.txt>: Connection was refused by other side: 111: Connection refused.[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.
+[31m2023-10-22 23:47:27 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://www.scottsurovell.com/robots.txt> (failed 3 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-10-22 23:47:27 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET https://www.scottsurovell.com/robots.txt>: Connection was refused by other side: 111: Connection refused.[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.
+[36m2023-10-22 23:47:39 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.wiltfordelegate.com> (failed 1 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:39 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://jpsva.com> (failed 1 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:39 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.scottsurovell.com> (failed 1 times): Connection was refused by other side: 111: Connection refused.[0m
+[32m2023-10-22 23:47:50 INFO (MainThread) [scrapy.extensions.logstats] Crawled 6 pages (at 6 pages/min), scraped 0 items (at 0 items/min)[0m
+[36m2023-10-22 23:47:51 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://jpsva.com> (failed 2 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:51 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.wiltfordelegate.com> (failed 2 times): Connection was refused by other side: 111: Connection refused.[0m
+[36m2023-10-22 23:47:51 DEBUG (MainThread) [scrapy.downloadermiddlewares.retry] Retrying <GET https://www.scottsurovell.com> (failed 2 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-10-22 23:48:03 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://jpsva.com> (failed 3 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-10-22 23:48:03 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://www.wiltfordelegate.com> (failed 3 times): Connection was refused by other side: 111: Connection refused.[0m
+[31m2023-10-22 23:48:03 ERROR (MainThread) [scrapy.downloadermiddlewares.retry] Gave up retrying <GET https://www.scottsurovell.com> (failed 3 times): Connection was refused by other side: 111: Connection refused.[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:48:03 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.>[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:48:03 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.>[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-22 23:48:03 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.>[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [scrapy.core.engine] Closing spider (finished)[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/exception_count': 32,
+ 'downloader/exception_type_count/idna.core.IDNAError': 2,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 18,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 12,
+ 'downloader/request_bytes': 14647,
+ 'downloader/request_count': 38,
+ 'downloader/request_method_count/GET': 38,
+ 'downloader/response_bytes': 17340,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/403': 3,
+ 'dupefilter/filtered': 143,
+ 'elapsed_time_seconds': 72.90393,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 10, 23, 3, 48, 3, 840364, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 17749,
+ 'httpcompression/response_count': 6,
+ 'log_count/DEBUG': 28,
+ 'log_count/ERROR': 25,
+ 'log_count/INFO': 173,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 73965568,
+ 'memusage/startup': 68247552,
+ 'response_received_count': 6,
+ 'retry/count': 20,
+ 'retry/max_reached': 10,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 12,
+ 'retry/reason_count/twisted.internet.error.DNSLookupError': 8,
+ "robotstxt/exception_count/<class 'idna.core.IDNAError'>": 1,
+ "robotstxt/exception_count/<class 'twisted.internet.error.ConnectionRefusedError'>": 3,
+ "robotstxt/exception_count/<class 'twisted.internet.error.DNSLookupError'>": 2,
+ 'robotstxt/request_count': 9,
+ 'robotstxt/response_count': 3,
+ 'robotstxt/response_status_count/200': 3,
+ 'scheduler/dequeued': 19,
+ 'scheduler/dequeued/memory': 19,
+ 'scheduler/enqueued': 19,
+ 'scheduler/enqueued/memory': 19,
+ 'start_time': datetime.datetime(2023, 10, 23, 3, 46, 50, 936434, tzinfo=datetime.timezone.utc)}[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [scrapy.core.engine] Spider closed (finished)[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [website_downloader] ----Time taken in seconds----:73.03945112228394[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [privacy_policy_analyzer] Starting privacy policy presence analysis.[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on PatrickAHope, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MajorMikeWebb, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on CharnieleLHerring, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RichardCRipSullivanJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KarenAKeys-Gamarra, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on NhanCHuynh, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on DavidLBulova, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on HollyMSeibold, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MarcusBSimon, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on DaveACranceJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on VivianEWatts, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LauraJaneHCohen, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MarcusTEvans, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MarkDSickles, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KathyKLTran, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on Michelle-AnnELopesMaldonado, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SharonEAshurst, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JoshEThomas, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JohnTStirrup, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on TravisSNembhard, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on IanTravisLovejoy, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on CandiPatriceMundonKing, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JamesVTully, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LukeETorian, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on BrianaDSewell, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KannanSrinivasan, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on AtoosaRReaser, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ChrisKHarnisch, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on DavidAReid, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on FernandoJMartyMartinez, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RobertLRobBanseJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on GearyMHiggins, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on GraceEMorrison, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on WilliamDBillWiley, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on CToddGilbert, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on TonyOWilt, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ChrisSRunion, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RandallKWolf, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on EllenHCampbell, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SSamRasoul, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on WilliamPDavis, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JosephPJoeMcNamara, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LillianVFranklin, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JChristianChrisObenshain, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JasonSBallard, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JamesWWillMorefield, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on IsraelDO'Quinn, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on TerryGKilgore, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on WrenMWilliams, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LesRAdams, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on WendellSWalker, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on TimothyPGriffin, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KatrinaECallsen, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SteveDHarvey, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ThomasATomGarrettJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SusannaSGibson, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on DavidLOwen, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RodneyTWillett, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LRileyShaia, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RachelALevy, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on HFBuddyFowlerJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MichaelJWebert, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SaraHRatcliffe, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on NickJFreitas, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LeonardBLacey, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JoshuaGCole, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LeePetersIII, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MKeithHodges, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ShellyASimonds, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JessicaLAnderson, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on AmandaEBatten, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RLeeWareJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MarkLEarleyJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MichaelACherry, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on CarrieEmersonCoyner, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MichaelJJones, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on BetsyBCarr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RaeCCousins, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on DestinyLLevereBolling, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KimberlyPopeAdams, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KimATaylor, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on HOttoWachsmannJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on NadariusEClark, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MichaelJDillender, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ACCordoza, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JeionAWard, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on DonLScottJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on NBaxterEnnis, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JamesAJayLeftwichJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on CECliffHayesJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on BonitaGraceAnthony, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JackieHopeGlass, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JohnSitkaIII, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on PhilMHernandez, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on AndrewBAndyPittman, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on AlexQAskew, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KellyKConvirs-Fowler, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on NicholasSOlenik, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MichaelBFeggans, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on BarryDKnight, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on CatAPorterfield, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on AnneFerrellTata, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RobertSBloxomJr, House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on EmilyGScott, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MarkDObenshain, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JadeDHarris, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ChristopherTHead, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on PATrishWhite-Boyd, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ToddEPillion, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on DeborahIRenieGates, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on WilliamMBillStanleyJr, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MarkJPeake, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on FrankMRuffJr, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JohnJMcGuireIII, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on GlenHSturtevantJr, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LashrecseDAird, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on EricFDitri, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on LamontBagby, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on GhazalaFHashmi, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SchuylerTVanValkenburg, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SiobhanSDunnavant, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ClintonLJenkins, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on EmilyMarieBrewer, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on AnthonyWTonyGoodwin, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on VictoriaALuevanos, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on WilliamRBillDeSteph, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on AngeliaWilliamsGraves, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on AaronRRouse, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KevinHAdams, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on TMontyMason, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JDDannyDiggs, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JoliciaAWard, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RichardHStuart, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on RyanTMcDougle, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JoelLGriffin, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MonicaLGary, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on TaraADurant, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JeremySMcPike, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on NikkiNRattrayBaldwin, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JuanPabloSegura, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SuhasSubramanyam, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on GregoryJMoulthrop, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JenniferDCarrollFoy, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MikeLVanMeter, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on ScottASurovell, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on DavidWMarsden, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MarkBVafiades, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on StellaGPekarsky, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on SaddamAzlanSalim, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on KennethDKenReid, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on JenniferBBoysko, Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [privacy_policy_analyzer] Working on MatthewJMattLang, Senate[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [privacy_policy_analyzer] Privacy Policy presence analysis completed. Results at results/privacy_policy_result.json..[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [link_extractor] Starting link_extractor[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on PatrickAHope,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MajorMikeWebb,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on CharnieleLHerring,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RichardCRipSullivanJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KarenAKeys-Gamarra,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on NhanCHuynh,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on DavidLBulova,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on HollyMSeibold,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MarcusBSimon,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on DaveACranceJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on VivianEWatts,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LauraJaneHCohen,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MarcusTEvans,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MarkDSickles,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KathyKLTran,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on Michelle-AnnELopesMaldonado,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SharonEAshurst,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JoshEThomas,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JohnTStirrup,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on TravisSNembhard,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on IanTravisLovejoy,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on CandiPatriceMundonKing,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JamesVTully,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LukeETorian,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on BrianaDSewell,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KannanSrinivasan,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on AtoosaRReaser,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ChrisKHarnisch,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on DavidAReid,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on FernandoJMartyMartinez,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RobertLRobBanseJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on GearyMHiggins,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on GraceEMorrison,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on WilliamDBillWiley,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on CToddGilbert,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on TonyOWilt,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ChrisSRunion,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RandallKWolf,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on EllenHCampbell,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SSamRasoul,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on WilliamPDavis,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JosephPJoeMcNamara,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LillianVFranklin,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JChristianChrisObenshain,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JasonSBallard,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JamesWWillMorefield,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on IsraelDO'Quinn,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on TerryGKilgore,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on WrenMWilliams,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LesRAdams,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on WendellSWalker,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on TimothyPGriffin,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KatrinaECallsen,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SteveDHarvey,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ThomasATomGarrettJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SusannaSGibson,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on DavidLOwen,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RodneyTWillett,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LRileyShaia,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RachelALevy,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on HFBuddyFowlerJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MichaelJWebert,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SaraHRatcliffe,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on NickJFreitas,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LeonardBLacey,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JoshuaGCole,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LeePetersIII,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MKeithHodges,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ShellyASimonds,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JessicaLAnderson,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on AmandaEBatten,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RLeeWareJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MarkLEarleyJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MichaelACherry,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on CarrieEmersonCoyner,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MichaelJJones,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on BetsyBCarr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RaeCCousins,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on DestinyLLevereBolling,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KimberlyPopeAdams,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KimATaylor,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on HOttoWachsmannJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on NadariusEClark,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MichaelJDillender,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ACCordoza,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JeionAWard,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on DonLScottJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on NBaxterEnnis,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JamesAJayLeftwichJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on CECliffHayesJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on BonitaGraceAnthony,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JackieHopeGlass,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JohnSitkaIII,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on PhilMHernandez,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on AndrewBAndyPittman,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on AlexQAskew,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KellyKConvirs-Fowler,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on NicholasSOlenik,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MichaelBFeggans,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on BarryDKnight,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on CatAPorterfield,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on AnneFerrellTata,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RobertSBloxomJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on EmilyGScott,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MarkDObenshain,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JadeDHarris,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ChristopherTHead,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on PATrishWhite-Boyd,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ToddEPillion,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on DeborahIRenieGates,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on WilliamMBillStanleyJr,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MarkJPeake,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on FrankMRuffJr,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JohnJMcGuireIII,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on GlenHSturtevantJr,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LashrecseDAird,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on EricFDitri,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on LamontBagby,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on GhazalaFHashmi,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SchuylerTVanValkenburg,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SiobhanSDunnavant,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ClintonLJenkins,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on EmilyMarieBrewer,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on AnthonyWTonyGoodwin,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on VictoriaALuevanos,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on WilliamRBillDeSteph,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on AngeliaWilliamsGraves,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on AaronRRouse,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KevinHAdams,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on TMontyMason,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JDDannyDiggs,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JoliciaAWard,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RichardHStuart,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on RyanTMcDougle,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JoelLGriffin,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MonicaLGary,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on TaraADurant,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JeremySMcPike,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on NikkiNRattrayBaldwin,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JuanPabloSegura,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SuhasSubramanyam,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on GregoryJMoulthrop,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JenniferDCarrollFoy,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MikeLVanMeter,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on ScottASurovell,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on DavidWMarsden,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MarkBVafiades,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on StellaGPekarsky,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on SaddamAzlanSalim,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on KennethDKenReid,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on JenniferBBoysko,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] Working on MatthewJMattLang,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [link_extractor] Completed link_extractor![0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [form_extractor] Starting form_extractor[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on PatrickAHope,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for PatrickAHope-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MajorMikeWebb,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MajorMikeWebb-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on CharnieleLHerring,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for CharnieleLHerring-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RichardCRipSullivanJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RichardCRipSullivanJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KarenAKeys-Gamarra,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KarenAKeys-Gamarra-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on NhanCHuynh,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for NhanCHuynh-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on DavidLBulova,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for DavidLBulova-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on HollyMSeibold,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for HollyMSeibold-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MarcusBSimon,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MarcusBSimon-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on DaveACranceJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for DaveACranceJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on VivianEWatts,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for VivianEWatts-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LauraJaneHCohen,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LauraJaneHCohen-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MarcusTEvans,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MarcusTEvans-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MarkDSickles,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MarkDSickles-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KathyKLTran,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KathyKLTran-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on Michelle-AnnELopesMaldonado,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for Michelle-AnnELopesMaldonado-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SharonEAshurst,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SharonEAshurst-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JoshEThomas,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JoshEThomas-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JohnTStirrup,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JohnTStirrup-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on TravisSNembhard,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for TravisSNembhard-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on IanTravisLovejoy,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for IanTravisLovejoy-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on CandiPatriceMundonKing,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for CandiPatriceMundonKing-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JamesVTully,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JamesVTully-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LukeETorian,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LukeETorian-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on BrianaDSewell,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for BrianaDSewell-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KannanSrinivasan,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KannanSrinivasan-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on AtoosaRReaser,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for AtoosaRReaser-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ChrisKHarnisch,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ChrisKHarnisch-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on DavidAReid,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for DavidAReid-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on FernandoJMartyMartinez,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for FernandoJMartyMartinez-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RobertLRobBanseJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RobertLRobBanseJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on GearyMHiggins,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for GearyMHiggins-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on GraceEMorrison,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for GraceEMorrison-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on WilliamDBillWiley,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for WilliamDBillWiley-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on CToddGilbert,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for CToddGilbert-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on TonyOWilt,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for TonyOWilt-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ChrisSRunion,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ChrisSRunion-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RandallKWolf,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RandallKWolf-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on EllenHCampbell,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for EllenHCampbell-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SSamRasoul,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SSamRasoul-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on WilliamPDavis,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for WilliamPDavis-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JosephPJoeMcNamara,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JosephPJoeMcNamara-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LillianVFranklin,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LillianVFranklin-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JChristianChrisObenshain,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JChristianChrisObenshain-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JasonSBallard,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JasonSBallard-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JamesWWillMorefield,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JamesWWillMorefield-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on IsraelDO'Quinn,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for IsraelDO'Quinn-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on TerryGKilgore,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for TerryGKilgore-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on WrenMWilliams,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for WrenMWilliams-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LesRAdams,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LesRAdams-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on WendellSWalker,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for WendellSWalker-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on TimothyPGriffin,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for TimothyPGriffin-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KatrinaECallsen,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KatrinaECallsen-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SteveDHarvey,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SteveDHarvey-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ThomasATomGarrettJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ThomasATomGarrettJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SusannaSGibson,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SusannaSGibson-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on DavidLOwen,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for DavidLOwen-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RodneyTWillett,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RodneyTWillett-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LRileyShaia,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LRileyShaia-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RachelALevy,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RachelALevy-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on HFBuddyFowlerJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for HFBuddyFowlerJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MichaelJWebert,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MichaelJWebert-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SaraHRatcliffe,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SaraHRatcliffe-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on NickJFreitas,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for NickJFreitas-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LeonardBLacey,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LeonardBLacey-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JoshuaGCole,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JoshuaGCole-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LeePetersIII,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LeePetersIII-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MKeithHodges,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MKeithHodges-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ShellyASimonds,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ShellyASimonds-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JessicaLAnderson,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JessicaLAnderson-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on AmandaEBatten,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for AmandaEBatten-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RLeeWareJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RLeeWareJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MarkLEarleyJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MarkLEarleyJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MichaelACherry,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MichaelACherry-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on CarrieEmersonCoyner,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for CarrieEmersonCoyner-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MichaelJJones,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MichaelJJones-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on BetsyBCarr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for BetsyBCarr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RaeCCousins,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RaeCCousins-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on DestinyLLevereBolling,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for DestinyLLevereBolling-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KimberlyPopeAdams,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KimberlyPopeAdams-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KimATaylor,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KimATaylor-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on HOttoWachsmannJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for HOttoWachsmannJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on NadariusEClark,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for NadariusEClark-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MichaelJDillender,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MichaelJDillender-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ACCordoza,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ACCordoza-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JeionAWard,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JeionAWard-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on DonLScottJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for DonLScottJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on NBaxterEnnis,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for NBaxterEnnis-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JamesAJayLeftwichJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JamesAJayLeftwichJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on CECliffHayesJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for CECliffHayesJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on BonitaGraceAnthony,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for BonitaGraceAnthony-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JackieHopeGlass,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JackieHopeGlass-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JohnSitkaIII,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JohnSitkaIII-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on PhilMHernandez,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for PhilMHernandez-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on AndrewBAndyPittman,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for AndrewBAndyPittman-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on AlexQAskew,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for AlexQAskew-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KellyKConvirs-Fowler,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KellyKConvirs-Fowler-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on NicholasSOlenik,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for NicholasSOlenik-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MichaelBFeggans,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MichaelBFeggans-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on BarryDKnight,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for BarryDKnight-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on CatAPorterfield,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for CatAPorterfield-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on AnneFerrellTata,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for AnneFerrellTata-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RobertSBloxomJr,House[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RobertSBloxomJr-House:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on EmilyGScott,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for EmilyGScott-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MarkDObenshain,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MarkDObenshain-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JadeDHarris,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JadeDHarris-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ChristopherTHead,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ChristopherTHead-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on PATrishWhite-Boyd,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for PATrishWhite-Boyd-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ToddEPillion,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ToddEPillion-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on DeborahIRenieGates,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for DeborahIRenieGates-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on WilliamMBillStanleyJr,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for WilliamMBillStanleyJr-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MarkJPeake,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MarkJPeake-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on FrankMRuffJr,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for FrankMRuffJr-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JohnJMcGuireIII,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JohnJMcGuireIII-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on GlenHSturtevantJr,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for GlenHSturtevantJr-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LashrecseDAird,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LashrecseDAird-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on EricFDitri,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for EricFDitri-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on LamontBagby,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for LamontBagby-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on GhazalaFHashmi,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for GhazalaFHashmi-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SchuylerTVanValkenburg,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SchuylerTVanValkenburg-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SiobhanSDunnavant,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SiobhanSDunnavant-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ClintonLJenkins,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ClintonLJenkins-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on EmilyMarieBrewer,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for EmilyMarieBrewer-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on AnthonyWTonyGoodwin,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for AnthonyWTonyGoodwin-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on VictoriaALuevanos,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for VictoriaALuevanos-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on WilliamRBillDeSteph,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for WilliamRBillDeSteph-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on AngeliaWilliamsGraves,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for AngeliaWilliamsGraves-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on AaronRRouse,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for AaronRRouse-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KevinHAdams,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KevinHAdams-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on TMontyMason,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for TMontyMason-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JDDannyDiggs,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JDDannyDiggs-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JoliciaAWard,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JoliciaAWard-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RichardHStuart,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RichardHStuart-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on RyanTMcDougle,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for RyanTMcDougle-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JoelLGriffin,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JoelLGriffin-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MonicaLGary,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MonicaLGary-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on TaraADurant,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for TaraADurant-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JeremySMcPike,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JeremySMcPike-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on NikkiNRattrayBaldwin,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for NikkiNRattrayBaldwin-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JuanPabloSegura,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JuanPabloSegura-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SuhasSubramanyam,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SuhasSubramanyam-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on GregoryJMoulthrop,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for GregoryJMoulthrop-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JenniferDCarrollFoy,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JenniferDCarrollFoy-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MikeLVanMeter,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MikeLVanMeter-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on ScottASurovell,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for ScottASurovell-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on DavidWMarsden,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for DavidWMarsden-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MarkBVafiades,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MarkBVafiades-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on StellaGPekarsky,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for StellaGPekarsky-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on SaddamAzlanSalim,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for SaddamAzlanSalim-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on KennethDKenReid,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for KennethDKenReid-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on JenniferBBoysko,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for JenniferBBoysko-Senate:[][0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] Working on MatthewJMattLang,Senate[0m
+[36m2023-10-22 23:48:03 DEBUG (MainThread) [form_extractor] extracted fields for MatthewJMattLang-Senate:[][0m
+[32m2023-10-22 23:48:03 INFO (MainThread) [form_extractor] Completed form_extractor![0m

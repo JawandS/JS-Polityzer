@@ -1,0 +1,1575 @@
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.utils.log] Scrapy 2.11.0 started (bot: scrapybot)[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.utils.log] Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.addons] Enabled addons:
+[][0m
+[33m2023-10-23 15:21:57 WARNING (MainThread) [py.warnings] /home/js/.local/lib/python3.10/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [scrapy.utils.log] Using reactor: twisted.internet.epollreactor.EPollReactor[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.extensions.telnet] Telnet Password: 8d941836e1d22e7f[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats'][0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.crawler] Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue'}[0m
+[33m2023-10-23 15:21:57 WARNING (MainThread) [scrapy.middleware] Disabled scrapy_selenium.SeleniumMiddleware: SELENIUM_DRIVER_NAME and SELENIUM_DRIVER_EXECUTABLE_PATH must be set[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'][0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'][0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.middleware] Enabled item pipelines:
+[][0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.core.engine] Spider opened[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [website_downloader] ----------download started-----------[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [website_downloader] Working on JamesAThomasJr->House->https://www.thomasforvirginia.com[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [website_downloader] Working on BillCWoolfIII->Senate->https://www.woolf4va.com/[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [website_downloader] Working on DavidAHenshaw->Senate->https://www.henshaw4va.com/[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [website_downloader] Working on RussetWPerry->Senate->https://russetperry.com/[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [website_downloader] Working on DanIHelmer->House->https://www.danhelmer.com[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [website_downloader] Working on NhanCHuynh->House->huynhforvirginia.com[0m
+[31m2023-10-23 15:21:57 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET https:///robots.txt>: Empty domain[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 1693, in _inlineCallbacks
+    result = context.run(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/python/failure.py", line 518, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/utils/defer.py", line 81, in mustbe_deferred
+    result = f(*args, **kw)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/__init__.py", line 86, in download_request
+    return cast(Deferred, handler.download_request(request, spider))
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/http11.py", line 72, in download_request
+    return agent.download_request(request)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/http11.py", line 375, in download_request
+    d = agent.request(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1148, in request
+    endpoint = self._getEndpoint(parsedURI)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1132, in _getEndpoint
+    return self._endpointFactory.endpointForURI(uri)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1003, in endpointForURI
+    connectionCreator = self._policyForHTTPS.creatorForNetloc(
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/contextfactory.py", line 105, in creatorForNetloc
+    return ScrapyClientTLSOptions(
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/tls.py", line 44, in __init__
+    super().__init__(hostname, ctx)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/_sslverify.py", line 1124, in __init__
+    self._hostnameBytes = _idnaBytes(hostname)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/_idna.py", line 31, in _idnaBytes
+    return idna.encode(text)
+  File "/home/js/.local/lib/python3.10/site-packages/idna/core.py", line 355, in encode
+    raise IDNAError('Empty domain')
+idna.core.IDNAError: Empty domain
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/robots.txt> (referer: None)[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [scrapy.core.engine] Crawled (404) <GET https://www.woolf4va.com/robots.txt> (referer: None)[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [protego] Rule at line 1 without any user agent to enforce it on.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [protego] Rule at line 2 without any user agent to enforce it on.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [protego] Rule at line 3 without any user agent to enforce it on.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [protego] Rule at line 4 without any user agent to enforce it on.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [protego] Rule at line 7 without any user agent to enforce it on.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [protego] Rule at line 9 without any user agent to enforce it on.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com> (referer: None)[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [scrapy.core.engine] Crawled (301) <GET https://www.danhelmer.com/robots.txt> (referer: None)[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://russetperry.com, 200, https://russetperry.com[0m
+[32m2023-10-23 15:21:57 INFO (MainThread) [website_downloader] Saving https://russetperry.com, Path -> html/Senate/RussetWPerry/russetperry.comVirginia Senate - Russet Perry for Senate16980889178276968[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [scrapy.dupefilters] Filtered duplicate request: <GET https://russetperry.com/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/meet-russet[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/on-the-issues[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/meet-russet[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/on-the-issues[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/meet-russet[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/on-the-issues[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://policies.google.com/privacy ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://policies.google.com/terms ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:21:57 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.thomasforvirginia.com/robots.txt> (referer: None)[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com> (referer: None)[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com, 200, https://www.woolf4va.com[0m
+[32m2023-10-23 15:21:58 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com, Path -> html/Senate/BillCWoolfIII/www.woolf4va.comWoolf for VA16980889181378872[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/about[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/news[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/district-30-plan[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/vote[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/about[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://twitter.com/Woolf4VA ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/about[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/news[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/endorsements[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/district-30-plan[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] http://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/privacy-policy[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/terms-conditions[0m
+[32m2023-10-23 15:21:58 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-23 15:21:58 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure idna.core.IDNAError: Empty domain>[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/meet-russet> (referer: https://russetperry.com)[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://russetperry.com/meet-russet, 200, https://russetperry.com/meet-russet[0m
+[32m2023-10-23 15:21:58 INFO (MainThread) [website_downloader] Saving https://russetperry.com/meet-russet, Path -> html/Senate/RussetWPerry/russetperry.com|meet-russet16980889184965298[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/on-the-issues[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/on-the-issues[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/on-the-issues[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.thomasforvirginia.com> (referer: None)[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com/about> (referer: https://www.woolf4va.com)[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com, 200, https://www.thomasforvirginia.com[0m
+[32m2023-10-23 15:21:58 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com, Path -> html/House/JamesAThomasJr/www.thomasforvirginia.comThomas for VA - James Thomas for Virginia16980889187218482[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/es[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/홈[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/about[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/issues[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/join[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/about/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/issues/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/join/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/es[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/홈[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.facebook.com/thomasforvirginia ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://twitter.com/JamesThomasVA ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://secure.anedot.com/thomas-for-virginia/6ac6b149-f38c-4eb5-b3f4-020343e2f9f8 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.cafepress.com/jamesthomasforvirginia ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/about/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/issues/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/join/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com/about, 200, https://www.woolf4va.com/about[0m
+[32m2023-10-23 15:21:58 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com/about, Path -> html/Senate/BillCWoolfIII/www.woolf4va.com|about16980889188090615[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/news[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/district-30-plan[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/vote[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/news[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/endorsements[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/district-30-plan[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] #https://secure.winred.com/woolf-for-senate/donate ignored[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/privacy-policy[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/terms-conditions[0m
+[36m2023-10-23 15:21:58 DEBUG (MainThread) [scrapy.core.engine] Crawled (301) <GET https://www.thomasforvirginia.com/es> (referer: https://www.thomasforvirginia.com)[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com/es, 301, https://www.thomasforvirginia.com/es[0m
+[31m2023-10-23 15:21:59 ERROR (MainThread) [website_downloader] 301 error on url https://www.thomasforvirginia.com/es
+[0m
+[32m2023-10-23 15:21:59 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com/es, Path -> html/House/JamesAThomasJr/www.thomasforvirginia.com|es16980889190307794[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] No Links... https://www.thomasforvirginia.com/es, https://www.thomasforvirginia.com/es, 301[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/on-the-issues> (referer: https://russetperry.com)[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://russetperry.com/on-the-issues, 200, https://russetperry.com/on-the-issues[0m
+[32m2023-10-23 15:21:59 INFO (MainThread) [website_downloader] Saving https://russetperry.com/on-the-issues, Path -> html/Senate/RussetWPerry/russetperry.com|on-the-issues16980889191423993[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/endorsements[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/womens-rights[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/affordable-virginia[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/prevent-firearm-violence-1[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/health-care-2[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/ensure-criminal-justice[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-vulnerable-cit-1[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/support-strong-schools-1[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-environment-2[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com/news> (referer: https://www.woolf4va.com)[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/endorsements> (referer: https://russetperry.com)[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com/news, 200, https://www.woolf4va.com/news[0m
+[32m2023-10-23 15:21:59 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com/news, Path -> html/Senate/BillCWoolfIII/www.woolf4va.com|news169808891945271[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/district-30-plan[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/vote[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/press-release-bill-woolf-challenges-del-danica-roems-record-on-fentanyl-dealers-8857640 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/the-weekly-woolf-ez4tx4vo83?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/the-weekly-woolf?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8856404?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/republican-bill-woolf-announces-candidacy-for-va-senate-district-8855496?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8855628?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/republican-bill-woolf-announces-candidacy-for-va-senate-district-8855144?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8855004?e=f97c8ab1d1 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/momentum-8854556?e=f97c8ab1d1 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8854448?e=f97c8ab1d1 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/momentum-8854104?e=f97c8ab1d1 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8853604?e=f97c8ab1d1 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/republican-bill-woolf-announces-candidacy-for-va-senate-district-8852944 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8852736 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8852228 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/momentum-8851924 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/dottie-miller-is-on-our-team-8851796 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8851552 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://us8.campaign-archive.com/?e=[UNIQID]&u=2ffbabc3c1a2e41c593cadaba&id=1e074dda46 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://us8.campaign-archive.com/?e=[UNIQID]&u=2ffbabc3c1a2e41c593cadaba&id=55c8a7596d ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://us8.campaign-archive.com/?e=[UNIQID]&u=2ffbabc3c1a2e41c593cadaba&id=a0e12bfded ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/youngkinendorsement?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/republican-bill-woolf-announces-candidacy-for-va-senate-district-8849932?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/0430woolfweekly-8849872?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/woolf4va/republican-bill-woolf-announces-candidacy-for-va-senate-district-8848852?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://us8.campaign-archive.com/?e=[UNIQID]&u=2ffbabc3c1a2e41c593cadaba&id=c87166c323 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/ea40685de111/republican-bill-woolf-announces-candidacy-for-va-senate-district-8847496 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/cd1c472b93cf/he-is-risen-8847724?e=[UNIQID] ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.youtube.com/watch?v=lAA2U2W-GQM ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.youtube.com/watch?v=I-oivWcSUr0 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.youtube.com/watch?v=BOrXZ3EUh18 ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://mailchi.mp/62b38bde5de5/republican-bill-woolf-announces-candidacy-for-va-senate-district-8846784?e=%5BUNIQID%5D ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/endorsements[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/district-30-plan[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/privacy-policy[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/terms-conditions[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://russetperry.com/endorsements, 200, https://russetperry.com/endorsements[0m
+[32m2023-10-23 15:21:59 INFO (MainThread) [website_downloader] Saving https://russetperry.com/endorsements, Path -> html/Senate/RussetWPerry/russetperry.com|endorsements16980889195397127[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/media[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [scrapy.core.engine] Crawled (404) <GET https://www.thomasforvirginia.com/%ED%99%88> (referer: https://www.thomasforvirginia.com)[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [scrapy.core.engine] Crawled (301) <GET https://www.danhelmer.com> (referer: None)[0m
+[32m2023-10-23 15:21:59 INFO (MainThread) [website_downloader] Logging error from the error handler[0m
+[31m2023-10-23 15:21:59 ERROR (MainThread) [website_downloader] <twisted.python.failure.Failure scrapy.spidermiddlewares.httperror.HttpError: Ignoring non-200 response>[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.danhelmer.com, 301, https://www.danhelmer.com[0m
+[31m2023-10-23 15:21:59 ERROR (MainThread) [website_downloader] 301 error on url https://www.danhelmer.com
+[0m
+[32m2023-10-23 15:21:59 INFO (MainThread) [website_downloader] Saving https://www.danhelmer.com, Path -> html/House/DanIHelmer/www.danhelmer.com16980889197543366[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] No Links... https://www.danhelmer.com, https://www.danhelmer.com, 301[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com/district-30-plan> (referer: https://www.woolf4va.com)[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com/district-30-plan, 200, https://www.woolf4va.com/district-30-plan[0m
+[32m2023-10-23 15:21:59 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com/district-30-plan, Path -> html/Senate/BillCWoolfIII/www.woolf4va.com|district-30-plan16980889199147081[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/vote[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/endorsements[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/privacy-policy[0m
+[36m2023-10-23 15:21:59 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/terms-conditions[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/media> (referer: https://russetperry.com)[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [scrapy.core.engine] Crawled (301) <GET https://www.thomasforvirginia.com/about> (referer: https://www.thomasforvirginia.com)[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://russetperry.com/media, 200, https://russetperry.com/media[0m
+[32m2023-10-23 15:22:00 INFO (MainThread) [website_downloader] Saving https://russetperry.com/media, Path -> html/Senate/RussetWPerry/russetperry.com|media169808892011379[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vote-now[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] mailto:Press@RussetPerry.com ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/helmer-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/kaine-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vsdc-press-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/kincaid-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/pp-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/primary-win[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/wapo-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/votevets-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/virginias-list-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/pipe-trades-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/spanbereger-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/freedomva-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/gooditis-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/moms-demand[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/stoney-endorse[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/april-fundraising[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/now-press-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/first-on-ballot-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/deeds-press-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/menstrual-press-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/wexton-press-release-1[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/bwldc-press-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/northam-press-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/january-finance-release-1[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/climate-cab-press-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/12%2F2%2F22-press-release[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.fauquiernow.com/news/government_politics/former-loudoun-county-prosecutor-announces-democratic-campaign-for-new-31st-district-senate-seat/article_b881ff36-5532-11ed-bacc-3f2d2e621e63.html ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.loudoun40under40.com/honorees ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com/about, 301, https://www.thomasforvirginia.com/about[0m
+[31m2023-10-23 15:22:00 ERROR (MainThread) [website_downloader] 301 error on url https://www.thomasforvirginia.com/about
+[0m
+[32m2023-10-23 15:22:00 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com/about, Path -> html/House/JamesAThomasJr/www.thomasforvirginia.com|about16980889201507275[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] No Links... https://www.thomasforvirginia.com/about, https://www.thomasforvirginia.com/about, 301[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com/vote> (referer: https://www.woolf4va.com)[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/vote-now> (referer: https://russetperry.com)[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com/vote, 200, https://www.woolf4va.com/vote[0m
+[32m2023-10-23 15:22:00 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com/vote, Path -> html/Senate/BillCWoolfIII/www.woolf4va.com|vote16980889206220124[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://secureyourvotevirginia.com/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/endorsements[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/join-team-woolf[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/privacy-policy[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.henshaw4va.com/robots.txt> (referer: None)[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/terms-conditions[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://russetperry.com/vote-now, 200, https://russetperry.com/vote-now[0m
+[32m2023-10-23 15:22:00 INFO (MainThread) [website_downloader] Saving https://russetperry.com/vote-now, Path -> html/Senate/RussetWPerry/russetperry.com|vote-now16980889206728644[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/contact-us[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.loudoun.gov/5392/Early-Voting-Information ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.fauquiercounty.gov/home/showpublisheddocument/39054/638271679917370000 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://vote.elections.virginia.gov/Registration/DmvLookup ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.eabsentee.org/form/perry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://vote.elections.virginia.gov/VoterInformation/Lookup/absentee ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [scrapy.core.engine] Crawled (301) <GET https://www.thomasforvirginia.com/issues> (referer: https://www.thomasforvirginia.com)[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com/issues, 301, https://www.thomasforvirginia.com/issues[0m
+[31m2023-10-23 15:22:00 ERROR (MainThread) [website_downloader] 301 error on url https://www.thomasforvirginia.com/issues
+[0m
+[32m2023-10-23 15:22:00 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com/issues, Path -> html/House/JamesAThomasJr/www.thomasforvirginia.com|issues16980889208970997[0m
+[36m2023-10-23 15:22:00 DEBUG (MainThread) [website_downloader] No Links... https://www.thomasforvirginia.com/issues, https://www.thomasforvirginia.com/issues, 301[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/contact-us> (referer: https://russetperry.com)[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://russetperry.com/contact-us, 200, https://russetperry.com/contact-us[0m
+[32m2023-10-23 15:22:01 INFO (MainThread) [website_downloader] Saving https://russetperry.com/contact-us, Path -> html/Senate/RussetWPerry/russetperry.com|contact-us16980889211357899[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://secure.ngpvan.com/-SlGO5kb7kurhajv8kJ43Q2 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com/join-team-woolf> (referer: https://www.woolf4va.com)[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com/join-team-woolf, 200, https://www.woolf4va.com/join-team-woolf[0m
+[32m2023-10-23 15:22:01 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com/join-team-woolf, Path -> html/Senate/BillCWoolfIII/www.woolf4va.com|join-team-woolf16980889213531892[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/endorsements[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/privacy-policy[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/terms-conditions[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [scrapy.core.engine] Crawled (301) <GET https://www.thomasforvirginia.com/join> (referer: https://www.thomasforvirginia.com)[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com/endorsements> (referer: https://www.woolf4va.com)[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com/join, 301, https://www.thomasforvirginia.com/join[0m
+[31m2023-10-23 15:22:01 ERROR (MainThread) [website_downloader] 301 error on url https://www.thomasforvirginia.com/join
+[0m
+[32m2023-10-23 15:22:01 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com/join, Path -> html/House/JamesAThomasJr/www.thomasforvirginia.com|join16980889216788843[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] No Links... https://www.thomasforvirginia.com/join, https://www.thomasforvirginia.com/join, 301[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com/endorsements, 200, https://www.woolf4va.com/endorsements[0m
+[32m2023-10-23 15:22:01 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com/endorsements, Path -> html/Senate/BillCWoolfIII/www.woolf4va.com|endorsements16980889217018971[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/privacy-policy[0m
+[36m2023-10-23 15:22:01 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/terms-conditions[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.henshaw4va.com> (referer: None)[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.henshaw4va.com, 200, https://www.henshaw4va.com[0m
+[32m2023-10-23 15:22:02 INFO (MainThread) [website_downloader] Saving https://www.henshaw4va.com, Path -> html/Senate/DavidAHenshaw/www.henshaw4va.comDavid Henshaw for Virginia Senate16980889221569622[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/about/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/issues/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/volunteer/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secureyourvotevirginia.com/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/volunteer/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/about/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/about/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/issues/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/volunteer/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/privacy/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/womens-rights> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com/privacy-policy> (referer: https://www.woolf4va.com)[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/affordable-virginia> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://russetperry.com/womens-rights, 200, https://russetperry.com/womens-rights[0m
+[32m2023-10-23 15:22:02 INFO (MainThread) [website_downloader] Saving https://russetperry.com/womens-rights, Path -> html/Senate/RussetWPerry/russetperry.com|womens-rights16980889223387675[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-vulnerable-cit-1[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/support-strong-schools-1[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-environment-2[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/health-care-2[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/prevent-firearm-violence-1[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/ensure-criminal-justice[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/affordable-virginia[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com/privacy-policy, 200, https://www.woolf4va.com/privacy-policy[0m
+[32m2023-10-23 15:22:02 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com/privacy-policy, Path -> html/Senate/BillCWoolfIII/www.woolf4va.com|privacy-policy16980889223664784[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/terms-conditions[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://russetperry.com/affordable-virginia, 200, https://russetperry.com/affordable-virginia[0m
+[32m2023-10-23 15:22:02 INFO (MainThread) [website_downloader] Saving https://russetperry.com/affordable-virginia, Path -> html/Senate/RussetWPerry/russetperry.com|affordable-virginia16980889223846607[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-vulnerable-cit-1[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/ensure-criminal-justice[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/support-strong-schools-1[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/prevent-firearm-violence-1[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/health-care-2[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-environment-2[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.thomasforvirginia.com/about/> (referer: https://www.thomasforvirginia.com)[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com/about/, 200, https://www.thomasforvirginia.com/about/[0m
+[32m2023-10-23 15:22:02 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com/about/, Path -> html/House/JamesAThomasJr/www.thomasforvirginia.com|about|16980889227048712[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/홈[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/issues/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/join/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/홈[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.facebook.com/thomasforvirginia ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://twitter.com/JamesThomasVA ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/join/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.woolf4va.com/terms-conditions> (referer: https://www.woolf4va.com)[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://www.woolf4va.com/terms-conditions, 200, https://www.woolf4va.com/terms-conditions[0m
+[32m2023-10-23 15:22:02 INFO (MainThread) [website_downloader] Saving https://www.woolf4va.com/terms-conditions, Path -> html/Senate/BillCWoolfIII/www.woolf4va.com|terms-conditions1698088922950991[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] https://secure.winred.com/woolf-for-senate/donate ignored. Outbound link.[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] Found link: https://www.woolf4va.com/[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:02 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/prevent-firearm-violence-1> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://russetperry.com/prevent-firearm-violence-1, 200, https://russetperry.com/prevent-firearm-violence-1[0m
+[32m2023-10-23 15:22:03 INFO (MainThread) [website_downloader] Saving https://russetperry.com/prevent-firearm-violence-1, Path -> html/Senate/RussetWPerry/russetperry.com|prevent-firearm-violence-11698088923106293[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-vulnerable-cit-1[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/ensure-criminal-justice[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/support-strong-schools-1[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/health-care-2[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-environment-2[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.henshaw4va.com/about/> (referer: https://www.henshaw4va.com)[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.thomasforvirginia.com/issues/> (referer: https://www.thomasforvirginia.com)[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.henshaw4va.com/about/, 200, https://www.henshaw4va.com/about/[0m
+[32m2023-10-23 15:22:03 INFO (MainThread) [website_downloader] Saving https://www.henshaw4va.com/about/, Path -> html/Senate/DavidAHenshaw/www.henshaw4va.com|about|1698088923288683[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/issues/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/volunteer/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/cdn-cgi/l/email-protection[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/issues/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/volunteer/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/privacy/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com/issues/, 200, https://www.thomasforvirginia.com/issues/[0m
+[32m2023-10-23 15:22:03 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com/issues/, Path -> html/House/JamesAThomasJr/www.thomasforvirginia.com|issues|16980889233322036[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/홈[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/join/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/홈[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.facebook.com/thomasforvirginia ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://twitter.com/JamesThomasVA ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/join/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.thomasforvirginia.com/join/> (referer: https://www.thomasforvirginia.com)[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/health-care-2> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com/join/, 200, https://www.thomasforvirginia.com/join/[0m
+[32m2023-10-23 15:22:03 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com/join/, Path -> html/House/JamesAThomasJr/www.thomasforvirginia.com|join|16980889237673035[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/홈[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://www.thomasforvirginia.com/홈[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] mailto:info@thomasforvirginia.com ignored[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.anedot.com/thomas-for-virginia/6ac6b149-f38c-4eb5-b3f4-020343e2f9f8 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://vote.elections.virginia.gov/Registration/DmvLookup ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://vote.elections.virginia.gov/VoterInformation/Lookup/absentee ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://whosmy.virginiageneralassembly.gov/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.facebook.com/thomasforvirginia ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://twitter.com/JamesThomasVA ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://russetperry.com/health-care-2, 200, https://russetperry.com/health-care-2[0m
+[32m2023-10-23 15:22:03 INFO (MainThread) [website_downloader] Saving https://russetperry.com/health-care-2, Path -> html/Senate/RussetWPerry/russetperry.com|health-care-21698088923791415[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-vulnerable-cit-1[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/ensure-criminal-justice[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/support-strong-schools-1[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-environment-2[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:03 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.henshaw4va.com/issues/> (referer: https://www.henshaw4va.com)[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://www.henshaw4va.com/issues/, 200, https://www.henshaw4va.com/issues/[0m
+[32m2023-10-23 15:22:04 INFO (MainThread) [website_downloader] Saving https://www.henshaw4va.com/issues/, Path -> html/Senate/DavidAHenshaw/www.henshaw4va.com|issues|16980889242347045[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/volunteer/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/volunteer/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/privacy/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/ensure-criminal-justice> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://russetperry.com/ensure-criminal-justice, 200, https://russetperry.com/ensure-criminal-justice[0m
+[32m2023-10-23 15:22:04 INFO (MainThread) [website_downloader] Saving https://russetperry.com/ensure-criminal-justice, Path -> html/Senate/RussetWPerry/russetperry.com|ensure-criminal-justice16980889245341291[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/support-strong-schools-1[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-environment-2[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:04 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/protecting-vulnerable-cit-1> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://russetperry.com/protecting-vulnerable-cit-1, 200, https://russetperry.com/protecting-vulnerable-cit-1[0m
+[32m2023-10-23 15:22:05 INFO (MainThread) [website_downloader] Saving https://russetperry.com/protecting-vulnerable-cit-1, Path -> html/Senate/RussetWPerry/russetperry.com|protecting-vulnerable-cit-116980889250741746[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/support-strong-schools-1[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-environment-2[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.henshaw4va.com/volunteer/> (referer: https://www.henshaw4va.com)[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.henshaw4va.com/volunteer/, 200, https://www.henshaw4va.com/volunteer/[0m
+[32m2023-10-23 15:22:05 INFO (MainThread) [website_downloader] Saving https://www.henshaw4va.com/volunteer/, Path -> html/Senate/DavidAHenshaw/www.henshaw4va.com|volunteer|1698088925221002[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/privacy/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/support-strong-schools-1> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://russetperry.com/support-strong-schools-1, 200, https://russetperry.com/support-strong-schools-1[0m
+[32m2023-10-23 15:22:05 INFO (MainThread) [website_downloader] Saving https://russetperry.com/support-strong-schools-1, Path -> html/Senate/RussetWPerry/russetperry.com|support-strong-schools-116980889257308748[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/protecting-environment-2[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:05 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.henshaw4va.com/privacy/> (referer: https://www.henshaw4va.com)[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://www.henshaw4va.com/privacy/, 200, https://www.henshaw4va.com/privacy/[0m
+[32m2023-10-23 15:22:06 INFO (MainThread) [website_downloader] Saving https://www.henshaw4va.com/privacy/, Path -> html/Senate/DavidAHenshaw/www.henshaw4va.com|privacy|16980889261745207[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://www.henshaw4va.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://secure.winred.com/friends-of-david-henshaw/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://www.facebook.com/profile.php?id=100095197557756 ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/protecting-environment-2> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://russetperry.com/protecting-environment-2, 200, https://russetperry.com/protecting-environment-2[0m
+[32m2023-10-23 15:22:06 INFO (MainThread) [website_downloader] Saving https://russetperry.com/protecting-environment-2, Path -> html/Senate/RussetWPerry/russetperry.com|protecting-environment-216980889263555984[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/civilized-debate-1[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:06 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/civilized-debate-1> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://russetperry.com/civilized-debate-1, 200, https://russetperry.com/civilized-debate-1[0m
+[32m2023-10-23 15:22:07 INFO (MainThread) [website_downloader] Saving https://russetperry.com/civilized-debate-1, Path -> html/Senate/RussetWPerry/russetperry.com|civilized-debate-116980889270524974[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/drug-issues[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/drug-issues> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://russetperry.com/drug-issues, 200, https://russetperry.com/drug-issues[0m
+[32m2023-10-23 15:22:07 INFO (MainThread) [website_downloader] Saving https://russetperry.com/drug-issues, Path -> html/Senate/RussetWPerry/russetperry.com|drug-issues16980889277509828[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/vet-issues[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:07 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/vet-issues> (referer: https://russetperry.com/on-the-issues)[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://russetperry.com/vet-issues, 200, https://russetperry.com/vet-issues[0m
+[32m2023-10-23 15:22:08 INFO (MainThread) [website_downloader] Saving https://russetperry.com/vet-issues, Path -> html/Senate/RussetWPerry/russetperry.com|vet-issues1698088928236731[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/helmer-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://russetperry.com/helmer-endorse, 200, https://russetperry.com/helmer-endorse[0m
+[32m2023-10-23 15:22:08 INFO (MainThread) [website_downloader] Saving https://russetperry.com/helmer-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|helmer-endorse1698088928973381[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/071032%20Stacey%20Kincaid%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/071032%20Stacey%20Kincaid%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:08 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/kaine-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://russetperry.com/kaine-endorse, 200, https://russetperry.com/kaine-endorse[0m
+[32m2023-10-23 15:22:09 INFO (MainThread) [website_downloader] Saving https://russetperry.com/kaine-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|kaine-endorse16980889296205628[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/071032%20Stacey%20Kincaid%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/071032%20Stacey%20Kincaid%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/vsdc-press-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://russetperry.com/vsdc-press-release, 200, https://russetperry.com/vsdc-press-release[0m
+[32m2023-10-23 15:22:09 INFO (MainThread) [website_downloader] Saving https://russetperry.com/vsdc-press-release, Path -> html/Senate/RussetWPerry/russetperry.com|vsdc-press-release16980889299218938[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/071032%20Stacey%20Kincaid%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/071032%20Stacey%20Kincaid%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:09 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/kincaid-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] https://russetperry.com/kincaid-endorse, 200, https://russetperry.com/kincaid-endorse[0m
+[32m2023-10-23 15:22:10 INFO (MainThread) [website_downloader] Saving https://russetperry.com/kincaid-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|kincaid-endorse16980889306031692[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/071032%20Stacey%20Kincaid%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/071032%20Stacey%20Kincaid%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:10 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/pp-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://russetperry.com/pp-endorse, 200, https://russetperry.com/pp-endorse[0m
+[32m2023-10-23 15:22:11 INFO (MainThread) [website_downloader] Saving https://russetperry.com/pp-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|pp-endorse16980889313271508[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/062923%20Planned%20Parenthood%20Endorsement%20(1).pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/062923%20Planned%20Parenthood%20Endorsement%20(1).pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/primary-win> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://russetperry.com/primary-win, 200, https://russetperry.com/primary-win[0m
+[32m2023-10-23 15:22:11 INFO (MainThread) [website_downloader] Saving https://russetperry.com/primary-win, Path -> html/Senate/RussetWPerry/russetperry.com|primary-win16980889319731479[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/062023%20Election%20Night.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/062023%20Election%20Night.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:11 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/wapo-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] https://russetperry.com/wapo-endorse, 200, https://russetperry.com/wapo-endorse[0m
+[32m2023-10-23 15:22:12 INFO (MainThread) [website_downloader] Saving https://russetperry.com/wapo-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|wapo-endorse1698088932595629[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/061223WaPo%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/061223WaPo%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:12 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/votevets-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://russetperry.com/votevets-endorse, 200, https://russetperry.com/votevets-endorse[0m
+[32m2023-10-23 15:22:13 INFO (MainThread) [website_downloader] Saving https://russetperry.com/votevets-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|votevets-endorse16980889331512835[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/060223%20VoteVets.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/060223%20VoteVets.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/virginias-list-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://russetperry.com/virginias-list-endorse, 200, https://russetperry.com/virginias-list-endorse[0m
+[32m2023-10-23 15:22:13 INFO (MainThread) [website_downloader] Saving https://russetperry.com/virginias-list-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|virginias-list-endorse1698088933759123[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/053023%20VA%20List%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/053023%20VA%20List%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:13 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/pipe-trades-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://russetperry.com/pipe-trades-endorse, 200, https://russetperry.com/pipe-trades-endorse[0m
+[32m2023-10-23 15:22:14 INFO (MainThread) [website_downloader] Saving https://russetperry.com/pipe-trades-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|pipe-trades-endorse16980889340457296[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/052223%20Pipe%20Trades%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/052223%20Pipe%20Trades%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/spanbereger-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.henshaw4va.com/cdn-cgi/l/email-protection> (referer: https://www.henshaw4va.com/about/)[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://russetperry.com/spanbereger-endorse, 200, https://russetperry.com/spanbereger-endorse[0m
+[32m2023-10-23 15:22:14 INFO (MainThread) [website_downloader] Saving https://russetperry.com/spanbereger-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|spanbereger-endorse16980889346352491[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/051923%20Spanberger%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/051923%20Spanberger%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.henshaw4va.com/cdn-cgi/l/email-protection, 200, https://www.henshaw4va.com/cdn-cgi/l/email-protection[0m
+[32m2023-10-23 15:22:14 INFO (MainThread) [website_downloader] Saving https://www.henshaw4va.com/cdn-cgi/l/email-protection, Path -> html/Senate/DavidAHenshaw/www.henshaw4va.com|cdn-cgi|l|email-protection1698088934656188[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.cloudflare.com/sign-up?utm_source=email_protection ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://support.cloudflare.com/hc/en-us/articles/200170016-What-is-Email-Address-Obfuscation- ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://support.cloudflare.com/hc/en-us/categories/200275218-Getting-Started ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.cloudflare.com/5xx-error-landing ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/freedomva-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://russetperry.com/freedomva-endorse, 200, https://russetperry.com/freedomva-endorse[0m
+[32m2023-10-23 15:22:14 INFO (MainThread) [website_downloader] Saving https://russetperry.com/freedomva-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|freedomva-endorse1698088934950426[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/051823%20FVA%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/051823%20FVA%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:14 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/gooditis-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] https://russetperry.com/gooditis-endorse, 200, https://russetperry.com/gooditis-endorse[0m
+[32m2023-10-23 15:22:15 INFO (MainThread) [website_downloader] Saving https://russetperry.com/gooditis-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|gooditis-endorse1698088935407601[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/050823%20Gooditis%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/050823%20Gooditis%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:15 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/moms-demand> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://russetperry.com/moms-demand, 200, https://russetperry.com/moms-demand[0m
+[32m2023-10-23 15:22:16 INFO (MainThread) [website_downloader] Saving https://russetperry.com/moms-demand, Path -> html/Senate/RussetWPerry/russetperry.com|moms-demand16980889361092055[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/050323%20Gun%20Sense%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/050323%20Gun%20Sense%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/stoney-endorse> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://russetperry.com/stoney-endorse, 200, https://russetperry.com/stoney-endorse[0m
+[32m2023-10-23 15:22:16 INFO (MainThread) [website_downloader] Saving https://russetperry.com/stoney-endorse, Path -> html/Senate/RussetWPerry/russetperry.com|stoney-endorse16980889368174484[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/041823%20Stoney%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/041823%20Stoney%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:16 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/april-fundraising> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://russetperry.com/april-fundraising, 200, https://russetperry.com/april-fundraising[0m
+[32m2023-10-23 15:22:17 INFO (MainThread) [website_downloader] Saving https://russetperry.com/april-fundraising, Path -> html/Senate/RussetWPerry/russetperry.com|april-fundraising16980889372778132[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/041823%20Q1%20Fundraising.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/041823%20Q1%20Fundraising.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/now-press-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://russetperry.com/now-press-release, 200, https://russetperry.com/now-press-release[0m
+[32m2023-10-23 15:22:17 INFO (MainThread) [website_downloader] Saving https://russetperry.com/now-press-release, Path -> html/Senate/RussetWPerry/russetperry.com|now-press-release16980889378858418[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/040523%20NOW%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/040523%20NOW%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:17 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/first-on-ballot-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://russetperry.com/first-on-ballot-release, 200, https://russetperry.com/first-on-ballot-release[0m
+[32m2023-10-23 15:22:18 INFO (MainThread) [website_downloader] Saving https://russetperry.com/first-on-ballot-release, Path -> html/Senate/RussetWPerry/russetperry.com|first-on-ballot-release16980889385772736[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/032123%20Filing%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/032123%20Filing%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/deeds-press-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://russetperry.com/deeds-press-release, 200, https://russetperry.com/deeds-press-release[0m
+[32m2023-10-23 15:22:18 INFO (MainThread) [website_downloader] Saving https://russetperry.com/deeds-press-release, Path -> html/Senate/RussetWPerry/russetperry.com|deeds-press-release16980889389685447[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/deeds%20press%20release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/deeds%20press%20release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:18 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/menstrual-press-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] https://russetperry.com/menstrual-press-release, 200, https://russetperry.com/menstrual-press-release[0m
+[32m2023-10-23 15:22:19 INFO (MainThread) [website_downloader] Saving https://russetperry.com/menstrual-press-release, Path -> html/Senate/RussetWPerry/russetperry.com|menstrual-press-release16980889396878853[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/Bill%20to%20Protect%20Menstrual%20Data.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/Bill%20to%20Protect%20Menstrual%20Data.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:19 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/wexton-press-release-1> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://russetperry.com/wexton-press-release-1, 200, https://russetperry.com/wexton-press-release-1[0m
+[32m2023-10-23 15:22:20 INFO (MainThread) [website_downloader] Saving https://russetperry.com/wexton-press-release-1, Path -> html/Senate/RussetWPerry/russetperry.com|wexton-press-release-116980889401565285[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/021423%20Wexton%20Endorsement%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/021423%20Wexton%20Endorsement%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/bwldc-press-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://russetperry.com/bwldc-press-release, 200, https://russetperry.com/bwldc-press-release[0m
+[32m2023-10-23 15:22:20 INFO (MainThread) [website_downloader] Saving https://russetperry.com/bwldc-press-release, Path -> html/Senate/RussetWPerry/russetperry.com|bwldc-press-release16980889405071576[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/2.1.23%20BWLDC%20NoVA%20Endorsements%20Press%20Release.d.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/2.1.23%20BWLDC%20NoVA%20Endorsements%20Press%20Release.d.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:20 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/northam-press-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://russetperry.com/northam-press-release, 200, https://russetperry.com/northam-press-release[0m
+[32m2023-10-23 15:22:21 INFO (MainThread) [website_downloader] Saving https://russetperry.com/northam-press-release, Path -> html/Senate/RussetWPerry/russetperry.com|northam-press-release16980889411458752[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/Northam%20Endorses%20Perry.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/Northam%20Endorses%20Perry.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/january-finance-release-1> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://russetperry.com/january-finance-release-1, 200, https://russetperry.com/january-finance-release-1[0m
+[32m2023-10-23 15:22:21 INFO (MainThread) [website_downloader] Saving https://russetperry.com/january-finance-release-1, Path -> html/Senate/RussetWPerry/russetperry.com|january-finance-release-116980889416582[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/1.18%20Perry%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/1.18%20Perry%20Release.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:21 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/climate-cab-press-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://russetperry.com/climate-cab-press-release, 200, https://russetperry.com/climate-cab-press-release[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [website_downloader] Saving https://russetperry.com/climate-cab-press-release, Path -> html/Senate/RussetWPerry/russetperry.com|climate-cab-press-release16980889422198048[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/Press%20Release%20-%20Climate%20Cabinet%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/Press%20Release%20-%20Climate%20Cabinet%20Endorsement.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader]  ignored[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://russetperry.com/12%2F2%2F22-press-release> (referer: https://russetperry.com/media)[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://russetperry.com/12%2F2%2F22-press-release, 200, https://russetperry.com/12%2F2%2F22-press-release[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [website_downloader] Saving https://russetperry.com/12%2F2%2F22-press-release, Path -> html/Senate/RussetWPerry/russetperry.com|12%2F2%2F22-press-release16980889426560626[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] # ignored[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] Found link: https://russetperry.com/[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://secure.actblue.com/donate/friends-of-russet-perry-2?refcode=website ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/RP%20Press%20Release%20Final%2012.2.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] //img1.wsimg.com/blobby/go/381a7842-f685-40bc-b348-2c22ac98075f/RP%20Press%20Release%20Final%2012.2.pdf ignored. Not proper link[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://www.facebook.com/RussetPerryVA/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://www.instagram.com/russetperry/ ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader] https://www.twitter.com/RussetPerry ignored. Outbound link.[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [website_downloader]  ignored[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.core.engine] Closing spider (finished)[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/idna.core.IDNAError': 2,
+ 'downloader/request_bytes': 44434,
+ 'downloader/request_count': 76,
+ 'downloader/request_method_count/GET': 76,
+ 'downloader/response_bytes': 903027,
+ 'downloader/response_count': 74,
+ 'downloader/response_status_count/200': 66,
+ 'downloader/response_status_count/301': 6,
+ 'downloader/response_status_count/404': 2,
+ 'dupefilter/filtered': 463,
+ 'elapsed_time_seconds': 25.362671,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 10, 23, 19, 22, 22, 664380, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 4949564,
+ 'httpcompression/response_count': 67,
+ 'log_count/DEBUG': 1262,
+ 'log_count/ERROR': 8,
+ 'log_count/INFO': 87,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 114573312,
+ 'memusage/startup': 114573312,
+ 'request_depth_max': 3,
+ 'response_received_count': 74,
+ "robotstxt/exception_count/<class 'idna.core.IDNAError'>": 1,
+ 'robotstxt/request_count': 6,
+ 'robotstxt/response_count': 5,
+ 'robotstxt/response_status_count/200': 3,
+ 'robotstxt/response_status_count/301': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 70,
+ 'scheduler/dequeued/memory': 70,
+ 'scheduler/enqueued': 70,
+ 'scheduler/enqueued/memory': 70,
+ 'start_time': datetime.datetime(2023, 10, 23, 19, 21, 57, 301709, tzinfo=datetime.timezone.utc)}[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.core.engine] Spider closed (finished)[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [website_downloader] ----Time taken in seconds----:25.462799310684204[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.utils.log] Scrapy 2.11.0 started (bot: scrapybot)[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.utils.log] Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.addons] Enabled addons:
+[][0m
+[33m2023-10-23 15:22:22 WARNING (MainThread) [py.warnings] /home/js/.local/lib/python3.10/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [scrapy.utils.log] Using reactor: twisted.internet.epollreactor.EPollReactor[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.extensions.telnet] Telnet Password: 641a6b8c85057e2e[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats'][0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.crawler] Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue'}[0m
+[33m2023-10-23 15:22:22 WARNING (MainThread) [scrapy.middleware] Disabled scrapy_selenium.SeleniumMiddleware: SELENIUM_DRIVER_NAME and SELENIUM_DRIVER_EXECUTABLE_PATH must be set[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'][0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'][0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.middleware] Enabled item pipelines:
+[][0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.core.engine] Spider opened[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.utils.log] Scrapy 2.11.0 started (bot: scrapybot)[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.utils.log] Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.addons] Enabled addons:
+[][0m
+[33m2023-10-23 15:22:22 WARNING (MainThread) [py.warnings] /home/js/.local/lib/python3.10/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+[0m
+[36m2023-10-23 15:22:22 DEBUG (MainThread) [scrapy.utils.log] Using reactor: twisted.internet.epollreactor.EPollReactor[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.extensions.telnet] Telnet Password: 2155a1d751b02c89[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats'][0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.crawler] Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue'}[0m
+[33m2023-10-23 15:22:22 WARNING (MainThread) [scrapy.middleware] Disabled scrapy_selenium.SeleniumMiddleware: SELENIUM_DRIVER_NAME and SELENIUM_DRIVER_EXECUTABLE_PATH must be set[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'][0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'][0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.middleware] Enabled item pipelines:
+[][0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.core.engine] Spider opened[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)[0m
+[32m2023-10-23 15:22:22 INFO (MainThread) [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6024[0m

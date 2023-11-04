@@ -1,0 +1,125 @@
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.utils.log] Scrapy 2.11.0 started (bot: scrapybot)[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.utils.log] Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.addons] Enabled addons:
+[][0m
+[33m2023-10-23 16:32:23 WARNING (MainThread) [py.warnings] /home/js/.local/lib/python3.10/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+[0m
+[36m2023-10-23 16:32:23 DEBUG (MainThread) [scrapy.utils.log] Using reactor: twisted.internet.epollreactor.EPollReactor[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.extensions.telnet] Telnet Password: bcf7ae62199ed11f[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats'][0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.crawler] Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue'}[0m
+[33m2023-10-23 16:32:23 WARNING (MainThread) [scrapy.middleware] Disabled scrapy_selenium.SeleniumMiddleware: SELENIUM_DRIVER_NAME and SELENIUM_DRIVER_EXECUTABLE_PATH must be set[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'][0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'][0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.middleware] Enabled item pipelines:
+[][0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.core.engine] Spider opened[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] ----------download started-----------[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on LukeETorian->House->www.delegatetorian.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on JamesVTully->House->tullyforvirginia.com[0m
+[36m2023-10-23 16:32:23 DEBUG (MainThread) [scrapy.dupefilters] Filtered duplicate request: <GET https://> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on ChrisKHarnisch->House->chris4va.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on DavidAReid->House->delegatedavidreid.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on FernandoJMartyMartinez->House->martyfordelegate.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on KannanSrinivasan->House->kannanfordelegate.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on GearyMHiggins->House->www.gearyhiggins.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on BrianaDSewell->House->sewellfordelegate.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on RobertLRobBanseJr->House->robbanse.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on GraceEMorrison->House->gracefordelegate.com[0m
+[32m2023-10-23 16:32:23 INFO (MainThread) [__main__] Working on AtoosaRReaser->House->atoosareaser.com[0m
+[31m2023-10-23 16:32:23 ERROR (MainThread) [scrapy.downloadermiddlewares.robotstxt] Error downloading <GET https:///robots.txt>: Empty domain[0m
+Traceback (most recent call last):
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/defer.py", line 1693, in _inlineCallbacks
+    result = context.run(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/python/failure.py", line 518, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/utils/defer.py", line 81, in mustbe_deferred
+    result = f(*args, **kw)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/__init__.py", line 86, in download_request
+    return cast(Deferred, handler.download_request(request, spider))
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/http11.py", line 72, in download_request
+    return agent.download_request(request)
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/handlers/http11.py", line 375, in download_request
+    d = agent.request(
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1148, in request
+    endpoint = self._getEndpoint(parsedURI)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1132, in _getEndpoint
+    return self._endpointFactory.endpointForURI(uri)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/web/client.py", line 1003, in endpointForURI
+    connectionCreator = self._policyForHTTPS.creatorForNetloc(
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/contextfactory.py", line 105, in creatorForNetloc
+    return ScrapyClientTLSOptions(
+  File "/home/js/.local/lib/python3.10/site-packages/scrapy/core/downloader/tls.py", line 44, in __init__
+    super().__init__(hostname, ctx)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/_sslverify.py", line 1124, in __init__
+    self._hostnameBytes = _idnaBytes(hostname)
+  File "/home/js/.local/lib/python3.10/site-packages/twisted/internet/_idna.py", line 31, in _idnaBytes
+    return idna.encode(text)
+  File "/home/js/.local/lib/python3.10/site-packages/idna/core.py", line 355, in encode
+    raise IDNAError('Empty domain')
+idna.core.IDNAError: Empty domain
+[32m2023-10-23 16:32:24 INFO (MainThread) [__main__] Logging error from the error handler[0m
+[31m2023-10-23 16:32:24 ERROR (MainThread) [__main__] <twisted.python.failure.Failure idna.core.IDNAError: Empty domain>[0m
+[32m2023-10-23 16:32:24 INFO (MainThread) [scrapy.core.engine] Closing spider (finished)[0m
+[32m2023-10-23 16:32:24 INFO (MainThread) [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/idna.core.IDNAError': 2,
+ 'downloader/request_bytes': 735,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'dupefilter/filtered': 10,
+ 'elapsed_time_seconds': 1.131818,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 10, 23, 20, 32, 24, 512501, tzinfo=datetime.timezone.utc),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 23,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 69562368,
+ 'memusage/startup': 69562368,
+ "robotstxt/exception_count/<class 'idna.core.IDNAError'>": 1,
+ 'robotstxt/request_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2023, 10, 23, 20, 32, 23, 380683, tzinfo=datetime.timezone.utc)}[0m
+[32m2023-10-23 16:32:24 INFO (MainThread) [scrapy.core.engine] Spider closed (finished)[0m
+[32m2023-10-23 16:32:24 INFO (MainThread) [__main__] ----Time taken in seconds----:1.2691781520843506[0m

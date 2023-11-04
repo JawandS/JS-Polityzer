@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><title>
+	Sign Up
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="https://www.pricefordelegate.com/volunteer" />
+<meta property="og:title" content="Sign Up"/>
+<meta property="og:title" content="Sign Up"/>
+<meta property="twitter:title" content="Sign Up"/>
+<meta property="og:description" content="Sign Up!"/>
+<meta property="twitter:description" content="Sign Up!"/>
+<meta name="twitter: card" content="summary" />
+<meta property="og:url" content="https://www.pricefordelegate.com/volunteer">
+<link href="//fonts.googleapis.com" rel="dns-prefetch" /><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/local_css/foundation-icons.css" type="text/css" charset="utf-8" /><link id="CSSFile" type="text/css" lang="en" rel="Stylesheet" href="//www.pricefordelegate.com/css2/5039_638173619432470000.css" /><link id="EventsRSS" type="application/rss+xml" rel="alternate" href="https://www.pricefordelegate.com/rss/events.xml" />
+<link id="NewsRSS" type="application/rss+xml" rel="alternate" href="https://www.pricefordelegate.com/rss/news.xml" />
+<link id="CountdownCSS" type="text/css" rel="Stylesheet" href="/local_css/jquery.countdown.css" /><meta property="fb:app_id" content="213468812034111" />
+    <script src="/scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/scripts.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22484530-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-22484530-2');
+</script>
+    
+    <meta name="robots" content="index">
+<style type="text/css">#sidebar{float:left;order:1;}#content{float:right;order:2;}</style>
+<link href="/local_css/fontawesome/css/fontawesome.css" rel="stylesheet" /><link href="/local_css/fontawesome/css/brands.css" rel="stylesheet" /><style type="text/css">
+#container{max-width:1150px;}
+#header{max-width:1150px;}
+#countdownWrapper-33f5ceb3-49ef-4e32-8bb7-627a04911781 h3{color:#fff!important;}
+</style>
+    
+    
+    <style type="text/css">
+        .fieldLabel { display: block; margin: 3px 0 3px 5px; color: #111111; }
+        .req { display: inline !important; color: #e25950;}
+        .f-val { display: none; }
+        .formButton { font-family: 'Open Sans', sans-serif; background-color: #4cac55; color: #ffffff; padding: 12px 18px 13px; display: block; margin: 10px auto; font-size: 17px; font-weight: 600; line-height: 20px; border: medium none; border-radius: 1px; box-shadow: 0 2px 2px rgba(000,000,000,0.1); width: 175px; }
+        .formButton:hover { transition: all 300ms ease 0s; background-color: #56C44F; }
+        .formButton:active { background: #56C44F; }
+        .cbl label { padding-left: 5px; }
+        #formWrapper { margin-top: 10px; }
+        .form-group { display: flex; flex-direction: row; }
+        .form-unit { display: flex; flex-direction: column; flex-grow: 1; flex-shrink: 1; flex-basis: auto; }
+        .form-field { border: 1px solid #ACAEB0; flex-grow: 1; flex-shrink: 1; flex-basis: auto; display: block; margin: 5px; border-radius: 3px; font-size: 15px; font-family: 'Roboto', Helvetica, Arial, sans-serif; color: rgb(0, 43, 69); padding: 12px 17px; }
+        .form-field:focus { outline: none !important; border: 1px solid #009CDE; transition: all 300ms ease 0s;}
+        #formFooter { display: flex; flex-grow: 1; flex-direction: row;}
+        #CBOptions { color: #111111; }
+        .redOutline { border: 1px solid #e25950; box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06);}
+        .zipUnit{max-width:100px;}
+
+        @media screen and (max-width: 600px) {
+            .form-group { display: flex; flex-direction: column; }
+            .zipUnit{max-width:unset;}
+        }
+
+    </style>
+    <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script defer src="/scripts/jquery.cycle2.min-new.js" type="text/javascript"></script>
+    <script defer src="/scripts/jquery.plugin.min.js" defer="defer"></script>
+<script defer src="/scripts/jquery.countdown.min.js" defer="defer"></script>
+
+    <style type="text/css">
+        #upcomingEvents { width: 220px; margin: 10px auto 20px auto; }
+        #upcomingEvents p { padding-left: 5px; }
+        #upcomingEvents a { text-decoration: none; }
+        #upcomingEvents a:hover { text-decoration: underline; }
+        .sidebarEventDate{ font-size: 11px;}
+        #backToTop { position: fixed; bottom: 10px; right: 10px; cursor: pointer; display: none; width: 45px; height: 45px; }
+
+        /* Responsive fixes specific to Campaign1 */
+        #amountsSection { width: unset;}
+        #emailSignup { flex-direction: column; height: unset; }
+        #signupWrapper { height: unset; min-height: unset; margin: 20px auto;}
+        .textfield { padding: 12px 17px; flex-grow: 1; margin-right: 0; margin-bottom: 5px; }
+        .zip-field { max-width: unset; }
+        .image-align-right{float:right; max-width:300px!important;  height:auto!important; margin-bottom:25px; margin-left:25px;}
+        .image-align-left{float:left; max-width:300px!important; height:auto!important; margin-bottom:25px; margin-right:25px;}
+        .image-align-center{height:auto!important; display:block; margin:20px auto;}
+        img[src^="https://graphics"]{ width: 1px; height: 1px; }
+    </style>
+   
+<meta name="description" content="Sign Up!" /></head>
+<body>
+    <form method="post" action="/volunteer" onsubmit="javascript:return WebForm_OnSubmit();" id="mainForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mainForm'];
+if (!theForm) {
+    theForm = document.mainForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZDdlY2qDzDzw8RbMtl_bAC0g6PGvJ3oDhzvoO7J7bzsWyVTSptVbJpIq8IhVQMJD1SGRxSEBAsr-iUYKKPl2omD8M48jYX8vr1bY-XQCKzK10&amp;t=638285921964787378" type="text/javascript"></script>
+
+
+<script src="/Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script src="/WebResource.axd?d=x2nkrMJGXkMELz33nwnakMMVKt5QkdunJjaxU92zPCAegJlfp3rCmM2uW2zFli3ZhuylVJznd56kexa2YnhChc5MEWr4uKaxJuu5y-oj0PSAoo3OTqtWtT4br8IqGsDKMBlTbKGbmU1hCozvxKuA4Q2&amp;t=638285921964787378" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+        
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=213468812034111&autoLogAppEvents=1"></script>
+
+        
+        
+         
+        <div id="header">
+            <a href="/"><img src="https://content.campaignpartner.net/images/30630/logo_637651433935087114.png" alt="Delegate Marcia S. "Cia" Price" height="92" width="668" border="0" /></a>
+        </div>
+        <div id="container">
+            <div id="navigation">
+                <div class="tinyLogo"><a href="/"><img src="https://content.campaignpartner.net/images/30630/logo_637651433935087114.png" alt="Delegate Marcia S "></a></div>
+                <div class="menu-open-button">
+                    <a class="btn-open" href="#">&#9776; MENU</a>
+                </div>
+                <ul class="menu mp-e4c9c6a8-566b-4811-953a-4716323c1f7f"><li class="menu-li-39669"><a href="/home">Home</a></li><li class="menu-li-39670"><a href="/about_marcia">About Marcia</a></li><li class="menu-li-39674"><a href="/news">News</a><ul><li><a href="/events">Events</a></li><li><a href="/spring-newsletter">2023 Newsletter</a></li></ul></li><li class="menu-li-39676 nav-highlight"><a href="/contribute">Contribute</a><ul><li><a href="/2023-blue-party">2023 Blue Party</a></li></ul></li><li class="menu-li-39677"><a href="/vote">Voter Information</a><ul><li><a href="/voting-rights">Voting Rights in VA</a></li></ul></li><li class="menu-li-39673"><a href="/contact">Contact</a></li></ul>
+            </div>
+            
+    
+       
+            <div id="mid">
+                <div id="content">
+                    <div id="backToTop"><img alt="Back to Top" src="/local_images/scroll_up_2.png" title="Back to Top"/></div>
+                    
+    <div id="contentInterior">
+        
+        <h1>Sign up!</h1>
+<p>Want to stay engaged during the legislative process?&nbsp; Want to know announcements and updates?&nbsp; Sign up for our newsletter and email updates!&nbsp;</p>
+
+        
+        <div id="formWrapper">
+            <div class="form-group" id="volunteerRow1">
+                <div id="FirstUnit" class="form-unit">
+                    <label for="TxtFirst" id="Label1" class="fieldLabel">First Name:<span data-val-controltovalidate="TxtFirst" data-val-errormessage="Please include your First Name" data-val-display="None" id="FirstNameValidator" class="f-val" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;"></span></label>
+                    <input name="ctl00$ContentPlaceHolder1$TxtFirst" type="text" id="TxtFirst" class="form-field" />
+                </div>
+                <div id="LastUnit" class="form-unit">
+                    <label for="TxtLast" id="Label2" class="fieldLabel">Last Name:<span data-val-controltovalidate="TxtLast" data-val-errormessage="Please include your Last Name" data-val-display="None" id="LastNameValidator" class="f-val" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;"></span></label>
+                    <input name="ctl00$ContentPlaceHolder1$TxtLast" type="text" id="TxtLast" class="form-field" />
+                </div>
+            </div>
+            <div class="form-group"  id="volunteerRow2">
+                <div id="EmailUnit" class="form-unit">
+                    <label for="TxtEmail" id="LblEmail" class="fieldLabel">Email:<span data-val-controltovalidate="TxtEmail" data-val-errormessage="Please include your Email Address" data-val-display="None" id="EmailValidator" class="f-val" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;"></span></label>
+                    <input name="ctl00$ContentPlaceHolder1$TxtEmail" type="text" id="TxtEmail" class="form-field" />
+                </div>
+                <div id="PhoneUnit" class="form-unit">
+                    <label for="TxtPhone" id="LblPhone" class="fieldLabel">Phone:</label>
+                    <input name="ctl00$ContentPlaceHolder1$TxtPhone" type="text" id="TxtPhone" class="form-field" />
+                </div>
+            </div>
+            <div class="form-group"  id="volunteerRow3">
+                <div id="AddressUnit" class="form-unit">
+                    <label for="TxtAddress" id="LblAddress" class="fieldLabel">Address:</label>
+                    <input name="ctl00$ContentPlaceHolder1$TxtAddress" type="text" id="TxtAddress" class="form-field" />
+                </div>
+            </div>
+            <div class="form-group"  id="volunteerRow4">
+                
+            </div>
+            <div class="form-group"  id="volunteerRow5">
+                <div id="CityUnit" class="form-unit">
+                    <label for="TxtCity" id="LblCity" class="fieldLabel">City/Town:</label>
+                    <input name="ctl00$ContentPlaceHolder1$TxtCity" type="text" id="TxtCity" class="form-field" />
+                </div>
+                <div id="StateUnit" class="form-unit">
+                    <label for="DDLStates" id="LblState" class="fieldLabel">State:</label>
+                    
+                    <select name="ctl00$ContentPlaceHolder1$DDLStates" id="DDLStates" class="form-field">
+	<option value=""></option>
+	<option value="AA">AA</option>
+	<option value="AE">AE</option>
+	<option value="AK">AK</option>
+	<option value="AL">AL</option>
+	<option value="AP">AP</option>
+	<option value="AR">AR</option>
+	<option value="AS">AS</option>
+	<option value="AZ">AZ</option>
+	<option value="CA">CA</option>
+	<option value="CO">CO</option>
+	<option value="CT">CT</option>
+	<option value="DC">DC</option>
+	<option value="DE">DE</option>
+	<option value="FL">FL</option>
+	<option value="FM">FM</option>
+	<option value="GA">GA</option>
+	<option value="GU">GU</option>
+	<option value="HI">HI</option>
+	<option value="IA">IA</option>
+	<option value="ID">ID</option>
+	<option value="IL">IL</option>
+	<option value="IN">IN</option>
+	<option value="KS">KS</option>
+	<option value="KY">KY</option>
+	<option value="LA">LA</option>
+	<option value="MA">MA</option>
+	<option value="MD">MD</option>
+	<option value="ME">ME</option>
+	<option value="MH">MH</option>
+	<option value="MI">MI</option>
+	<option value="MN">MN</option>
+	<option value="MO">MO</option>
+	<option value="MP">MP</option>
+	<option value="MS">MS</option>
+	<option value="MT">MT</option>
+	<option value="NC">NC</option>
+	<option value="ND">ND</option>
+	<option value="NE">NE</option>
+	<option value="NH">NH</option>
+	<option value="NJ">NJ</option>
+	<option value="NM">NM</option>
+	<option value="NV">NV</option>
+	<option value="NY">NY</option>
+	<option value="OH">OH</option>
+	<option value="OK">OK</option>
+	<option value="OR">OR</option>
+	<option value="PA">PA</option>
+	<option value="PR">PR</option>
+	<option value="PW">PW</option>
+	<option value="RI">RI</option>
+	<option value="SC">SC</option>
+	<option value="SD">SD</option>
+	<option value="TN">TN</option>
+	<option value="TX">TX</option>
+	<option value="UT">UT</option>
+	<option value="VA">VA</option>
+	<option value="VI">VI</option>
+	<option value="VT">VT</option>
+	<option value="WA">WA</option>
+	<option value="WI">WI</option>
+	<option value="WV">WV</option>
+	<option value="WY">WY</option>
+
+</select>
+                </div>
+                <div id="ZipUnit" class="form-unit zipUnit">
+                    <label for="TxtZip" id="LblPostal" class="fieldLabel">Zip Code:</label><span data-val-controltovalidate="TxtZip" data-val-errormessage="Please include your Zip Code" data-val-display="None" id="ZipValidator" class="f-val" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;"></span>
+                    <input name="ctl00$ContentPlaceHolder1$TxtZip" type="text" id="TxtZip" class="form-field" />
+                </div>
+            </div>
+            <div class="form-group"  id="volunteerRow6">
+                <div class="form-unit">
+                    <table id="CBOptions" class="cbl" style="margin: 6px auto;">
+	<tr>
+		<td><input id="CBOptions_0" type="checkbox" name="ctl00$ContentPlaceHolder1$CBOptions$CBOptions_0" value="19462" /><label for="CBOptions_0">I would like to volunteer with Del. Price!</label></td>
+	</tr><tr>
+		<td><input id="CBOptions_1" type="checkbox" name="ctl00$ContentPlaceHolder1$CBOptions$CBOptions_1" value="19463" /><label for="CBOptions_1">I would like to get updates via email</label></td>
+	</tr>
+</table>
+                </div>
+            </div>
+        <div class="form-group">
+            <div class="form-unit">
+                
+                <div id="ValidationSummary1" data-valsummary="true" style="color:Red;max-width:500px;margin:5px auto;display:none;">
+
+</div>
+                    
+                
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$HFToken" id="HFToken" value="06374ae7-7440-478f-9394-f23070f4e0ac" />
+                <input type="submit" name="ctl00$ContentPlaceHolder1$Button1" value="Volunteer" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$Button1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="Button1" class="formButton" />
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+
+       
+        
+        <div id="formFooter"></div>
+    </div>
+    
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Append required indicator          
+            $('.f-val').each(function () {
+                var p = $(this).data('val-controltovalidate');
+                //console.log(p);
+                $("label[for='" + p + "']").append('<span class=\"req\">*</span>');
+            });
+
+            // Remove redOutline class on focus
+            $(".form-field").on('blur input', function() {//.focus(function () {
+                $(this).removeClass("redOutline");
+                $("label[for='" + this.id + "']").removeClass("req");
+            });
+        });
+
+
+        function WebForm_OnSubmit() {
+            if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) {
+                // Highlight fields
+
+                $('#ValidationSummary1 li').each(function () {
+                    var s = $('.form-unit').find('[data-val-errormessage="' + $(this).text() + '"]');
+                    var p = $(s).data('val-controltovalidate');
+                    $("#" + p).addClass("redOutline");
+                    $("label[for='" + p + "']").addClass("req");
+                    console.log("#" + p);
+                    
+                });
+
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+                    
+    <!--bottom here-->
+    
+
+                </div>
+                <div id="sidebar">
+<div style="width:200px; margin:-20px auto 10px auto; padding:10px; "><img src="/images/30630/official 2.jpg" style="display:block; margin:10px auto;  "><div></div></div>
+<a id="z-3501b15e-0614-41e2-8444-34e53bbed011" class="sidebar-button championRed"  href="/contact"><i class="fi-mail"></i>  CONTACT US</a>
+<a id="z-08717df2-3bdf-488a-8151-0af7b5c83b30" class="sidebar-button mediumBlueButton"  href="/housing-information"><i class="fi-alert"></i>  HOUSING INFO</a>
+<a id="z-cb155bb7-d769-42b4-8bc3-de6b8210b146" class="sidebar-button mediumGreenButton"  href="/contribute"><i class="fi-dollar"></i>  CONTRIBUTE</a>
+<a id="z-be2a2ffa-eed1-43ac-95c0-ecba565e9167" class="sidebar-button goldButton"  href="/vote"><i class="fi-checkbox"></i>  VOTING INFO</a>
+<a id="z-5b0e1b04-07ea-4acc-a0e1-cd783b9bd09f" class="sidebar-button customButton34"  href="/volunteer"><i class="fi-clipboard-pencil"></i>  SIGN UP</a>
+<a id="z-9580fd80-234e-4763-b67f-ca8392930dfd" class="sidebar-button customButton33"  href="http://restore.virginia.gov/"><i class="fi-star"></i>  RIGHTS RESTORATION</a>
+<a id="z-5c5ce01d-e20a-455c-a957-0e8fdd085275" class="sidebar-button customButton30"  href="/-pcos-awareness"><i class="fi-microphone"></i>  PCOS Awareness</a>
+<div id="sidebarEmailSignupWrapper">
+<h3 id="sidebarSignupHeader">Get Updates</h3>
+<div id="sidebarEmailSignup">
+<input id="sidebarSubE" class="textfield email-field" type="text" placeholder="Email Address">
+<input id="sidebarSubButton" type="button" onclick="sidebarSubForm()" value="GO">
+</div>
+</div>
+<div id="sidebarSignupThanks">
+Thank you for signing up!
+</div>
+
+<div id="sidebarSocial">
+<a href="https://www.facebook.com/PriceForDel95" target="_blank"><img src="/images/facebook.png" width="33" height="33" style="margin:5px;" alt="Join us on Facebook" title="Join us on Facebook"  border="0"></a>
+<a href="https://twitter.com/PriceForDel95" target="_blank"><img src="/images/twitter.png" width="33" height="33" style="margin:5px;" alt="Follow us on Twitter" title="Follow us on Twitter"  border="0"></a>
+<a href="https://www.youtube.com/channel/UC4zXvQsgVvtr6Ra5SVuCH1Q" target="_blank"><img src="/images/youtube.png" width="33" height="33" style="margin:5px;" alt="Watch our Videos on Youtube" target="_blank" title="Watch our Videos on Youtube" border="0"></a>
+<a href="https://www.instagram.com/pricefordel95/" target="_blank"><img src="/images/instagram.png" width="33" height="33" style="margin:5px;" alt="Follow us on Instagram" target="_blank" title="Follow us on Instagram" border="0"></a>
+</div>
+
+<center><div class="fb-page" data-href="https://www.facebook.com/PriceForDel95"  data-height="600" data-tabs="timeline"  data-small-header="false"  data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="False"><blockquote cite = "https://www.facebook.com/PriceForDel95" class="fb-xfbml-parse-ignore"><a href = "https://www.facebook.com/PriceForDel95"></a></blockquote ></div></center>
+<div id="recent_news">
+<h3>News</h3>
+<p><a href="/news/60th-march-on-washington">Commemorating 60th Anniversary of March on Washington</a></p>
+<p><a href="/news/vlbc-elects-cia-price-as-vice-chair">VLBC Elects Cia Price as Vice-Chair</a></p>
+<p><a href="https://richmond.com/news/state-and-regional/tenant-protection-bill-dies-as-house-gop-members-reverse-stance/article_6c832fc0-9cb7-11ed-96ad-6f742f8b7cfe.html" target="_blank">Tenant protection bill dies as House GOP members reverse stance</a></p>
+<p><a href="/news/price-statement-on-hb1650">Del. Price's Statement on Republicans Killing HB1650</a></p>
+<p><a href="https://www.washingtonpost.com/dc-md-va/2023/01/20/virginia-assembly-youngkin-richneck-shooting/" target="_blank">Va. lawmakers gingerly take up issue of 6-year-old with a gun</a></p>
+</div>
+
+
+</div>
+
+                <br style="clear: both;" />
+              
+            </div>
+            <div id="footer">
+                
+                
+                <div id="bottom-nav-wrapper">
+<ul class="bottom-nav-menu">
+<li><a href="/home">Home</a></li>
+<li><a href="/about_marcia">About Marcia</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contribute">Contribute</a></li>
+<li><a href="/2023-blue-party">2023 Blue Party</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/social-media">Social Media</a></li>
+</ul>
+</div>
+
+            </div>
+        </div>
+       
+      
+        <div id="subFooter">
+        </div>
+        <div id="paidFor">
+            Paid for &amp; Authorized by Friends of Marcia Price
+        </div>
+        
+        
+        <div id="campaignPartner">
+            Powered by CampaignPartner.com - <a href="https://www.campaignpartner.com">Political Websites</a>
+        </div>
+        
+        <div class="overlay"><a class="close-button overlay-close"> <i class="fi-x"></i> </a>
+<div class="overlay-nav"><ul class="overlay-menu"><li class="menu-li-39669"><a href="/home">Home</a></li><li class="menu-li-39670"><a href="/about_marcia">About Marcia</a></li><li class="menu-li-39674"><a href="/news">News</a></li><li class="menu-li-39676"><a href="/contribute">Contribute</a></li><li class="menu-li-163712"><a href="/2023-blue-party">2023 Blue Party</a></li><li class="menu-li-39677"><a href="/vote">Voter Information</a></li><li class="menu-li-39672"><a href="/volunteer">Sign Up</a></li><li class="menu-li-39673"><a href="/contact">Contact</a></li></ul></div><div id="overlay-social"><div style="margin-top:20px;"><a id="close-overlay" class="overlay-close">Close Menu</a></div></div></div>
+        <script>
+$(function () {
+var pollsOpenIn = new Date();
+pollsOpenIn = new Date(2023, 10, 7,6,0);
+$('#pollsOpen').countdown({until: pollsOpenIn, format: 'dHMS'});
+});
+</script>
+
+          
+          
+        
+        
+        
+     
+    
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A032D9F9" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="fHFUXas2lC02F46a40CiYXIijIKAnPlpyiZix4B6+dmJ6rbM2Pob/f5IGzEpP9Z92ZVrV7O5x2+48F1DvLRsxzNsOCXp3Oy0b+qRKuH4JjFi9KmZOYb/beZoG1fU3j4QH875X6YGJFUctwGeC66HxNN9VhZikmzKO3TiT+wgaIUiMZl91TLzkBOBhy0z4Yn1KfddLNi4gFxCghPP5jg+wj43ZjfaB6Z6z4vDLpxGkwlO8YH9nZPjb/KcIv1RgyP+KUnIgP4CqqjX/aZrIAZST6wW4fF23aYHiI6tfG39Dfa60JYqdHangPxfJLt6VJJC3aVbv9oRe1gQWYaRNQtfOF/SHLk7wM+pG4rpBndWlvYC4wmcHVYfTf3T+o72pzvmFVDGeQ4psKQGUbj/R+JGQ740VlGSKsc/m+D7uMz1+3DL+IXkDMvK2vO7r4AiZ/SqD/7dY5sXvwwF7cfXhGf1aD/3QtLp8gvX1Ap4G+k1gZHJdz37imIZxcvR6cWJXOcyDwul+lrBXGTnXopFo57EPGwpAoS+R6FEvfHTcIEu/g7skpbPho2ew/ZjtOUcXAU3VTsYvoCWrBLyYo7wtKUTVYxzMDeDh833od7QasdQqW1pUTtykPDQf6e3JKFY7RzUP66PUlVLKS3Hd2PGRojqALI7dV7EOVOExsKzhx32yCBWRvLXrZFeu0O4xBQ/Nr65Fmbzbvm5VHXZ3gLgWoJ1PIesuAqnkGkWtbY+5PIAVN5eBc+pX+qC5+/a+tHq31sceKWdlvr7mdB4lVheyso+hIeg9HJ+IopONludEgQU9sOnNwjhDnrY9aVXkUefWzOm/jVYhRAN7DoCy1IEMgrDyIQlZuIC1W/1ihyiO2uq1xIz1SVAnl0IVncaIqRXGrVSsZKCbp97zZoSqANRbdcX0e5EvKlbo3rf38ouJfMW2E0PKwOSSOhWw+Imyu2r9SvsezDa4rpCdheOOm1sADOWxVkfdP1ps9kyHErOI9cxv6T80vhgPLMcUlg2e8ZyJbnykE6yJW8mutvbonk0OywCmHDItFaUij08jJJbIoUQ8Ngth2t3e/VakcmL4yPRO2HxMAJeXym212rm1oguMIHNI5NCdQjkOH65aRzcBWdvQ+5NJcxpXSkLXee4EAWTuRBhSySSYKgRNRfuPrR9YUjUllU9ApEmgCg9RzCfkBfOjsSGkuWN52bpvSX/VtPQOyTc07t4FxtPJGiMVQtuRt6SOSIuKXG7kwPSzYOU022h+x9weuzbwYHFCDUzgHjz42k+SWWF+wB7jK1w1caHEiOGqyXKAXXe1eTKkwbfy29FHc0DiA8t5+ARjm16HprPqBdhoI/Ym0Sc0uCuAmR8dWJHirYa51Z2EHSgZ0Qncmums7uU5d1z7i/VT7//E063w5upEr5JOdNoVDm3ZLwmDTjJWpqHYK9YTbLRHaXYUYs7aIk7NMjwVc7m8GW59eWs+jCeoMVXpCA9HKaLNQqw+D2sx1S2MxVdUpOZRKWw+uT3PEYUVocFcahz18zwmwTbPBAggiXHTtKAUM35sO/6g5HG27o7k2QPUdxk4f+BCXUcVKVJ4NPjGTJ5jYa7yFv/B7GmWzdHUd6Q5K+RBT5w55lffrxDHHPoQiWUtxdECpG1oe3iVujEJhvifQjl7gI7KTUWVx2cSA0//UYLm/GUzXTMVJwzUHunZq0GAzcdbleeTHvyG9T9LJIDSWDsywcjMLm3" />
+</div></form>
+    
+<script defer type="text/javascript">
+    /* Resize embedded YouTube and Vimeo videos */
+    (function ($) {
+
+        var videos = $('iframe[src^="https://player.vimeo.com"], iframe[src^="http://www.youtube.com"], iframe[src^="https://www.youtube.com"], object, embed');
+        var parentElement = $("#content");
+
+        if ($("#homeContent").length) {
+            parentElement = $("#homeContent");
+        }
+
+        videos.each(function () {
+            var v = $(this);
+            v.attr('data-aspectRatio', v.height() / v.width()).attr('data-oldWidth', v.attr('width'));
+        });
+
+        $(window).resize(function () {
+            var newWidth = parentElement.width();
+            videos.each(function () {
+                var element = $(this),
+                    oldWidth = element.attr('data-oldWidth');
+
+                if (oldWidth > newWidth) {
+                    element
+                        .removeAttr('height')
+                        .removeAttr('width')
+                        .width(newWidth)
+                        .height(newWidth * element.attr('data-aspectRatio'));
+                }
+
+            });
+
+        }).resize();
+
+    })(jQuery);
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.utils.log] Scrapy 2.11.0 started (bot: scrapybot)[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.utils.log] Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.addons] Enabled addons:
+[][0m
+[33m2023-10-23 16:57:23 WARNING (MainThread) [py.warnings] /home/js/.local/lib/python3.10/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+[0m
+[36m2023-10-23 16:57:23 DEBUG (MainThread) [scrapy.utils.log] Using reactor: twisted.internet.epollreactor.EPollReactor[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.extensions.telnet] Telnet Password: 88ea09a5cfbe6df1[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats'][0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.crawler] Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue'}[0m
+[33m2023-10-23 16:57:23 WARNING (MainThread) [scrapy.middleware] Disabled scrapy_selenium.SeleniumMiddleware: SELENIUM_DRIVER_NAME and SELENIUM_DRIVER_EXECUTABLE_PATH must be set[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'][0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'][0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.middleware] Enabled item pipelines:
+[][0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.core.engine] Spider opened[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [website_downloader] ----------download started-----------[0m
+[32m2023-10-23 16:57:23 INFO (MainThread) [website_downloader] Working on JamesVTully->House->https://tullyforvirginia.com[0m
+[36m2023-10-23 16:57:23 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://tullyforvirginia.com/robots.txt> (referer: None)[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://tullyforvirginia.com> (referer: None)[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://tullyforvirginia.com, 200, https://tullyforvirginia.com[0m
+[32m2023-10-23 16:57:24 INFO (MainThread) [website_downloader] Saving https://tullyforvirginia.com, Path -> html/House/JamesVTully/tullyforvirginia.comHome - James Tully for Delegate16980946441919265[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] #content ignored[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [scrapy.dupefilters] Filtered duplicate request: <GET https://tullyforvirginia.com/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/my-story/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/positions/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/volunteer/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] mailto:info@tullyforvirginia.com ignored[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://www.facebook.com/tullyforvirginia/ ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://twitter.com/TullyForVA ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/my-story/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/positions/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/volunteer/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/my-story/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/positions/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today?amount=25 ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today?amount=50 ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today?amount=100 ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today?amount=250 ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today?amount=500 ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today?amount=1000 ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] mailto:info@tullyforvirginia.com ignored[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://tullyforvirginia.com/my-story/> (referer: https://tullyforvirginia.com)[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://tullyforvirginia.com/my-story/, 200, https://tullyforvirginia.com/my-story/[0m
+[32m2023-10-23 16:57:24 INFO (MainThread) [website_downloader] Saving https://tullyforvirginia.com/my-story/, Path -> html/House/JamesVTully/tullyforvirginia.com|my-story|1698094644886374[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] #content ignored[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/positions/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/volunteer/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] mailto:info@tullyforvirginia.com ignored[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://www.facebook.com/tullyforvirginia/ ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://twitter.com/TullyForVA ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/positions/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/volunteer/[0m
+[36m2023-10-23 16:57:24 DEBUG (MainThread) [website_downloader] mailto:info@tullyforvirginia.com ignored[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://tullyforvirginia.com/positions/> (referer: https://tullyforvirginia.com)[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] https://tullyforvirginia.com/positions/, 200, https://tullyforvirginia.com/positions/[0m
+[32m2023-10-23 16:57:25 INFO (MainThread) [website_downloader] Saving https://tullyforvirginia.com/positions/, Path -> html/House/JamesVTully/tullyforvirginia.com|positions|16980946455797696[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] #content ignored[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/volunteer/[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] mailto:info@tullyforvirginia.com ignored[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] https://www.facebook.com/tullyforvirginia/ ignored. Outbound link.[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] https://twitter.com/TullyForVA ignored. Outbound link.[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/volunteer/[0m
+[36m2023-10-23 16:57:25 DEBUG (MainThread) [website_downloader] mailto:info@tullyforvirginia.com ignored[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://tullyforvirginia.com/volunteer/> (referer: https://tullyforvirginia.com)[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] https://tullyforvirginia.com/volunteer/, 200, https://tullyforvirginia.com/volunteer/[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [website_downloader] Saving https://tullyforvirginia.com/volunteer/, Path -> html/House/JamesVTully/tullyforvirginia.com|volunteer|1698094646277602[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] #content ignored[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] mailto:info@tullyforvirginia.com ignored[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] https://www.facebook.com/tullyforvirginia/ ignored. Outbound link.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] https://twitter.com/TullyForVA ignored. Outbound link.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] Found link: https://tullyforvirginia.com/[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] https://secure.winred.com/tully-for-virginia/donate-today ignored. Outbound link.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [website_downloader] mailto:info@tullyforvirginia.com ignored[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [scrapy.core.engine] Closing spider (finished)[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 2553,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 109410,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'dupefilter/filtered': 27,
+ 'elapsed_time_seconds': 3.005363,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 10, 23, 20, 57, 26, 293427, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 495233,
+ 'httpcompression/response_count': 5,
+ 'log_count/DEBUG': 85,
+ 'log_count/INFO': 16,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 63873024,
+ 'memusage/startup': 63873024,
+ 'request_depth_max': 2,
+ 'response_received_count': 5,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2023, 10, 23, 20, 57, 23, 288064, tzinfo=datetime.timezone.utc)}[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [scrapy.core.engine] Spider closed (finished)[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [website_downloader] ----Time taken in seconds----:3.1463747024536133[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [privacy_policy_analyzer] Starting privacy policy presence analysis.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [privacy_policy_analyzer] Working on JamesVTully, House[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [privacy_policy_analyzer] Skipping html/House/JamesVTully/pdfs as it is a directory.[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [privacy_policy_analyzer] Privacy Policy presence analysis completed. Results at results/privacy_policy_result.json..[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [link_extractor] Starting link_extractor[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [link_extractor] Working on JamesVTully,House[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [link_extractor] Skipping html/House/JamesVTully/pdfs as it is a directory.[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [link_extractor] 16 inbound links, 18 outbound links[0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [link_extractor] Completed link_extractor![0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [form_extractor] Starting form_extractor[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [form_extractor] Working on JamesVTully,House[0m
+[36m2023-10-23 16:57:26 DEBUG (MainThread) [form_extractor] extracted fields for JamesVTully-House:[][0m
+[32m2023-10-23 16:57:26 INFO (MainThread) [form_extractor] Completed form_extractor![0m

@@ -1,0 +1,135 @@
+[36m2023-10-06 14:12:27 DEBUG (MainThread) [utils] Chromedriver setup successful[0m
+[32m2023-10-06 14:12:27 INFO (MainThread) [scrapy.utils.log] Scrapy 2.11.0 started (bot: scrapybot)[0m
+[32m2023-10-06 14:12:27 INFO (MainThread) [scrapy.utils.log] Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0], pyOpenSSL 23.2.0 (OpenSSL 3.1.3 19 Sep 2023), cryptography 41.0.4, Platform Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35[0m
+[32m2023-10-06 14:12:27 INFO (MainThread) [scrapy.addons] Enabled addons:
+[][0m
+[33m2023-10-06 14:12:27 WARNING (MainThread) [py.warnings] /home/js/.local/lib/python3.10/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+[0m
+[36m2023-10-06 14:12:27 DEBUG (MainThread) [scrapy.utils.log] Using reactor: twisted.internet.epollreactor.EPollReactor[0m
+[32m2023-10-06 14:12:27 INFO (MainThread) [scrapy.extensions.telnet] Telnet Password: 2c6accc6b6960ee3[0m
+[32m2023-10-06 14:12:27 INFO (MainThread) [scrapy.middleware] Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats'][0m
+[32m2023-10-06 14:12:27 INFO (MainThread) [scrapy.crawler] Overridden settings:
+{'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue'}[0m
+[33m2023-10-06 14:12:28 WARNING (MainThread) [scrapy.middleware] Disabled scrapy_selenium.SeleniumMiddleware: SELENIUM_DRIVER_NAME and SELENIUM_DRIVER_EXECUTABLE_PATH must be set[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [scrapy.middleware] Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'][0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [scrapy.middleware] Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'][0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [scrapy.middleware] Enabled item pipelines:
+[][0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [scrapy.core.engine] Spider opened[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [scrapy.extensions.logstats] Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [scrapy.extensions.telnet] Telnet console listening on 127.0.0.1:6023[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [website_downloader] ----------download started-----------[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [website_downloader] Working on James A. Thomas Jr.->House->https://www.thomasforvirginia.com/[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [website_downloader] Working on Alfonso H. Lopez->House->https://www.alfonsolopez.org[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [website_downloader] Working on Madelyn "Mady" Rodriguez->House->https://www.madyforvirginia.com[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [website_downloader] Working on Marcus T. Evans->House->https://www.marcusforva15.com/[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [scrapy.core.engine] Crawled (301) <GET https://www.madyforvirginia.com/robots.txt> (referer: None)[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.marcusforva15.com/robots.txt> (referer: None)[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [scrapy.core.engine] Crawled (301) <GET https://www.madyforvirginia.com> (referer: None)[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.alfonsolopez.org/robots.txt> (referer: None)[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.marcusforva15.com/> (referer: None)[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [website_downloader] https://www.madyforvirginia.com, 301, https://www.madyforvirginia.com[0m
+[31m2023-10-06 14:12:28 ERROR (MainThread) [website_downloader] 301 error on url https://www.madyforvirginia.com
+[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [website_downloader] Saving https://www.madyforvirginia.com, Path -> html/House/Madelyn"Mady"Rodriguez/www.madyforvirginia.com16966159485025897[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [website_downloader] No Links... https://www.madyforvirginia.com, https://www.madyforvirginia.com, 301[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [website_downloader] https://www.marcusforva15.com/, 200, https://www.marcusforva15.com/[0m
+[32m2023-10-06 14:12:28 INFO (MainThread) [website_downloader] Saving https://www.marcusforva15.com/, Path -> html/House/MarcusT.Evans/www.marcusforva15.com|1696615948594381[0m
+[36m2023-10-06 14:12:28 DEBUG (MainThread) [website_downloader] None ignored[0m
+[36m2023-10-06 14:12:29 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.alfonsolopez.org> (referer: None)[0m
+[36m2023-10-06 14:12:29 DEBUG (MainThread) [website_downloader] https://www.alfonsolopez.org, 200, https://www.alfonsolopez.org[0m
+[32m2023-10-06 14:12:29 INFO (MainThread) [website_downloader] Saving https://www.alfonsolopez.org, Path -> html/House/AlfonsoH.Lopez/www.alfonsolopez.org16966159495187876[0m
+[36m2023-10-06 14:12:29 DEBUG (MainThread) [website_downloader] No Links... https://www.alfonsolopez.org, https://www.alfonsolopez.org, 200[0m
+[36m2023-10-06 14:12:30 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.thomasforvirginia.com/robots.txt> (referer: None)[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [scrapy.core.engine] Crawled (200) <GET https://www.thomasforvirginia.com/> (referer: None)[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [website_downloader] https://www.thomasforvirginia.com/, 200, https://www.thomasforvirginia.com/[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [website_downloader] Saving https://www.thomasforvirginia.com/, Path -> html/House/JamesA.ThomasJr./www.thomasforvirginia.com|16966159517559073[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [website_downloader] No Links... https://www.thomasforvirginia.com/, https://www.thomasforvirginia.com/, 200[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [scrapy.core.engine] Closing spider (finished)[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [scrapy.statscollectors] Dumping Scrapy stats:
+{'downloader/request_bytes': 3281,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 374119,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 6,
+ 'downloader/response_status_count/301': 2,
+ 'elapsed_time_seconds': 3.693465,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 10, 6, 18, 12, 31, 760962, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 366318,
+ 'httpcompression/response_count': 4,
+ 'log_count/DEBUG': 17,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 19,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 63406080,
+ 'memusage/startup': 63406080,
+ 'response_received_count': 8,
+ 'robotstxt/request_count': 4,
+ 'robotstxt/response_count': 4,
+ 'robotstxt/response_status_count/200': 3,
+ 'robotstxt/response_status_count/301': 1,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2023, 10, 6, 18, 12, 28, 67497, tzinfo=datetime.timezone.utc)}[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [scrapy.core.engine] Spider closed (finished)[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [website_downloader] ----Time taken in seconds----:4.006244659423828[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [privacy_policy_analyzer] Starting privacy policy presence analysis.[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [privacy_policy_analyzer] Working on Madelyn "Mady" Rodriguez, House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [privacy_policy_analyzer] Working on Alfonso H. Lopez, House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [privacy_policy_analyzer] Working on James A. Thomas Jr., House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [privacy_policy_analyzer] Working on Marcus T. Evans, House[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [privacy_policy_analyzer] Privacy Policy presence analysis completed. Results at results/privacy_policy_result.json..[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [link_extractor] Starting link_extractor[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [link_extractor] Working on Madelyn "Mady" Rodriguez,House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [link_extractor] Working on Alfonso H. Lopez,House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [link_extractor] Working on James A. Thomas Jr.,House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [link_extractor] Working on Marcus T. Evans,House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [link_extractor] 0 inbound links, 0 outbound links[0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [link_extractor] Completed link_extractor![0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [form_extractor] Starting form_extractor[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [form_extractor] Working on Madelyn "Mady" Rodriguez,House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [form_extractor] extracted fields for Madelyn "Mady" Rodriguez-House:[][0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [form_extractor] Working on Alfonso H. Lopez,House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [form_extractor] extracted fields for Alfonso H. Lopez-House:[][0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [form_extractor] Working on James A. Thomas Jr.,House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [form_extractor] extracted fields for James A. Thomas Jr.-House:[][0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [form_extractor] Working on Marcus T. Evans,House[0m
+[36m2023-10-06 14:12:31 DEBUG (MainThread) [form_extractor] extracted fields for Marcus T. Evans-House:[][0m
+[32m2023-10-06 14:12:31 INFO (MainThread) [form_extractor] Completed form_extractor![0m

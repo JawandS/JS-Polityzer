@@ -16,8 +16,8 @@ if [ ! -d "storage" ]; then
   mkdir storage/html/House
 fi
 
-# run the experiment for website downlaoder
-python3 experiment.py
+# run the autodownloader for website downlaoder
+python3 auto_downloader.py
 
 # remove remaining html files
 rm -rf html

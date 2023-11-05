@@ -164,8 +164,11 @@ def download_candidate_wget(log_name):
             links = set()
             for a_tag in soup.find_all('a', href=True):
                 link = a_tag['href']
-                if link.startswith("http") and homepage in link and len(link) < 1000:
-                    links.add(link)
+                if link.startswith("http") and len(link) < 1000:
+                    if homepage in link: # link is fully formatted
+                        links.add(link)
+                    elif link.startswith("/"): # link is relative
+                        links.add(website + link)
             # log the number of internal links for the candidate
             with open(log_name, "a+") as f:
                 f.write(f"{candidate_name}: {len(links)} internal links\n")
@@ -191,8 +194,11 @@ def download_candidate_wget(log_name):
                 # get all the links (depth=1)
                 for a_tag in soup.find_all('a', href=True):
                     link = a_tag['href']
-                    if link.startswith("http") and homepage in link and len(link) < 1000:
-                        depth_two_links.add(link)
+                    if link.startswith("http") and len(link) < 1000:
+                        if homepage in link: # link is fully formatted
+                            depth_two_links.add(link)
+                        elif link.startswith("/"): # link is relative
+                            depth_two_links.add(website + link)
             # remove links that are already downloaded
             depth_two_links = depth_two_links - links
             # download remaining links

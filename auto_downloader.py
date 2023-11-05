@@ -7,6 +7,8 @@ from website_downloader import start as start_download
 import subprocess 
 from bs4 import BeautifulSoup as bs
 
+VERBOSE = 1 # for debugging
+
 # clean up files in html by replacing spaces in file name
 def replace_filenames():
     # find if senate/house folders exists
@@ -160,16 +162,24 @@ def download_candidate_wget(log_name):
             # generate beautifulsoup
             soup = bs(html, "html.parser")
 
+            def is_valid_link(link): # validate link
+                if len(link) < 1000: # make sure the link isn't too long
+                    if link.startswith("http") and homepage in link: # link is fully formatted
+                        links.add(link)
+                        if VERBOSE: print(f"Absolute: {link}")
+                    elif link.startswith("/"): # link is relative
+                        links.add(website + link)
+                        if VERBOSE: print(f"Relative: {link}, Absolute: {website + link}")
+                    elif VERBOSE:
+                        print(f"Invalid: {link}")
+
             # get all the links (depth=1)
             links = set()
             for a_tag in soup.find_all('a', href=True):
                 link = a_tag['href']
-                print(link)
-                if link.startswith("http") and len(link) < 1000:
-                    if homepage in link: # link is fully formatted
-                        links.add(link)
-                    elif link.startswith("/"): # link is relative
-                        links.add(website + link)
+                if is_valid_link(link):
+                    links.add(link)
+                
             # log the number of internal links for the candidate
             with open(log_name, "a+") as f:
                 f.write(f"{candidate_name}: {len(links)} internal links\n")
@@ -195,11 +205,8 @@ def download_candidate_wget(log_name):
                 # get all the links (depth=1)
                 for a_tag in soup.find_all('a', href=True):
                     link = a_tag['href']
-                    if link.startswith("http") and len(link) < 1000:
-                        if homepage in link: # link is fully formatted
-                            depth_two_links.add(link)
-                        elif link.startswith("/"): # link is relative
-                            depth_two_links.add(website + link)
+                    if is_valid_link(link):
+                        depth_two_links.add(link)
             # remove links that are already downloaded
             depth_two_links = depth_two_links - links
             # download remaining links

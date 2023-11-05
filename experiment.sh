@@ -1,21 +1,24 @@
+test_dir="./small_test"
 # remove testing directory
-rm -r ./testing_full
+rm -r $test_dir
 # iteratee four times
 for counter in 1 2 3 4 5
 do
+    # get the directory for current run
+    curr_dir=$test_dir/Run$counter
     # clear previous results
     ./clear.sh
     # run the website downloader
     python3 auto_downloader.py
     # make a new folder for the testing
-    mkdir -p ./testing_full/Run$counter
+    mkdir -p $test_dir/Run$counter
     # copy missing_website, downloads from database
-    cp database/missing_website.csv ./testing_full/Run$counter
-    cp database/downloaded_javascript_links.csv ./testing_full/Run$counter
-    cp database/downloaded_websites.csv ./testing_full/Run$counter
+    cp database/missing_website.csv $curr_dir
+    cp database/downloaded_javascript_links.csv $curr_dir
+    cp database/downloaded_websites.csv $curr_dir
     # move contents of logs dir to the testing folder
-    mkdir -p ./testing_full/Run$counter/logs
-    mv ./logs/* ./testing_full/Run$counter/logs
+    mkdir -p $curr_dir/logs
+    mv ./logs/* $curr_dir/logs
     # copy html to the testing folder
-    cp -r ./html ./testing_full/Run$counter
+    cp -r ./html $curr_dir
 done

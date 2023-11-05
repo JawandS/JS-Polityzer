@@ -1,11 +1,11 @@
 # remove logs
-rm logs/*
+rm -r logs/*
 
 # remove results
 rm -r results/*
 
 # remove html
-rm html/*
+rm -r html/
 
 # remove storage
 rm -r storage/

@@ -168,7 +168,7 @@ def download_candidate_wget(log_name):
                         set_to_ad.add(link)
                         if VERBOSE: print(f"Absolute: {link}")
                     elif link.startswith("/"): # link is relative
-                        set_to_ad.add(website[:-1] + link)
+                        set_to_ad.add(website + link)
                         if VERBOSE: print(f"Relative: {link}, Absolute: {website + link}")
                     elif VERBOSE:
                         print(f"Invalid: {link}")
@@ -189,7 +189,7 @@ def download_candidate_wget(log_name):
                 link_name = link[link.find('://')+3:].replace('/', '_')
                 link_filename = f"{candidate_path}/{link_name}{timestamp}"
                 # download the link, use p to avoid downloading embeddings
-                subprocess.run(f"wget -p {link} -O {link_filename}", shell=True)
+                subprocess.run(f"wget {link} -O {link_filename}", shell=True)
             # get the links from depth 1 (depth=2 links)
             depth_two_links = set()
             for link in links:
@@ -213,7 +213,7 @@ def download_candidate_wget(log_name):
                 link_name = link[link.find('://')+3:].replace('/', '_')
                 link_filename = f"{candidate_path}/{link_name}{timestamp}"
                 # download the link, use p to avoid downloading embeddings
-                subprocess.run(f"wget -p {link} -O {link_filename}", shell=True)
+                subprocess.run(f"wget {link} -O {link_filename}", shell=True)
         except Exception as e:
             print(f"**ERROR: {candidate_name}**")
             with open(f"error_log.txt", "a+") as f:

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/templates/yootheme/packages/theme-joomla/assets/images/favicon.png" sizes="any">
+                <link rel="apple-touch-icon" href="/templates/yootheme/packages/theme-joomla/assets/images/apple-touch-icon.png">
+        <meta charset="utf-8">
+	<meta name="author" content="Mike">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>How I Serve</title>
+	<link href="/media/system/css/joomla-fontawesome.min.css?ver=4.1.1" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.2.0" rel="stylesheet" />
+	<link href="/plugins/system/jcemediabox/css/jcemediabox.min.css?5fd08c89b5f5fb4807fcec58ae247364" rel="stylesheet" />
+	<link href="/media/com_jce/site/css/content.min.css?badb4208be409b1335b815dde676300e" rel="stylesheet" />
+	<link href="/templates/yootheme/css/theme.12.css?1696546977" rel="stylesheet" />
+<script src="/media/vendor/jquery/js/jquery.min.js?3.6.3"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?04499b98c0305b16b373dff09fe79d1290976288"></script>
+	<script type="application/json" class="joomla-script-options new">{"joomla.jtext":{"ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"system.paths":{"root":"","rootFull":"https:\/\/jeionward.com\/","base":"","baseFull":"https:\/\/jeionward.com\/"},"csrf.token":"b06fb420d51e96b11e5308b98960f11f"}</script>
+	<script src="/media/system/js/core.min.js?576eb51da909dcf692c98643faa6fc89629ead18"></script>
+	<script src="/media/system/js/messages-es5.min.js?44e3f60beada646706be6569e75b36f7cf293bf9" nomodule defer></script>
+	<script src="/media/system/js/messages.min.js?7425e8d1cb9e4f061d5e30271d6d99b085344117" type="module"></script>
+	<script src="/plugins/system/jcemediabox/js/jcemediabox.min.js?5fd08c89b5f5fb4807fcec58ae247364"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?4.1.1"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-balou.min.js?4.1.1"></script>
+	<script src="/templates/yootheme/js/theme.js?4.1.1"></script>
+	<script>jQuery(document).ready(function(){WfMediabox.init({"base":"\/","theme":"standard","width":"","height":"","lightbox":0,"shadowbox":0,"icons":1,"overlay":1,"overlay_opacity":0,"overlay_color":"","transition_speed":300,"close":2,"scrolling":"0","labels":{"close":"Close","next":"Next","previous":"Previous","cancel":"Cancel","numbers":"{{numbers}}","numbers_count":"{{current}} of {{total}}","download":"Download"},"swipe":true});});</script>
+	<script>document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });</script>
+	<script>window.yootheme ||= {}; var $theme = yootheme.theme = {"i18n":{"close":{"label":"Close"},"totop":{"label":"Back to top"},"marker":{"label":"Open"},"navbarToggleIcon":{"label":"Open menu"},"paginationPrevious":{"label":"Previous page"},"paginationNext":{"label":"Next page"},"searchIcon":{"toggle":"Open Search","submit":"Submit Search"},"slider":{"next":"Next slide","previous":"Previous slide","slideX":"Slide %s","slideLabel":"%s of %s"},"slideshow":{"next":"Next slide","previous":"Previous slide","slideX":"Slide %s","slideLabel":"%s of %s"},"lightboxPanel":{"next":"Next slide","previous":"Previous slide","slideLabel":"%s of %s","close":"Close"}}};</script>
+
+    </head>
+    <body class="">
+
+        <div class="uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto">
+            <div class="uk-notification-message">
+                <a href="#tm-main">Skip to main content</a>
+            </div>
+        </div>
+    
+        
+        
+        <div class="tm-page">
+
+                        
+
+
+<header class="tm-header-mobile uk-hidden@l" uk-header>
+
+
+        <div uk-sticky cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://jeionward.com/" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/5a/jward-logo-oval-5a00d666.webp 115w, /templates/yootheme/cache/43/jward-logo-oval-4342b19d.webp 230w" sizes="(min-width: 115px) 115px">
+<img alt loading="eager" src="/templates/yootheme/cache/4b/jward-logo-oval-4befcd8e.png" width="115" height="72">
+</picture></a>
+                        
+                        
+                    </div>
+                    
+                    
+                                        <div class="uk-navbar-right">
+
+                                                    
+                        
+                        <a uk-toggle href="#tm-dialog-mobile" class="uk-navbar-toggle">
+
+        
+        <div uk-navbar-toggle-icon></div>
+
+        
+    </a>
+
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true" mode="slide">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                        <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+            
+                        <div class="uk-margin-auto-bottom">
+                
+<div class="uk-grid uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-menu-dialog-mobile">
+
+    
+    
+<ul class="uk-nav uk-nav-primary">
+    
+	<li class="item-101"><a href="/"> Home</a></li>
+	<li class="item-147 uk-parent"><a href="/about"> About</a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-237"><a href="/92nd-district-map"><span class="uk-margin-small-right" uk-icon="icon: location;"></span> House of Delegates 92nd District</a></li>
+		<li class="item-238"><a href="https://virginiageneralassembly.gov/house/members/members.php?id=H0173" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: info;"></span> Jeion in the General Assembly</a></li></ul></li>
+	<li class="item-150 uk-active uk-parent"><a href="/service"> How I Serve</a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-239 uk-nav-header uk-parent"> Position Papers
+		<ul>
+
+			<li class="item-231"><a href="/service/position-papers/green-jobs-renewable-energy"><span class="uk-margin-small-right" uk-icon="icon: check;"></span> Green Jobs / Renewable Energy</a></li>
+			<li class="item-232"><a href="/service/position-papers/education"><span class="uk-margin-small-right" uk-icon="icon: check;"></span> Education</a></li>
+			<li class="item-233"><a href="/service/position-papers/jobs-and-economy"><span class="uk-margin-small-right" uk-icon="icon: check;"></span> Jobs and Economy</a></li>
+			<li class="item-256"><a href="/service/position-papers/aging"><span class="uk-margin-small-right" uk-icon="icon: check;"></span> Aging</a></li></ul></li></ul></li>
+	<li class="item-148"><a href="/capitol-classroom" target="_blank"> Capitol Classroom</a></li>
+	<li class="item-149"><a href="/news" target="_blank"> News</a></li>
+	<li class="item-146"><a href="https://secure.actblue.com/donate/jeion-ward-4" target="_blank"> Donate</a></li>
+	<li class="item-151"><a href="/contact"> Contact</a></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-tm-4">
+
+    
+    <ul class="uk-flex-inline uk-flex-middle uk-flex-nowrap uk-grid-small" uk-grid>                    <li><a href="https://www.facebook.com/delegatejeionward/" class="uk-preserve-width uk-icon-button" rel="noreferrer" target="_blank"><span uk-icon="icon: facebook;"></span></a></li>
+                    <li><a href="https://twitter.com/jeionward" class="uk-preserve-width uk-icon-button" rel="noreferrer" target="_blank"><span uk-icon="icon: twitter;"></span></a></li>
+                    <li><a href="https://www.instagram.com/jeionward/" class="uk-preserve-width uk-icon-button" rel="noreferrer" target="_blank"><span uk-icon="icon: instagram;"></span></a></li>
+            </ul>
+</div>
+</div></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+
+</header>
+
+
+
+
+
+<header class="tm-header uk-visible@l" uk-header>
+
+
+
+        <div uk-sticky media="@l" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container uk-navbar-primary">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    <a href="https://jeionward.com/" aria-label="Back to home" class="uk-logo uk-navbar-item">
+    <picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/03/jward-logo-oval-03e876fa.webp 154w, /templates/yootheme/cache/54/jward-logo-oval-54bfc906.webp 308w" sizes="(min-width: 154px) 154px">
+<img alt loading="eager" src="/templates/yootheme/cache/12/jward-logo-oval-12076d12.png" width="154" height="96">
+</picture></a>
+                        
+                        
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-center">
+
+                        
+                                                    
+<ul class="uk-navbar-nav">
+    
+	<li class="item-101"><a href="/"> Home</a></li>
+	<li class="item-147 uk-parent"><a href="/about"> About</a>
+	<div class="uk-navbar-dropdown"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-237"><a href="/92nd-district-map" class="uk-preserve-width"><span class="uk-margin-small-right" uk-icon="icon: location;"></span> House of Delegates 92nd District</a></li>
+		<li class="item-238"><a href="https://virginiageneralassembly.gov/house/members/members.php?id=H0173" target="_blank" class="uk-preserve-width"><span class="uk-margin-small-right" uk-icon="icon: info;"></span> Jeion in the General Assembly</a></li></ul></div></div></li>
+	<li class="item-150 uk-active uk-parent"><a href="/service"> How I Serve</a>
+	<div class="uk-navbar-dropdown"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-239 uk-parent"><a role="button"> Position Papers</a>
+		<ul class="uk-nav-sub">
+
+			<li class="item-231"><a href="/service/position-papers/green-jobs-renewable-energy" class="uk-preserve-width"><span class="uk-margin-small-right" uk-icon="icon: check;"></span> Green Jobs / Renewable Energy</a></li>
+			<li class="item-232"><a href="/service/position-papers/education" class="uk-preserve-width"><span class="uk-margin-small-right" uk-icon="icon: check;"></span> Education</a></li>
+			<li class="item-233"><a href="/service/position-papers/jobs-and-economy" class="uk-preserve-width"><span class="uk-margin-small-right" uk-icon="icon: check;"></span> Jobs and Economy</a></li>
+			<li class="item-256"><a href="/service/position-papers/aging" class="uk-preserve-width"><span class="uk-margin-small-right" uk-icon="icon: check;"></span> Aging</a></li></ul></li></ul></div></div></li>
+	<li class="item-148"><a href="/capitol-classroom" target="_blank"> Capitol Classroom</a></li>
+	<li class="item-149"><a href="/news" target="_blank"> News</a></li>
+	<li class="item-146"><a href="https://secure.actblue.com/donate/jeion-ward-4" target="_blank"> Donate</a></li>
+	<li class="item-151"><a href="/contact"> Contact</a></li></ul>
+
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-right">
+
+                        
+                                                    
+<div class="uk-navbar-item" id="module-tm-3">
+
+    
+    <ul class="uk-flex-inline uk-flex-middle uk-flex-nowrap uk-grid-small" uk-grid>                    <li><a href="https://www.facebook.com/delegatejeionward/" class="uk-preserve-width uk-icon-button" rel="noreferrer" target="_blank"><span uk-icon="icon: facebook; width: 24; height: 24;"></span></a></li>
+                    <li><a href="https://twitter.com/jeionward" class="uk-preserve-width uk-icon-button" rel="noreferrer" target="_blank"><span uk-icon="icon: twitter; width: 24; height: 24;"></span></a></li>
+                    <li><a href="https://www.instagram.com/jeionward/" class="uk-preserve-width uk-icon-button" rel="noreferrer" target="_blank"><span uk-icon="icon: instagram; width: 24; height: 24;"></span></a></li>
+            </ul>
+</div>
+
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+
+
+</header>
+
+            
+            
+
+            <main id="tm-main" >
+
+                
+                <div id="system-message-container" aria-live="polite"></div>
+
+                <!-- Builder #page -->
+<div class="uk-section-default uk-section uk-padding-remove-bottom" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-scale-up; delay: 100;">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    
+<h1 uk-scrollspy-class>        <div style="text-align: left;">How I serve</div>    </h1>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+    
+</div>
+<div class="uk-section-default uk-section uk-section-small" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-scale-up; delay: 200;">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-xlarge">                
+                    <div class="uk-grid tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-width-2-3@m">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin" uk-scrollspy-class><p><img src="/images/jeion-podium.png" alt="jeion podium" style="margin-bottom: 9px; margin-left: 9px; float: right;" width="240" height="275" />Every year when I am in session at the General Assembly, I take the time to listen to all my constituents’ concerns through the Constituent Surveys. I read every one and reply to them all with a written comment. It is a pleasure to serve the 92nd House District, but it could not be done effectively without hearing from you. Many bills I patron or co-patron are because I am listening to your voice and applying your concerns to legislation. Thank you for your support and please continue to let your voice be heard.</p>
+<hr />
+<div class="entry-content">
+<p>The Virginia House of Delegates consists of 100 members. Each Delegate is elected from a separate and distinct district for a term of two years. I have held the position of Delegate for the past 14 years over the 92nd House District.</p>
+<p>Every year, as requested by constituents, I prepare to introduce legislation. Here is the process:</p>
+<ul>
+<li>I explain exactly the proposal I have in mind to a staff attorney in the Division of Legislative Services. A staff attorney checks existing law and the constitutionality of the proposed legislation.</li>
+<li>The bill is then drafted by the Division of Legislative Services. Draft copies of the bill are made and delivered to me.</li>
+<li>Then I sign my name on the bill and introduce it by laying the original and duplicate copies on the desk of the Clerk of the House of Delegates.</li>
+<li>The bill is ordered printed and referred by the House Speaker to the appropriate Standing Committee. (The House of Delegates has 14 Standing Committees.)</li>
+<li>The members of the Committee -in public session- study, discuss, and vote on the bill.</li>
+<li>The Committee then reports (“approves”) the bill, with or without amendments, to the originating body (House of Delegates).</li>
+<li>The <a href="http://constitution.legis.virginia.gov/Constitution.htm#4S11" target="_blank" rel="noopener noreferrer">Constitution, within Article IV, Section 11</a>, requires that every bill have three readings on three calendar days.</li>
+<li>First Reading: The bill title is printed in the Calendar (the daily printed agenda of business) or is read by the Clerk.</li>
+<li>Second Reading: The next day the bill title appears in its respective Calendar. Bills are considered in the order in which they appear in the Calendar. The Clerk of House of Delegates reads the title of the bill.</li>
+<li>A bill on second reading is amendable. Any amendments are taken up and agreed to or rejected. By voice vote, the bill is engrossed and passed to its third reading.</li>
+<li>A bill that has passed the second reading with or without amendments is engrossed</li>
+<li>If amendments are adopted, the bill is rewritten with amendments included and reprinted in its engrossed form for passage.</li>
+<li>Third Reading: The next day, the engrossed bill title appears in the calendar on third reading. The bill is read by title by the Clerk. By a recorded vote, the bill is passed.</li>
+<li>Communication: When passed, the bill is sent to the other house for its consideration.</li>
+<li>In the Senate’s chamber: The bill goes through substantially the same procedure as it did in the House of Delegates.</li>
+<li>The bill is read by title a first time, then the bill is referred to a Standing Committee, considered and reported by the Standing Committee, read a second time and a third time before passage by a constitutional majority.</li>
+<li>If there are differences between the Senate and House versions of the bill, a Committee of Conference is created to resolve them.</li>
+<li>After the bill has been passed by both houses of the General Assembly, it is printed as an enrolled bill, and examined and signed by the presiding officer of each house.</li>
+<li>The bill is sent to the Governor for approval, where the Governor may 1) sign the bill into law; 2) amend the bill and return it to the General Assembly for approval; 3) veto the bill and return it to the General Assembly, where the House of Delegates and the Senate may override the veto by a two-thirds vote of both houses; or, 4) take no action and the bill becomes law without the Governor’s signature.</li>
+<li>After being signed by the Governor, the bill is sent to the Clerk of the House of Delegates (Keeper of the Rolls of the Commonwealth) and is assigned a Chapter number. All Chapters of a Session are compiled and bound as the Acts of Assembly.</li>
+<li>Bills enacted at a Regular Session (or the Reconvened Session which follows) are effective the 1st day of July following adjournment of the Regular Session, unless another date is specified.</li>
+<li>Bills enacted at a Special Session (or Reconvened Session) are effective the 1st day of the fourth month following the adjournment of the Special Session, unless another date is specified.</li>
+</ul>
+<p>The General Appropriations Act is usually effective July 1st and Emergency Acts become effective when signed by the Governor.</p>
+</div></div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-3@m">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin" uk-scrollspy-class><h3>Position Papers</h3></div>
+<div class="uk-margin uk-text-left">
+    <div class="uk-grid uk-child-width-1-1 uk-child-width-1-1@m uk-grid-match" uk-grid>        <div>
+<div class="el-item uk-grid-item-match" uk-scrollspy-class>
+        <a class="uk-panel uk-tile-primary uk-tile-hover uk-padding uk-margin-remove-first-child uk-transition-toggle uk-link-toggle uk-display-block" href="/service/position-papers/green-jobs-renewable-energy">    
+    
+                <div class="uk-inline-clip"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/9c/green-energy-icon-720-9c250e65.webp 720w" sizes="(min-width: 720px) 720px">
+<img src="/templates/yootheme/cache/be/green-energy-icon-720-beac1450.png" width="720" height="512" class="el-image uk-transition-scale-up uk-transition-opaque" alt loading="lazy">
+</picture></div>        
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Green Jobs / Renewable Energy                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-text-small uk-margin-top"><p>I support passage of clean energy and climate-change laws that will reduce global warming and move America toward energy independence.  These laws will also prompt the market to expand job opportunities in green technologies and manufacturing. </p></div>        
+        
+                <div class="uk-margin-top"><div class="el-link uk-button uk-button-text">Learn more</div></div>        
+        
+        
+    
+        </a>    
+</div></div>
+        <div>
+<div class="el-item uk-grid-item-match" uk-scrollspy-class>
+        <a class="uk-panel uk-tile-primary uk-tile-hover uk-padding uk-margin-remove-first-child uk-transition-toggle uk-link-toggle uk-display-block" href="/service/position-papers/education">    
+    
+                <div class="uk-inline-clip"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/57/education-icon-720-57205a49.webp 720w" sizes="(min-width: 720px) 720px">
+<img src="/templates/yootheme/cache/22/education-icon-720-22aac72e.png" width="720" height="512" class="el-image uk-transition-scale-up uk-transition-opaque" alt loading="lazy">
+</picture></div>        
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Education                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-text-small uk-margin-top"><p>Every child should have the opportunity to learn and achieve in a secure and nurturing environment.  This requires schools that are safe, manageable classroom sizes, challenging curriculum, and a commitment to equal access to all students.</p>
+<p></p></div>        
+        
+                <div class="uk-margin-top"><div class="el-link uk-button uk-button-text">Learn more</div></div>        
+        
+        
+    
+        </a>    
+</div></div>
+        <div>
+<div class="el-item uk-grid-item-match" uk-scrollspy-class>
+        <a class="uk-panel uk-tile-primary uk-tile-hover uk-padding uk-margin-remove-first-child uk-transition-toggle uk-link-toggle uk-display-block" href="/service/position-papers/jobs-and-economy">    
+    
+                <div class="uk-inline-clip"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/d7/work-icon-720-d7d07883.webp 720w" sizes="(min-width: 720px) 720px">
+<img src="/templates/yootheme/cache/72/work-icon-720-721c0a3f.png" width="720" height="512" class="el-image uk-transition-scale-up uk-transition-opaque" alt loading="lazy">
+</picture></div>        
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Jobs and Economy                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-text-small uk-margin-top"><p>I will continue my endeavor to expand employment opportunities by assisting small and minority businesses and creating jobs through rebuilding our infrastructure. As your Delegate, I will also continue to champion the cause of small business development.</p></div>        
+        
+                <div class="uk-margin-top"><div class="el-link uk-button uk-button-text">Learn more</div></div>        
+        
+        
+    
+        </a>    
+</div></div>
+        <div>
+<div class="el-item uk-grid-item-match" uk-scrollspy-class>
+        <a class="uk-panel uk-tile-primary uk-tile-hover uk-padding uk-margin-remove-first-child uk-transition-toggle uk-link-toggle uk-display-block" href="/service/position-papers/aging">    
+    
+                <div class="uk-inline-clip"><picture>
+<source type="image/webp" srcset="/templates/yootheme/cache/e9/aging-icon-900-e915e0d7.webp 768w, /component/ajax/?p=image&amp;src=file%3Dimages%252Faging-icon-900.png%26type%3Dwebp%2C100%26thumbnail%3D899%2C512%2C&amp;hash=497f6a69 899w, /templates/yootheme/cache/29/aging-icon-900-29145bec.webp 900w" sizes="(min-width: 900px) 900px">
+<img src="/templates/yootheme/cache/21/aging-icon-900-2171aa35.png" width="900" height="512" class="el-image uk-transition-scale-up uk-transition-opaque" alt loading="lazy">
+</picture></div>        
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Aging                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-text-small uk-margin-top"><p>Aging well is a right for all, not a privilege for a few. I support policies that address the disparities that many older adults have faced throughout their lives that are now exacerbated as they age to ensure that have a decent and respectable quality of life as they age.</p></div>        
+        
+                <div class="uk-margin-top"><div class="el-link uk-button uk-button-text">Learn more</div></div>        
+        
+        
+    
+        </a>    
+</div></div>
+        </div>
+</div>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+    
+</div>
+
+                
+            </main>
+
+            
+
+                        <footer>
+                <!-- Builder #footer -->
+<div class="uk-section-secondary uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-small">                
+                    <div class="uk-grid tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-width-1-2@m">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin"><h5>Important Links</h5></div>
+<div>
+    
+    
+        
+        <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">                                <li class="el-item ">
+<a class="el-link" href="http://virginiageneralassembly.gov/" target="_blank">
+    
+        
+                    Virginia General Assembly        
+    
+</a></li>
+                                            <li class="el-item ">
+<a class="el-link" href="http://leg1.state.va.us/" target="_blank">
+    
+        
+                    Legislative Information System        
+    
+</a></li>
+                                            <li class="el-item ">
+<a class="el-link" href="http://capclass.virginiageneralassembly.gov/PagePrograms/PagePrograms.html" target="_blank">
+    
+        
+                    Page Program        
+    
+</a></li>
+                                            <li class="el-item ">
+<a class="el-link" href="/92nd-district-map">
+    
+        
+                    House of Delegates 92nd District        
+    
+</a></li>
+                            </ul>
+        
+    
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-grid-item-match uk-width-1-2@m">
+    
+        
+            
+            
+                        <div class="uk-panel uk-width-1-1">            
+                
+                    <div class="uk-panel uk-position-absolute uk-width-1-1" style="left: 240px;"><h5>Staff</h5>
+<p><span style="font-size: 14pt;" mce-data-marked="1"><strong>Ted Sorrell</strong></span><br />Legislative Assistant</p></div>
+                
+                        </div>            
+        
+    
+</div></div><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <hr class="uk-divider-icon">
+                
+            
+        
+    
+</div></div><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin"><p style="text-align: center;"><span class="copy-right" style="font-size: 14pt;">Paid for and Authorized by J. Ward for Delegate </span></p></div>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+    
+</div>            </footer>
+            
+        </div>
+
+        
+        
+
+    </body>
+</html>

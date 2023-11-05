@@ -109,7 +109,7 @@ def download_candidate_website_downloader(logname):
             print("\n**FAIL: Website Download**")
             # output error to log
             with open(logname, "a+") as f:
-                f.write(f"ERROR: {e}")
+                f.write(f"ERROR: {e if e else repr(e)}\n")
             print("**ERROR: see the log for details**\n")
         # clean up the html file names
         replace_filenames()
@@ -156,6 +156,7 @@ def download_candidate_wget(log_name):
             # extract all links from the homepage using bs4
             with open(filename, "r") as f:
                 html = f.read()
+
             # generate beautifulsoup
             soup = bs(html, "html.parser")
 
@@ -205,7 +206,26 @@ def download_candidate_wget(log_name):
             print(f"**ERROR: {candidate_name}**")
             with open(f"error_log.txt", "a+") as f:
                 f.write(f"ERROR: {candidate_name} {website} {e}\n")
-            
+
+# remove candidates with no valid html
+def validate_candidates(logname):
+    # go through all candidates
+    for candidate in os.listdir("html/Senate") + os.listdir("html/House"):
+        # get path to the candidates
+        candidate_path = f"html/Senate/{candidate}" if candidate in os.listdir("html/Senate") else f"html/House/{candidate}"
+        # get all files from candidate
+        files = [file for file in os.listdir(candidate_path) if os.path.isfile(os.path.join(candidate_path, file))]
+        # if there are no files, or all files are empty remove the candidate directory
+        if len(files) == 0 or all(os.stat(os.path.join(candidate_path, file)).st_size == 0 for file in files):
+            shutil.rmtree(candidate_path)
+            # log the removal
+            with open(logname, "a+") as f:
+                f.write(f"REMOVED: {candidate}\n")
+    # log the number of candidates left compared to length of original candidates list in DB
+    with open(logname, "a+") as f:
+        total_candidates = len(pd.read_csv("database/candidate_office_website.csv"))
+        f.write(f"REMAINING: {len(os.listdir('html/Senate')) + len(os.listdir('html/House'))} / {total_candidates} candidates\n")
+
 # main function
 def start():
     # get timestamp for log
@@ -215,6 +235,10 @@ def start():
     # write timestamp to log
     with open(logname, "a+") as f:
         f.write(f"{pd.Timestamp.now()}\n")
+    # make storage directory
+    if "storage" not in os.listdir():
+        os.makedirs("storage/html/Senate")
+        os.makedirs("storage/html/House")
     # use website downloder
     download_candidate_website_downloader(logname)
     # clear html, move files, and remove storage
@@ -225,6 +249,8 @@ def start():
     shutil.rmtree("storage")
     # use wget
     download_candidate_wget(logname)
+    # validate html
+    validate_candidates(logname)
 
 # main method
 if __name__ == "__main__":

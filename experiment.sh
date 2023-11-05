@@ -1,5 +1,7 @@
+# remove testing directory
+rm -r ./testing
 # iteratee four times
-for counter in 1
+for counter in 1 2 3 4 5
 do
     # clear previous results
     ./clear.sh

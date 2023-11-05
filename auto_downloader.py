@@ -73,7 +73,7 @@ def download_candidate_website_downloader(logname):
         start_download()
     # copy candidates to missing candidates csv
     print("\n**Copy Candidates to Missing Candidates CSV**\n")
-    shutil.copy("database/candidates.csv", "database/missing_website.csv")
+    shutil.copy("database/candidate_office_website.csv", "database/missing_website.csv")
     # clean up the html file names
     replace_filenames()
     # go through data in html folder:

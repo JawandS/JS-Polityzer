@@ -1,5 +1,5 @@
 # iteratee four times
-for counter in 1 2 3 4 5
+for counter in 1
 do
     # clear previous results
     ./clear.sh

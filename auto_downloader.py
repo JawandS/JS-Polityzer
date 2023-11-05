@@ -217,6 +217,8 @@ def start():
         f.write(f"{pd.Timestamp.now()}\n")
     # use website downloder
     download_candidate_website_downloader(logname)
+    # clear storage
+    shutil.rmtree("storage")
     # use wget
     download_candidate_wget(logname)
 

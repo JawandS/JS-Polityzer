@@ -7,7 +7,7 @@ from website_downloader import start as start_download
 import subprocess 
 from bs4 import BeautifulSoup as bs
 
-VERBOSE = 1 # for debugging
+VERBOSE = 0 # for debugging
 
 # clean up files in html by replacing spaces in file name
 def replace_filenames():
@@ -238,6 +238,18 @@ def validate_candidates(logname):
         total_candidates = len(pd.read_csv("database/candidate_office_website.csv"))
         f.write(f"REMAINING: {len(os.listdir('html/Senate')) + len(os.listdir('html/House'))} / {total_candidates} candidates\n")
 
+# remove all empty files from candidates in html folder
+def clear_empty_files():
+    # go through all candidates
+    for candidate_path in os.listdir('html/House') + os.listdir('html/Senate'):
+        # get all files from candidate
+        files = [file for file in os.listdir(candidate_path) if os.path.isfile(os.path.join(candidate_path, file))]
+        # remove files that have a file size of zero
+        for file in files:
+            file_path = os.path.join(candidate_path, file)
+            if os.stat(file_path).st_size == 0:
+                os.remove(file_path)
+                
 # main function
 def start():
     # get timestamp for log
@@ -252,16 +264,18 @@ def start():
         os.makedirs("storage/html/Senate")
         os.makedirs("storage/html/House")
     # use website downloder
-    # download_candidate_website_downloader(logname)
+    download_candidate_website_downloader(logname)
     # clear html, move files, and remove storage
     shutil.rmtree("html")
     os.mkdir("html")
     shutil.move("storage/html/Senate", "html/Senate")
     shutil.move("storage/html/House", "html/House")
     shutil.rmtree("storage")
+    # clear empty files
+    clear_empty_files()
     # use wget
     download_candidate_wget(logname)
-    # validate html
+    # rm candidates with no valid data
     validate_candidates(logname)
     # write end timestamp to log
     with open(logname, "a+") as f:

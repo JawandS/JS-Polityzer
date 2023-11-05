@@ -2,7 +2,7 @@ test_dir="./small_test"
 # remove testing directory
 rm -r $test_dir
 # iteratee four times
-for counter in 1 2 3 4 5
+for counter in 1
 do
     # get the directory for current run
     curr_dir=$test_dir/Run$counter

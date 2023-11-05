@@ -164,6 +164,7 @@ def download_candidate_wget(log_name):
             links = set()
             for a_tag in soup.find_all('a', href=True):
                 link = a_tag['href']
+                print(link)
                 if link.startswith("http") and len(link) < 1000:
                     if homepage in link: # link is fully formatted
                         links.add(link)
@@ -240,13 +241,13 @@ def start():
     logname = "logs/downloader_log_" + timestamp + ".txt"
     # write timestamp to log
     with open(logname, "a+") as f:
-        f.write(f"{pd.Timestamp.now()}\n")
+        f.write(f"START {pd.Timestamp.now()}\n")
     # make storage directory
     if "storage" not in os.listdir():
         os.makedirs("storage/html/Senate")
         os.makedirs("storage/html/House")
     # use website downloder
-    download_candidate_website_downloader(logname)
+    # download_candidate_website_downloader(logname)
     # clear html, move files, and remove storage
     shutil.rmtree("html")
     os.mkdir("html")
@@ -257,6 +258,9 @@ def start():
     download_candidate_wget(logname)
     # validate html
     validate_candidates(logname)
+    # write end timestamp to log
+    with open(logname, "a+") as f:
+        f.write(f"END {pd.Timestamp.now()}\n")
 
 # main method
 if __name__ == "__main__":

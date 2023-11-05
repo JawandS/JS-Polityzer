@@ -162,13 +162,13 @@ def download_candidate_wget(log_name):
             # generate beautifulsoup
             soup = bs(html, "html.parser")
 
-            def is_valid_link(link): # validate link
+            def add_link(link, set_to_ad): # validate link
                 if len(link) < 1000: # make sure the link isn't too long
                     if link.startswith("http") and homepage in link: # link is fully formatted
-                        links.add(link)
+                        set_to_ad.add(link)
                         if VERBOSE: print(f"Absolute: {link}")
                     elif link.startswith("/"): # link is relative
-                        links.add(website + link)
+                        set_to_ad.add(website[:-1] + link)
                         if VERBOSE: print(f"Relative: {link}, Absolute: {website + link}")
                     elif VERBOSE:
                         print(f"Invalid: {link}")
@@ -177,8 +177,7 @@ def download_candidate_wget(log_name):
             links = set()
             for a_tag in soup.find_all('a', href=True):
                 link = a_tag['href']
-                if is_valid_link(link):
-                    links.add(link)
+                add_link(link, links)
                 
             # log the number of internal links for the candidate
             with open(log_name, "a+") as f:
@@ -205,8 +204,7 @@ def download_candidate_wget(log_name):
                 # get all the links (depth=1)
                 for a_tag in soup.find_all('a', href=True):
                     link = a_tag['href']
-                    if is_valid_link(link):
-                        depth_two_links.add(link)
+                    add_link(link, depth_two_links)
             # remove links that are already downloaded
             depth_two_links = depth_two_links - links
             # download remaining links

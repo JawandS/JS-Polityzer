@@ -4,7 +4,7 @@ test_dir="./testing_full/11_6_2023_am"
 # remove testing directory
 rm -r $test_dir
 # iterate
-for counter in 1
+for counter in 1 2
 do
     # get the directory for current run
     curr_dir=$test_dir/Run$counter

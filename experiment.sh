@@ -25,3 +25,5 @@ do
     # copy html to the testing folder
     cp -r ./html $curr_dir
 done
+# clear 
+./clear.sh

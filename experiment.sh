@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# test_dir="./testing_full/11_6_2023_pm"
-test_dir="./small_test/11_6_23"
+test_dir="./testing_full/11_6_2023_pm"
+# test_dir="./small_test/11_6_23"
 # remove testing directory
 rm -r $test_dir
 # iterate

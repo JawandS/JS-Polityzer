@@ -6,7 +6,6 @@ import datetime
 from website_downloader import start as start_download
 import subprocess 
 from bs4 import BeautifulSoup as bs
-import urllib.parse
 
 VERBOSE = 0 # for debugging
 
@@ -163,7 +162,12 @@ def download_candidate_wget(log_name):
             # generate beautifulsoup
             soup = bs(html, "html.parser")
 
-            def add_link(link, set_to_add): # validate link and add to set
+            origin_tracker = {} # track the page that spawned the deht two link
+
+            # TO DO: split add link for depth 1 and depth 2
+            # so that depth 2 relative links are properly formatted
+
+            def add_link(link, set_to_add, parent_link): # validate link and add to set
                 # check if links should be skipped
                 if len(link) > 1000 or link.startswith("mailto:") or link.startswith("tel:"):
                     if VERBOSE: print(f"Skipped: {link}")
@@ -171,7 +175,7 @@ def download_candidate_wget(log_name):
                     set_to_add.add(link)
                     if VERBOSE: print(f"Absolute: {link}")
                 elif link.startswith("/"): # link is relative
-                    set_to_add.add(website + link)
+                    set_to_add.add(parent_link + link)
                     if VERBOSE: print(f"Relative: {link}, Absolute: {website + link}")
                 elif VERBOSE:
                     print(f"Invalid: {link}")
@@ -180,7 +184,7 @@ def download_candidate_wget(log_name):
             links = set()
             for a_tag in soup.find_all('a', href=True):
                 link = a_tag['href']
-                add_link(link, links)
+                add_link(link, links, website)
                 
             # log the number of internal links for the candidate
             with open(log_name, "a+") as f:
@@ -193,7 +197,8 @@ def download_candidate_wget(log_name):
                 link_filename = f"{candidate_path}/{link_name}{timestamp}"
                 # download the link, use p to avoid downloading embeddings
                 subprocess.run(f"wget {link} -O {link_filename}", shell=True)
-            # get the links from depth 1 (depth=2 links)
+
+            # get the sub links from depth 1 (depth=2 links)
             depth_two_links = set()
             for link in links:
                 # update filename
@@ -206,8 +211,9 @@ def download_candidate_wget(log_name):
                 soup = bs(html, "html.parser")
                 # get all the links (depth=1)
                 for a_tag in soup.find_all('a', href=True):
-                    link = a_tag['href']
-                    add_link(link, depth_two_links)
+                    sub_link = a_tag['href']
+                    origin_tracker[sub_link] = link
+                    add_link(sub_link, depth_two_links, link)
             # remove links that are already downloaded
             depth_two_links = depth_two_links - links
             # download remaining links

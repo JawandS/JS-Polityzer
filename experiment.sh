@@ -1,10 +1,9 @@
 #!/bin/bash
 
-test_dir="./small_test"
-# test_dir="./testing_full/11_5_2023"
+test_dir="./testing_full/11_6_2023_am"
 # remove testing directory
 rm -r $test_dir
-# iteratee four times
+# iterate
 for counter in 1
 do
     # get the directory for current run

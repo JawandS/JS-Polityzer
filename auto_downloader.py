@@ -241,7 +241,14 @@ def validate_candidates(logname):
 # remove all empty files from candidates in html folder
 def clear_empty_files():
     # go through all candidates
-    for candidate_path in os.listdir('html/House') + os.listdir('html/Senate'):
+    candidate_paths = []
+    for candidate in os.listdir('html/House'):
+        # creat candidate path
+        candidate_paths.append(f"html/House/{candidate}")
+    for candidate in os.listdir('html/Senate'):
+        # creat candidate path
+        candidate_paths.append(f"html/Senate/{candidate}")
+    for candidate_path in candidate_paths:
         # get all files from candidate
         files = [file for file in os.listdir(candidate_path) if os.path.isfile(os.path.join(candidate_path, file))]
         # remove files that have a file size of zero

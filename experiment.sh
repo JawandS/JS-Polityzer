@@ -1,4 +1,7 @@
-test_dir="./testing_full/11_5_2023"
+#!/bin/bash
+
+test_dir="./small_test"
+# test_dir="./testing_full/11_5_2023"
 # remove testing directory
 rm -r $test_dir
 # iteratee four times

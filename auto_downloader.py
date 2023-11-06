@@ -6,6 +6,7 @@ import datetime
 from website_downloader import start as start_download
 import subprocess 
 from bs4 import BeautifulSoup as bs
+import urllib.parse
 
 VERBOSE = 0 # for debugging
 
@@ -162,16 +163,18 @@ def download_candidate_wget(log_name):
             # generate beautifulsoup
             soup = bs(html, "html.parser")
 
-            def add_link(link, set_to_ad): # validate link
-                if len(link) < 1000: # make sure the link isn't too long
-                    if link.startswith("http") and homepage in link: # link is fully formatted
-                        set_to_ad.add(link)
-                        if VERBOSE: print(f"Absolute: {link}")
-                    elif link.startswith("/"): # link is relative
-                        set_to_ad.add(website + link)
-                        if VERBOSE: print(f"Relative: {link}, Absolute: {website + link}")
-                    elif VERBOSE:
-                        print(f"Invalid: {link}")
+            def add_link(link, set_to_add): # validate link and add to set
+                # check if links should be skipped
+                if len(link) > 1000 or link.startswith("mailto:") or link.startswith("tel:"):
+                    if VERBOSE: print(f"Skipped: {link}")
+                if link.startswith("http") and homepage in link: # link is fully formatted
+                    set_to_add.add(link)
+                    if VERBOSE: print(f"Absolute: {link}")
+                elif link.startswith("/"): # link is relative
+                    set_to_add.add(website + link)
+                    if VERBOSE: print(f"Relative: {link}, Absolute: {website + link}")
+                elif VERBOSE:
+                    print(f"Invalid: {link}")
 
             # get all the links (depth=1)
             links = set()

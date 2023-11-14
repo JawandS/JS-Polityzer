@@ -1,0 +1,1393 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'mobile';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'https://www.timmyfrench.com/',
+        AccountUUID: 'e95376c425124be189daa0e81dd3dec7',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '8aa65406',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Fri Nov 03 21:02:39 UTC 2023',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'about',
+        InitialPageUuid: 'c392a5f5c13847e9bce7c327c1c32b8c',
+        InitialPageId: '1136874221',
+        InitialEncodedPageAlias: 'YWJvdXQ=',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '11040',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'timmyfrench',
+        HasCustomDomain: true,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'LEFT',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 5,
+            NavbarLiveHomePage: 'https://www.timmyfrench.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 22;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.timmyfrench.com/about">
+
+<meta id="view" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" type="image/x-icon" href="/favicon_reseller.ico"/>
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin />
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+    const defs={};
+    window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+    window.waitForDeferred = function (b, a, c) {
+      let d = window?.getDeferred?.(b);
+      d
+        ? d.promise.then(a)
+        : c && ["complete", "interactive"].includes(document.readyState)
+        ? setTimeout(a, 1)
+        : c
+        ? document.addEventListener("DOMContentLoaded", a)
+        : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(1,89,47,1);
+  --color_2: rgba(120,120,120,1);
+}
+</style>
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+<style id="criticalCss">
+    @charset "UTF-8";#dm .dmwidget-title,.dmLayoutWrapper.dmStandardMobile,.dmform .dmforminput label,[dmtemplateid*=amburger] .dmLayoutWrapper,body{overflow:hidden}.clearfix:after,:not(.runtime-module-container) .layout-drawer,:not(.runtime-module-container) .layout-drawer-hamburger,:not(.runtime-module-container) .layout-drawer-overlay{visibility:hidden}@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/robotoslab/v33/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:400;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/droidserif/v19/tDbI2oqRg1oM3QBjjcaDkOr9rAU.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:700;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/droidserif/v19/tDbV2oqRg1oM3QBjjcaDkOJGiRD7OwE.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}:root{--color_1:rgba(1,89,47,1);--color_2:rgba(120,120,120,1)}.dmInner{min-height:100vh!important;position:relative}.dmPopup,.dmPopupMask{position:fixed;left:0}#dmRoot.dmMobileBody #dm .dmOuter :not(.dmInner){background-attachment:scroll!important}.clearfix:after{clear:both;line-height:0;height:0}.clearfix:after,.clearfix:before{content:' ';display:table}.clearfix{display:inline-block}#dm .dmWidget .icon{font-size:26px}body.dmRoot #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}.dmRoot .hasFontIcon{background-image:none!important}.dmPopupMask{margin:0;display:none;width:10px;z-index:1000000999;top:0}#dmRoot .dmPopup,.dmPopup,.dmPopupClose:before,[data-display-type=block]{display:block}.dmPopup{padding:10px;text-align:left;margin:0 10px;top:10px;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%}#dm .dmRespRow .dmRespCol>.dmWidget,body.fix-mobile-scrolling{overflow:initial}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{font-size:20px;color:#000;top:3px;right:3px}#dm .dmBackToTop{position:fixed!important}.dmRespRow.fullBleedMode>.dmRespColsWrapper{width:100%!important;max-width:100%!important}.dmRespRow.fullBleedMode{padding-left:0!important;padding-right:0!important}#dm .dmRespRow .dmRespColsWrapper{display:flex}.dmMobileBody #dm .dmRespRow .dmRespColsWrapper{flex-wrap:wrap}.pswp{display:none;z-index:9999999999!important}#dm .dmInner .dmWidget.align-center,.align-center{margin-left:auto;margin-right:auto}.text-align-center{text-align:center}#dmRoot{text-decoration-skip-ink:none}.dmform-title{padding-right:15px;padding-left:15px}body{-webkit-overflow-scrolling:touch}:not(.runtime-module-container) .layout-drawer{position:fixed;transform:translate(-100%,-100%)}:not(.runtime-module-container) .layout-drawer-overlay{opacity:0}.runtime-module-container{width:100%}.runtime-module-container[dmtemplateid*=amburger] #site_content,.runtime-module-container[dmtemplateid*=amburger] .dmInner{position:static}.runtime-module-container[dmtemplateid*=amburger] #site_content .site_content{position:relative}.runtime-module-container[dmtemplateid*=amburger] .dmLayoutWrapper{background-color:transparent}.runtime-module-container .hamburger-header-container{position:fixed;z-index:2;top:0;left:0;width:100%}.runtime-module-container .hamburger-header-container .hamburger-header{min-height:43px}.runtime-module-container .layout-drawer,.runtime-module-container .layout-drawer-hamburger,.runtime-module-container .layout-drawer-overlay{visibility:visible}.runtime-module-container[dmtemplateid*=amburger] .site_content{margin-top:59px}.runtime-module-container .layout-drawer,.runtime-module-container .layout-drawer-overlay{height:100%;position:fixed;top:0;left:0}.runtime-module-container .layout-drawer{background-color:#fff;width:75vw;transform:translate(-100%,0);overflow:auto;-webkit-overflow-scrolling:auto;z-index:13;display:flex;flex-direction:column}.runtime-module-container .layout-drawer .dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child:empty{min-height:0}.runtime-module-container .layout-drawer[data-origin=top]{min-height:20vh;min-width:40vw;max-height:100%;height:auto;width:100%;transform:translate(0,-100%)}.runtime-module-container .layout-drawer[data-origin=top]#mobile-hamburger-drawer{min-height:40vh}.runtime-module-container .layout-drawer-overlay{width:100vw;background-color:rgba(0,0,0,.4);opacity:0;z-index:6}body:not([data-flex-site]) .layout-drawer .dmRespRow:not(:first-of-type):not(:last-of-type){flex:1 1 auto}.layout-drawer-hamburger{position:fixed;left:18px;margin-left:env(safe-area-inset-left);padding:17px 11px;z-index:13;width:52px;height:52px;background-color:transparent;color:#787878;display:flex;flex-direction:column;border:0;justify-content:space-between;align-items:stretch;outline:0;top:18px;border-radius:0}.layout-drawer-hamburger .hamburger__slice{display:block;height:0;width:100%;border:1px solid currentColor;transform-origin:center}@media (max-width:767px){.layout-drawer-hamburger{position:fixed;left:10px;margin-left:env(safe-area-inset-left);padding:13px 9px;z-index:13;width:40px;height:40px;background-color:transparent;color:#787878;display:flex;flex-direction:column;border:0;justify-content:space-between;align-items:stretch;outline:0;top:10px;border-radius:0}.layout-drawer-hamburger .hamburger__slice{display:block;height:0;width:100%;border:1px solid currentColor;transform-origin:center}}.hamburger-reverse .layout-drawer-hamburger{left:auto;right:10px;margin-right:env(safe-area-inset-right)}@media (min-width:1025px){:root{--btn-text-font-size:18px}}@media (min-width:768px) and (max-width:1024px){:root{--btn-text-font-size:18px}}#dm-outer-wrapper.hamburger-reverse #hamburger-header-container #mobile-hamburger-header .dmRespRow .dmRespColsWrapper{flex-direction:row-reverse;direction:ltr}#dm-outer-wrapper #hamburger-header-container #mobile-hamburger-header .dmRespRow .dmRespCol{display:flex;flex-direction:column;justify-content:center}nav{display:block}html{font-family:Source Sans Pro;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}button,input{font-family:inherit;font-size:100%;margin:0;line-height:normal}button{text-transform:none;-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmRespRow .dmRespCol>*{max-width:100%}.dmMobileBody .dmRespRow .dmRespCol{position:relative;padding-left:15px;padding-right:15px;float:left}.dmMobileBody .dmRespRow .small-2{position:relative;width:16.66667%}.dmMobileBody .dmRespRow .small-8{position:relative;width:66.66667%}.dmMobileBody .dmRespRow .small-12{position:relative;width:100%}.socialHubIcon,[class*=' dm-common-icons-']{font-family:dm-social-icons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class*=' dm-common-icons-']{font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}.icon-star:before{content:'\f005'}.icon-rss:before{content:'\f09e'}.icon-angle-down:before{content:'\f107'}@media (min-width:768px){.hamburger-reverse .layout-drawer-hamburger{right:18px}#dm .dmRespRow .dmRespCol>.dmWidget{width:280px;max-width:100%}}@media (max-width:767px){#dm .dmInner .dmWidget{width:100%}}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget:not(.displayNone)[data-display-type=block]{display:block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;clear:both;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0;height:auto;border-style:solid;white-space:nowrap}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}@supports (padding:0px){.dmMobileBody .dmRespColsWrapper{padding-left:env(safe-area-inset-left)!important;padding-right:env(safe-area-inset-right)!important}}#dm div.dmInner .dmform .dmforminput label[hide=true]{display:none}.dmform .dmforminput label{display:block;text-overflow:ellipsis}.dmMobileBody .dmform .dmforminput label{white-space:normal}.socialHubIcon{display:flex!important;align-items:center;justify-content:center}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] .text-align-center{text-align:center!important}.dmNewParagraph[data-version] h1,.dmNewParagraph[data-version] h3,.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}*{border:0 solid #333;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{width:100%;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}h1,h3,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}span.oneIcon:before{display:inline-block}.clearfix,a,img,li,ul{vertical-align:top}#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmInner{font-size:16px;background:#fff;color:#666}.dmInner a{color:#463939;outline:0;vertical-align:inherit}.dmInner ul:not(.defaultList){padding:0}DIV.dmBody{padding:0;clear:both}.dmContent{margin:0;padding:0}#site_content ul:not(.defaultList){-webkit-padding-start:0;-moz-padding-start:0;list-style-position:inside}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.imageWidget:not(.displayNone) img{width:100%}.dmMobileBody .imageWidget{text-align:center}h3{font-weight:400;font-size:23px}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLinksMenu>ul{display:block;margin:0;font-size:inherit}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed).empty-column,.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child:empty{min-height:100px}.dmMobileBody .hamburger-header .dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed).empty-column{min-height:55px}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol:not(.content-removed).empty-column,.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol:not(.content-removed):empty{min-height:1px}.dmMobileBody .hamburger-drawer .dmRespRow:not(.dmPlaceHolderRespRow):first-child .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child.empty-column,.dmMobileBody .hamburger-drawer .dmRespRow:not(.dmPlaceHolderRespRow):first-child .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child:empty{min-height:0!important}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child.empty-column{min-height:100px}#dm h3.dmwidget-title[hide=true]{display:none}#dm .dmwidget-title{margin:10px 0;font-size:23px;text-shadow:none;text-align:left;text-transform:capitalize;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}#dm .dmDivider{display:block;margin:10px 0}.dmSocialHub{clear:both}#dm .dmSocialHub a{display:inline-block;text-decoration:none;margin:0;vertical-align:bottom}.dmSocialHub>div{text-align:inherit}a span.socialHubIcon{width:36px;height:36px;font-size:31px;display:inline-block;text-align:center;margin-right:0;margin-bottom:5px;line-height:36px;box-sizing:content-box;background-image:none!important}.socialHubIcon.style8{font-size:24px;padding:4px;border-radius:50%;color:#fff;background:#000}#dm .dmSocialHub .socialHubWrapper{display:inline-block;max-width:100%}#dm .dmBackToTop{width:30px;height:30px;opacity:0;background:rgba(0,0,0,.6);z-index:200;bottom:10px;right:10px;border:1px solid #fff;-moz-box-shadow:0 0 1px rgba(247,247,247,.4);-webkit-box-shadow:0 0 1px rgba(247,247,247,.4);box-shadow:0 0 1px rgba(247,247,247,.4)}#dm .dmBackToTop:after,#dm .dmBackToTop:before{content:'';position:absolute;width:4px;height:15px;background:#fff;border-radius:2px;left:8px;top:6px;transform:rotate(45deg)}#dm .dmBackToTop:after{left:16px;transform:rotate(-45deg)}body{background-color:#eee}.dmDivider{min-height:2px;border:currentColor;color:grey;background:0 0}#dm .dmDividerWrapper{display:block}.main-navigation.unifiednav{display:flex;justify-content:flex-start;align-items:stretch;overflow:visible}.main-navigation.unifiednav ul{list-style:none;padding:0;margin:0;font-size:1rem}.main-navigation.unifiednav .unifiednav__container{display:flex;justify-content:flex-start;list-style:none}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap{display:flex;justify-content:flex-start;position:relative;font-weight:400}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::before{content:'';-ms-grid-row-align:center;align-self:center;font-weight:700}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{display:flex;justify-content:flex-start;align-items:center;flex-direction:row;color:inherit;text-decoration:none;position:relative;padding:12px 15px;margin:0;font-weight:inherit;letter-spacing:.03em}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:nowrap}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{content:'';width:100%;height:0;border:0 solid transparent;border-top-color:currentColor;display:block;opacity:0}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{opacity:1}.main-navigation.unifiednav.effect-bottom{padding:calc(12px - .2em - 2px) 15px}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{transform:scaleX(0);border-top-width:2px}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after{margin-top:.2em}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{margin-bottom:.2em;border-top-color:transparent}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{transform:scaleX(1)}.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{justify-content:inherit}#dm .p_hfcontainer nav.main-navigation.unifiednav{min-width:9em!important;text-align:initial!important}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container{flex-direction:column;flex:1 1 100%}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{padding:8px 0;margin:0}.dmSocialRss,.socialHubInnerDiv a:last-child{margin:0!important}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:initial}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap{flex-direction:column}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after{content:''!important;width:100%;height:0;color:#d1d1d1;align-self:flex-start;border:0 solid currentColor}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL][layout-main=vertical_nav_layout_2] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:5px 0}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL][data-show-vertical-sub-items=HIDE]>.unifiednav__container:not([data-depth])>.unifiednav__item-wrap .unifiednav__item.dmNavItemSelected>.nav-item-text .icon::before{transform:rotate(180deg)}.dmMobileBody #dm .main-navigation.unifiednav .nav-item-text{position:relative}#dm .dmBody .dmRespRowsWrapper{max-width:none;background-color:transparent}#dm div.dmContent h1{color:#666}#dm div.dmContent h3,#dm div.dmFooter h3{color:#fff}#dm div.dmInner{line-height:initial}#dm div.dmInner h1,#dm div.dmInner h3{font-family:Montserrat,"Montserrat Fallback"}#dm div.dmOuter div.dmInner{background-position:center center;background-repeat:repeat;background-size:auto}#dm .dmform .dmforminput label,#dm div.dmInner,#dm div.dmInner .dmRespCol{font-weight:300;font-size:15px}#dm .dmRespCol div.dmNewParagraph,#dm .dmform .dmforminput label,#dm div.dmInner,#dm div.dmInner .dmRespCol{color:rgba(0,0,0,1);font-family:'Droid Serif'}#dm div.dmContent h1,#dm div.dmContent h3,#dm div.dmFooter h3,#dm div.p_hfcontainer h3{data-inject:primary-color-false;color:rgba(195,0,47,1);font-family:"Roboto Slab","Roboto Slab Fallback";font-weight:700;font-style:normal}#dm div.dmRespCol>*{line-height:2}#dm div.dmContent h1{color:var(--color_1);direction:ltr;text-decoration:none;line-height:initial;font-size:35px}#dm div.dmContent .dmNewParagraph[data-version] h1{text-decoration:inherit}#dm div.dmContent .dmNewParagraph[data-version] h1 *{text-decoration:none}#dm div.dmContent h3,#dm div.dmFooter h3,#dm div.p_hfcontainer h3{color:var(--color_1);direction:ltr;text-decoration:none}#dm div.dmContent .dmNewParagraph[data-version] h3{text-decoration:inherit}.dmSocialRss{display:none!important}#dm DIV.dmInner{background-repeat:no-repeat;background-image:url(https://lirp.cdn-website.com/md/dmtmpl/206453b5-f833-49b3-b494-9534ee6dedb2/dms3rep/multi/opt/site_background_education-2087x1173-640w.jpg);background-size:cover;background-position:50% 0}.dmMobileBody .dmLayoutWrapper{background-color:transparent}#dm div.dmContent h3,#dm div.dmFooter h3{line-height:initial}#dm DIV.dmOuter DIV.dmInner{background-image:none;background-color:rgba(255,255,255,1)}#dm div.dmContent h3,#dm div.dmFooter h3,#dm div.p_hfcontainer h3{font-size:20px}#dm .dmContent .dmRespRow{margin:0;padding:15px 0}#dm .dmContent .dmRespRow .dmRespCol{margin:0;padding:0 15px}@media all{:root{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:0px;--btn-border-radius:3px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:var(--color_1);--btn-border-color:var(--color_1);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-bg-image:none;--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgba(255, 255, 255, 1);--btn-text-decoration:none;--btn-text-font-weight:bold;--btn-text-font-family:"Roboto Slab","Roboto Slab Fallback";--btn-icon-color:rgb(247, 247, 247);--btn-icon-fill:rgb(247, 247, 247);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:var(--color_2);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:rgba(0, 0, 0, 0);--btn-hover-text-color:rgb(255, 255, 255);--btn-hover-text-font-weight:bold;--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}}@media (min-width:0px) and (max-width:767px){:root{--btn-text-font-size:16px}}#dm .dmWidget:not([data-buttonstyle]){border-radius:50px}#dm .dmWidget:not([data-buttonstyle]) .text{padding:10px 0}#dm .dmWidget:not([data-buttonstyle]) .iconBg{display:none}#dm div.dmInner #site_content .dmWidget{background-color:var(--btn-bg-color);background-image:var(--btn-bg-image);border-color:var(--btn-border-color);border-bottom-color:var(--btn-border-b-color);border-left-color:var(--btn-border-l-color);border-right-color:var(--btn-border-r-color);border-top-color:var(--btn-border-t-color);border-radius:var(--btn-border-radius);border-bottom-left-radius:var(--btn-border-bl-radius);border-bottom-right-radius:var(--btn-border-br-radius);border-top-left-radius:var(--btn-border-tl-radius);border-top-right-radius:var(--btn-border-tr-radius);border-width:var(--btn-border-width);border-bottom-width:var(--btn-border-b-width);border-left-width:var(--btn-border-l-width);border-right-width:var(--btn-border-r-width);border-top-width:var(--btn-border-t-width);direction:var(--btn-text-direction);text-align:var(--btn-text-align)}#dm div.dmInner #site_content .dmWidget span.text{color:var(--btn-text-color);font-family:var(--btn-text-font-family);font-size:var(--btn-text-font-size);font-weight:var(--btn-text-font-weight);text-decoration:var(--btn-text-decoration)}#dm div.dmInner #site_content .dmWidget span.icon{color:var(--btn-icon-color);fill:var(--btn-icon-fill)}#dm div.dmInner #site_content .dmWidget:not([data-buttonstyle]) .iconBg{display:var(--btn-icon-wrpr-display)}#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:14px!important}#dm .p_hfcontainer .u_1392265751.main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after{align-self:center!important}#dm .p_hfcontainer div.u_1149527800 .socialHubIcon{color:rgba(39,42,47,1)!important;border-color:rgba(39,42,47,1)!important;background-color:rgba(255,255,255,1)!important}#dm .p_hfcontainer div.dmform-error,#dm .p_hfcontainer div.u_1837348934 .dmform-success{color:rgba(255,255,255,1)!important}#dm .p_hfcontainer .u_1392265751.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{justify-content:center!important;text-align:center!important;padding-top:6px!important;padding-bottom:6px!important}#dm .p_hfcontainer .u_1265018392{data-inject:header-name;height:100%!important;display:none!important;justify-content:center!important;align-items:center!important;text-align:center!important}a.u_1779557614{display:block!important}.socialHubInnerDiv a{margin-right:10px!important;margin-left:10px!important}#dm .p_hfcontainer div.u_1837348934 input:not([type=submit]){background-color:rgba(255,255,255,1)!important;border-radius:3!important;border-style:solid!important;border-width:2px!important}#dm .p_hfcontainer .u_1837348934 .dmforminput input{text-align:LEFT!important;padding:20px!important;border-radius:3px!important}#dm .p_hfcontainer div.u_1630004510 .socialHubIcon{background-color:var(--color_1)!important}#dm .p_hfcontainer div#mobile-hamburger-drawer.layout-drawer,#dm .p_hfcontainer div#mobile-hamburger-header,#dm .p_hfcontainer div.u_1265018392{background-color:rgba(255,255,255,1)!important}#dm .p_hfcontainer div.u_1265018392{color:var(--color_1)!important;font-weight:700!important;font-family:'Roboto Slab'!important}#dm .p_hfcontainer nav.u_1392265751.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{color:var(--color_2)!important;font-weight:400!important}#dm .p_hfcontainer nav.u_1392265751.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after{border-top-color:var(--color_1)!important}#dm .p_hfcontainer nav.u_1392265751.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected{color:var(--color_1)!important;font-weight:400!important}[dmtemplateid=mobileHamburgerLayout] div.layout-drawer-overlay{background-color:rgba(0,0,0,.4)!important}#dm .p_hfcontainer #mobile-hamburger-drawer.layout-drawer[data-origin=top]:not([data-auto-height]){height:100%!important}#dm .p_hfcontainer div.u_1126403696,#dm .p_hfcontainer div.u_1207217519,#dm .p_hfcontainer div.u_1477754604{margin:0!important;padding:0!important}#dm .p_hfcontainer div.u_1862570804{margin:0!important;padding:30px 20px!important}#dm .p_hfcontainer div.u_1710444360{margin:0!important;padding:70px 20px 0!important}#dm .p_hfcontainer .u_1149527800 .socialHubInnerDiv a{margin-right:19px!important}#dm .p_hfcontainer .u_1149527800 .socialHubIcon{width:26px!important;height:26px!important;font-size:17.33px!important;line-height:26px!important}#dm .p_hfcontainer .u_1149527800 .socialHubIcon:after{width:34px!important;height:26px!important}#dm .p_hfcontainer div.u_1149527800{display:block!important;float:none!important;top:0!important;left:0!important;width:100%!important;position:relative!important;height:auto!important;max-width:100%!important;min-width:0!important;text-align:center!important;padding:0!important;margin:10px auto 0!important}#dm .dmBody div.u_1482073861,#dm .p_hfcontainer nav.u_1392265751{float:none!important;left:0!important;position:relative!important;min-width:25px!important}#dm .p_hfcontainer nav.u_1392265751.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{font-size:18px!important}#dm .p_hfcontainer nav.u_1392265751{top:0!important;width:100%!important;height:auto!important;max-width:calc(100% - 0px)!important;justify-content:center!important;align-items:stretch!important;text-align:start!important;padding:0!important;margin:23px auto 0!important}.responsiveTablet [dmtemplateid=mobileHamburgerLayout].runtime-module-container .layout-drawer-hamburger,[dmtemplateid=mobileHamburgerLayout].runtime-module-container .layout-drawer-hamburger{top:12.5px!important}#dm .p_hfcontainer div.u_1857427606{margin-left:0!important;margin-right:0!important;padding-left:15px!important;padding-right:15px!important;text-align:center!important}#dm .p_hfcontainer div.u_1735902752{text-align:center!important;margin:0!important;padding:0 0 0 10px!important}#dm .p_hfcontainer div.u_1265018392{font-size:16px!important;padding:0!important;margin:0!important}#dm .p_hfcontainer div.u_1120371234{width:auto!important;padding:0!important;margin:0!important}#dm .p_hfcontainer div.u_1369990997{text-align:center!important;background-repeat:no-repeat!important;background-size:contain!important;background-position:50% 50%!important;padding:0!important;margin:0!important}#dm .p_hfcontainer div#mobile-hamburger-header{box-shadow:rgba(0,0,0,.25) 0 3px 11px 0!important;-moz-box-shadow:rgba(0,0,0,.25) 0 3px 11px 0!important;-webkit-box-shadow:rgba(0,0,0,.25) 0 3px 11px 0!important;border-style:solid!important;border-width:0!important;padding:5px 0!important;margin:0!important}.responsiveTablet [dmtemplateid=mobileHamburgerLayout] .site_content,[dmtemplateid=mobileHamburgerLayout] .site_content{margin-top:65px!important}[dmtemplateid=mobileHamburgerLayout] .layout-drawer-hamburger.hamburger-on-header{color:var(--color_2)!important;background-color:rgba(0,0,0,0)!important}p{margin:0!important}#dm .dmBody div.u_1992289617{background-color:var(--color_1)!important}#dm .dmBody div.u_1887952293{box-shadow:rgba(0,0,0,.2) 0 0 11px 0!important;-moz-box-shadow:rgba(0,0,0,.2) 0 0 11px 0!important;-webkit-box-shadow:rgba(0,0,0,.2) 0 0 11px 0!important;border-radius:3px!important;-moz-border-radius:3px!important;-webkit-border-radius:3px!important;background-image:initial!important;background-color:rgba(255,255,255,1)!important;border-style:solid!important;border-width:0!important}#dm .dmBody div.u_1491957476 hr{background:no-repeat!important;height:0!important;background-size:initial!important;min-height:0!important;border-color:currentColor!important;border-width:1px!important;border-top-style:solid!important;color:rgba(229,229,229,1)!important}#dm .dmBody div.u_1482073861{top:0!important;width:100%!important;height:auto!important;max-width:calc(100% - 0px)!important;padding:2px 0!important;margin:0 auto 8px!important}#dm .dmBody div.u_1992289617{width:auto!important;padding:0!important}#dm .dmBody div.u_1073762109{margin:0!important;padding:0!important}#dm .dmBody div.u_1887952293{padding:10px!important;margin:-10px 0 0!important}#dm .dmBody div.u_1287034463{background-image:initial!important;background-color:rgba(243,243,243,1)!important;width:auto!important;padding:0 15px 10px!important}#dm .dmBody div.u_1466214869{important:true!important;width:100%!important;height:auto!important}
+    .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+      visibility: hidden;
+    }
+    
+</style>
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Slab Fallback";
+  src: local('Arial');
+  ascent-override: 97.7562%;
+  descent-override: 25.2818%;
+  size-adjust: 107.1903%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <title>
+    Timmy French
+  </title>
+  <meta name="description" content="Vote Timmy French"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Timmy French"/>
+  <meta name="twitter:description" content="Vote Timmy French"/>
+  <meta name="twitter:image" content="null"/>
+  <meta property="og:description" content="Vote Timmy French"/>
+  <meta property="og:title" content="Timmy French"/>
+  <meta property="og:image" content="null"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="about"  class="dmRoot dmMobileBody fix-mobile-scrolling addCanvasBorder dmResellerSite mac safariFix responsiveTablet " style="padding:0;margin:0;"
+      
+      >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper mobileHamburgerLayout-var5 null mobileHamburgerLayout">
+         <div dmwrapped="true" id="1256624359"> <div dmtemplateid="mobileHamburgerLayout" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations hasStickyHeader hamburger-reverse dmPageBody d-page-1607565485 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1607565485" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardMobile"> <div id="site_content"> <div class="p_hfcontainer"> <div id="mobile-hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e86e38bc9a3b4296b63d93d0db7db907===header" data-origin="top"> <div class="u_1126403696 dmRespRow middleDrawerRow" style="text-align: center;" id="1126403696"> <div class="dmRespColsWrapper" id="1732940104"> <div class="dmRespCol small-12 medium-12 large-12 empty-column" id="1013407811"></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1710444360" style="text-align: center;" id="1710444360"> <div class="dmRespColsWrapper" id="1400945127"> <div class="u_1207217519 dmRespCol small-12 medium-12 large-12 content-removed" id="1207217519"> <nav class="u_1392265751 effect-bottom main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HIDE" id="1392265751" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/about" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101139510  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         About
+        " data-auto="page-text-style">About<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/issues" class="unifiednav__item  dmUDNavigationItem_010101494191  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Issues
+        " data-auto="page-text-style">Issues<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item  dmUDNavigationItem_010101943230  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/volunteer" class="unifiednav__item  dmUDNavigationItem_010101472067  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Volunteer
+        " data-auto="page-text-style">Volunteer<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+ <a data-display-type="block" class="u_1779557614 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1779557614 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="https://secure.winred.com/timmy-french-for-the-senate-of-virginia/donate-today" data-element-type="dButtonLinkId" id="1779557614" target="_blank" data-binding="W3siYmluZGluZ05hbWUiOiJsaW5rIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnNvY2lhbC5yc3MifV0=" data-diy-link=""> <span class="iconBg" id="1344426061"> <span class="icon hasFontIcon icon-star" id="1147986634"></span> 
+</span> 
+ <span class="text" id="1660255309" data-diy-text="">Donate</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1862570804" style="text-align: center;" id="1862570804"> <div class="dmRespColsWrapper" id="1964024555"> <div class="dmRespCol small-12 medium-12 large-12 u_1477754604" id="1477754604"> <div class="u_1149527800 align-center text-align-center dmSocialHub" id="1149527800" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://#" dm_dont_rewrite_url="true" aria-label="rss" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Rss&apos;)"> <span class="dmSocialRss icon-rss oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="hamburger-header-container p_hfcontainer"> <div id="mobile-hamburger-header" class="hamburger-header p_hfcontainer" layout="38670d8735c043ce93d94809f1715eac===header"> <div class="dmRespRow dmDefaultListContentRow u_1120371234 fullBleedChanged fullBleedMode" style="text-align:center" id="1120371234" mode="4"> <div class="dmRespColsWrapper" id="1092547868"> <div class="u_1857427606 dmRespCol medium-4 large-4 small-2 empty-column" id="1857427606"></div> 
+ <div class="u_1369990997 dmRespCol medium-4 large-4 small-8" id="1369990997" data-binding="W3siYmluZGluZ05hbWUiOiJiYWNrZ3JvdW5kIiwidmFsdWUiOiJzaXRlX2ltYWdlcy5sb2dvIn1d" style="background-image: url('https://lirp.cdn-website.com/8aa65406/dms3rep/multi/opt/TimmyFrenchLogo+%281%29-640w.png') !important;"> <div class="u_1265018392 dmNewParagraph" id="1265018392" style="transition:opacity 1s ease-in-out;line-height:initial;" data-version="5" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLmNvbXBhbnlfbmFtZSJ9XQ==" data-diy-text="">Timmy French</div></div> 
+ <div class="u_1735902752 dmRespCol medium-4 large-4 small-2 empty-column" id="1735902752"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="1256624359" class="dmBody u_dmStyle_template_about"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1607565485"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1078622436"> <div class="dmRespRow u_1992289617 fullBleedChanged fullBleedMode" id="1992289617"> <div class="dmRespColsWrapper" id="1310910613"> <div class="dmRespCol large-12 medium-12 small-12 u_1073762109" id="1073762109"> <div class="imageWidget align-center hasFullWidth u_1466214869 hasFullWidthMobile" data-element-type="image" data-widget-type="image" id="1466214869" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMucGVyc2lzdGVkLmFib3V0In1d"><img src="https://lirp.cdn-website.com/8aa65406/dms3rep/multi/opt/null-66d0f562-432w.jpeg" alt="" id="1181566104" data-diy-image="" data-dm-image-path="https://irp.cdn-website.com/8aa65406/dms3rep/multi/null-66d0f562.jpeg" onerror="handleImageLoadError(this)" fetchpriority="high" height="200.8125" width="360.0"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1287034463" style="text-align: center;" id="1287034463" data-anim-desktop="none"> <div class="dmRespColsWrapper" id="1154526230"> <div class="dmRespCol small-12 medium-12 large-12 u_1887952293" id="1887952293" data-anim-extended="eyJkZXNrdG9wIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJblVwIn19" data-anim-desktop="fadeInUp"> <div class="u_1482073861 dmNewParagraph" id="1482073861" style="transition: none 0s ease 0s; display: block; text-align: left;" data-element-type="paragraph" data-version="5" new-inline-bind-applied="true" data-diy-text=""> <h1 class="text-align-center"><span style="color: var(--color_1); display: initial;"><span class="inline-data-binding" data-encoded-value="QWJvdXQ=" data-inline-binding="site_text.about-headline">Meet Timmy French</span></span></h1> 
+</div> <div class="u_1491957476 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1491957476" layout="divider-style-1"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1304616594"/></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1794990339" style="transition: opacity 1s ease-in-out 0s;" new-inline-bind-applied="true" data-diy-text=""> <p></p> 
+ <div class="inline-data-binding-markup" data-inline-binding="site_text.about_us" data-encoded-value="PHA+VGltbXkgRnJlbmNoIGlzIGEgbGlmZWxvbmcgZmFybWVyIGluIFNoZW5hbmRvYWggQ291bnR5LCB0aGUgY28tb3duZXIgb2YgYmVlZiwgcG91bHRyeSwgZGFpcnksIGFuZCByb3cgY3JvcCBvcGVyYXRpb25zLiBMaWtlIG1vc3QgbW9kZXJuIGZhcm1lcnMsIGhlIGlzIGEgc21hcnQgYnVzaW5lc3NtYW4gYXMgd2VsbC4gPHU+RnJlbmNoIGtub3dzIHRoYXQgZmFybSB2YWx1ZXMgbWFkZSBvdXIgY291bnRyeSBncmVhdDwvdT4gYW5kIGFiYW5kb25pbmcgdGhlbSB0aHJlYXRlbnMgb3VyIGFncmljdWx0dXJhbCBjb21tdW5pdHkgYW5kIGplb3BhcmRpemVzIEFtZXJpY2HigJlzIGZ1dHVyZS48L3A+PHA+PGJyPjwvcD48aDM+IlRoZSBjYXJlZXIgcG9saXRpY2lhbnMgYXJlIHJ1aW5pbmcgdGhpcyBjb3VudHJ5IGFuZCBvbmx5IGNhcmUgYWJvdXQgdGhlbXNlbHZlcyBhbmQgdGhlIHNwZWNpYWwgaW50ZXJlc3RzLiBXZSBuZWVkIHRvIHJlY2xhaW0gb3VyIGNvdW50cnkgYW5kIHN0YW5kIHVwIGZvciBvdXIgY29uc2VydmF0aXZlIHZhbHVlcywgb3VyIGNvbW11bml0eSBhbmQgb3VyIG5laWdoYm9ycy4gVGhhdOKAmXMgd2h5IEnigJltIHJ1bm5pbmcgZm9yIFN0YXRlIFNlbmF0ZS4iPC9oMz48aDM+4oCUVGltbXkgRnJlbmNoPC9oMz48cD48YnI+PC9wPjxwPlRpbW15IEZyZW5jaCBiZWxpZXZlcyBpdOKAmXMgdGltZSB0aGF0IGRlY2VudCBldmVyeWRheSBwZW9wbGUgc3RhbmQgdXAgYW5kIDxzdHJvbmc+dGFrZSBvdXIgY291bnRyeSBiYWNrIGZyb20gdGhlIHBvbGl0aWNpYW5zIGFuZCBzcGVjaWFsIGludGVyZXN0cy48L3N0cm9uZz48L3A+PHA+PGJyPjwvcD48aDM+PHN0cm9uZz48dT5UaW1teSBGcmVuY2ggaXMgRW5kb3JzZWQgQnk6PC91Pjwvc3Ryb25nPiZuYnNwOzwvaDM+PHA+R292ZXJub3IgR2xlbm4gWW91bmdraW48L3A+PHA+QXR0b3JuZXkgR2VuZXJhbCBKYXNvbiBNaXlhcmVzJm5ic3A7PC9wPjxwPlN0YXRlIFNlbmF0b3IgSmlsbCBWb2dlbDwvcD48cD5TdGF0ZSBTZW5hdG9yIE1hcmsgT2JlbnNoYWluPC9wPjxwPlNwZWFrZXIgb2YgdGhlIEhvdXNlIERlbGVnYXRlIFRvZGQgR2lsYmVydDwvcD48cD5EZWxlZ2F0ZSBCaWxsIFdpbGV5PC9wPjxwPlJlcHVibGljYW4gUGFydHkgb2YgVmlyZ2luaWEgQ2hhaXJtYW4gUmljaCBBbmRlcnNvbiZuYnNwOzwvcD48cD5OUkEmbmJzcDs8L3A+PHA+PGJyPjwvcD48cD7igJxBcyBhIGxpZmVsb25nIGZhcm1lciwgVGltbXkgRnJlbmNoIHdpbGwgYmUgYSBncmVhdCBjaGFtcGlvbiBmb3IgdGhlIFNoZW5hbmRvYWggVmFsbGV5IGFuZCB3aWxsIGJlIGEgc3RhdW5jaCBjb25zZXJ2YXRpdmUgd2UgY2FuIGRlcGVuZCBvbi4gSSBhbSBwcm91ZCB0byBlbmRvcnNlIGhpbSBhcyBJIGtub3cgaGUgd2lsbCBiZSBhbiBvdXRzdGFuZGluZyBhZGRpdGlvbiB0byB0aGUgUmVwdWJsaWNhbiBTZW5hdGUgYXMgd2UgYWR2YW5jZSBvdXIgY29tbW9uc2Vuc2UgY29uc2VydmF0aXZlIGFnZW5kYS4iIC0gPHN0cm9uZz5Hb3Zlcm5vciBHbGVubiBZb3VuZ2tpbjwvc3Ryb25nPjwvcD48cD48YnI+PC9wPjxwPiJJJ20gcHJvdWQgdG8gZW5kb3JzZSBUaW1teSBGcmVuY2ggZm9yIFN0YXRlIFNlbmF0ZS4gQSBsaWZlbG9uZyBmYXJtZXIgYW5kIGJ1c2luZXNzbWFuLCBoZSB3aWxsIHN0YW5kIHVwIGZvciBhZ3JpY3VsdHVyZSwgc3RyZW5ndGhlbiBvdXIgY29tbXVuaXRpZXMgd2l0aCBjb21tb25zZW5zZSBjb25zZXJ2YXRpdmUgcG9saWNpZXMsIGFuZCB3b3JrIHRvIGVuc3VyZSB0aGF0IHBhcmVudHMgaGF2ZSBhIHNheSBpbiB0aGUgZWR1Y2F0aW9uIG9mIHRoZWlyIGNoaWxkcmVuLiBJJ20gcHJvdWQgdG8gam9pbiB0aGUgaW1wcmVzc2l2ZSBsaXN0IG9mIGNvbW11bml0eSBsZWFkZXJzIHN1cHBvcnRpbmcgVGltbXkh4oCdIC0gPHN0cm9uZz5BdHRvcm5leSBHZW5lcmFsIEphc29uIE1peWFyZXM8L3N0cm9uZz48L3A+PHA+PGJyPjwvcD48cD4iRm9yIHRoZSBwYXN0IDIwIHllYXJzIEkgaGF2ZSByZXByZXNlbnRlZCBtdWNoIG9mIHdoYXQgaXMgbm93IHRoZSAxc3QgVmlyZ2luaWEgU2VuYXRlIERpc3RyaWN0IGFuZCBoYXZlIGEgcmVjb3JkIGFzIGEgcHJpbmNpcGxlZCBjb25zZXJ2YXRpdmUgbGVhZGVyLiZuYnNwO1Rocm91Z2ggcmVkaXN0cmljdGluZywgbXkgZGlzdHJpY3QgbW92ZXMgc291dGggYW5kIFRpbW15IEZyZW5jaCBpcyB0aGUgUmVwdWJsaWNhbiBub21pbmVlIHRvIHJlcHJlc2VudCB0aGUgbm9ydGhlcm4gU2hlbmFuZG9haCBWYWxsZXkgaW4gdGhlIFNlbmF0ZS4gSSB3YW50IHlvdSB0byBrbm93IHRoYXQgaXQgaXMgdml0YWxseSBpbXBvcnRhbnQgZm9yIFRpbW15IEZyZW5jaCB0byB3aW4gdGhpcyBzZWF0LjwvcD48cD48YnI+PC9wPjxwPkZvciB0aGlzIHJlYXNvbiwgYW5kIGJlY2F1c2UgSSBrbm93IFRpbW15IGFuZCBiZWxpZXZlIHRoYXQgaGUgd2lsbCBiZSBhIGNvbnNlcnZhdGl2ZSBtZW1iZXIgb2YgdGhlIFNlbmF0ZSwgc3RhbmRpbmcgdXAgZm9yIG91ciBWYWxsZXkgVmFsdWVzLCBJIGhhdmUgZW50aHVzaWFzdGljYWxseSBlbmRvcnNlZCBUaW1teSBGcmVuY2guIERvbuKAmXQgdGhyb3cgeW91ciB2b3RlIGF3YXkgYnkgY2FzdGluZyBhIHdyaXRlLWluIGJhbGxvdC4gVGhlIG9ubHkgd2F5IHRoZSBEZW1vY3JhdHMgY2FuIHdpbiB0aGlzIHNlYXQgaXMgZm9yIFJlcHVibGljYW5zIHRvIGJlIGRpdmlkZWQuPC9wPjxwPkFzIGEgZmFybWVyIGFuZCBzbWFsbCBidXNpbmVzcyBvd25lciwgVGltbXkgRnJlbmNoIGtub3dzIHRoZSBpbXBvcnRhbmNlIG9mIHN1cHBvcnRpbmcgb3VyIEFnIGluZHVzdHJ5IGhlcmUgaW4gdGhlIFZhbGxleSBhbmQgYWNyb3NzIFZpcmdpbmlhLiZuYnNwO0hlIHdpbGwgc3VwcG9ydCBsYXcgZW5mb3JjZW1lbnQgYW5kIHdpbGwgaGVscCByb2xsIGJhY2sgYnVyZGVuc29tZSByZWd1bGF0aW9ucyBvbiBidXNpbmVzc2VzLiBNb3N0IGltcG9ydGFudGx5LCBoZSB3aWxsIHN0YW5kIHVwIGZvciBvdXIgZmFtaWx5IHZhbHVlcy4gVGltbXkgd2lsbCBtYWtlIGFuIGV4Y2VsbGVudCByZXByZXNlbnRhdGl2ZSBmb3IgdGhlIGNpdGl6ZW5zIG9mIFNoZW5hbmRvYWgsIFdhcnJlbiwgRnJlZGVyaWNrLCBDbGFya2UgYW5kIFdpbmNoZXN0ZXIuIEkgc2luY2VyZWx5IGhvcGUgdGhhdCB5b3Ugd2lsbCBqb2luIG1lIGluIHN1cHBvcnRpbmcgVGltbXkgRnJlbmNoIGZvciB0aGUgVmlyZ2luaWEgU2VuYXRlLiIgLSA8c3Ryb25nPlNlbmF0b3IgTWFyayBPYmVuc2hhaW48L3N0cm9uZz48L3A+PHA+PHN0cm9uZz7vu788L3N0cm9uZz48L3A+" contenteditable="false"> <p>Timmy French is a lifelong farmer in Shenandoah County, the co-owner of beef, poultry, dairy, and row crop operations. Like most modern farmers, he is a smart businessman as well. <u>French knows that farm values made our country great</u> 
+and abandoning them threatens our agricultural community and jeopardizes America&rsquo;s future.</p> 
+ <p><br/></p> 
+ <h3>&quot;The career politicians are ruining this country and only care about themselves and the special interests. We need to reclaim our country and stand up for our conservative values, our community and our neighbors. That&rsquo;s why I&rsquo;m running for State Senate.&quot;</h3> 
+ <h3>&mdash;Timmy French</h3> 
+ <p><br/></p> 
+ <p>Timmy French believes it&rsquo;s time that decent everyday people stand up and <strong>take our country back from the politicians and special interests.</strong> 
+ </p> 
+ <p><br/></p> 
+ <h3> <strong> <u>Timmy French is Endorsed By:</u> 
+</strong> 
+ &nbsp;</h3> 
+ <p>Governor Glenn Youngkin</p> 
+ <p>Attorney General Jason Miyares&nbsp;</p> 
+ <p>State Senator Jill Vogel</p> 
+ <p>State Senator Mark Obenshain</p> 
+ <p>Speaker of the House Delegate Todd Gilbert</p> 
+ <p>Delegate Bill Wiley</p> 
+ <p>Republican Party of Virginia Chairman Rich Anderson&nbsp;</p> 
+ <p>NRA&nbsp;</p> 
+ <p><br/></p> 
+ <p>&ldquo;As a lifelong farmer, Timmy French will be a great champion for the Shenandoah Valley and will be a staunch conservative we can depend on. I am proud to endorse him as I know he will be an outstanding addition to the Republican Senate as we advance our commonsense conservative agenda.&quot; - <strong>Governor Glenn Youngkin</strong> 
+ </p> 
+ <p><br/></p> 
+ <p>&quot;I'm proud to endorse Timmy French for State Senate. A lifelong farmer and businessman, he will stand up for agriculture, strengthen our communities with commonsense conservative policies, and work to ensure that parents have a say in the education of their children. I'm proud to join the impressive list of community leaders supporting Timmy!&rdquo; - <strong>Attorney General Jason Miyares</strong> 
+ </p> 
+ <p><br/></p> 
+ <p>&quot;For the past 20 years I have represented much of what is now the 1st Virginia Senate District and have a record as a principled conservative leader.&nbsp;Through redistricting, my district moves south and Timmy French is the Republican nominee to represent the northern Shenandoah Valley in the Senate. I want you to know that it is vitally important for Timmy French to win this seat.</p> 
+ <p><br/></p> 
+ <p>For this reason, and because I know Timmy and believe that he will be a conservative member of the Senate, standing up for our Valley Values, I have enthusiastically endorsed Timmy French. Don&rsquo;t throw your vote away by casting a write-in ballot. The only way the Democrats can win this seat is for Republicans to be divided.</p> 
+ <p>As a farmer and small business owner, Timmy French knows the importance of supporting our Ag industry here in the Valley and across Virginia.&nbsp;He will support law enforcement and will help roll back burdensome regulations on businesses. Most importantly, he will stand up for our family values. Timmy will make an excellent representative for the citizens of Shenandoah, Warren, Frederick, Clarke and Winchester. I sincerely hope that you will join me in supporting Timmy French for the Virginia Senate.&quot; - <strong>Senator Mark Obenshain</strong> 
+ </p> 
+ <p> <strong></strong> 
+ </p> 
+</div> 
+ <span style="display: initial;"><span class="ql-cursor"></span></span><p></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1885176994"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1824894450 dmRespRow" style="text-align: center;" id="1824894450"> <div class="dmRespColsWrapper" id="1089197514"> <div class="u_1095414372 dmRespCol small-12 medium-12 large-12" id="1095414372"> <span id="1502915977"></span> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1783564820" style="transition: opacity 1s ease-in-out 0s;" new-inline-bind-applied="true" data-diy-text=""> <h2 class="m-text-align-center text-align-center"><span style="color: var(--color_2); text-shadow: none; display: initial;"><span class="inline-data-binding" data-encoded-value="Rm9sbG93IFVzIE9uIFNvY2lhbCBNZWRpYQ==" data-inline-binding="site_text.social-cta">Follow Timmy French</span></span></h2> 
+</div> 
+ <div class="u_1630004510 align-center text-align-center dmSocialHub" id="1630004510" dmle_extension="social_hub" data-element-type="social_hub" data-binding="W3siYmluZGluZ05hbWUiOiJzb2NpYWwiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwuc29jaWFsIn1d" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://facebook.com/timmyfrenchva" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://twitter.com/timmyfrenchva" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Twitter&apos;)"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://instagram.com/timmyfrenchva" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://secure.winred.com/timmy-french-for-the-senate-of-virginia/donate-today" target="_blank" dm_dont_rewrite_url="true" aria-label="rss" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Rss&apos;)"> <span class="dmSocialRss icon-rss oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1916535278" id="1916535278"> <div class="dmRespColsWrapper" id="1117372495"> <div class="dmRespCol large-12 medium-12 small-12 u_1483908481" id="1483908481"> <div class="u_1276324518 dmNewParagraph" data-element-type="paragraph" id="1276324518" style="transition: none 0s ease 0s; display: block; text-align: right;" data-version="5" new-inline-bind-applied="true" data-diy-text=""> <h2 class="m-text-align-center text-align-center"><span style="color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px; display: initial;"><span class="inline-data-binding" data-encoded-value="U2lnbiBVcCBGb3IgVXBkYXRlcw==" data-inline-binding="site_text.newsletter-cta">Sign Up For Updates</span></span></h2> 
+</div> <div class="u_1837348934 dmform default native-inputs" data-element-type="dContactUsRespId" captcha="true" data-require-captcha="true" data-captcha-position="bottomleft" id="1837348934" data-layout="layout-4"> <h3 class="dmform-title dmwidget-title" id="1763519008" hide="true">newsletter</h3> 
+ <div class="dmform-wrapper" id="1657746244" captcha-lang="en"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1847363745"> <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1306124382"> <label for="1159872235" id="1192023797" class="" hide="true" data-dm-for="dmform-0">Name:</label> 
+<input type="text" class="" name="dmform-0" id="1159872235" placeholder="Name" data-placeholder-original="Name"/><input type="hidden" name="label-dmform-0" value="Name" id="1372099587"/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1443790972"> <label for="1486987420" id="1604339654" class="" hide="true" data-dm-for="dmform-1">Email:</label> 
+<input type="email" class="" name="dmform-1" id="1486987420" placeholder="Email" data-placeholder-original="Email"/><input type="hidden" name="label-dmform-1" value="Email" id="1008195678"/></div> 
+ <span id="undefined_clear" class="dmWidgetClear"></span> 
+ <span id="undefined_clear_clear" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" id="1223280083"><input class="" name="submit" type="submit" value="Sign Up" id="1963954138"/></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLtlp9lrnzYqjrBmvgWvj0lc0BNwPlHx5+kpx1xp12bQHeNnsWoOcTDWN3KYLdnOLG8=" id="1784948067" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1994722645"/><input name="dmformsubject" type="hidden" value="Form Message" id="1635402964"/><input name="dmformfrom" type="hidden" value="" id="1121144403"/><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrS5NYdk0POWQp4/PH+p4tZgvaxjemUNyOtu4YzXA/kRBWNGd1IOc6Z/ax8xFrPkwBRc7DqVm5kBas43/YWQ+zg3CKsGBXqTfIR+fI54k1XUXEz58BCwvHOur9hxs+r36gZGvjVqG11lbNMtx3E3/gWz36WUT98NB6X3zJYKnfxyqk659FaBGZjtwmDsvtFTL2FRb7G3U9lLR0pDeCnI3EwFO4ty9RumwBQA==" data-dec="true"/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" id="1859039282">Thank you for contacting us.<br id="1216002135"/>We will get back to you as soon as possible.</div> 
+ <div class="dmform-error" style="display:none" id="1389156548">Oops, there was an error sending your message.<br id="1756071393"/>Please try again later.</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1355464176 dmRespRow" id="1355464176"> <div class="dmRespColsWrapper" id="1317662221"> <div class="u_1179898756 dmRespCol small-12 large-3 medium-3" id="1179898756"> <div class="dmRespRow u_1787216544" id="1787216544"> <div class="dmRespColsWrapper" id="1416217692"> <div class="u_1161702952 dmRespCol small-12 medium-12 large-12" id="1161702952"> <div data-element-type="spacer" class="dmSpacer u_1494643225" id="1494643225"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1682737881 dmRespCol small-12 large-6 medium-6" id="1682737881"> <div class="u_1857192519 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1857192519" style="transition: opacity 1s ease-in-out 0s; text-align: left; display: block;" new-inline-bind-applied="true" data-diy-text=""><p class="text-align-center"><span style="color: rgb(255, 255, 255); display: initial;"><span class="inline-data-binding" data-encoded-value="UGFpZCBmb3IgYnkgdGhlIGNvbW1pdHRlZS4=" data-inline-binding="site_text.disclaimer">Authorized and paid for by Timmy French for the Senate of Virginia</span></span></p></div> 
+ <nav class="u_1314025540 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_4" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" data-divider="PIPE" id="1314025540" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/privacy-policy" class="unifiednav__item    " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Privacy Policy
+        " data-auto="page-text-style">Privacy Policy<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="https://ryvall.com" class="unifiednav__item    " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Powered by Ryvall" data-auto="page-text-style">Powered by Ryvall<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1302211624 dmRespCol small-12 large-3 medium-3" id="1302211624"> <div data-element-type="spacer" class="dmSpacer u_1713836694" id="1713836694"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" role="button" aria-label="menu opener" tabindex="0"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+ <a class="dmBackToTop" id="dmBackToTop" aria-label="Scroll to top" href="#dmContent"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<link rel="preload" href="https://irp.cdn-website.com/fonts/css2?family=Roboto+Slab:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Droid+Serif:ital,wght@0,400;0,700&amp;subset=latin-ext&amp;display=swap"  as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-mobile-one-package-structured-global-->
+<link rel="preload" as="style" fetchpriority="low" onload="loadCSS(this)" href="https://static.cdn-website.com/mnlt/production/3896/_dm/s/rt/dist/css/d-css-runtime-mobile-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+
+<link rel="preload" href="https://irp.cdn-website.com/WIDGET_CSS/production_3896/42035e6e3f0f35d2f82168f618a743dd.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="about"] #dm [data-show-on-page-only="about"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link rel="preload" href="https://irp.cdn-website.com/8aa65406/files/8aa65406_0.min.css?v=27" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody *.u_1947702867 .dmforminput input{
+text-align:LEFT !important;
+padding:20px !important}
+*#dm *.dmBody *.u_1947702867 .dmforminput textarea{
+text-align:LEFT !important;
+width:100% !important;
+border-radius:10px !important}
+*#dm *.dmBody *.u_1947702867 .dmforminput .fileUploadLink{
+text-align:LEFT !important}
+*#dm *.dmBody *.u_1947702867 .checkboxwrapper span{
+text-align:LEFT !important}
+*#dm *.dmBody *.u_1947702867 .radiowrapper span{
+text-align:LEFT !important}
+*#dm *.dmBody *.u_1947702867 .optinwrapper div{
+text-align:LEFT !important}
+*#dm *.dmBody *.u_1947702867 .freetextwrapper{
+text-align:LEFT !important}
+*#dm *.dmBody *.u_1947702867 .dmforminput select{
+text-align:LEFT !important}
+*#dm *.dmBody *.u_1947702867 .dmforminput option{
+text-align:LEFT !important}
+*#dm *.dmBody *.u_1947702867 .dmformsubmit{
+float:RIGHT !important}
+*#dm *.dmBody div.u_1947702867 input:not([type="submit"]){
+border-radius:30px !important;
+width:100% !important}
+*#dm *.dmBody nav.u_1869870532{
+color:black !important}
+#dm div.dmPrettyList.ed-version .listText .itemText{
+white-space:normal !important;
+margin:0 !important}
+p{
+margin:0 !important}
+*#dm *.dmBody div.u_1992289617{
+background-color:var(--color_1) !important}
+iframe{
+filter:width(100%) !important}
+.responsiveCal iframe{
+width:100% !important}
+*#dm *.dmBody div.u_1887952293{
+box-shadow:rgba(0,0,0,0.2) 0 0 11px 0 !important;
+-moz-box-shadow:rgba(0,0,0,0.2) 0 0 11px 0 !important;
+-webkit-box-shadow:rgba(0,0,0,0.2) 0 0 11px 0 !important;
+border-radius:3px !important;
+-moz-border-radius:3px !important;
+-webkit-border-radius:3px !important;
+background-image:initial !important;
+background-color:rgba(255,255,255,1) !important;
+border-style:solid !important;
+border-width:0 !important}
+*#dm *.dmBody div.u_1491957476 hr{
+background:none !important;
+height:0 !important;
+background-color:transparent !important;
+background-repeat:no-repeat !important;
+background-size:initial !important;
+min-height:0 !important;
+border-color:currentColor !important;
+border-width:1px !important;
+border-top-style:solid !important;
+color:rgba(229,229,229,1) !important}
+*#dm *.dmBody div.u_1287034463{
+background-image:initial !important;
+background-color:rgba(243,243,243,1) !important}
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody h3.u_1482073861{
+padding-right:15px !important;
+padding-left:15px !important}
+*#dm *.dmBody div.u_1482073861{
+float:none !important;
+top:0 !important;
+left:0 !important;
+width:100% !important;
+position:relative !important;
+height:auto !important;
+padding-top:2px !important;
+padding-left:0 !important;
+padding-bottom:2px !important;
+margin-right:auto !important;
+margin-left:auto !important;
+max-width:calc(100% - 0px) !important;
+margin-top:0 !important;
+margin-bottom:8px !important;
+padding-right:0 !important;
+min-width:25px !important}
+*#dm *.dmBody div.u_1947702867{
+margin-left:0 !important;
+padding-top:0 !important;
+padding-left:0 !important;
+padding-bottom:0 !important;
+margin-top:0 !important;
+margin-bottom:0 !important;
+margin-right:0 !important;
+padding-right:0 !important}
+*#dm *.dmBody div.u_1992289617{
+padding-top:0 !important;
+padding-left:0 !important;
+padding-bottom:0 !important;
+padding-right:0 !important;
+width:auto !important}
+*#dm *.dmBody div.u_1073762109{
+margin-left:0 !important;
+padding-top:0 !important;
+padding-left:0 !important;
+padding-bottom:0 !important;
+margin-top:0 !important;
+margin-bottom:0 !important;
+margin-right:0 !important;
+padding-right:0 !important}
+*#dm *.dmBody div.u_1887952293{
+padding-top:10px !important;
+margin-top:-10px !important;
+padding-bottom:10px !important;
+margin-left:0 !important;
+padding-left:10px !important;
+margin-bottom:0 !important;
+margin-right:0 !important;
+padding-right:10px !important}
+*#dm *.dmBody div.u_1287034463{
+padding-top:0 !important;
+padding-right:15px !important;
+padding-left:15px !important;
+padding-bottom:10px !important;
+width:auto !important}
+*#dm *.dmBody div.u_1466214869{
+important:true !important;
+width:100% !important;
+height:auto !important}
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_3896";
+    var build = "2023-11-03T09_19_05";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2023-11-03T09_19_05";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+    <script type="text/javascript" id='d-js-jquery'
+            src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+    <!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "mobile";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/3896';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/3896';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+    rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtCommonProps["keyboard.navigation.enabled"] =true;
+    rtCommonProps["scripts.widgetCount.enabled"] =true;
+    rtCommonProps["run.imageCount.script.enabled"] =false;
+    rtCommonProps["maps.cookiebot.enabled"] =true;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+    rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+    rtCommonProps["new.store.accountPage.ecwid.resetPassword.fix"] =true;
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+    rtCommonProps["geocode.search.localize"] =false;
+    rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["contact.form.date.format.enabled"] = true;
+    rtCommonProps["filestack.uploadToTempBucket.enabled"] = true;
+    rtCommonProps["platform.monolith.loginBar.getUserLoggedIn.enabled"] = true;
+    rtCommonProps["platform.monolith.loginBar.layout.enabled"] = true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/3896/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-mobile.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/3896/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    
+});
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  </script>
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '8aa65406'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en"></div>
+<!-- Alias: 8aa65406 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<script>
+    jQuery(window).on('load', function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+    });
+</script>
+<script>
+    dmAPI.loadScript(
+        window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+        function () {
+            dmAPI.runOnReady('lozadInit', function () {
+                window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                    img.addEventListener('load', function (event) {
+                        var img = event.target;
+                        img.style.filter = 'blur(0)';
+                        setTimeout(function () {
+                            $(img).closest('.imageWidget').addClass('lazyLoaded');
+                        }, 250)
+                    });
+                });
+                lozad('.lazy', {
+                    threshold: 0.1,
+                    loaded: function (element) {
+                        if (element.getAttribute('data-background-image')) {
+                            element.style.setProperty(
+                                'background-image',
+                                "url('" + element.getAttribute('data-background-image') + "')",
+                                "important"
+                            );
+                        }
+                    }
+                }).observe();
+            });
+        }
+    );
+</script>
+<!--  End Script tags -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

@@ -39,8 +39,17 @@ def count_candidate_files():
             print(f"{candidate} has {file_counts} different file counts: {candidate_to_num_files[candidate]}")
             print(f"Run info: {candidate_run_info[candidate]}\n")
 
+def count_downloaded_candidates():
+    # count the number of folders in html/House and html/Senate
+    import os
+    house_count = len(os.listdir("html/House"))
+    senate_count = len(os.listdir("html/Senate"))
+    # print total candidates
+    print(f"Total: {house_count + senate_count} / 222 candidates")
+
 # main method
 if __name__ == "__main__":
     # download_candidate_wget('temp.txt')
     # clear_empty_files()
-    count_candidate_files()
+    # count_candidate_files()
+    count_downloaded_candidates()

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="ru-RU">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="ru-RU">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="ru-RU">
+<!--<![endif]-->
+
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.peakeforsenate.com/xmlrpc.php">
+	
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WTTLDGK');</script>
+<!-- End Google Tag Manager -->
+	
+	<title>8TH District &#8211; Senator Mark Peake</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Senator Mark Peake &raquo; Feed" href="https://www.peakeforsenate.com/ru/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Senator Mark Peake &raquo; Comments Feed" href="https://www.peakeforsenate.com/ru/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/www.peakeforsenate.com\/wp-includes\/js\/wp-emoji.js","twemoji":"https:\/\/www.peakeforsenate.com\/wp-includes\/js\/twemoji.js"}};
+/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+/**
+ * Emoji Settings as exported in PHP via _print_emoji_detection_script().
+ * @typedef WPEmojiSettings
+ * @type {object}
+ * @property {?object} source
+ * @property {?string} source.concatemoji
+ * @property {?string} source.twemoji
+ * @property {?string} source.wpemoji
+ * @property {?boolean} DOMReady
+ * @property {?Function} readyCallback
+ */
+
+/**
+ * Support tests.
+ * @typedef SupportTests
+ * @type {object}
+ * @property {?boolean} flag
+ * @property {?boolean} emoji
+ */
+
+/**
+ * IIFE to detect emoji support and load Twemoji if needed.
+ *
+ * @param {Window} window
+ * @param {Document} document
+ * @param {WPEmojiSettings} settings
+ */
+( function wpEmojiLoader( window, document, settings ) {
+	if ( typeof Promise === 'undefined' ) {
+		return;
+	}
+
+	var sessionStorageKey = 'wpEmojiSettingsSupports';
+	var tests = [ 'flag', 'emoji' ];
+
+	/**
+	 * Checks whether the browser supports offloading to a Worker.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {boolean}
+	 */
+	function supportsWorkerOffloading() {
+		return (
+			typeof Worker !== 'undefined' &&
+			typeof OffscreenCanvas !== 'undefined' &&
+			typeof URL !== 'undefined' &&
+			URL.createObjectURL &&
+			typeof Blob !== 'undefined'
+		);
+	}
+
+	/**
+	 * @typedef SessionSupportTests
+	 * @type {object}
+	 * @property {number} timestamp
+	 * @property {SupportTests} supportTests
+	 */
+
+	/**
+	 * Get support tests from session.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {?SupportTests} Support tests, or null if not set or older than 1 week.
+	 */
+	function getSessionSupportTests() {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = JSON.parse(
+				sessionStorage.getItem( sessionStorageKey )
+			);
+			if (
+				typeof item === 'object' &&
+				typeof item.timestamp === 'number' &&
+				new Date().valueOf() < item.timestamp + 604800 && // Note: Number is a week in seconds.
+				typeof item.supportTests === 'object'
+			) {
+				return item.supportTests;
+			}
+		} catch ( e ) {}
+		return null;
+	}
+
+	/**
+	 * Persist the supports in session storage.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {SupportTests} supportTests Support tests.
+	 */
+	function setSessionSupportTests( supportTests ) {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = {
+				supportTests: supportTests,
+				timestamp: new Date().valueOf()
+			};
+
+			sessionStorage.setItem(
+				sessionStorageKey,
+				JSON.stringify( item )
+			);
+		} catch ( e ) {}
+	}
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} set1 Set of Emoji to test.
+	 * @param {string} set2 Set of Emoji to test.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( context, set1, set2 ) {
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set1, 0, 0 );
+		var rendered1 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set2, 0, 0 );
+		var rendered2 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		return rendered1.every( function ( rendered2Data, index ) {
+			return rendered2Data === rendered2[ index ];
+		} );
+	}
+
+	/**
+	 * Determines if the browser properly renders Emoji that Twemoji can supplement.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( context, type, emojiSetsRenderIdentically ) {
+		var isIdentical;
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. Added in Unicode 13.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDFF3\uFE0F\u200D\u26A7\uFE0F', // as a zero-width joiner sequence
+					'\uD83C\uDFF3\uFE0F\u200B\u26A7\uFE0F' // separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDDFA\uD83C\uDDF3', // as the sequence of two code points
+					'\uD83C\uDDFA\u200B\uD83C\uDDF3' // as the two code points separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather a five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					// as the flag sequence
+					'\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F',
+					// with each code point separated by a zero-width space
+					'\uD83C\uDFF4\u200B\uDB40\uDC67\u200B\uDB40\uDC62\u200B\uDB40\uDC65\u200B\uDB40\uDC6E\u200B\uDB40\uDC67\u200B\uDB40\uDC7F'
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Why can't we be friends? Everyone can now shake hands in emoji, regardless of skin tone!
+				 *
+				 * To test for Emoji 14.0 support, try to render a new emoji: Handshake: Light Skin Tone, Dark Skin Tone.
+				 *
+				 * The Handshake: Light Skin Tone, Dark Skin Tone emoji is a ZWJ sequence combining 🫱 Rightwards Hand,
+				 * 🏻 Light Skin Tone, a Zero Width Joiner, 🫲 Leftwards Hand, and 🏿 Dark Skin Tone.
+				 *
+				 * 0x1FAF1 == Rightwards Hand
+				 * 0x1F3FB == Light Skin Tone
+				 * 0x200D == Zero-Width Joiner (ZWJ) that links the code points for the new emoji or
+				 * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+				 * 0x1FAF2 == Leftwards Hand
+				 * 0x1F3FF == Dark Skin Tone.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83E\uDEF1\uD83C\uDFFB\u200D\uD83E\uDEF2\uD83C\uDFFF', // as the zero-width joiner sequence
+					'\uD83E\uDEF1\uD83C\uDFFB\u200B\uD83E\uDEF2\uD83C\uDFFF' // separated by a zero-width space
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Checks emoji support tests.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {string[]} tests Tests.
+	 * @param {Function} browserSupportsEmoji Reference to browserSupportsEmoji function, needed due to minification.
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {SupportTests} Support tests.
+	 */
+	function testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically ) {
+		var canvas;
+		if (
+			typeof WorkerGlobalScope !== 'undefined' &&
+			self instanceof WorkerGlobalScope
+		) {
+			canvas = new OffscreenCanvas( 300, 150 ); // Dimensions are default for HTMLCanvasElement.
+		} else {
+			canvas = document.createElement( 'canvas' );
+		}
+
+		var context = canvas.getContext( '2d', { willReadFrequently: true } );
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		var supports = {};
+		tests.forEach( function ( test ) {
+			supports[ test ] = browserSupportsEmoji( context, test, emojiSetsRenderIdentically );
+		} );
+		return supports;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {string} src The url where the script is located.
+	 *
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+		script.src = src;
+		script.defer = true;
+		document.head.appendChild( script );
+	}
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	// Create a promise for DOMContentLoaded since the worker logic may finish after the event has fired.
+	var domReadyPromise = new Promise( function ( resolve ) {
+		document.addEventListener( 'DOMContentLoaded', resolve, {
+			once: true
+		} );
+	} );
+
+	// Obtain the emoji support from the browser, asynchronously when possible.
+	new Promise( function ( resolve ) {
+		var supportTests = getSessionSupportTests();
+		if ( supportTests ) {
+			resolve( supportTests );
+			return;
+		}
+
+		if ( supportsWorkerOffloading() ) {
+			try {
+				// Note that the functions are being passed as arguments due to minification.
+				var workerScript =
+					'postMessage(' +
+					testEmojiSupports.toString() +
+					'(' +
+					[
+						JSON.stringify( tests ),
+						browserSupportsEmoji.toString(),
+						emojiSetsRenderIdentically.toString()
+					].join( ',' ) +
+					'));';
+				var blob = new Blob( [ workerScript ], {
+					type: 'text/javascript'
+				} );
+				var worker = new Worker( URL.createObjectURL( blob ), { name: 'wpTestEmojiSupports' } );
+				worker.onmessage = function ( event ) {
+					supportTests = event.data;
+					setSessionSupportTests( supportTests );
+					worker.terminate();
+					resolve( supportTests );
+				};
+				return;
+			} catch ( e ) {}
+		}
+
+		supportTests = testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically );
+		setSessionSupportTests( supportTests );
+		resolve( supportTests );
+	} )
+		// Once the browser emoji support has been obtained from the session, finalize the settings.
+		.then( function ( supportTests ) {
+			/*
+			 * Tests the browser support for flag emojis and other emojis, and adjusts the
+			 * support settings accordingly.
+			 */
+			for ( var test in supportTests ) {
+				settings.supports[ test ] = supportTests[ test ];
+
+				settings.supports.everything =
+					settings.supports.everything && settings.supports[ test ];
+
+				if ( 'flag' !== test ) {
+					settings.supports.everythingExceptFlag =
+						settings.supports.everythingExceptFlag &&
+						settings.supports[ test ];
+				}
+			}
+
+			settings.supports.everythingExceptFlag =
+				settings.supports.everythingExceptFlag &&
+				! settings.supports.flag;
+
+			// Sets DOMReady to false and assigns a ready function to settings.
+			settings.DOMReady = false;
+			settings.readyCallback = function () {
+				settings.DOMReady = true;
+			};
+		} )
+		.then( function () {
+			return domReadyPromise;
+		} )
+		.then( function () {
+			// When the browser can not render everything we need to load a polyfill.
+			if ( ! settings.supports.everything ) {
+				settings.readyCallback();
+
+				var src = settings.source || {};
+
+				if ( src.concatemoji ) {
+					addScript( src.concatemoji );
+				} else if ( src.wpemoji && src.twemoji ) {
+					addScript( src.twemoji );
+					addScript( src.wpemoji );
+				}
+			}
+		} );
+} )( window, document, window._wpemojiSettings );
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://www.peakeforsenate.com/wp-includes/css/dist/block-library/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-active-filters-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/active-filters.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-add-to-cart-form-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/add-to-cart-form.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-packages-style-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/packages-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-all-products-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/all-products.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-all-reviews-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/all-reviews.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-attribute-filter-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/attribute-filter.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-breadcrumbs-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/breadcrumbs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-catalog-sorting-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/catalog-sorting.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-customer-account-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/customer-account.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-featured-category-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/featured-category.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-featured-product-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/featured-product.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-mini-cart-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-price-filter-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/price-filter.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-add-to-cart-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-add-to-cart.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-button-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-button.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-categories-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-categories.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-image-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-image.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-image-gallery-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-image-gallery.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-query-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-query.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-results-count-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-results-count.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-reviews-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-reviews.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-sale-badge-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-sale-badge.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-search-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-search.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-sku-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-sku.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-stock-indicator-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-stock-indicator.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-summary-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-summary.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-title-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-title.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-rating-filter-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/rating-filter.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-reviews-by-category-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/reviews-by-category.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-reviews-by-product-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/reviews-by-product.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-details-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-details.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-single-product-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/single-product.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-stock-filter-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/stock-filter.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-cart-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/cart.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-checkout-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/checkout.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-mini-cart-contents-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart-contents.css' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.peakeforsenate.com/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='give-styles-css' href='https://www.peakeforsenate.com/wp-content/plugins/give/assets/dist/css/give.css' type='text/css' media='all' />
+<link rel='stylesheet' id='give-donation-summary-style-frontend-css' href='https://www.peakeforsenate.com/wp-content/plugins/give/assets/dist/css/give-donation-summary.css' type='text/css' media='all' />
+<link rel='stylesheet' id='charitable-styles-css' href='https://www.peakeforsenate.com/wp-content/plugins/charitable/assets/css/charitable.css' type='text/css' media='all' />
+<link rel='stylesheet' id='default-style-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cp-widgets-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/css/widgets.css' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-woostyle-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/css/wp-commerce.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cp-bootstrap-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cp-animate-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/css/animate.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cp-svg-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/css/svg.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cp-form-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/css/form.css' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/css/prettyphoto.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/font-awesome/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='googleFonts-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&#038;subset=latin-ext%2Ccyrillic%2Clatin%2Cgreek%2Ccyrillic-ext%2Cvietnamese%2Cgreek-ext&#038;ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-smoothness-css' href='https://www.peakeforsenate.com/wp-content/plugins/contact-form-7/includes/js/jquery-ui/themes/smoothness/jquery-ui.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='vcv:assets:front:style-css' href='https://www.peakeforsenate.com/wp-content/plugins/visualcomposer/public/dist/front.bundle.css' type='text/css' media='all' />
+<link rel='stylesheet' id='vcv:assets:source:styles:assetslibraryimagefilterdistimagefilterbundlecss-css' href='https://www.peakeforsenate.com/wp-content/plugins/visualcomposer/public/sources/assetsLibrary/imageFilter/dist/imageFilter.bundle.css' type='text/css' media='all' />
+<style id='vcv:assets:front:style:947-inline-css' type='text/css'>
+.vce-col{box-sizing:border-box;display:-ms-flexbox;display:flex;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;min-width:1em;position:relative}.vce-col--auto{-ms-flex-preferred-size:auto;-ms-flex:1;flex:1;flex-basis:auto}.vce-col-content,.vce-col-inner{overflow-wrap:break-word;position:relative;transition:box-shadow .2s}.vce-col-inner{width:100%}.vce-col-direction--rtl{direction:rtl}.vce-element--has-background>.vce-col-inner>.vce-col-content{padding-left:30px;padding-right:30px;padding-top:30px}.vce-col.vce-col--all-hide{display:none}@media (min-width:0),print{.vce-col--xs-auto{-ms-flex:1 1 0;flex:1 1 0;width:auto}.vce-col--xs-1{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.vce-col.vce-col--xs-visible{display:-ms-flexbox;display:flex}.vce-col.vce-col--xs-hide{display:none}}.vce-row-container>.vce-row>.vce-row-content>.vce-col>.vce-col-inner{padding:0}@media (min-width:544px),print{.vce-col--sm-auto{-ms-flex:1 1 0;flex:1 1 0;width:auto}.vce-col--sm-1{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.vce-col.vce-col--sm-visible{display:-ms-flexbox;display:flex}.vce-col.vce-col--sm-hide{display:none}}@media (min-width:768px),print{.vce-col--md-auto{-ms-flex:1 1 0;flex:1 1 0;width:auto}.vce-col--md-1{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.vce-col.vce-col--md-visible{display:-ms-flexbox;display:flex}.vce-col.vce-col--md-hide{display:none}}@media print,screen and (min-width:992px){.vce-col--lg-auto{-ms-flex:1 1 0;flex:1 1 0;width:1px}.vce-col--lg-1{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.vce-col.vce-col--lg-visible{display:-ms-flexbox;display:flex}.vce-col.vce-col--lg-hide{display:none}}@media (min-width:1200px),print{.vce-col--xl-auto{-ms-flex:1 1 0;flex:1 1 0;width:auto}.vce-col--xl-1{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.vce-col.vce-col--xl-visible{display:-ms-flexbox;display:flex}.vce-col.vce-col--xl-hide{display:none}}@media (min-width:0) and (max-width:543px){.vce-element--xs--has-background>.vce-col-inner>.vce-col-content{padding-left:30px;padding-right:30px;padding-top:30px}}@media (min-width:544px) and (max-width:767px){.vce-element--sm--has-background>.vce-col-inner>.vce-col-content{padding-left:30px;padding-right:30px;padding-top:30px}}@media (min-width:768px) and (max-width:991px){.vce-element--md--has-background>.vce-col-inner>.vce-col-content{padding-left:30px;padding-right:30px;padding-top:30px}}@media (min-width:992px) and (max-width:1199px){.vce-element--lg--has-background>.vce-col-inner>.vce-col-content{padding-left:30px;padding-right:30px;padding-top:30px}}@media (min-width:1200px){.vce-element--xl--has-background>.vce-col-inner>.vce-col-content{padding-left:30px;padding-right:30px;padding-top:30px}}.vce{margin-bottom:30px}.vce-row-container{width:100%}.vce-row{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;margin-left:0;position:relative;transition:box-shadow .2s}.vce-row,.vce-row-content>.vce-col:last-child{margin-right:0}.vce-row-full-height{min-height:100vh}.vce-row-content{-ms-flex-pack:start;-ms-flex-line-pack:start;-ms-flex-align:start;align-content:flex-start;align-items:flex-start;display:-ms-flexbox;display:flex;-ms-flex:1 1 auto;flex:1 1 auto;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;justify-content:flex-start;min-height:1em;position:relative}.vce-row-wrap--reverse>.vce-row-content{-ms-flex-line-pack:end;-ms-flex-align:end;align-content:flex-end;align-items:flex-end;-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}.vce-row-columns--top>.vce-row-content{-ms-flex-line-pack:start;align-content:flex-start}.vce-row-columns--top.vce-row-wrap--reverse>.vce-row-content{-ms-flex-line-pack:end;align-content:flex-end}.vce-row-columns--middle>.vce-row-content{-ms-flex-line-pack:center;align-content:center}.vce-row-columns--bottom>.vce-row-content{-ms-flex-line-pack:end;align-content:flex-end}.vce-row-columns--bottom.vce-row-wrap--reverse>.vce-row-content{-ms-flex-line-pack:start;align-content:flex-start}.vce-row-columns--bottom>.vce-row-content:after,.vce-row-columns--middle>.vce-row-content:after,.vce-row-columns--top>.vce-row-content:after{content:"";display:block;height:0;overflow:hidden;visibility:hidden;width:100%}.vce-row-content--middle>.vce-row-content>.vce-col>.vce-col-inner{-ms-flex-pack:center;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;justify-content:center}.vce-row-content--bottom>.vce-row-content>.vce-col>.vce-col-inner{-ms-flex-pack:end;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;justify-content:flex-end}.vce-row-equal-height>.vce-row-content{-ms-flex-align:stretch;align-items:stretch}.vce-row-columns--stretch>.vce-row-content{-ms-flex-line-pack:stretch;-ms-flex-align:stretch;align-content:stretch;align-items:stretch}.vce-row[data-vce-full-width=true]{box-sizing:border-box;position:relative}.vce-row[data-vce-stretch-content=true]{padding-left:30px;padding-right:30px}.vce-row[data-vce-stretch-content=true].vce-row-no-paddings{padding-left:0;padding-right:0}.vce-row.vce-element--has-background{padding-left:30px;padding-right:30px;padding-top:30px}.vce-row.vce-element--has-background[data-vce-full-width=true]:not([data-vce-stretch-content=true]){padding-left:0;padding-right:0}.vce-row.vce-element--has-background.vce-row--has-col-background{padding-bottom:30px}.vce-row>.vce-row-content>.vce-col.vce-col--all-last{margin-right:0}.rtl .vce-row>.vce-row-content>.vce-col.vce-col--all-last,.rtl.vce-row>.vce-row-content>.vce-col.vce-col--all-last{margin-left:0}@media (min-width:0) and (max-width:543px){.vce-row.vce-element--xs--has-background{padding-left:30px;padding-right:30px;padding-top:30px}.vce-row.vce-element--xs--has-background[data-vce-full-width=true]:not([data-vce-stretch-content=true]){padding-left:0;padding-right:0}.vce-row.vce-element--has-background.vce-row--xs--has-col-background,.vce-row.vce-element--xs--has-background.vce-row--has-col-background,.vce-row.vce-element--xs--has-background.vce-row--xs--has-col-background{padding-bottom:30px}.vce-row>.vce-row-content>.vce-col.vce-col--xs-last{margin-right:0}.rtl .vce-row>.vce-row-content>.vce-col.vce-col--xs-last,.rtl.vce-row>.vce-row-content>.vce-col.vce-col--xs-last{margin-left:0}}@media (min-width:544px) and (max-width:767px){.vce-row.vce-element--sm--has-background{padding-left:30px;padding-right:30px;padding-top:30px}.vce-row.vce-element--sm--has-background[data-vce-full-width=true]:not([data-vce-stretch-content=true]){padding-left:0;padding-right:0}.vce-row.vce-element--has-background.vce-row--sm--has-col-background,.vce-row.vce-element--sm--has-background.vce-row--has-col-background,.vce-row.vce-element--sm--has-background.vce-row--sm--has-col-background{padding-bottom:30px}.vce-row>.vce-row-content>.vce-col.vce-col--sm-last{margin-right:0}.rtl .vce-row>.vce-row-content>.vce-col.vce-col--sm-last,.rtl.vce-row>.vce-row-content>.vce-col.vce-col--sm-last{margin-left:0}}@media (min-width:768px) and (max-width:991px){.vce-row.vce-element--md--has-background{padding-left:30px;padding-right:30px;padding-top:30px}.vce-row.vce-element--md--has-background[data-vce-full-width=true]:not([data-vce-stretch-content=true]){padding-left:0;padding-right:0}.vce-row.vce-element--has-background.vce-row--md--has-col-background,.vce-row.vce-element--md--has-background.vce-row--has-col-background,.vce-row.vce-element--md--has-background.vce-row--md--has-col-background{padding-bottom:30px}.vce-row>.vce-row-content>.vce-col.vce-col--md-last{margin-right:0}.rtl .vce-row>.vce-row-content>.vce-col.vce-col--md-last,.rtl.vce-row>.vce-row-content>.vce-col.vce-col--md-last{margin-left:0}}@media (min-width:992px) and (max-width:1199px){.vce-row.vce-element--lg--has-background{padding-left:30px;padding-right:30px;padding-top:30px}.vce-row.vce-element--lg--has-background[data-vce-full-width=true]:not([data-vce-stretch-content=true]){padding-left:0;padding-right:0}.vce-row.vce-element--has-background.vce-row--lg--has-col-background,.vce-row.vce-element--lg--has-background.vce-row--has-col-background,.vce-row.vce-element--lg--has-background.vce-row--lg--has-col-background{padding-bottom:30px}.vce-row>.vce-row-content>.vce-col.vce-col--lg-last{margin-right:0}.rtl .vce-row>.vce-row-content>.vce-col.vce-col--lg-last,.rtl.vce-row>.vce-row-content>.vce-col.vce-col--lg-last{margin-left:0}}@media (min-width:1200px){.vce-row.vce-element--xl--has-background{padding-left:30px;padding-right:30px;padding-top:30px}.vce-row.vce-element--xl--has-background[data-vce-full-width=true]:not([data-vce-stretch-content=true]){padding-left:0;padding-right:0}.vce-row.vce-element--has-background.vce-row--xl--has-col-background,.vce-row.vce-element--xl--has-background.vce-row--has-col-background,.vce-row.vce-element--xl--has-background.vce-row--xl--has-col-background{padding-bottom:30px}.vce-row>.vce-row-content>.vce-col.vce-col--xl-last{margin-right:0}.rtl .vce-row>.vce-row-content>.vce-col.vce-col--xl-last,.rtl.vce-row>.vce-row-content>.vce-col.vce-col--xl-last{margin-left:0}}a.vce-single-image-inner{color:transparent}a.vce-single-image-inner,a.vce-single-image-inner:focus,a.vce-single-image-inner:hover{border-bottom:0;box-shadow:none;text-decoration:none}.vce-single-image-inner{line-height:1;position:relative}.vce-single-image-inner,.vce-single-image-wrapper{display:inline-block;max-width:100%;vertical-align:top}.vce-single-image-wrapper{overflow:hidden}.vce-single-image-wrapper img{max-width:100%;vertical-align:top}.vce-single-image--border-rounded{border-radius:5px;overflow:hidden}.vce-single-image--border-round{border-radius:50%;overflow:hidden}.vce-single-image--align-center{text-align:center}.vce-single-image--align-right{text-align:right}.vce-single-image--align-left{text-align:left}.vce-single-image-wrapper figure{margin:0}.vce-single-image-wrapper figcaption{font-style:italic;margin-top:10px}.vce-single-image-wrapper figcaption[hidden]{display:none}.vce-single-image-inner.vce-single-image--absolute .vce-single-image:not([data-dynamic-natural-size=true]){height:100%;left:0;object-fit:cover;position:absolute;top:0;width:100%}.vce-single-image-container .vce-single-image-inner .vce-single-image{box-shadow:none}.vce-single-image-figure-inner{display:inline-block;max-width:100%}.vce-row--col-gap-30>.vce-row-content>.vce-col{margin-right:30px}.vce-row--col-gap-30>.vce-row-content>.vce-column-resizer .vce-column-resizer-handler{width:30px}.rtl .vce-row--col-gap-30>.vce-row-content>.vce-col,.rtl.vce-row--col-gap-30>.vce-row-content>.vce-col{margin-left:30px;margin-right:0}@media all and (min-width:768px),print{.vce-row--col-gap-30[data-vce-do-apply*="312b4f57"]>.vce-row-content>.vce-col--md-auto{-webkit-flex:1 1 0;flex:1 1 0;max-width:none;width:auto}}@media all and (min-width:768px),print{.vce-row--col-gap-30[data-vce-do-apply*="3ce007e3"]>.vce-row-content>.vce-col--md-auto{-webkit-flex:1 1 0;flex:1 1 0;max-width:none;width:auto}}
+</style>
+<link rel='stylesheet' id='wpglobus-css' href='https://www.peakeforsenate.com/wp-content/plugins/wpglobus/includes/css/wpglobus.css' type='text/css' media='all' />
+<link rel='stylesheet' id='def-googleFonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300i%2C400%2C400i%2C700&#038;ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='def-googleFonts-sig-css' href='https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=6.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/charitable/assets/js/libraries/js-cookie.js' id='js-cookie-js'></script>
+<script type='text/javascript' id='charitable-sessions-js-extra'>
+/* <![CDATA[ */
+var CHARITABLE_SESSION = {"ajaxurl":"https:\/\/www.peakeforsenate.com\/wp-admin\/admin-ajax.php","id":"","cookie_name":"charitable_session","expiration":"86400","expiration_variant":"82800","secure":"","cookie_path":"\/","cookie_domain":"","generated_id":"e92e3f59b1d247a1f1ca05c90e869481","disable_cookie":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/charitable/assets/js/charitable-session.js' id='charitable-sessions-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/jquery.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/jquery-migrate.js' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/core.js' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/mouse.js' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/sortable.js' id='jquery-ui-sortable-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/datepicker.js' id='jquery-ui-datepicker-js'></script>
+<script id="jquery-ui-datepicker-js-after" type="text/javascript">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/resizable.js' id='jquery-ui-resizable-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/draggable.js' id='jquery-ui-draggable-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/controlgroup.js' id='jquery-ui-controlgroup-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/checkboxradio.js' id='jquery-ui-checkboxradio-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/button.js' id='jquery-ui-button-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/jquery/ui/dialog.js' id='jquery-ui-dialog-js'></script>
+<script type='text/javascript' id='events-manager-js-extra'>
+/* <![CDATA[ */
+var EM = {"ajaxurl":"https:\/\/www.peakeforsenate.com\/wp-admin\/admin-ajax.php","locationajaxurl":"https:\/\/www.peakeforsenate.com\/wp-admin\/admin-ajax.php?action=locations_search","firstDay":"1","locale":"ru","dateFormat":"yy-mm-dd","ui_css":"https:\/\/www.peakeforsenate.com\/wp-content\/plugins\/events-manager\/includes\/css\/jquery-ui\/build.css","show24hours":"","is_ssl":"1","autocomplete_limit":"10","calendar":{"breakpoints":{"small":560,"medium":908,"large":false}},"datepicker":{"format":"d\/m\/Y"},"search":{"breakpoints":{"small":650,"medium":850,"full":false}},"url":"https:\/\/www.peakeforsenate.com\/wp-content\/plugins\/events-manager","bookingInProgress":"Please wait while the booking is being submitted.","tickets_save":"Save Ticket","bookingajaxurl":"https:\/\/www.peakeforsenate.com\/wp-admin\/admin-ajax.php","bookings_export_save":"Export Bookings","bookings_settings_save":"Save Settings","booking_delete":"Are you sure you want to delete?","booking_offset":"30","bookings":{"submit_button":{"text":{"default":"Send your booking","free":"Send your booking","payment":"Send your booking","processing":"Processing ..."}}},"bb_full":"Sold Out","bb_book":"Book Now","bb_booking":"Booking...","bb_booked":"Booking Submitted","bb_error":"Booking Error. Try again?","bb_cancel":"Cancel","bb_canceling":"Canceling...","bb_cancelled":"Cancelled","bb_cancel_error":"Cancellation Error. Try again?","txt_search":"Search","txt_searching":"Searching...","txt_loading":"Loading...","event_detach_warning":"Are you sure you want to detach this event? By doing so, this event will be independent of the recurring set of events.","delete_recurrence_warning":"Are you sure you want to delete all recurrences of this event? All events will be moved to trash.","disable_bookings_warning":"Are you sure you want to disable bookings? If you do this and save, you will lose all previous bookings. If you wish to prevent further bookings, reduce the number of spaces available to the amount of bookings you currently have","booking_warning_cancel":"Are you sure you want to cancel your booking?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/events-manager/includes/js/events-manager.js' id='events-manager-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/dist/vendor/wp-polyfill-inert.js' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/dist/vendor/regenerator-runtime.js' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/dist/vendor/wp-polyfill.js' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/dist/hooks.js' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/dist/i18n.js' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after" type="text/javascript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='give-js-extra'>
+/* <![CDATA[ */
+var give_global_vars = {"ajaxurl":"https:\/\/www.peakeforsenate.com\/wp-admin\/admin-ajax.php","checkout_nonce":"1f9e55b564","currency":"USD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Please select a payment method.","bad_minimum":"The minimum custom donation amount for this form is","bad_maximum":"The maximum custom donation amount for this form is","general_loading":"Loading...","purchase_loading":"Please Wait...","textForOverlayScreen":"<h3>Processing...<\/h3><p>This will only take a second!<\/p>","number_decimals":"0","is_test_mode":"","give_version":"2.32.0","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Please select payment mode.","give_first":"Please enter your first name.","give_last":"Please enter your last name.","give_email":"Please enter a valid email address.","give_user_login":"Invalid email address or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agree_to_terms":"You must agree to the terms and conditions."},"confirm_email_sent_message":"Please check your email and click on the link to access your complete donation history.","ajax_vars":{"ajaxurl":"https:\/\/www.peakeforsenate.com\/wp-admin\/admin-ajax.php","ajaxNonce":"3bc00df8ca","loading":"Loading","select_option":"Please select an option","default_gateway":"manual","permalinks":"1","number_decimals":0},"cookie_hash":"77f0d544af8b62b1149faacff905b07e","session_nonce_cookie_name":"wp-give_session_reset_nonce_77f0d544af8b62b1149faacff905b07e","session_cookie_name":"wp-give_session_77f0d544af8b62b1149faacff905b07e","delete_session_nonce_cookie":"0"};
+var giveApiSettings = {"root":"https:\/\/www.peakeforsenate.com\/ru\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/give/assets/dist/js/give.js' id='give-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/js/html5shive.js' id='html5shiv-js'></script>
+<![endif]-->
+<script type='text/javascript' id='utils-js-extra'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1699308103","secure":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/utils.js' id='utils-js'></script>
+<link rel="https://api.w.org/" href="https://www.peakeforsenate.com/ru/wp-json/" /><link rel="alternate" type="application/json" href="https://www.peakeforsenate.com/ru/wp-json/wp/v2/pages/947" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.peakeforsenate.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.2" />
+<meta name="generator" content="WooCommerce 8.0.2" />
+<link rel="canonical" href="https://www.peakeforsenate.com/ru/22nd-district/" />
+<link rel='shortlink' href='https://www.peakeforsenate.com/ru/?p=947' />
+<link rel="alternate" type="application/json+oembed" href="https://www.peakeforsenate.com/ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.peakeforsenate.com%2Fru%2F22nd-district%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.peakeforsenate.com/ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.peakeforsenate.com%2Fru%2F22nd-district%2F&#038;format=xml" />
+		<script type="text/javascript">
+		var ajaxurl = 'https://www.peakeforsenate.com/wp-admin/admin-ajax.php';
+		</script>
+	<meta name="generator" content="Powered by Visual Composer Website Builder - fast and easy-to-use drag and drop visual editor for WordPress."/><noscript><style>.vce-row-container .vcv-lozad {display: none}</style></noscript><meta name="generator" content="Give v2.32.0" />
+		<script type="text/JavaScript">
+		var ajaxurl = 'https://www.peakeforsenate.com/wp-admin/admin-ajax.php';
+		var directory_url = 'https://www.peakeforsenate.com/wp-content/themes/markpeake';
+		</script>
+	<style type="text/css">body, .main-content{background:#ffffff;}body h1{ font-size:72px !important; }body h2{ font-size:52px !important; }body h3{ font-size:30px !important; }body h4{ font-size:26px !important; }body h5{ font-size:20px !important; }body h6{ font-size:18px !important; }body p{font-size:14px !important;}body p { font-family:"Roboto" !important;}h1, h2, h3, h4, h5, h6{}#nav{font-family:"Open Sans",sans-serif;}</style><style id="stylesheet">::selection {
+
+			background: #B40C0F; /* Safari */
+
+			color:#fff;
+
+		}
+
+		::-moz-selection {
+
+			background: #B40C0F; /* Firefox */
+
+			color:#fff;
+
+		}
+		 
+		{
+			background-color:#B40C0F; 
+
+			color:#fff;
+
+		}.top-bar .holder, .top-bar .holder:before, #nav li:hover > a, #nav li ul li a:hover, #nav li ul li:hover > a, .search-box, .top-bar .left-box .dropdown-menu li a:hover, .welcome-section .box:hover .icon-col:before, .donate-goal-box .progress-bar, .causes-style-1 .owl-theme .owl-dots .owl-dot.active span, .causes-style-1 .owl-theme .owl-dots .owl-dot:hover span, .event-style-1 .bx-wrapper .bx-pager.bx-default-pager a:hover, .event-style-1 .bx-wrapper .bx-pager.bx-default-pager a.active, .event-style-1 a.plus, .style-1 .text-box:before, .testimonial-style-1 .owl-theme .owl-dots .owl-dot.active span, .testimonial-style-1 .owl-theme .owl-dots .owl-dot:hover span, .team-social-box-1, .team-style-1 .box .text-box, .team-style-1 .box .team-social-box-1 ul li a:hover, .project-style-1 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover, .testimonial-style-2 .bx-wrapper .bx-pager.bx-default-pager a:hover, .testimonial-style-2 .bx-wrapper .bx-pager.bx-default-pager a.active, .shop-style-1 .box .text-box a.like:hover, .inner-header .top-bar, #filter li a:hover, #filter .current, #filter li a.selected, .pagination-box .pagination > li > a:hover, .pagination-box .pagination > li > span:hover, .pagination-box .pagination > li > a:focus, .pagination-box .pagination > li > span:focus, .pagination-box .pagination li.active a, .gallery-section .thumb .caption:before, .gallery-section .thumb .caption:after, .review-section .nav-tabs > li.active > a, .review-section .nav-tabs > li.active > a:hover, .review-section .nav-tabs > li.active > a:focus, .shop-slider .owl-theme .owl-dots .owl-dot.active span, .shop-slider .owl-theme .owl-dots .owl-dot:hover span, .team-style-2 .box, .coming-soon .countdown-amount:before, .coming-soon .inner a.btn-style-1:after, input.radio:checked + label > span.show-hover, .testimonial-style-3 .owl-theme .owl-dots .owl-dot.active span, .testimonial-style-3 .owl-theme .owl-dots .owl-dot:hover span, .style-1 .frame .sticky, .recent-news .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover, .news-grid blockquote, .share-row ul li a:hover, .event-timer .countdown-section, .logo-row .navbar-toggle, .logo-row .navbar-inverse .navbar-toggle:hover, .logo-row .navbar-inverse .navbar-toggle:focus, a.btn-style-1, .logo-row a.btn-donate, .donate-goal-box a.btn-style-1:after, .event-style-1-box .right-box a.btn-detail:after, .event-style-1-box:hover a.btn-detail, .join-form input[type="submit"], .newsletter-box form button[type="submit"], .comment-box input[type="submit"], .coming-soon .inner form input[type="submit"], .form-row input[type="submit"], .sidebar-box .newsletter-box-2 form button[type="submit"], .contact-row form input[type="submit"], .contact-form form input[type="submit"] {
+				
+			background-color:#B40C0F; 
+		}.heading-style-1 span.title, .heading-style-1 em, .welcome-section .box .icon-col, .welcome-section .box .icon-col:before, .welcome-section .box:hover .text-col h4 a, .causes-style-1 .box .text-box a.link .fa, .causes-goal-box strong.amount, .pie-title-center b, .event-style-1-box a.link .fa, .event-style-1-box .left-box p a:hover, .event-style-1-box:hover strong.date, .style-1 a.link .fa, .style-1 a.btn-more, .style-1:hover, .team-style-1 .box:hover .team-social-box-1 ul li a, .team-style-1 .box:hover .text-box h4 a, .team-style-1 .box:hover .text-box em.disp, .event-widget strong.date, .event-widget ul li:hover span.time, .tweets-box p a, .tweets-box .fa, .tweets-box span.time, .copyrights-section strong.copy a:hover, .project-style-1 .box .outer .text-box strong.month, .project-style-1 .box:hover .text-box h3 a, .shop-style-1 .box .text-box span.price, .shop-style-1 .box .text-box a.like, .shop-style-1 .box:hover .text-box h3 a, .shop-style-1 .box:hover span.cut-price, .project-3-col .text-box strong.month, .error-section .inner h1, .error-section .inner strong.title, .error-section .inner form button[type="submit"], .gallery-section .thumb .inner a.link:hover, .rating li a, .team-social-box-2 ul li a:hover, .coming-soon .countdown-amount, .coming-soon .countdown-period, .coming-soon .inner a.btn-style-1, .style-1:hover .text-box h3 a, .link-post a.link-text, .sidebar-box form button[type="submit"], .recent-widget .text-col span.date .fa, .recent-news .owl-next:before, .recent-news .owl-prev:before, .upcoming-event-widget .date-box, .sidebar-box .box a, .sidebar-box .box .fa, .sidebar-box .box span, .upcoming-event-widget .text-col a:hover, .recent-widget .text-col a:hover, .address-box ul li .fa, .address-box ul li:hover p, .address-box ul li:hover p a, .heading-col h2 span, .address-col ul li .fa, .address-col ul li:hover p, .address-col ul li:hover p a
+
+		{
+
+			color:#B40C0F; 
+
+		}.event-style-1-box:hover strong.date, .coming-soon .countdown-section:after, .logo-row .navbar-toggle, .logo-row .navbar-inverse .navbar-toggle:hover, .logo-row .navbar-inverse .navbar-toggle:focus
+
+		{
+
+			border-color:#B40C0F; 
+
+		}#inner-banner {background: #000 url(https://www.peakeforsenate.com/wp-content/themes/markpeake/images/inner-banner.jpg) no-repeat left top/cover }</style><style id="charitable-highlight-colour-styles">.campaign-raised .amount,.campaign-figures .amount,.donors-count,.time-left,.charitable-form-field a:not(.button),.charitable-form-fields .charitable-fieldset a:not(.button),.charitable-notice,.charitable-notice .errors a {color:;}#charitable-donation-form .charitable-notice {border-color:;}.campaign-progress-bar .bar,.donate-button,.charitable-donation-form .donation-amount.selected,.charitable-donation-amount-form .donation-amount.selected { background-color:#f89d35; }.charitable-donation-form .donation-amount.selected,.charitable-donation-amount-form .donation-amount.selected,.charitable-notice,.charitable-drag-drop-images li:hover a.remove-image,.supports-drag-drop .charitable-drag-drop-dropzone.drag-over { border-color:#f89d35; }</style>		  <!--Customizer CSS--> 
+		  <style type="text/css">
+			    
+			    
+			   		  </style> 
+		  <!--/Customizer CSS-->
+		  	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+				<style media="screen">
+				.wpglobus_flag_en{background-image:url(https://www.peakeforsenate.com/wp-content/plugins/wpglobus/flags/us.png)}
+.wpglobus_flag_es{background-image:url(https://www.peakeforsenate.com/wp-content/plugins/wpglobus/flags/es.png)}
+.wpglobus_flag_de{background-image:url(https://www.peakeforsenate.com/wp-content/plugins/wpglobus/flags/de.png)}
+.wpglobus_flag_fr{background-image:url(https://www.peakeforsenate.com/wp-content/plugins/wpglobus/flags/fr.png)}
+.wpglobus_flag_ru{background-image:url(https://www.peakeforsenate.com/wp-content/plugins/wpglobus/flags/ru.png)}
+			</style>
+			<link rel="alternate" hreflang="en-US" href="https://www.peakeforsenate.com/22nd-district/" /><link rel="alternate" hreflang="es-ES" href="https://www.peakeforsenate.com/es/22nd-district/" /><link rel="alternate" hreflang="de-DE" href="https://www.peakeforsenate.com/de/22nd-district/" /><link rel="alternate" hreflang="fr-FR" href="https://www.peakeforsenate.com/fr/22nd-district/" /><link rel="alternate" hreflang="ru-RU" href="https://www.peakeforsenate.com/ru/22nd-district/" /><link rel="icon" href="https://www.peakeforsenate.com/wp-content/uploads/cropped-mp-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.peakeforsenate.com/wp-content/uploads/cropped-mp-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.peakeforsenate.com/wp-content/uploads/cropped-mp-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.peakeforsenate.com/wp-content/uploads/cropped-mp-favicon-270x270.png" />
+	
+</head>
+
+<body class="page-template-default page page-id-947 theme-markpeake vcwb woocommerce-no-js user-dashboard theneeds_full_width inner_page_cp ">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTTLDGK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+	<!--Wrapper Start-->
+	
+	<div id="wrapper" class="theme-style-1">
+	
+			
+		  <header id="header" class = "inner-header">
+			<section class="top-bar">
+			  <div class="container">
+				<div class="holder">
+				  <div class="row">
+					<div class="col-md-7">
+					  <div class="left-box">
+						<ul>
+															<li> 
+									<div class="dropdown">
+									  <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <i class="fa fa-globe" aria-hidden="true"></i> Language: ENG  <i class="fa fa-angle-down" aria-hidden="true"></i> </button>
+									  <ul class="dropdown-menu">
+										<li><a href="https://www.peakeforsenate.com/22nd-district/">EN</a></li><li><a href="https://www.peakeforsenate.com/es/22nd-district/">ES</a></li><li><a href="https://www.peakeforsenate.com/de/22nd-district/">DE</a></li><li><a href="https://www.peakeforsenate.com/fr/22nd-district/">FR</a></li>									  </ul>	
+									</div>
+								</li>
+														
+													</ul>
+					  </div>
+					</div>
+					<div class="col-md-5">
+						<div class="right-box">
+							<div class="login-box"> 
+															</div>
+							<div class="topbar-social">
+							  <ul>
+																  </ul>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</section>
+			<section class="logo-row">
+			  <div class="container">
+				<div class="holder"> <strong class="logo">
+							<a href="https://www.peakeforsenate.com/ru/">
+					<img width="230" height="99" src="https://www.peakeforsenate.com/wp-content/uploads/Mark-Peake-Logo.jpg" alt="Senator Mark Peake">
+				</a>
+			
+					
+	</strong>
+				  <nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
+						<span class="sr-only">Toggle navigation</span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+					  </button>
+					</div>
+					<div id="navbar" class="collapse navbar-collapse">
+					  <div id="default-menu" class="header-menu"><ul id="nav" class="navbar-nav"><li id="menu-item-976" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-976"><a href="https://www.peakeforsenate.com/ru/meet-mark/">Meet Mark</a></li>
+<li id="menu-item-971" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-947 current_page_item menu-item-971"><a href="https://www.peakeforsenate.com/ru/22nd-district/" aria-current="page">8th District</a></li>
+<li id="menu-item-989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989"><a href="https://www.peakeforsenate.com/ru/issues/">Issues</a></li>
+<li id="menu-item-975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-975"><a href="https://www.peakeforsenate.com/ru/contact-us-2/">Contact Us</a></li>
+<li id="menu-item-1602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602"><a href="https://www.peakeforsenate.com/ru/continuethefight/">Contribute</a></li>
+</ul></div>					</div>
+				  </nav>
+				  									</div>
+			  </div>
+			</section>
+		</header>
+		
+	<div class="content">
+	
+					<div id="inner-banner">
+					<div class="container">
+					  <h1>8TH District</h1>
+						<em></em>
+											</div>
+				</div>
+									
+		
+		<div class="">
+			    
+			
+			<div class="main-content margin-top-bottom-cp">
+				<div class="page_content">
+					<div class = "container">
+						<div class = "row">
+													
+							<div id="block_content_first" class="col-md-12">
+								<div class="container-res">
+									<div class="row">
+									<div class="">		<div id="post-947" class="post-947 page type-page status-publish hentry">
+			<a href="https://www.peakeforsenate.com/ru/22nd-district/">
+						</a>
+			<div class="entry-content-cp">
+				<div class="vce-row-container" data-vce-boxed-width="true"><div class="vce-row vce-row--col-gap-30 vce-row-equal-height vce-row-content--top" id="el-312b4f57" data-vce-do-apply="all el-312b4f57"><div class="vce-row-content" data-vce-element-content="true"><div class="vce-col vce-col--md-auto vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-699ffeeb"><div class="vce-col-inner" data-vce-do-apply="border margin background  el-699ffeeb"><div class="vce-col-content" data-vce-element-content="true" data-vce-do-apply="padding el-699ffeeb"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-9beda8f9" data-vce-do-apply="all el-9beda8f9"><div><p><!-- [if lt IE 9]><br /><script type='text/javascript' src='http://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/js/html5shive.js' id='html5shiv-js'></script><br /><![endif]--><noscript>&lt;/p&gt;
+&lt;style&gt;.vce-row-container .vcv-lozad {display: none}&lt;/style&gt;
+&lt;p&gt;</noscript><!--Customizer CSS--><!--/Customizer CSS--><noscript>&lt;/p&gt;
+&lt;style&gt;.woocommerce-product-gallery{ opacity: 1 !important; }&lt;/style&gt;
+&lt;p&gt;</noscript></p></div><p>&nbsp;</p><div><h2 style="text-align: center;"><span style="color: #ff0000;">IF you live in Lynchburg, Bedford, or Campbell, You are in the 8th senate district!</span></h2><p>&nbsp;</p><p style="text-align: center;"><span style="font-size: 14pt;">District 8 contains some of the most scenic parts of our Commonwealth including the Peaks of Otter and beautiful Smith Mountain Lake. Senator Peake understands the needs of our primarily rural district.</span></p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;"><span style="font-size: 14pt;">If you are unsure, if you are a resident of the 8th&nbsp;district, use the&nbsp;<a href="http://whosmy.virginiageneralassembly.gov/" target="_blank" rel="noopener noreferrer">“Who Is My Legislator?”</a>&nbsp;tool to identify your state and federal representatives.</span></p></div><div>&nbsp;</div></div></div></div></div></div></div></div></div><div class="vce-row-container" data-vce-boxed-width="true"><div class="vce-row vce-row--col-gap-30 vce-row-equal-height vce-row-content--top" id="el-3ce007e3" data-vce-do-apply="all el-3ce007e3"><div class="vce-row-content" data-vce-element-content="true"><div class="vce-col vce-col--md-auto vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-cec93724"><div class="vce-col-inner" data-vce-do-apply="border margin background  el-cec93724"><div class="vce-col-content" data-vce-element-content="true" data-vce-do-apply="padding el-cec93724"><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-8b4f0a65" data-vce-do-apply="all el-8b4f0a65"><figure><div class="vce-single-image-figure-inner" style="width: 580px;"><div class="vce-single-image-inner vce-single-image--absolute" style="width: 100%; padding-bottom: 72.41379310344827%;"><img decoding="async" fetchpriority="high" class="vce-single-image"  width="580" height="420" srcset="https://www.peakeforsenate.com/wp-content/uploads/8th-District-outline-580x350.png 580w, https://www.peakeforsenate.com/wp-content/uploads/8th-District-outline-320x232.png 320w, https://www.peakeforsenate.com/wp-content/uploads/8th-District-outline-480x348.png 480w" src="https://www.peakeforsenate.com/wp-content/uploads/8th-District-outline-580x350.png" data-img-src="https://www.peakeforsenate.com/wp-content/uploads/8th-District-outline.png" data-attachment-id="1371"  alt="" title="8th District outline" /></div></div><figcaption hidden=""></figcaption></figure></div></div></div></div></div></div></div></div>
+			</div><!-- .entry-content -->
+		</div><!-- #post-## -->
+		
+		</div>									</div>
+								</div>
+							</div>
+							
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<footer id="footer">
+			<section class="footer-section-1">
+			  <div class="container">
+				<div class="row">
+									</div>
+			  </div>
+			</section>
+						<section class="copyrights-section">
+								<strong class="copy">© Copyright 2017 Peake For Senate · All Rights Reserved · Paid For &amp; Authorized by Peake For Senate</strong>
+			</section>
+		</footer>
+
+	 
+   
+</div>
+
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<style id='core-block-supports-inline-css' type='text/css'>
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/visualcomposer/public/dist/runtime.bundle.js' id='vcv:assets:runtime:script-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/visualcomposer/public/dist/front.bundle.js' id='vcv:assets:front:script-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/visualcomposer/public/sources/assetsLibrary/lazyLoad/dist/lazyLoad.bundle.js' id='vcv:assets:source:scripts:assetslibrarylazyloaddistlazyloadbundlejs-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.peakeforsenate.com\/ru\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/www.peakeforsenate.com\/ru","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.js' id='wc-add-to-cart-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.js' id='woocommerce-js'></script>
+<script type='text/javascript' id='give-donation-summary-script-frontend-js-extra'>
+/* <![CDATA[ */
+var GiveDonationSummaryData = {"currencyPrecisionLookup":{"USD":2,"EUR":2,"GBP":2,"AUD":2,"BRL":2,"CAD":2,"CZK":2,"DKK":2,"HKD":2,"HUF":2,"ILS":2,"JPY":0,"MYR":2,"MXN":2,"MAD":2,"NZD":2,"NOK":2,"PHP":2,"PLN":2,"SGD":2,"KRW":0,"ZAR":2,"SEK":2,"CHF":2,"TWD":2,"THB":2,"INR":2,"TRY":2,"IRR":2,"RUB":2,"AED":2,"AMD":2,"ANG":2,"ARS":2,"AWG":2,"BAM":2,"BDT":2,"BHD":3,"BMD":2,"BND":2,"BOB":2,"BSD":2,"BWP":2,"BZD":2,"CLP":0,"CNY":2,"COP":2,"CRC":2,"CUC":2,"CUP":2,"DOP":2,"EGP":2,"GIP":2,"GTQ":2,"HNL":2,"HRK":2,"IDR":2,"ISK":0,"JMD":2,"JOD":2,"KES":2,"KWD":2,"KYD":2,"MKD":2,"NPR":2,"OMR":3,"PEN":2,"PKR":2,"RON":2,"SAR":2,"SZL":2,"TOP":2,"TZS":2,"UAH":2,"UYU":2,"VEF":2,"XCD":2,"AFN":2,"ALL":2,"AOA":2,"AZN":2,"BBD":2,"BGN":2,"BIF":0,"XBT":8,"BTN":1,"BYR":2,"BYN":2,"CDF":2,"CVE":2,"DJF":0,"DZD":2,"ERN":2,"ETB":2,"FJD":2,"FKP":2,"GEL":2,"GGP":2,"GHS":2,"GMD":2,"GNF":0,"GYD":2,"HTG":2,"IMP":2,"IQD":2,"IRT":2,"JEP":2,"KGS":2,"KHR":0,"KMF":2,"KPW":0,"KZT":2,"LAK":0,"LBP":2,"LKR":0,"LRD":2,"LSL":2,"LYD":3,"MDL":2,"MGA":0,"MMK":2,"MNT":2,"MOP":2,"MRO":2,"MUR":2,"MVR":1,"MWK":2,"MZN":0,"NAD":2,"NGN":2,"NIO":2,"PAB":2,"PGK":2,"PRB":2,"PYG":2,"QAR":2,"RSD":2,"RWF":2,"SBD":2,"SCR":2,"SDG":2,"SHP":2,"SLL":2,"SOS":2,"SRD":2,"SSP":2,"STD":2,"SYP":2,"TJS":2,"TMT":2,"TND":3,"TTD":2,"UGX":2,"UZS":2,"VND":1,"VUV":0,"WST":2,"XAF":2,"XOF":2,"XPF":2,"YER":2,"ZMW":2,"RIAL":2},"recurringLabelLookup":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/give/assets/dist/js/give-donation-summary.js' id='give-donation-summary-script-frontend-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/js/modernizr.min.js' id='cp-scripts_modernizr-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/js/custom.js' id='custom-scripts-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.js' id='prettyPhoto-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/js/pie-chart.js' id='cp-piechart-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-includes/js/comment-reply.js' id='comment-reply-js'></script>
+<script type='text/javascript' id='cp-bootstrap-js-extra'>
+/* <![CDATA[ */
+var ajax_var = {"url":"https:\/\/www.peakeforsenate.com\/wp-admin\/admin-ajax.php","nonce":"649070010a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/themes/markpeake/frontend/js/bootstrap.min.js' id='cp-bootstrap-js'></script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/contact-form-7/includes/js/html5-fallback.js' id='contact-form-7-html5-fallback-js'></script>
+<script type='text/javascript' id='wpglobus-js-extra'>
+/* <![CDATA[ */
+var WPGlobus = {"version":"2.12.2","language":"ru","enabledLanguages":["en","es","de","fr","ru"]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.peakeforsenate.com/wp-content/plugins/wpglobus/includes/js/wpglobus.js' id='wpglobus-js'></script>
+
+</body>
+
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: www.peakeforsenate.com @ 2023-11-06 22:01:43 by W3 Total Cache
+-->

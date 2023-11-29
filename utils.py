@@ -323,10 +323,11 @@ class CandidateUtils:
                     continue
                 forms = soup.find_all("form")
                 if not forms:
-                    return []
+                    # return []
+                    continue
                 for form in forms:
                     if form.find_all("input"):
                         labels = form.find_all("label")
                         for label in labels:
-                            input_fields.add(label.text)
+                            input_fields.add(str(label.text).replace("\n", "").replace("\t", "").strip())
         return list(input_fields)

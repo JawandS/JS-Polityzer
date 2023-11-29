@@ -32,3 +32,6 @@ def start():
     with open(config.FORM_EXTRACTOR_RESULTS, "w") as f:
         json.dump(candidate_fields, f, indent=1)
     _Logger.info("Completed form_extractor!")
+
+if __name__ == "__main__":
+    start()

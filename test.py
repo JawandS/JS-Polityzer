@@ -47,9 +47,34 @@ def count_downloaded_candidates():
     # print total candidates
     print(f"Total: {house_count + senate_count} / 222 candidates")
 
+def get_files(directory):
+    # get all files in a directory
+    import os
+    files = []
+    for path in os.listdir(directory):
+        if os.path.isfile(f"{directory}/{path}"):
+            files.append(f"{directory}/{path}")
+    return files
+
+def remove_301_candidates():
+    # remove candidates whose only download is a 301 error
+    import os
+    candidates_paths = []
+    for path in os.listdir("html/House"):
+        candidates_paths.append(f"html/House/{path}")
+    for path in os.listdir("html/Senate"):
+        candidates_paths.append(f"html/Senate/{path}")
+    for path in candidates_paths:
+        if len(paths:=get_files(path)) == 1:
+            with open(f"{paths[0]}") as f:
+                if "301 Moved Permanently" in f.read():
+                    print(f"Removing {path}")
+                    os.system(f"rm -rf {path}")
+
 # main method
 if __name__ == "__main__":
     # download_candidate_wget('temp.txt')
     # clear_empty_files()
     # count_candidate_files()
-    count_downloaded_candidates()
+    # count_downloaded_candidates()
+    remove_301_candidates()

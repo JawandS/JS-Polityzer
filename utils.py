@@ -329,5 +329,5 @@ class CandidateUtils:
                     if form.find_all("input"):
                         labels = form.find_all("label")
                         for label in labels:
-                            input_fields.add(str(label.text).replace("\n", "").replace("\t", "").strip())
+                            input_fields.add(str(label.text).replace("\n", "").replace("\t", "").replace("*", "").replace("(required)", "").strip().lower())
         return list(input_fields)

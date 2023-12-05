@@ -26,9 +26,8 @@ with open("./form_extractor_result.json") as f:
         "2": "phone_number",
         "3": "location_coarse",
         "4": "location_fine",
-        "5": "non-pii",
-        "6": "misc",
-        "7": "ignore"
+        " ": "misc",
+        "": "ignore"
     }
     print(f"{len(form_fields)} form fields found")
     for field in form_fields:

@@ -11,16 +11,19 @@ for index, row in candiate_df.iterrows():
     candidate_name = row['fec_name']
     office = row['office']
     website = row['website']
+    # print
+    print(f"testing candidate {candidate_name}; {index} of {len(candiate_df)}")
     # perform a get request on the website
     try:
-        https_result = requests.get(website)
+        https_result = str(requests.get(website).status_code)
     except:
-        https_result = None
+        https_result = "Error"
     try:
-        http_result = requests.get(website.replace('https', 'http'))
+        http_result = str(requests.get(website.replace('https', 'http')).status_code)
     except:
-        http_result = None
+        http_result = "Error"
     # add to result dataframe
-    result_df = result_df.append({'fec_name': candidate_name, 'office': office, 'website': website, 'https_result': https_result, 'http_result': http_result}, ignore_index=True)
+    print(f"{candidate_name} https result: {https_result} http result: {http_result}")
+    result_df = pd.concat([result_df, pd.DataFrame({'fec_name': candidate_name, 'office': office, 'website': website, 'https_result': https_result, 'http_result': http_result}, index=[0])])
 # save result dataframe
 result_df.to_csv('./database/candidate_tls_test.csv', index=False)

@@ -312,6 +312,9 @@ class CandidateUtils:
     @staticmethod
     def get_form_fields(candidate_name, candidate_office):
         input_fields = set()
+        would_skip_flag = False # indicates wheter the file woud have been skipped pre bugfix
+        skipped_log = open("database/skipped_forms_log.txt", "a") # track the candidates and form fields that would have been skipped
+        skipped_file_names = [] # track the files that would have been skipped
         for html_file in CandidateUtils.get_webpages(candidate_name, candidate_office):
             if os.path.isdir(html_file):
                 _Logger.debug(f"Skipping {html_file} as it is a directory.")
@@ -323,11 +326,19 @@ class CandidateUtils:
                     continue
                 forms = soup.find_all("form")
                 if not forms:
-                    # return []
+                    # return [] - BUGFIX 
+                    would_skip_flag = True
                     continue
+                if would_skip_flag:
+                    skipped_file_names.append(html_file)
                 for form in forms:
                     if form.find_all("input"):
                         labels = form.find_all("label")
                         for label in labels:
                             input_fields.add(str(label.text).replace("\n", "").replace("\t", "").replace("*", "").replace("(required)", "").strip().lower())
+        if would_skip_flag:
+            skipped_log.write(f"Candidate: {candidate_name} Office: {candidate_office}\n")
+            skipped_log.write(f"Files: {skipped_file_names}\n")
+            skipped_log.write(f"Form Fields: {list(input_fields)}\n")
+        skipped_log.close()
         return list(input_fields)

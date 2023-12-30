@@ -313,7 +313,7 @@ class CandidateUtils:
     def get_form_fields(candidate_name, candidate_office):
         input_fields = set()
         would_skip_flag = False # indicates wheter the file woud have been skipped pre bugfix
-        skipped_log = open("database/skipped_forms_log.txt", "a") # track the candidates and form fields that would have been skipped
+        skipped_log = open("logs/skipped_forms_log.txt", "a") # track the candidates and form fields that would have been skipped
         skipped_file_names = [] # track the files that would have been skipped
         for html_file in CandidateUtils.get_webpages(candidate_name, candidate_office):
             if os.path.isdir(html_file):
@@ -336,7 +336,7 @@ class CandidateUtils:
                         labels = form.find_all("label")
                         for label in labels:
                             input_fields.add(str(label.text).replace("\n", "").replace("\t", "").replace("*", "").replace("(required)", "").strip().lower())
-        if would_skip_flag:
+        if would_skip_flag and skipped_file_names and input_fields: # check that skipping the candidate would have actually had an impact
             skipped_log.write(f"Candidate: {candidate_name} Office: {candidate_office}\n")
             skipped_log.write(f"Files: {skipped_file_names}\n")
             skipped_log.write(f"Form Fields: {list(input_fields)}\n")

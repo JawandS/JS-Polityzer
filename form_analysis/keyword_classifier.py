@@ -2,7 +2,7 @@
 import json
 
 # open the mapping into a dictionary
-with open('keyword_mapping.json') as f:
+with open('data/keyword_mapping.json') as f:
     mapping = json.load(f)
     reverse_mapping = {}
     # reverse the mapping to go from label to keyword
@@ -17,7 +17,7 @@ with open('keyword_mapping.json') as f:
     keyword_count = {}
 
     # go through form extractor in results 
-    with open('form_extractor_result.json') as f2:
+    with open('../results/form_extractor_result.json') as f2:
         candidate_data = json.load(f2)
         # go through each candidate and increment the keywork counts
         for candidate in candidate_data:
@@ -40,9 +40,9 @@ with open('keyword_mapping.json') as f:
                         keyword_count[keyword] = [0, 1]
 
 # write the keyword counts sorted by highest to lowest to file
-with open('keyword_count.csv', 'w') as f:
+with open('data/keyword_count.csv', 'w') as f:
     house_candidates = 78
-    senate_candidates = 41
+    senate_candidates = 42
     f.write('keyword, house_count, house_percent, senate_count, senate_percent\n')
     for keyword in sorted(keyword_count, key=lambda k: keyword_count[k][0] + keyword_count[k][1], reverse=True):
         house_count = keyword_count[keyword][0]

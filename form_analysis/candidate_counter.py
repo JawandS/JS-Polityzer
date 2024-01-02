@@ -1,8 +1,8 @@
-# count the number of house and senate candidates that have at least one form field not in ignore/misc
+# count the number of house and senate candidates that have at least one form field not in ignore
 import json
 
 # open the mapping into a dictionary
-with open('keyword_mapping.json') as f:
+with open('data/keyword_mapping.json') as f:
     mapping = json.load(f)
     reverse_mapping = {}
     # reverse the mapping to go from label to keyword
@@ -14,7 +14,7 @@ with open('keyword_mapping.json') as f:
             reverse_mapping[label] = keyword
 
 # go through the form data
-with open("form_extractor_result.json") as f:
+with open("../results/form_extractor_result.json") as f:
     data = json.load(f)
     house_candidates = 0
     senate_candidates = 0
@@ -22,7 +22,7 @@ with open("form_extractor_result.json") as f:
         house = False
         senate = False
         for field in data[candidate]["form_fields"]:
-            if reverse_mapping[field] not in ["ignore", "misc"]:
+            if reverse_mapping[field] not in ["ignore"]:
                 if data[candidate]["office"] == "House":
                     house = True
                 else:

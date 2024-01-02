@@ -22,24 +22,29 @@ with open('keyword_mapping.json') as f:
         # go through each candidate and increment the keywork counts
         for candidate in candidate_data:
             candidate_office = candidate_data[candidate]['office']
+            keywords = set()
             for field in candidate_data[candidate]['form_fields']:
-                if field in reverse_mapping:
-                    keyword = reverse_mapping[field]
-                    if keyword in keyword_count:
-                        # 0: house, 1: senate
-                        if candidate_office == 'House':
-                            keyword_count[keyword][0] += 1
-                        else:
-                            keyword_count[keyword][1] += 1
+                keywords.add(reverse_mapping[field])
+            for keyword in keywords:
+                if keyword in keyword_count:
+                    # 0: house, 1: senate
+                    if candidate_office == 'House':
+                        keyword_count[keyword][0] += 1
                     else:
-                        # 0: house, 1: senate
-                        if candidate_office == 'House':
-                            keyword_count[keyword] = [1, 0]
-                        else:
-                            keyword_count[keyword] = [0, 1]
+                        keyword_count[keyword][1] += 1
+                else:
+                    # 0: house, 1: senate
+                    if candidate_office == 'House':
+                        keyword_count[keyword] = [1, 0]
+                    else:
+                        keyword_count[keyword] = [0, 1]
 
 # write the keyword counts sorted by highest to lowest to file
 with open('keyword_count.csv', 'w') as f:
-    f.write('keyword,house_count,senate_count\n')
+    house_candidates = 136
+    senate_candidates = 61
+    f.write('keyword, house_count, house_percent, senate_count, senate_percent\n')
     for keyword in sorted(keyword_count, key=lambda k: keyword_count[k][0] + keyword_count[k][1], reverse=True):
-        f.write(keyword + ',' + str(keyword_count[keyword][0]) + ',' + str(keyword_count[keyword][1]) + '\n')
+        house_count = keyword_count[keyword][0]
+        senate_count = keyword_count[keyword][1]
+        f.write(keyword + ', ' + str(house_count) + ', ' + str(round(house_count / house_candidates * 100, 2)) + ', ' + str(senate_count) + ', ' + str(round(senate_count / senate_candidates * 100, 2)) + '\n')

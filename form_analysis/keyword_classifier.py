@@ -41,8 +41,8 @@ with open('keyword_mapping.json') as f:
 
 # write the keyword counts sorted by highest to lowest to file
 with open('keyword_count.csv', 'w') as f:
-    house_candidates = 136
-    senate_candidates = 61
+    house_candidates = 90
+    senate_candidates = 47
     f.write('keyword, house_count, house_percent, senate_count, senate_percent\n')
     for keyword in sorted(keyword_count, key=lambda k: keyword_count[k][0] + keyword_count[k][1], reverse=True):
         house_count = keyword_count[keyword][0]

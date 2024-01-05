@@ -75,10 +75,10 @@ def transfer_files():
             file = lines[i+2].strip().replace("\\", "/")
             if file == 'manual':
                 # copy from manual downloads
-                os.system(f"cp ./manual_downloads/{office}/{candidate}.html ./polityzer_privacy_policies/{office}/{candidate}.html")
+                os.system(f"cp ./manual_downloads/{office}/{candidate} ./privacy_policies/{office}/{candidate}")
             else:
                 # copy from html
-                os.system(f"cp ../{file} ./polityzer_privacy_policies/{office}/{candidate}.html")
+                os.system(f"cp ../{file} ./privacy_policies/{office}/{candidate}")
 
 # main method
 if __name__ == "__main__":

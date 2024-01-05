@@ -80,10 +80,19 @@ def transfer_files():
                 # copy from html
                 os.system(f"cp ../{file} ./privacy_policies/{office}/{candidate}")
 
+# generate a list of all files
+def generate_candidate_list():
+    base_url = 'https://jawands.github.io/VA-Privacy-Policies/'
+    with open('candidate_list.txt', 'w') as f:
+        for office in os.listdir('./privacy_policies'):
+            for file in os.listdir(f'./privacy_policies/{office}'):
+                f.write(f"{base_url}{office}/{file}\n")
+
 # main method
 if __name__ == "__main__":
     # map_policies()
     # clean_dir()
     # find_missing_candidates()
     # transfer_files()
-    analyze_downloads()
+    # analyze_downloads()
+    generate_candidate_list()

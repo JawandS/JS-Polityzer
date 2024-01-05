@@ -30,8 +30,8 @@ def map_policies():
 def analyze_downloads():
     # get all files in polityzer
     polityzer_files = set()
-    for office in os.listdir('./polityzer_privacy_policies'):
-        for file in os.listdir(f'./polityzer_privacy_policies/{office}'):
+    for office in os.listdir('./privacy_policies'):
+        for file in os.listdir(f'./privacy_policies/{office}'):
             polityzer_files.add(file)
     # get files from manual
     manual_files = set()   
@@ -84,6 +84,6 @@ def transfer_files():
 if __name__ == "__main__":
     # map_policies()
     # clean_dir()
-    # analyze_downloads()
     # find_missing_candidates()
-    transfer_files()
+    # transfer_files()
+    analyze_downloads()

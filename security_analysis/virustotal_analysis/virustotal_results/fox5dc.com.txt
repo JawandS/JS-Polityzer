@@ -1,0 +1,796 @@
+{
+  "attributes": {
+    "last_modification_date": 1703985479,
+    "times_submitted": 694,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://fox5dc.com/"
+    ],
+    "last_submission_date": 1703985162,
+    "last_http_response_content_length": 1286806,
+    "last_http_response_headers": {
+      "Content-Length": "1286806",
+      "X-XSS-Protection": "1; mode=block",
+      "Accept-Ranges": "none",
+      "Strict-Transport-Security": "max-age=15552000; includeSubDomains",
+      "Server": "nginx",
+      "Connection": "keep-alive",
+      "X-Frame-Options": "ALLOW-FROM https://layout-cms.fox5dc.com",
+      "X-DNS-Prefetch-Control": "off",
+      "X-Content-Type-Options": "nosniff",
+      "X-Download-Options": "noopen",
+      "Expires": "Sun, 31 Dec 2023 01:14:13 GMT",
+      "Vary": "Accept-Encoding",
+      "ETag": "\"13a296-xJg3CY1WEkA3MsEXMq2Bx6SEeds\"",
+      "Cache-Control": "max-age=90",
+      "Date": "Sun, 31 Dec 2023 01:12:43 GMT",
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1703985162,
+    "first_submission_date": 1392128300,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Sophos": "news",
+      "Xcitium Verdict Cloud": "streaming media",
+      "BitDefender": "financial"
+    },
+    "last_http_response_content_sha256": "720b7ff03910fc69ba79f3f82b9ac54c0cd9e575ea6562ce660f3d4ce0c12869",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.fox5dc.com/",
+    "trackers": {
+      "New Relic": [
+        {
+          "url": "{beacon:\"bam.nr-data.net\",errorBeacon:\"bam.nr-data.net\",agent:\"js-agent.newrelic.com/nr-spa-1184.min.js\"}",
+          "timestamp": 1655090378
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-TMF4BDJ",
+          "timestamp": 1703985162,
+          "id": "GTM-TMF4BDJ"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=UA-16512125-1",
+          "timestamp": 1703985162,
+          "id": "UA-16512125-1"
+        }
+      ]
+    },
+    "url": "http://fox5dc.com/",
+    "title": "FOX 5 DC",
+    "last_analysis_stats": {
+      "harmless": 71,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 20,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "dc.identifier": [
+        "urn:uri:base64:dHJhbnNjcmlwdDI0Mw=="
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+      ],
+      "og:image:height": [
+        "720"
+      ],
+      "dcterms.modified": [
+        "2023-12-20T13:42:07"
+      ],
+      "dcterms.abstract": [
+        "Washington, D.C. news, weather, traffic and sports from FOX 5, serving the District of Columbia, Maryland and Virginia. Watch breaking news live or see the latest videos from programs like Good Day DC."
+      ],
+      "dc.format": [
+        "text/html"
+      ],
+      "prism.section": [
+        "root"
+      ],
+      "fox.page_content_level_3": [
+        "wttg:web:root"
+      ],
+      "og:description": [
+        "Washington, D.C. news, weather, traffic and sports from FOX 5, serving the District of Columbia, Maryland and Virginia. Watch breaking news live or see the latest videos from programs like Good Day DC."
+      ],
+      "prism.aggregationType": [
+        "front"
+      ],
+      "prism.genre": [
+        "homePage"
+      ],
+      "fb:app_id": [
+        "1694671004102624"
+      ],
+      "content-creator": [
+        "tiger"
+      ],
+      "prism.channel": [
+        "fts"
+      ],
+      "dc.description": [
+        "Washington, D.C. news, weather, traffic and sports from FOX 5, serving the District of Columbia, Maryland and Virginia. Watch breaking news live or see the latest videos from programs like Good Day DC."
+      ],
+      "og:type": [
+        "website"
+      ],
+      "fox.page_content_category": [
+        "root"
+      ],
+      "fox.fix_version": [
+        "5.8.2"
+      ],
+      "og:title": [
+        "FOX 5 DC"
+      ],
+      "pagetype": [
+        "homepage"
+      ],
+      "fox.category": [
+        "root"
+      ],
+      "msapplication-square150x150logo": [
+        "//static.foxtv.com/static/orion/img/wttg/favicons/mstile-150x150.png"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "description": [
+        "Washington, D.C. news, weather, traffic and sports from FOX 5, serving the District of Columbia, Maryland and Virginia. Watch breaking news live or see the latest videos from programs like Good Day DC."
+      ],
+      "og:url": [
+        "https://www.fox5dc.com"
+      ],
+      "msapplication-wide310x150logo": [
+        "//static.foxtv.com/static/orion/img/wttg/favicons/mstile-310x150.png"
+      ],
+      "msapplication-square70x70logo": [
+        "//static.foxtv.com/static/orion/img/wttg/favicons/mstile-70x70.png"
+      ],
+      "robots": [
+        "noarchive, noodp, max-image-preview:large"
+      ],
+      "dc.publisher": [
+        "FOX 5 DC"
+      ],
+      "msapplication-square310x310logo": [
+        "//static.foxtv.com/static/orion/img/wttg/favicons/mstile-310x310.png"
+      ],
+      "dc.source": [
+        "FOX 5 DC"
+      ],
+      "og:image": [
+        "https://images.foxtv.com/www.fox5dc.com/img/1280/720/default-image.png?ve=1&tl=1"
+      ],
+      "fox.app_build": [
+        "no build version"
+      ],
+      "dc.type": [
+        "Collection"
+      ],
+      "dc.language": [
+        "en-US"
+      ],
+      "dc.title": [
+        "FOX 5 DC"
+      ],
+      "dcterms.created": [
+        "2023-12-20T13:42:07"
+      ],
+      "fox.app_version": [
+        "v77"
+      ],
+      "prism.stationCallSign": [
+        "wttg"
+      ],
+      "og:site_name": [
+        "FOX 5 DC"
+      ],
+      "fox.page_content_level_4": [
+        "wttg:web:root"
+      ],
+      "fox.page_content_level_2": [
+        "wttg:web:root"
+      ],
+      "strikepagetype": [
+        "homepage"
+      ],
+      "fox.page_content_level_1": [
+        "wttg:web"
+      ],
+      "dc.date": [
+        "2023-12-20"
+      ],
+      "prism.stationId": [
+        "WTTG_FOX5"
+      ],
+      "format-detection": [
+        "telephone=no"
+      ],
+      "fox.page_name": [
+        "wttg:web:root"
+      ],
+      "og:image:width": [
+        "1280"
+      ],
+      "fox.name": [
+        "Home Landing"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.tiktok.com/@fox5dc",
+      "https://www.my9nj.com/",
+      "https://www.foxweather.com/",
+      "https://twitter.com/fox5dc",
+      "https://www.instagram.com/fox5dc/",
+      "https://publicfiles.fcc.gov/tv-profile/wttg/equal-employment-opportunity-records/additional-documents/eeo-public-file-reports/8f356a86-7d5e-bfb8-26a4-37ead8c8184d/",
+      "https://www.fox5ny.com/",
+      "https://www.facebook.com/fox5dc/",
+      "https://www.youtube.com/fox5dc",
+      "https://www.fox29.com/",
+      "https://www.youtube.com/fox5dc?sub_confirmation=1",
+      "https://foxweather.com"
+    ]
+  },
+  "type": "url",
+  "id": "98ae96ae94ef8a138f3a6153fcea5cd9e0f49a14d370ec182cc70238c14a4e3a",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/98ae96ae94ef8a138f3a6153fcea5cd9e0f49a14d370ec182cc70238c14a4e3a"
+  }
+}

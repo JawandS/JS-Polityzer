@@ -1,0 +1,752 @@
+{
+  "attributes": {
+    "last_modification_date": 1704415153,
+    "times_submitted": 1337,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://independent.co.uk/",
+      "https://independent.co.uk/"
+    ],
+    "last_submission_date": 1704415140,
+    "last_http_response_content_length": 453137,
+    "last_http_response_headers": {
+      "Content-Length": "0",
+      "permissions-policy": "camera=(), microphone=(), midi=(), geolocation=(), interest-cohort=()",
+      "Content-Security-Policy": "default-src https: 'unsafe-inline' data: blob:; frame-src https: data:; script-src https: 'unsafe-inline' 'unsafe-eval' blob: 'unsafe-inline'; media-src https: 'unsafe-inline' blob:; img-src https: http: data: blob:; frame-ancestors https:",
+      "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400",
+      "Set-Cookie": "Locale=US, Locale=US ; Path=/ ;, esi-permutive-id=(null); Path=/ ; Secure ;",
+      "Accept-Ranges": "bytes",
+      "canary": "1",
+      "Retry-After": "0",
+      "Connection": "close",
+      "x-xss-protection": "1; mode=block",
+      "X-Cache-Hits": "0",
+      "Location": "/us",
+      "X-Backend": "flow-us",
+      "Access-Control-Allow-Origin": "*",
+      "X-Served-By": "cache-chi-kigq8000135-CHI",
+      "X-Cache": "HIT",
+      "x-content-type-options": "nosniff",
+      "X-Timer": "S1704415142.993464,VS0,VE0",
+      "feature-policy": "camera 'none'; microphone 'none'; midi 'none'; geolocation 'none'",
+      "Via": "1.1 varnish",
+      "Date": "Fri, 05 Jan 2024 00:39:01 GMT",
+      "x-frame-options": "SAMEORIGIN",
+      "referrer-policy": "no-referrer-when-downgrade"
+    },
+    "reputation": 0,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1704415140,
+    "first_submission_date": 1332759894,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Sophos": "news",
+      "BitDefender": "tabloids",
+      "Xcitium Verdict Cloud": "news",
+      "alphaMountain.ai": "News"
+    },
+    "last_http_response_content_sha256": "c32decd88ac0ac8eb8928d33764d331f845f19d727f66d5cba967a6dc588417f",
+    "last_http_response_code": 307,
+    "last_final_url": "https://www.independent.co.uk/",
+    "trackers": {
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-5XT7NPD",
+          "timestamp": 1693523414,
+          "id": "GTM-5XT7NPD"
+        }
+      ],
+      "New Relic": [
+        {
+          "url": "",
+          "timestamp": 1630890147
+        }
+      ],
+      "Google Publisher Tags": [
+        {
+          "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+          "timestamp": 1693523414
+        }
+      ]
+    },
+    "url": "http://independent.co.uk/",
+    "title": "The Independent | Latest news and features from US, UK and worldwide",
+    "last_analysis_stats": {
+      "harmless": 72,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 19,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "co.uk",
+    "html_meta": {
+      "adPageType": [
+        "Hub Page"
+      ],
+      "amp-google-client-id-api": [
+        "googleanalytics"
+      ],
+      "description": [
+        "Latest news, comment and features from The Independent US"
+      ],
+      "twitter:image": [
+        "https://www.independent.co.uk/img/shortcut-icons/icon-96x96.png"
+      ],
+      "page type": [
+        "Category"
+      ],
+      "og:locale": [
+        "en_GB"
+      ],
+      "robots": [
+        "max-image-preview:large,max-video-preview:-1"
+      ],
+      "twitter:site": [
+        "@Independent"
+      ],
+      "fb:app_id": [
+        "235586169789578"
+      ],
+      "og:image": [
+        "https://www.independent.co.uk/img/shortcut-icons/icon-96x96.png"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+      ],
+      "category": [
+        "US"
+      ],
+      "og:url": [
+        "https://www.independent.co.uk/us"
+      ],
+      "og:site_name": [
+        "The Independent"
+      ],
+      "page path": [
+        "/us"
+      ],
+      "sitename": [
+        "The Independent"
+      ],
+      "twitter:description": [
+        "Latest news, comment and features from The Independent US"
+      ],
+      "og:type": [
+        "website"
+      ],
+      "og:description": [
+        "Latest news, comment and features from The Independent US"
+      ],
+      "theme-color": [
+        "#f7f7f7"
+      ],
+      "og:title": [
+        "The Independent | Latest news and features from US, UK and worldwide | The Independent"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:title": [
+        "The Independent | Latest news and features from US, UK and worldwide | The Independent"
+      ],
+      "fb:pages": [
+        "https://www.facebook.com/TheIndependentOnline"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.independentespanol.com/",
+      "https://www.independenturdu.com/",
+      "https://twitter.com/Independent",
+      "https://www.independentadvertising.com/",
+      "https://www.the-independent.com/news/world/americas/us-politics/vivek-ramaswamy-donald-trump-2024-b2401414.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/mcconnell-freeze-health-scare-senate-doctors-b2402858.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/marjorie-taylor-greene-mitch-mcconnell-freeze-b2402604.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/trump-new-today-mugshot-2024-latest-b2402416.html",
+      "https://www.indyturk.com/",
+      "https://www.the-independent.com/news/world/americas/us-politics/trump-inflated-property-values-b2402500.html",
+      "https://www.independentpersian.com/",
+      "https://www.independentadvertising.com/licensing-and-syndication/",
+      "https://www.the-independent.com/news/world/americas/us-politics/harrison-floyd-trump-georgia-indictment-b2402845.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/clarence-thomas-harlan-crow-financial-disclosure-b2402684.html",
+      "https://en.novayagazeta.ru/",
+      "https://www.the-independent.com/news/world/americas/us-politics/jamie-raskin-jared-kushner-subpoena-b2402699.html",
+      "https://www.linkedin.com/company/the-independent/jobs/",
+      "https://www.the-independent.com/news/world/americas/us-politics/vivek-ramaswamy-al-sharpton-2003-b2401461.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/glenn-youngkin-2024-primary-murdoch-b2402879.html",
+      "https://www.facebook.com/TheIndependentOnline",
+      "https://www.indy100.com/",
+      "https://www.the-independent.com/news/world/americas/us-politics/tennessee-drag-law-blount-county-pride-b2402859.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/donald-trump-georgia-trial-election-b2402835.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/trump-not-guilty-plea-georgia-b2402687.html",
+      "https://www.the-independent.com/news/world/americas/us-politics",
+      "https://www.the-independent.com/news/world/americas/us-politics/texas-drag-ban-greg-abbott-b2402958.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/trump-lock-up-2024-election-b2402510.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/trump-desantis-pac-closing-campaign-b2402941.html",
+      "https://www.independentarabia.com/",
+      "https://www.the-independent.com/news/world/americas/us-politics/vivek-ramaswamy-nikki-haley-2024-b2401437.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/chris-christie-trump-gop-primary-poll-b2393421.html",
+      "https://www.the-independent.com/news/world/americas/us-politics/donald-trump-nuclear-holocaust-fraud-b2402899.html",
+      "https://www.standard.co.uk/",
+      "https://www.the-independent.com/news/world/americas/us-politics/donald-trump-georgia-codefendants-trial-b2402564.html"
+    ]
+  },
+  "type": "url",
+  "id": "8501574122c55aa3473511a791960c768b1d16c4d99db79c2025ab5b0e900258",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/8501574122c55aa3473511a791960c768b1d16c4d99db79c2025ab5b0e900258"
+  }
+}

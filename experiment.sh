@@ -1,6 +1,6 @@
 #!/bin/bash
 
-test_dir="./testing_full/12_28_23_PM"
+test_dir="./testing_full/1_6_24_PM"
 # test_dir="./small_test/11_6_23"
 # remove testing directory
 rm -r $test_dir

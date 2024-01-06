@@ -153,7 +153,7 @@ def download_candidate_wget(log_name):
             filename = f"{candidate_path}/{homepage}{timestamp}"
 
             # download the homepage   
-            subprocess.run(f"wget {website} -O {filename}", shell=True)
+            subprocess.run(f"wget {website} -O {filename} --tries=2", shell=True)
 
             # extract all links from the homepage using bs4
             with open(filename, "r") as f:
@@ -196,7 +196,7 @@ def download_candidate_wget(log_name):
                 link_name = link[link.find('://')+3:].replace('/', '_')
                 link_filename = f"{candidate_path}/{link_name}{timestamp}"
                 # download the link, use p to avoid downloading embeddings
-                subprocess.run(f"wget {link} -O {link_filename}", shell=True)
+                subprocess.run(f"wget {link} -O {link_filename} --tries=2", shell=True)
 
             # get the sub links from depth 1 (depth=2 links)
             depth_two_links = set()
@@ -222,7 +222,7 @@ def download_candidate_wget(log_name):
                 link_name = link[link.find('://')+3:].replace('/', '_')
                 link_filename = f"{candidate_path}/{link_name}{timestamp}"
                 # download the link, use p to avoid downloading embeddings
-                subprocess.run(f"wget {link} -O {link_filename}", shell=True)
+                subprocess.run(f"wget {link} -O {link_filename} --tries=2", shell=True)
         except Exception as e:
             print(f"**ERROR: {candidate_name}**")
             with open(f"error_log.txt", "a+") as f:

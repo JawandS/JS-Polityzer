@@ -1,0 +1,707 @@
+{
+  "attributes": {
+    "last_modification_date": 1704294029,
+    "last_http_response_cookies": {
+      "shell#lang": "en",
+      "SC_ANALYTICS_GLOBAL_COOKIE": "873e4f4097c543b1b1a2d57643ccd887|False",
+      "samesite": "none",
+      "ASP.NET_SessionId": "wsygean1j2fqmzhoy2lredo0",
+      "ASLBSA": "000365de027417496f74e5f42e9a3e02bb603c6f5f8d0be92abcedb6decd12acbc7d",
+      "SameSite": "None,",
+      "ASLBSACORS": "000365de027417496f74e5f42e9a3e02bb603c6f5f8d0be92abcedb6decd12acbc7d"
+    },
+    "times_submitted": 993,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://heart.org/"
+    ],
+    "last_submission_date": 1704293712,
+    "last_http_response_content_length": 178366,
+    "last_http_response_headers": {
+      "x-cache": "CONFIG_NOCACHE",
+      "Transfer-Encoding": "chunked",
+      "set-cookie": "shell#lang=en; path=/; secure; SameSite=None, ASP.NET_SessionId=wsygean1j2fqmzhoy2lredo0; path=/; secure; HttpOnly; SameSite=None, SC_ANALYTICS_GLOBAL_COOKIE=873e4f4097c543b1b1a2d57643ccd887|False; expires=Sat, 31-Dec-2033 14:55:14 GMT; path=/; secure; HttpOnly; SameSite=None, ASLBSA=000365de027417496f74e5f42e9a3e02bb603c6f5f8d0be92abcedb6decd12acbc7d; path=/; httponly; secure, ASLBSACORS=000365de027417496f74e5f42e9a3e02bb603c6f5f8d0be92abcedb6decd12acbc7d; samesite=none; path=/; httponly; secure",
+      "CF-Cache-Status": "DYNAMIC",
+      "expires": "-1",
+      "vary": "Accept-Encoding",
+      "Server": "cloudflare",
+      "Connection": "keep-alive",
+      "accept-ch": "Sec-CH-UA-Full-Version-List,Sec-CH-UA-Platform-Version,Sec-CH-UA-Arch,Sec-CH-UA-Model,Sec-CH-UA-Bitness",
+      "pragma": "no-cache",
+      "Content-Encoding": "br",
+      "x-azure-ref": "0UnWVZQAAAAC6o61k+rdzRYCjA7Td7LHxQ0gxQUEyMDIwNjA5MDM1AGRhMzc4M2VjLWMzOGEtNDA0Ny04YTc0LWU4ZjFjNmU2YTgwNw==",
+      "Cache-Control": "no-cache, no-store",
+      "Date": "Wed, 03 Jan 2024 14:55:14 GMT",
+      "CF-RAY": "83fc14e45c042c13-ORD",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1704293712,
+    "first_submission_date": 1332774411,
+    "categories": {
+      "Forcepoint ThreatSeeker": "health",
+      "Sophos": "health and medicines",
+      "BitDefender": "health",
+      "Xcitium Verdict Cloud": "health & medicine",
+      "alphaMountain.ai": "Health"
+    },
+    "last_http_response_content_sha256": "9d8fd6b66471c4c4c61e81e4fd4cc9dd68321fa1d517b85965ad2f963332f869",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.heart.org/",
+    "trackers": {
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-PRLD9XQ",
+          "timestamp": 1704293712,
+          "id": "GTM-PRLD9XQ"
+        }
+      ]
+    },
+    "url": "http://heart.org/",
+    "title": "American Heart Association | To be a relentless force for a world of longer, healthier lives",
+    "last_analysis_stats": {
+      "harmless": 72,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 19,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "org",
+    "html_meta": {
+      "description": [
+        "Learn more about the American Heart Association's efforts to reduce death caused by heart disease and stroke. Also learn about cardiovascular conditions, ECC and CPR, donating, heart disease information for healthcare professionals, caregivers, and educators and healthy living."
+      ],
+      "twitter:image": [
+        "https://www.heart.org/-/media/Images/Health-Topics/Congenital-Heart-Defects/grandfather-and-grandson-reading-book.jpg?sc_lang=en&hash=9A9EFDA5D10604C289AC884B03F51F2B"
+      ],
+      "VIcurrentDateTime": [
+        "638398905146884840"
+      ],
+      "twitter:site": [
+        "www.heart.org"
+      ],
+      "og:image": [
+        "https://www.heart.org/-/media/Images/Health-Topics/Congenital-Heart-Defects/grandfather-and-grandson-reading-book.jpg?sc_lang=en&hash=9A9EFDA5D10604C289AC884B03F51F2B"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1.0, user-scalable=yes"
+      ],
+      "og:url": [
+        "https://www.heart.org/en/"
+      ],
+      "twitter:url": [
+        "https://www.heart.org/en/"
+      ],
+      "og:site_name": [
+        "www.heart.org"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "VirtualFolder": [
+        "/"
+      ],
+      "twitter:description": [
+        "Learn more about the American Heart Association's efforts to reduce death caused by heart disease and stroke. Also learn about cardiovascular conditions, ECC and CPR, donating, heart disease information for healthcare professionals, caregivers, and educators and healthy living."
+      ],
+      "og:type": [
+        "website"
+      ],
+      "og:description": [
+        "Learn more about the American Heart Association's efforts to reduce death caused by heart disease and stroke. Also learn about cardiovascular conditions, ECC and CPR, donating, heart disease information for healthcare professionals, caregivers, and educators and healthy living."
+      ],
+      "og:title": [
+        "American Heart Association | To be a relentless force for a world of longer, healthier lives"
+      ],
+      "twitter:title": [
+        "American Heart Association | To be a relentless force for a world of longer, healthier lives"
+      ]
+    },
+    "outgoing_links": [
+      "https://heart.jobs/?utm_campaign=heart.org-TopNav&vs=2896&utm_medium=Other&utm_source=heart.org-TopNav",
+      "https://www.empoweredtoserve.org/en/health-ecosystems",
+      "https://ahainstructornetwork.americanheart.org/AHAECC/classConnector.jsp?pid=ahaecc.classconnector.home",
+      "https://www.instagram.com/american_heart/",
+      "https://www.shopheart.org/?utm_source=heart.org&utm_medium=Referral&utm_campaign=AHA-Parent-Site-Top-Nav-Mobile",
+      "https://raiseyourwayforaha.funraise.org/",
+      "https://www.empoweredtoserve.org/en/",
+      "https://www.give.org/charity-reviews/national/health/american-heart-association-in-dallas-tx-173",
+      "https://nationalhealthcouncil.org/standards-of-excellence/",
+      "https://www.youtube.com/user/americanheartassoc",
+      "https://www.linkedin.com/company/american-heart-association",
+      "https://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=3260",
+      "https://ahatribute.funraise.org/",
+      "https://www.tiktok.com/@americanheartassociation?lang=en",
+      "https://www.facebook.com/AmericanHeart",
+      "https://heart.jobs/?utm_campaign=heart.org-Footer&vs=2896&utm_medium=Other&utm_source=heart.org-Footer",
+      "https://www.shopheart.org/?a=aha-heart.org-bottom-navigation&utm_source=heart.org&utm_medium=referral&utm_campaign=aha-heart.org-bottom-navigation",
+      "https://www.threads.net/@american_heart",
+      "https://www.shopheart.org/?utm_source=heart.org&utm_medium=Referral&utm_campaign=AHA-Parent-Site-Top-Nav-Desktop",
+      "https://www.goredforwomen.org/en/",
+      "https://www.projectbaseline.com/gored/",
+      "https://www.pinterest.com/americanheart/",
+      "https://www.stroke.org/en/",
+      "https://ssl.comodo.com/",
+      "https://www.twitter.com/American_Heart"
+    ]
+  },
+  "type": "url",
+  "id": "be8e9a1ea4aa289885ef018e205a1512f06c271787737bc5fb8e2148de31e0a0",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/be8e9a1ea4aa289885ef018e205a1512f06c271787737bc5fb8e2148de31e0a0"
+  }
+}

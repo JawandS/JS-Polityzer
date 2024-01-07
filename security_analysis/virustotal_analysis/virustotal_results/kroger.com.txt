@@ -1,0 +1,685 @@
+{
+  "attributes": {
+    "last_modification_date": 1704447328,
+    "times_submitted": 921,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://kroger.com/",
+      "http://www.kroger.com/"
+    ],
+    "last_submission_date": 1704446982,
+    "last_http_response_content_length": 367459,
+    "last_http_response_headers": {
+      "X-KT-ACR-LMA-CT": "true",
+      "X-OneAgent-JS-Injection": "true",
+      "Transfer-Encoding": "chunked",
+      "Set-Cookie": "JSESSIONID=D3C6EE4150544653DB0370F6A405306A; path=/auth; secure; httponly, origin=fldc; path=/; expires=Wed, 02 Aug 2023 19:18:33 GMT; domain=.kroger.com; Secure; secure; httponly, abTest=TL_94ad9f_C|f7_2f03b8_B; path=/; expires=Wed, 16 Aug 2023 07:18:33 GMT; samesite=lax, x-active-modality={\"type\":\"PICKUP\",\"locationId\":\"01100695\",\"source\":\"FALLBACK_ACTIVE_MODALITY_COOKIE\",\"createdDate\":1690960713425}; path=/; domain=kroger.com; Secure; secure; httponly, sid=6eea8a72-8684-e751-a732-a3d0c96b70c5; Domain=.kroger.com; Path=/; HttpOnly; Secure, pid=a732a3d0-c96b-6eea-70c5-8a728684e751; Max-Age=2592000; Path=/; Secure, AKA_A2=A; expires=Wed, 02-Aug-2023 08:18:33 GMT; path=/; domain=kroger.com; secure; HttpOnly, bm_mi=E5DC58F72CD0921298A612078EEF537F~YAAQFxkhF9je3qeJAQAAPdgctRRSBYjgLp1jtXgwHKBZszPLqWzEXJQE39djTx1poQ4Zl0cYfwmPlXVPE81BPgAQ0tHLUggoA8/s/6SpOThtbqAmGxZhU7U+icmpfbk/szE0kUIgrq00ndzm9bnv/Y98rpOIzI00C1/d9NtwUDgyKE2sqg+2353TYm5q8ayyoktTk2rcaOXYIJZ82hK7kOPTsXyz33uu+CTvdnAEa5o3XNswo48AlNBw5N7MvEPZZq6UCQ/NPvuhEyKL6cZBKDzRzma7D0pnoModQyZ8QgSf8VRp0BGMrzqbULt+2g==~1; Domain=.kroger.com; Path=/; Expires=Wed, 02 Aug 2023 09:18:32 GMT; Max-Age=7199; SameSite=None; Secure, bm_sv=56033D399C67EB89A777DD3738D5B9E2~YAAQFxkhF9ne3qeJAQAAPdgctRSadYaR80yUcEDriFQGZzPYXiZsswD2ZhikUv79ZHtuGVZGlB+yBIIbHBjS7U3iV6OdFwKS9STwXocxKNCL184YymT94V23qtEdqWNccBWWlUSBUg6I8YCJtBfKdt771jm86fwAg+FC7TAHITjBWwdamML5JHW6lSAoHnvlZ8yviAaYyuWfdadBsH/lrehSr/mmihN/ApxjWmEEF1WeSmMZVBtaFO8sBjtejryt~1; Domain=.kroger.com; Path=/; Expires=Wed, 02 Aug 2023 09:18:33 GMT; Max-Age=7200; SameSite=None; Secure",
+      "Strict-Transport-Security": "max-age=31536000 ; preload",
+      "Server": "nginx",
+      "Connection": "keep-alive, Transfer-Encoding",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-Akamai-Transformed": "9 - 0 pmb=mTOE,4mRUM,2",
+      "Akamai-GRN": "0.17192117.1690960713.33817560",
+      "Access-Control-Allow-Headers": "*",
+      "Content-Encoding": "gzip",
+      "Expires": "Wed, 02 Aug 2023 07:18:33 GMT",
+      "Vary": "Accept-Encoding",
+      "Server-Timing": "cdn-cache; desc=MISS, edge; dur=34, origin; dur=485, dtSInfo;desc=\"0\", dtRpid;desc=\"17331512\", ak_p; desc=\"1690960713250_388045079_864122208_57507_19568_11_-_-\";dur=1",
+      "Link": "<https://ads.nextdoor.com>;rel=\"preconnect\",<https://cdn.clinch.co>;rel=\"preconnect\",<https://bat.bing.com>;rel=\"preconnect\",<https://s.pinimg.com>;rel=\"preconnect\",<https://js.adsrvr.org>;rel=\"preconnect\",<https://kroger.demdex.net>;rel=\"preconnect\",<https://cdnws.softcoin.com>;rel=\"preconnect\", <https://assets.adobedtm.com>;rel=\"preconnect\",<https://cdn.cookielaw.org>;rel=\"preconnect\"",
+      "Accept-CH": "Device-Memory",
+      "Pragma": "no-cache",
+      "Cache-Control": "max-age=0, no-cache, no-store",
+      "Date": "Wed, 02 Aug 2023 07:18:33 GMT",
+      "X-ruxit-JS-Agent": "true",
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1704446982,
+    "first_submission_date": 1332781152,
+    "categories": {
+      "Forcepoint ThreatSeeker": "shopping",
+      "Sophos": "online shopping",
+      "Xcitium Verdict Cloud": "shopping",
+      "BitDefender": "onlineshop"
+    },
+    "last_http_response_content_sha256": "81ce3a9788ea4859faba330c74a9099af7c560d0b32161664bfb7e632583d55e",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.kroger.com/",
+    "trackers": {
+      "Adobe Dynamic Tag Management": [
+        {
+          "url": "//assets.adobedtm.com/launch-ENc65675e0c6e24b419ed7b0a71a1df7ee.min.js",
+          "timestamp": 1690960710,
+          "id": "launch-ENc65675e0c6e24b419ed7b0a71a1df7ee.min.j"
+        }
+      ]
+    },
+    "url": "http://kroger.com/",
+    "title": "Kroger : Shop Groceries, Find Digital Coupons & Order Online",
+    "last_analysis_stats": {
+      "harmless": 72,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 19,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "og:site_name": [
+        "Kroger"
+      ],
+      "og:image:alt": [
+        "Kroger Logo"
+      ],
+      "og:image:height": [
+        "512"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "og:type": [
+        "website"
+      ],
+      "og:description": [
+        "Shop low prices on groceries to build your shopping list or order online. Fill prescriptions, save with 100s of digital coupons, get fuel points, cash checks, send money & more."
+      ],
+      "og:image:width": [
+        "512"
+      ],
+      "apple-itunes-app": [
+        "app-id=403901186"
+      ],
+      "viewport": [
+        "width=device-width,initial-scale=1"
+      ],
+      "og:title": [
+        "Shop Groceries, Find Digital Coupons & Order Online - Kroger"
+      ],
+      "twitter:site": [
+        "@KrogerNews"
+      ],
+      "google-site-verification": [
+        "mLDjWodVihPJXvMAL0-8hcbuNludulWFtLJ5FFFMbyk"
+      ],
+      "og:image": [
+        "https://www.kroger.com/content/v2/binary/image/freshcart_kroger_color_logo--kroger.svg"
+      ],
+      "theme-color": [
+        "#0067b1"
+      ],
+      "description": [
+        "Shop low prices on groceries to build your shopping list or order online. Fill prescriptions, save with 100s of digital coupons, get fuel points, cash checks, send money & more."
+      ]
+    },
+    "outgoing_links": [
+      "https://www.thekrogerco.com/",
+      "https://8451cx.az1.qualtrics.com/jfe/form/SV_3PoB79U0AFELzMy",
+      "https://www.communitygifts.com/Default.aspx?Zip-Code-Locator=Enabled&ReturnTo=/Default.aspx",
+      "http://www.krogerprecisionmarketing.com/",
+      "http://www.krogerrealestate.com/asp/index.asp",
+      "http://www.thekrogerco.com/vendors-suppliers",
+      "https://www.thekrogerco.com/community/standing-together/",
+      "http://www.thekrogerco.com/newsroom",
+      "https://www.moneyservices.com",
+      "https://8451cx.az1.qualtrics.com/jfe/form/SV_6D8a5PZwLNzdLz7"
+    ]
+  },
+  "type": "url",
+  "id": "6697002e34b2df47eba3cef6d735bd92979a7c7a0068ec08d455f40725b97b2c",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/6697002e34b2df47eba3cef6d735bd92979a7c7a0068ec08d455f40725b97b2c"
+  }
+}

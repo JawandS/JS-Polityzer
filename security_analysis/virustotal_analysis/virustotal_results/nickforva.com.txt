@@ -1,0 +1,654 @@
+{
+  "attributes": {
+    "last_modification_date": 1606360624,
+    "last_http_response_cookies": {
+      "__cfduid": "d31fbb463544c1e78eeb27361a65fc4491606360623",
+      "SameSite": "Lax"
+    },
+    "times_submitted": 13,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "title": "Nick Freitas",
+    "last_submission_date": 1606360622,
+    "last_http_response_content_length": 87348,
+    "last_http_response_headers": {
+      "x-cache": "HIT: 4",
+      "transfer-encoding": "chunked",
+      "set-cookie": "__cfduid=d31fbb463544c1e78eeb27361a65fc4491606360623; expires=Sat, 26-Dec-20 03:17:03 GMT; path=/; domain=.www.nickforva.com; HttpOnly; SameSite=Lax",
+      "cf-cache-status": "DYNAMIC",
+      "vary": "Accept-Encoding, Accept-Encoding, Accept-Encoding",
+      "x-cacheable": "bot",
+      "x-cache-group": "bot",
+      "link": "<https://www.nickforva.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.nickforva.com/wp-json/wp/v2/pages/141>; rel=\"alternate\"; type=\"application/json\", <https://www.nickforva.com/>; rel=shortlink",
+      "date": "Thu, 26 Nov 2020 03:17:03 GMT",
+      "cf-ray": "5f80744a488c8522-ORD",
+      "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "x-powered-by": "WP Engine",
+      "content-encoding": "br",
+      "cf-request-id": "06a427026d00008522a736d000000001",
+      "server": "cloudflare",
+      "connection": "keep-alive",
+      "cache-control": "max-age=10800, must-revalidate",
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "reputation": 0,
+    "threat_names": [],
+    "tags": [
+      "base64-embedded"
+    ],
+    "last_analysis_date": 1606360622,
+    "first_submission_date": 1558720893,
+    "categories": {
+      "Forcepoint ThreatSeeker": "political organizations",
+      "Comodo Valkyrie Verdict": "media sharing"
+    },
+    "last_http_response_content_sha256": "3c1c97261c4a03cc0d5bff48792ed0aae43e42dfcb81fcf58414eb049a51dffb",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.nickforva.com/",
+    "trackers": {
+      "Google Tag Manager": [
+        {
+          "url": "//www.googletagmanager.com/gtm.js?id='+i+dl",
+          "timestamp": 1606360622,
+          "id": "GTM-KSH36FT"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=UA-160448358-1",
+          "timestamp": 1606360622,
+          "id": "UA-160448358-1"
+        }
+      ],
+      "Google AdSense": [
+        {
+          "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          "timestamp": 1606360622,
+          "id": "ca-pub-6896431341523111"
+        }
+      ],
+      "Facebook Connect": [
+        {
+          "url": "//connect.facebook.net/en_US/sdk.js",
+          "timestamp": 1606360622
+        }
+      ]
+    },
+    "url": "http://nickforva.com/",
+    "last_analysis_stats": {
+      "harmless": 74,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 8,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "CLEAN MX": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CLEAN MX"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Tencent": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Tencent"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Armis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Armis"
+      },
+      "MalBeacon": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalBeacon"
+      },
+      "Comodo Valkyrie Verdict": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Comodo Valkyrie Verdict"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "Virusdie External Site Scan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Virusdie External Site Scan"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Cyren": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyren"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "MalwareDomainList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwareDomainList"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "zvelo": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "zvelo"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "Malware Domain Blocklist": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malware Domain Blocklist"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "Web Security Guard": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Web Security Guard"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Spamhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spamhaus"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "EonScope": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EonScope"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "NotMining": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "NotMining"
+      },
+      "CyberCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyberCrime"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "MalSilo": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalSilo"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "SecureBrain": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SecureBrain"
+      },
+      "Nucleon": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Nucleon"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Hoplite Industries": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Hoplite Industries"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "BADWARE.INFO": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BADWARE.INFO"
+      },
+      "FraudScore": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "FraudScore"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "StopBadware": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "StopBadware"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Baidu-International": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Baidu-International"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "twitter:creator": [
+        "@NickForVA"
+      ],
+      "googlebot": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "generator": [
+        "Site Kit by Google 1.9.0"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "msapplication-TileImage": [
+        "/wp-content/uploads/2019/11/cropped-Favicon_Congress_Freitas2-270x270.png"
+      ],
+      "bingbot": [
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+      ],
+      "twitter:site": [
+        "@NickForVA"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "description": [
+        "Nick Freitas is running for Congress to lead in the fight over the future of our nation and ensure our freedoms for the next generation."
+      ]
+    },
+    "outgoing_links": [
+      "https://plus.google.com/share?url=https://www.facebook.com/706414369427081/posts/3456233444445146",
+      "https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/706414369427081/posts/3456233444445146",
+      "https://twitter.com/intent/tweet?text=https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3447833295285161/?type=3+Thomas Sowell is a national treasure.",
+      "https://www.linkedin.com/shareArticle?mini=true&url=https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3448759428525881/?type=3",
+      "https://twitter.com/intent/tweet?text=https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3448759428525881/?type=3+Why did Facebook suddenly suspend the Virginia Rising Page without any explanation???\n\nThis page was started by concerned citizens that wanted to protect our 2nd Amendment rights. \n\nIs this yet again selective targeting by social media against conservative groups??",
+      "https://secure.winred.com/nick-freitas-for-congress/donate?utm_source=website&utm_medium=website&utm_campaign=website_donation",
+      "https://twitter.com/intent/tweet?text=https://www.facebook.com/706414369427081/posts/3458446047557219+So according to Obama, Hispanics are now racists and bigots if they didn\u2019t vote for Democrats.\n\nIN OTHER NEWS: Democrats officially change their campaign slogan to \n\n\u201cVote for us, or you\u2019re a horrible person\u201d\n\nhttps://twitter.com/dcexaminer/status/1331610250277920768?s=21",
+      "https://www.linkedin.com/shareArticle?mini=true&url=https://www.facebook.com/706414369427081/posts/3456233444445146",
+      "https://plus.google.com/share?url=https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3448759428525881/?type=3",
+      "https://www.facebook.com/706414369427081/",
+      "https://nick-freitas-for-congress.myshopify.com/",
+      "https://plus.google.com/share?url=https://www.facebook.com/706414369427081/posts/3458446047557219",
+      "https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/706414369427081/posts/3458446047557219",
+      "https://t.co/g13D",
+      "https://www.facebook.com/706414369427081/posts/3456233444445146",
+      "https://www.facebook.com/BarackObama",
+      "https://www.facebook.com/NickFreitasVA/",
+      "https://www.linkedin.com/shareArticle?mini=true&url=https://www.facebook.com/706414369427081/posts/3452969824771508",
+      "https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/706414369427081/posts/3452969824771508",
+      "https://twitter.com/NickForVA",
+      "https://plus.google.com/share?url=https://www.facebook.com/706414369427081/posts/3452969824771508",
+      "https://www.facebook.com/706414369427081/posts/3452969824771508",
+      "https://www.linkedin.com/shareArticle?mini=true&url=https://www.facebook.com/706414369427081/posts/3458446047557219",
+      "https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3448759428525881/?type=3",
+      "https://twitter.com/dcexaminer/status/1331610250277920768?s=21",
+      "https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3447833295285161/?type=3",
+      "https://www.facebook.com/706414369427081",
+      "https://www.facebook.com/706414369427081/posts/3458446047557219",
+      "https://twitter.com/intent/tweet?text=https://www.facebook.com/706414369427081/posts/3452969824771508+PSA: When an elected official says \u201cAll we\u2019re asking...\u201d \n\nPlease remember that they are most likely not \u201casking\u201d you anything. They are telling you, and they plan to punish you if you don\u2019t comply. \n\nThat\u2019s why we should be careful about how much power we hand over to politicians.",
+      "https://plus.google.com/share?url=https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3447833295285161/?type=3",
+      "https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3447833295285161/?type=3",
+      "https://twitter.com/intent/tweet?text=https://www.facebook.com/706414369427081/posts/3456233444445146+If the only reason you are free is because your government \u201cpermits\u201d you to be. Then you\u2019re probably not. \n\nUnfortunately we have a lot of government officials that think their job is to micromanage our lives because they arrogantly assume they know best.",
+      "https://www.linkedin.com/shareArticle?mini=true&url=https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3447833295285161/?type=3",
+      "https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/NickFreitasVA/photos/a.707566075978577/3448759428525881/?type=3"
+    ]
+  },
+  "type": "url",
+  "id": "f88abf0f0f0d9a6f431f84d46435ec90c65cced4afccb8ea08572e6440f2b853",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/f88abf0f0f0d9a6f431f84d46435ec90c65cced4afccb8ea08572e6440f2b853"
+  }
+}

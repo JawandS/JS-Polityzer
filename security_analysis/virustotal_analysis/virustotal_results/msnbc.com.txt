@@ -1,0 +1,750 @@
+{
+  "attributes": {
+    "last_modification_date": 1704206265,
+    "times_submitted": 1361,
+    "total_votes": {
+      "harmless": 1,
+      "malicious": 1
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://msnbc.com/",
+      "http://www.msnbc.com/"
+    ],
+    "last_submission_date": 1704205944,
+    "last_http_response_content_length": 765338,
+    "last_http_response_headers": {
+      "Content-Length": "765338",
+      "Content-Language": "en",
+      "Content-Security-Policy": "upgrade-insecure-requests;",
+      "X-Powered-By": "Next.js",
+      "X-Backend-Server": "green-ramen2-768cb7b985-tmbzw",
+      "Strict-Transport-Security": "max-age=2628000 ; preload",
+      "Set-Cookie": "akaas_MSNBC=1705069949~rv=70~id=f0b5818be01a0343b0d130268cdf7434~rn=; path=/; Expires=Fri, 12 Jan 2024 14:32:29 GMT; Secure; SameSite=None",
+      "Server": "nginx",
+      "Connection": "keep-alive",
+      "ETag": "\"bad9a-sd/+cft9Mkmc0pKIpfYkYvrpxMA\"",
+      "Link": "<https://nodeassets.nbcnews.com>; rel=preconnect, <https://media-cldnry.s-nbcnews.com>; rel=preconnect, <https://securepubads.g.doubleclick.net>; rel=preconnect, <https://nodeassets.nbcnews.com>; rel=preconnect; crossorigin=true, <https://mps.nbcuni.com/fetch/ext/load-nbcnews-bento.js?nowrite=jq>; as=script; rel=preload",
+      "Cache-Control": "private, no-cache, no-store, must-revalidate",
+      "Date": "Tue, 02 Jan 2024 14:32:29 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Encoding": "br"
+    },
+    "reputation": 44,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1704205944,
+    "first_submission_date": 1309265052,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Sophos": "news",
+      "Xcitium Verdict Cloud": "streaming media",
+      "BitDefender": "news"
+    },
+    "last_http_response_content_sha256": "d8fce8060eb3ee80a1941dec01254aedbdb49eb4d813e62c898cebfabfe94780",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.msnbc.com/",
+    "trackers": {
+      "Adobe Dynamic Tag Management": [
+        {
+          "url": "//assets.adobedtm.com/launch-EN03682f66064449c8b87d78eae3e2fc57.min.js",
+          "timestamp": 1704205944,
+          "id": "launch-EN03682f66064449c8b87d78eae3e2fc57.min.j"
+        }
+      ]
+    },
+    "url": "http://msnbc.com/",
+    "title": "MSNBC News - Breaking News and News Today | Latest News",
+    "last_analysis_stats": {
+      "harmless": 72,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 19,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "twitter:creator": [
+        "MSNBC"
+      ],
+      "msapplication-config": [
+        "https://nodeassets.nbcnews.com/cdnassets/projects/ramen/favicon/msnbc/all-other-sizes-PNG.ico/browserconfig.xml"
+      ],
+      "og:image:height": [
+        "630"
+      ],
+      "twitter:image": [
+        "https://media1.s-nbcnews.com/j/newscms/2021_35/3502573/mslogo_f83d3079a263f4b5b2af77cd6cccfbcf.nbcnews-fp-1024-512.png"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "og:image:width": [
+        "1200"
+      ],
+      "fb:app_id": [
+        "351594351545594"
+      ],
+      "google-site-verification": [
+        "REPjLi_yDHx7TLKgH3OC5uFnLfGp1M-1m8QUec6g8qQ"
+      ],
+      "twitter:site": [
+        "MSNBC"
+      ],
+      "og:image": [
+        "https://media1.s-nbcnews.com/j/newscms/2021_35/3502573/mslogo_f83d3079a263f4b5b2af77cd6cccfbcf.nbcnews-fp-1200-630.png"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1, user-scalable=yes"
+      ],
+      "description": [
+        "MSNBC breaking news and the latest news for today. Get daily news from local news reporters and world news updates with live audio & video from our team."
+      ],
+      "og:url": [
+        "https://www.msnbc.com"
+      ],
+      "og:site_name": [
+        "MSNBC.com"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "twitter:description": [
+        "MSNBC breaking news and the latest news for today. Get daily news from local news reporters and world news updates with live audio & video from our team."
+      ],
+      "og:type": [
+        "website"
+      ],
+      "og:description": [
+        "MSNBC breaking news and the latest news for today. Get daily news from local news reporters and world news updates with live audio & video from our team."
+      ],
+      "twitter:image:src": [
+        "https://media1.s-nbcnews.com/j/newscms/2021_35/3502573/mslogo_f83d3079a263f4b5b2af77cd6cccfbcf.nbcnews-fp-1024-512.png"
+      ],
+      "branch:deeplink:authorName1": [
+        "Paul Waldman"
+      ],
+      "og:title": [
+        "MSNBC News - Breaking News and News Today | Latest News"
+      ],
+      "next-head-count": [
+        "67"
+      ],
+      "twitter:title": [
+        "MSNBC News - Breaking News and News Today | Latest News"
+      ],
+      "branch:deeplink:unibrow": [
+        "NBC News"
+      ],
+      "thumbnail": [
+        "https://media1.s-nbcnews.com/j/newscms/2021_35/3502573/mslogo_f83d3079a263f4b5b2af77cd6cccfbcf.social_share_1024x768_scale.png"
+      ],
+      "fb:pages": [
+        "273864989376427",
+        "114114045339706",
+        "25987609066",
+        "153005644864469",
+        "598356233569407",
+        "62499551911",
+        "90692553761",
+        "114945745226947",
+        "280920811923248",
+        "809948162383434"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.nbcnews.com/news/us-news/surfer-killed-shark-encounter-hawaii-rcna131830",
+      "https://www.facebook.com/msnbc",
+      "https://www.nbcnews.com",
+      "https://nbcnews.zendesk.com/hc/en-us",
+      "https://www.nbcnews.com/video/inspiring-america-james-webb-telescope-team-transforms-understanding-of-our-universe-181557829632",
+      "https://www.nbcstore.com/pages/msnbc?utm_source=msnbc.com&utm_medium=referral&utm_campaign=msnbc_contentsite_nav&utm_term=msnbccontentsitereferralutm_content=landingpage",
+      "https://www.nbcnews.com/news/us-news/beverly-hills-90210-actor-ian-ziering-describes-attack-biker-gang-rcna131833",
+      "https://www.nbcnews.com/news/world/strong-earthquakes-japan-dozens-dead-buildings-destroyed-rcna131826",
+      "https://www.peacocktv.com/collections/msnbc?cid=2201libgennbnwownedi4995&utm_campaign=2201libgen&utm_source=msnbc_msnbc_na&utm_medium=own_edi_awa_navlnk&utm_term=msnbcvstr&utm_content=msnbc",
+      "https://www.nbcnews.com/news/us-news/winning-842-million-powerball-jackpot-sold-michigan-rcna131821",
+      "https://www.nbcnews.com/news/world/mexican-actor-ana-ofelia-murgui-voiced-mama-coco-coco-dies-90-rcna131810",
+      "https://www.nbcnews.com/news/world/man-attacks-injures-south-korean-opposition-leader-lee-jae-myung-rcna131818",
+      "https://www.nbcnews.com/tech/crypto/bitcoin-climbs-45000-first-time-april-2022-rcna131861",
+      "https://www.nbcnews.com/politics/2024-election/republicans-spend-100-million-iowa-ads-come-rcna130856",
+      "https://cnbcrsh.qualtrics.com/jfe/form/SV_3TUNjdZGhQ6s3ZA?Origin=msnbcwebsite",
+      "https://www.nbcnews.com/news/us-news/colorado-mother-suspected-killing-2-children-makes-court-appearance-lo-rcna131829",
+      "https://www.nbcnews.com/video/inspiring-america-volunteers-at-u-s-border-care-for-thousands-of-migrants-181557829731",
+      "https://www.nbcnews.com/video/inspiring-america-reba-mcentire-helps-breathe-new-life-into-oklahoma-hometown-181555781525",
+      "https://www.nbcnews.com/news/us-news/new-years-day-crash-kills-2-injures-5-rochester-ny-gasoline-canisters-rcna131836",
+      "https://www.nbcnews.com/video/inspiring-america-susan-burton-overcomes-tragedy-to-save-others-from-prison-addiction-181555269806",
+      "https://www.nbcnews.com/video/inspiring-america-gary-sinise-veterans-work-together-to-tell-military-stories-181557317677",
+      "https://www.instagram.com/msnbc",
+      "https://www.nbcnews.com/",
+      "https://www.nbcnews.com/news/us-news/people-carbon-monoxide-poisoning-mormon-church-utah-rcna131819",
+      "https://www.nbcnews.com/news/sports/michael-penix-jr-leads-no-2-washington-37-31-victory-texas-spot-nation-rcna131823",
+      "https://www.nbcnews.com/news/world/live-blog/israel-hamas-war-live-updates-rcna131825",
+      "https://www.nbcnews.com/news/sports/espn-apologizes-showing-clip-woman-flashing-breast-sugar-bowl-rcna131835",
+      "https://www.nbcnews.com/news/us-news/chinese-exchange-student-found-cold-scared-alone-tent-utah-mountains-c-rcna131840",
+      "https://www.nbcnews.com/news/world/plane-fire-japan-haneda-airport-rcna131827",
+      "https://www.twitter.com/msnbc",
+      "https://www.nbcnews.com/news/world/russia-attacks-ukraine-kyiv-kharkiv-putin-intensified-strikes-rcna131824",
+      "https://www.nbcnews.com/news/sports/michigan-beats-alabama-rose-bowl-reaches-national-title-game-rcna131817",
+      "https://www.today.com",
+      "https://www.nbcnews.com/news/world/hong-kong-activist-jimmy-lai-pleads-not-guilty-national-security-trial-rcna131822",
+      "https://www.nbcnews.com/news/us-news/aj-mclean-wife-officially-call-quits-yearlong-separation-rcna131811"
+    ]
+  },
+  "type": "url",
+  "id": "f34ddc1ec746fbf8623ff538ed511a404ff37e0464d06946a534ee3e41ed065e",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/f34ddc1ec746fbf8623ff538ed511a404ff37e0464d06946a534ee3e41ed065e"
+  }
+}

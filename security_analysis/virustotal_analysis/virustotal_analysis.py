@@ -9,7 +9,7 @@ from base64 import urlsafe_b64encode
 API_KEY = os.environ.get("VIRUSTOTAL_API_KEY")
 
 # set delay
-DELAY = 10 # seconds
+DELAY = 30 # seconds
 
 # set up virustotal instance
 vtotal = Virustotal(API_KEY=API_KEY, API_VERSION="v3")
@@ -24,14 +24,15 @@ with open('../../active_html/results/link_extractor_result.json', 'r') as f:
         all_candidates.add(candidate)
 
 # valid candidtes
-valid_candidates = ['GearyMHiggins', 'JackieHopeGlass', 'DucMTruong', 'LukeETorian', 'NicholasSOlenik', 'NhanCHuynh', 'KannanSrinivasan', 'DanIHelmer', 'KathyKLTran', 'SaraHRatcliffe', 'AmandaEBatten', 'AlfonsoHLopez', 'JohnQSmith', 'RobertDBobbyOrrockSr', 'MichaelCKarslake', 'MichaelACherry', 'CarrieEmersonCoyner', 'KarenLJenkins', 'JeremyDRodden', 'TerryGKilgore', 'EricRZehr', 'JamesAThomasJr', 'KristinLHoffman', 'NadariusEClark', 'KarenAKeys-Gamarra', 'PatrickAHope', 'RichardCRipSullivanJr', 'MarkDSickles', 'JoshEThomas', 'RaeCCousins', 'DeloresLMcQuinn', 'RLeeWareJr', 'AlexQAskew', 'MadelynMadyRodriguez', 'MarciaSCiaPrice', 'RodneyTWillett', 'MarkLEarleyJr', 'SSamRasoul', 'HOttoWachsmannJr', 'PaulEKrizek', 'JohnSitkaIII', 'TravisSNembhard', 'AmyJLaufer', 'DestinyLLevereBolling', 'DavidLOwen', 'CToddGilbert', 'AnneFerrellTata', 'StephenCMiller-PittsJr', 'JohnTStirrup', 'WilliamDBillWiley', 'PhilMHernandez', 'VivianEWatts', 'AtoosaRReaser', 'JoshuaGCole', 'MarkJLux', 'NickJFreitas', 'JChristianChrisObenshain', 'BetsyBCarr', 'LesRAdams', 'WChadGreen', 'ElizabethBBennett-Parker', 'BrianaDSewell', 'JosephPJoeMcNamara', 'EdwardFMcGovern', 'WendellSWalker', 'ACCordoza', 'RobertSBloxomJr', 'AdeleYMcClure', 'PatriciaLynnQuesenberry', 'WilliamPDavis', 'DeloresROates', 'SteveDHarvey', 'DaveACranceJr', 'MaxBFisher', 'EllenHCampbell', 'KimATaylor', 'CatAPorterfield', 'LeonardBLacey', 'LRileyShaia', 'JamesAJayLeftwichJr', 'LeePetersIII', 'RobertLRobBanseJr', 'MichaelJDillender', 'MattJWaters', 'JeionAWard', 'PhillipAPhilScott', 'DonLScottJr', 'DavidLBulova', 'ScottAWyatt', 'MarcusBSimon', 'AndrewBAndyPittman', 'IreneShin', 'KatrinaECallsen', 'JasonSBallard', 'IanTravisLovejoy', 'CECliffHayesJr', 'JamesVTully', 'KarenSGreenhalgh', 'RoziaAJRHensonJr', 'DebraDGardner', 'LarryJJackson', 'HFBuddyFowlerJr', 'HillaryPughKent', 'KarrieKDelaney', 'WrenMWilliams', 'HollyMSeibold', 'RachelALevy', 'MichaelBFeggans', 'ChrisSRunion', 'JenniferKWoofter', 'MichaelJWebert', 'CharnieleLHerring', 'FernandoJMartyMartinez', 'LillianVFranklin', 'TerryLAustin', 'KimberlyPopeAdams', 'JasonAFord', 'DeborahIRenieGates', 'FrankMRuffJr', 'JenniferDCarrollFoy', 'WilliamMBillStanleyJr', 'MamieELocke', 'GregoryJMoulthrop', 'RussetWPerry', 'LLouiseLucas', 'NatanDMcKenzie', 'EmilyGScott', 'WilliamRBillDeSteph', 'LamontBagby', 'SaddamAzlanSalim', 'JenniferBBoysko', 'TTravisHackworth', 'SchuylerTVanValkenburg', 'RichardHStuart', 'DavidAHenshaw', 'JohnJMcGuireIII', 'PATrishWhite-Boyd', 'KennethDKenReid', 'BryceEReeves', 'GlenHSturtevantJr', 'DouglassHaydenFisher', 'LashrecseDAird', 'AaronRRouse', 'RCreighDeeds', 'ChristieNewCraig', 'ToddEPillion', 'JDDannyDiggs', 'BarbaraAFavola', 'PhilipAHamilton', 'AdamPEbbin', 'JoliciaAWard', 'EricFDitri', 'RobertWBeckman', 'TimmyFFrench', 'DavidWMarsden', 'JoshuaJHuffman', 'JulieAnnaPerry', 'MarkDObenshain', 'TaraADurant', 'StellaGPekarsky']
+# valid_candidates = ['GearyMHiggins', 'JackieHopeGlass', 'DucMTruong', 'LukeETorian', 'NicholasSOlenik', 'NhanCHuynh', 'KannanSrinivasan', 'DanIHelmer', 'KathyKLTran', 'SaraHRatcliffe', 'AmandaEBatten', 'AlfonsoHLopez', 'JohnQSmith', 'RobertDBobbyOrrockSr', 'MichaelCKarslake', 'MichaelACherry', 'CarrieEmersonCoyner', 'KarenLJenkins', 'JeremyDRodden', 'TerryGKilgore', 'EricRZehr', 'JamesAThomasJr', 'KristinLHoffman', 'NadariusEClark', 'KarenAKeys-Gamarra', 'PatrickAHope', 'RichardCRipSullivanJr', 'MarkDSickles', 'JoshEThomas', 'RaeCCousins', 'DeloresLMcQuinn', 'RLeeWareJr', 'AlexQAskew', 'MadelynMadyRodriguez', 'MarciaSCiaPrice', 'RodneyTWillett', 'MarkLEarleyJr', 'SSamRasoul', 'HOttoWachsmannJr', 'PaulEKrizek', 'JohnSitkaIII', 'TravisSNembhard', 'AmyJLaufer', 'DestinyLLevereBolling', 'DavidLOwen', 'CToddGilbert', 'AnneFerrellTata', 'StephenCMiller-PittsJr', 'JohnTStirrup', 'WilliamDBillWiley', 'PhilMHernandez', 'VivianEWatts', 'AtoosaRReaser', 'JoshuaGCole', 'MarkJLux', 'NickJFreitas', 'JChristianChrisObenshain', 'BetsyBCarr', 'LesRAdams', 'WChadGreen', 'ElizabethBBennett-Parker', 'BrianaDSewell', 'JosephPJoeMcNamara', 'EdwardFMcGovern', 'WendellSWalker', 'ACCordoza', 'RobertSBloxomJr', 'AdeleYMcClure', 'PatriciaLynnQuesenberry', 'WilliamPDavis', 'DeloresROates', 'SteveDHarvey', 'DaveACranceJr', 'MaxBFisher', 'EllenHCampbell', 'KimATaylor', 'CatAPorterfield', 'LeonardBLacey', 'LRileyShaia', 'JamesAJayLeftwichJr', 'LeePetersIII', 'RobertLRobBanseJr', 'MichaelJDillender', 'MattJWaters', 'JeionAWard', 'PhillipAPhilScott', 'DonLScottJr', 'DavidLBulova', 'ScottAWyatt', 'MarcusBSimon', 'AndrewBAndyPittman', 'IreneShin', 'KatrinaECallsen', 'JasonSBallard', 'IanTravisLovejoy', 'CECliffHayesJr', 'JamesVTully', 'KarenSGreenhalgh', 'RoziaAJRHensonJr', 'DebraDGardner', 'LarryJJackson', 'HFBuddyFowlerJr', 'HillaryPughKent', 'KarrieKDelaney', 'WrenMWilliams', 'HollyMSeibold', 'RachelALevy', 'MichaelBFeggans', 'ChrisSRunion', 'JenniferKWoofter', 'MichaelJWebert', 'CharnieleLHerring', 'FernandoJMartyMartinez', 'LillianVFranklin', 'TerryLAustin', 'KimberlyPopeAdams', 'JasonAFord', 'DeborahIRenieGates', 'FrankMRuffJr', 'JenniferDCarrollFoy', 'WilliamMBillStanleyJr', 'MamieELocke', 'GregoryJMoulthrop', 'RussetWPerry', 'LLouiseLucas', 'NatanDMcKenzie', 'EmilyGScott', 'WilliamRBillDeSteph', 'LamontBagby', 'SaddamAzlanSalim', 'JenniferBBoysko', 'TTravisHackworth', 'SchuylerTVanValkenburg', 'RichardHStuart', 'DavidAHenshaw', 'JohnJMcGuireIII', 'PATrishWhite-Boyd', 'KennethDKenReid', 'BryceEReeves', 'GlenHSturtevantJr', 'DouglassHaydenFisher', 'LashrecseDAird', 'AaronRRouse', 'RCreighDeeds', 'ChristieNewCraig', 'ToddEPillion', 'JDDannyDiggs', 'BarbaraAFavola', 'PhilipAHamilton', 'AdamPEbbin', 'JoliciaAWard', 'EricFDitri', 'RobertWBeckman', 'TimmyFFrench', 'DavidWMarsden', 'JoshuaJHuffman', 'JulieAnnaPerry', 'MarkDObenshain', 'TaraADurant', 'StellaGPekarsky']
 # get outbound links
 outbound_links = set()
 candidate_mapping  = {}
 for candidate in all_candidates:
     # check if valid candidate
-    if candidate not in valid_candidates:
-        continue
+    # if candidate not in valid_candidates:
+        # print(f"Skipping {candidate} as not a valid candidate.")
+        # continue
     # get candidate data
     office = data[candidate]['office']
     website = f"{tldextract.extract(data[candidate]['website']).domain}.{tldextract.extract(data[candidate]['website']).suffix}".lower()
@@ -51,9 +52,17 @@ already_done = set()
 for filename in os.listdir("virustotal_results"):
     if filename.endswith(".txt"):
         already_done.add(filename[:-4])
+# remove links that have 404 error
+with open("virustotal_error.log", "r") as f:
+    for line in f:
+        link = line.split("\t")[0]
+        err_msg = line.split("\t")[1]
+        if "404" in err_msg:
+            already_done.add(link)
 for link in already_done:
     outbound_links.remove(link)
 print(f"Total number of links: {len(outbound_links)}")
+
 
 # use virustotal
 error_file = open("virustotal_error.log", "a")
@@ -73,6 +82,9 @@ for link in outbound_links:
     except Exception as err:
         print(f"An error occurred: {err}\nCatching and continuing with program.")
         error_file.write(link + "\t" + str(err) + "\n")
+        if "429" in str(err):
+            print("quota exceeded")
+            break
         time.sleep(DELAY)
 
 # write mapping

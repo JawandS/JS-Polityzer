@@ -1,0 +1,715 @@
+{
+  "attributes": {
+    "last_modification_date": 1686934650,
+    "times_submitted": 397,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://labour.org.nz/",
+      "https://labour.org.nz/"
+    ],
+    "last_submission_date": 1686836308,
+    "last_http_response_content_length": 51936,
+    "last_http_response_headers": {
+      "X-Request-Id": "ad26a581-239b-459e-8fc3-084a07b80326",
+      "Transfer-Encoding": "chunked",
+      "CF-Cache-Status": "DYNAMIC",
+      "Server": "cloudflare",
+      "Connection": "keep-alive",
+      "X-Content-Digest": "bd8b8f8a958d2ea6e659cdb815c5870988d0baf1",
+      "X-Middleware-Start": "t=1686843876752674",
+      "X-Frame-Options": "ALLOWALL",
+      "X-Served-By": "ip-10-30-103-82",
+      "X-Content-Type-Options": "nosniff",
+      "Content-Encoding": "gzip",
+      "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+      "X-Rack-Cache": "fresh",
+      "X-NB-Cached-Page": "yes",
+      "Access-Control-Request-Method": "GET, POST, PUT, DELETE",
+      "X-Runtime": "4.069340",
+      "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+      "Date": "Thu, 15 Jun 2023 15:44:36 GMT",
+      "CF-RAY": "7d7bef758cae2334-ORD",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "Content-Type": "text/html; charset=utf-8",
+      "Age": "0"
+    },
+    "reputation": 0,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1686836308,
+    "first_submission_date": 1387182662,
+    "categories": {
+      "Forcepoint ThreatSeeker": "political organizations",
+      "Xcitium Verdict Cloud": "media sharing",
+      "alphaMountain.ai": "News, Politics/Opinion, Society/Lifestyle",
+      "BitDefender": "misc"
+    },
+    "last_http_response_content_sha256": "8aff2d5fb03f4d35590b11427aa9a1832e8cdae7d1411cfc1b1c8e5b0f9a5090",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.labour.org.nz/",
+    "trackers": {
+      "Amazon Cloudfront": [
+        {
+          "url": "https://d3n8a8pro7vhmx.cloudfront.net/themes/55cd34742213937338000001/attachments/original/1503708269/fern.svg?1503708269",
+          "timestamp": 1606383682,
+          "id": "d3n8a8pro7vhmx"
+        },
+        {
+          "url": "https://d3f5l8ze0o4j2m.cloudfront.net/m87/k33spt.js",
+          "timestamp": 1606383682,
+          "id": "d3f5l8ze0o4j2m"
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-MZGC87M",
+          "timestamp": 1686836308,
+          "id": "GTM-MZGC87M"
+        }
+      ],
+      "Facebook Connect": [
+        {
+          "url": "https://connect.facebook.net/en_US/sdk.js",
+          "timestamp": 1686836308,
+          "id": "126739610711965"
+        },
+        {
+          "url": "https://connect.facebook.net/en_US/sdk.js",
+          "id": " window.fbAsyncInit = function() {\n    FB.init({\n      appId      : 126739610711965,\n      channelUrl : \"//nzlabour.nationbuilder.com/channel.html\",\n      status     : true,\n      version    : \"v3.2\",\n      cookie     : true,\n      xfbml      : true\n    });\n  };\n  (function(d, s, id) {\n    var js, fjs = d.getElementsByTagName(s)[0];\n    if (d.getElementById(id)) return;\n    js = d.createElement(s);\n    js.id = id;\n    js.async = true;\n    js.src = \"//connect.facebook.net/en_US/sdk.js\";\n    fjs.parentNode.insertBefore(js, fjs);\n  }(document, 'script"
+        }
+      ],
+      "Google Analytics": [
+        {
+          "url": "https://www.google-analytics.com/analytics.js",
+          "timestamp": 1606383682,
+          "id": "UA-73108357-1"
+        }
+      ]
+    },
+    "url": "http://labour.org.nz/",
+    "title": "NZ Labour Party \u2013 Let's keep moving >",
+    "last_analysis_stats": {
+      "harmless": 72,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 18,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "SecureBrain": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SecureBrain"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "AICC (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AICC (MONITORAPP)"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "org.nz",
+    "html_meta": {
+      "Title": [
+        "Let's keep moving"
+      ],
+      "csrf-token": [
+        "NYAHUk+06VspKuUj6hX4n/4drV3ER/WPZ2qn8XbUYPE="
+      ],
+      "twitter:image": [
+        "https://assets.nationbuilder.com/nzlabour/pages/3186/meta_images/original/Labour_social_share_image.jpg?1674357855"
+      ],
+      "csrf-param": [
+        "authenticity_token"
+      ],
+      "twitter:site": [
+        "@nzlabour"
+      ],
+      "og:image": [
+        "https://assets.nationbuilder.com/nzlabour/pages/3186/meta_images/original/Labour_social_share_image.jpg?1674357855"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "og:site_name": [
+        "NZ Labour Party"
+      ],
+      "og:url": [
+        "https://www.labour.org.nz/"
+      ],
+      "Description": [
+        "We\u2019re taking advantage of the big opportunities we have to do things differently. Whether it\u2019s building more homes for Kiwi families, investing in cleaner energy or providing mental health support in schools, we\u2019re committed to building the foundations for New Zealand to emerge stronger than ever."
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "twitter:text:description": [
+        "NZ Labour Party \u2014 Let's keep moving >"
+      ],
+      "og:type": [
+        "article"
+      ],
+      "og:description": [
+        "We\u2019re taking advantage of the big opportunities we have to do things differently. Whether it\u2019s building more homes for Kiwi families, investing in cleaner energy or providing mental health support in schools, we\u2019re committed to building the foundations for New Zealand to emerge stronger than ever."
+      ],
+      "theme-color": [
+        "#d82c20"
+      ],
+      "og:title": [
+        "NZ Labour Party"
+      ],
+      "twitter:title": [
+        "Let's keep moving"
+      ]
+    },
+    "outgoing_links": [
+      "https://twitter.com/chrishipkins",
+      "https://www.youtube.com/user/nzlabour",
+      "https://www.facebook.com/chrishipkinsmp",
+      "https://www.instagram.com/chrishipkinsmp/",
+      "https://nationbuilder.com/",
+      "https://www.facebook.com/NZLabourParty/",
+      "https://www.twitter.com/nzlabour",
+      "https://instagram.com/nzlabour"
+    ]
+  },
+  "type": "url",
+  "id": "109e499a4b61d375cb019a5ace7dea35c9c3954c88c260ce168c188d3d5971fb",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/109e499a4b61d375cb019a5ace7dea35c9c3954c88c260ce168c188d3d5971fb"
+  }
+}

@@ -1,0 +1,716 @@
+{
+  "attributes": {
+    "last_modification_date": 1704602095,
+    "times_submitted": 158,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://acwm.org/"
+    ],
+    "last_submission_date": 1704602095,
+    "last_http_response_content_length": 267822,
+    "last_http_response_headers": {
+      "X-Cache": "MISS",
+      "X-Tec-Api-Root": "https://acwm.org/wp-json/tribe/events/v1/",
+      "transfer-encoding": "chunked",
+      "Set-Cookie": "mailchimp_landing_site=https%3A%2F%2Facwm.org%2F; expires=Mon, 18-Dec-2023 19:08:00 GMT; Max-Age=2419200; path=/; secure; SameSite=Strict",
+      "Accept-Ranges": "bytes",
+      "Strict-Transport-Security": "max-age=300",
+      "Server": "nginx",
+      "X-Tec-Api-Version": "v1",
+      "Via": "1.1 varnish",
+      "X-Cache-Hits": "0",
+      "X-Pantheon-Styx-Hostname": "styx-fe3-a-85576d6d5b-q7n7g",
+      "X-Served-By": "cache-chi-kigq8000110-CHI",
+      "X-Timer": "S1700507280.440002,VS0,VE1456",
+      "Vary": "Accept-Encoding, Cookie",
+      "Connection": "keep-alive",
+      "X-Styx-Req-Id": "1f655f92-87d8-11ee-8c81-7e3af7233cd7",
+      "X-Tec-Api-Origin": "https://acwm.org",
+      "Link": "<https://acwm.org/wp-json/>; rel=\"https://api.w.org/\", <https://acwm.org/wp-json/wp/v2/pages/5>; rel=\"alternate\"; type=\"application/json\", <https://acwm.org/>; rel=shortlink",
+      "Cache-Control": "public, max-age=600",
+      "Date": "Mon, 20 Nov 2023 19:08:01 GMT",
+      "Cf-Edge-Cache": "cache,platform=wordpress",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Age": "0"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1700506977,
+    "first_submission_date": 1433242696,
+    "categories": {
+      "Forcepoint ThreatSeeker": "cultural institutions",
+      "alphaMountain.ai": "Society/Lifestyle",
+      "BitDefender": "travel"
+    },
+    "last_http_response_content_sha256": "4af1f09753c64ae8e6cf06d1acc2a236a26e52f76b1f9b42b1bf7c58cbbb00bc",
+    "last_http_response_code": 200,
+    "last_final_url": "https://acwm.org/",
+    "trackers": {
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-T27NTV9",
+          "timestamp": 1700506977,
+          "id": "GTM-T27NTV9"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=UA-143521564-1",
+          "timestamp": 1700506977,
+          "id": "UA-143521564-1"
+        }
+      ]
+    },
+    "url": "http://acwm.org/",
+    "title": "American Civil War Museum - Exploring the unparalleled significance of the Civil War",
+    "last_analysis_stats": {
+      "harmless": 72,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 18,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "org",
+    "html_meta": {
+      "twitter:label1": [
+        "Est. reading time"
+      ],
+      "msapplication-TileColor": [
+        "#0a71cc"
+      ],
+      "og:image:height": [
+        "416"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ],
+      "og:image:width": [
+        "795"
+      ],
+      "tec-api-version": [
+        "v1"
+      ],
+      "msapplication-TileImage": [
+        "https://i0.wp.com/acwm.org/wp-content/uploads/cropped-ACWM-Transparent-Logo-HEADS-ONLY.png?fit=270%2C270&ssl=1"
+      ],
+      "article:modified_time": [
+        "2023-11-16T20:21:08+00:00"
+      ],
+      "og:image:type": [
+        "image/jpeg"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "description": [
+        "The American Civil War Museum is more than a collection of artifacts, we are educators and storytellers connecting the Civil War and its legacies to current culture."
+      ],
+      "tec-api-origin": [
+        "https://acwm.org"
+      ],
+      "og:url": [
+        "https://acwm.org/"
+      ],
+      "twitter:data1": [
+        "2 minutes"
+      ],
+      "og:site_name": [
+        "American Civil War Museum"
+      ],
+      "generator": [
+        "WordPress 6.0.2",
+        "WooCommerce 7.0.0"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "og:type": [
+        "website"
+      ],
+      "og:description": [
+        "The American Civil War Museum is more than a collection of artifacts, we are educators and storytellers connecting the Civil War and its legacies to current culture."
+      ],
+      "og:image": [
+        "https://acwm.org/wp-content/uploads/Featured-Image-Size-Site-e1659450473321.jpg"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1, shrink-to-fit=no"
+      ],
+      "og:title": [
+        "American Civil War Museum - Exploring the unparalleled significance of the Civil War"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.guidestar.org/profile/46-4685540",
+      "https://www.youtube.com/c/TheAmericanCivilWarMuseum",
+      "http://eepurl.com/gTRs1v",
+      "https://www.youtube.com/c/TheAmericanCivilWarMuseum/",
+      "https://www.youtube.com/c/TheAmericanCivilWarMuseum/videos",
+      "http://www.facebook.com/acwmuseum",
+      "https://www.teamcolab.com/",
+      "https://evergreen.humanitru.com/web/campaigns/american-civil-war-museum~white-house-of-the-confederacy-tour",
+      "https://www.youtube.com/@ACWMuseum",
+      "https://www.linkedin.com/company/american-civil-war-museum/",
+      "https://twitter.com/ACWMuseum",
+      "https://acwm.pastperfectonline.com/",
+      "https://www.facebook.com/ACWMuseum",
+      "https://thevalentine.org/event/winter-wander-2023/",
+      "https://issuu.com/acwmuseum",
+      "https://mailchi.mp/ae7d9a0ef512/join-our-email-list",
+      "https://www.instagram.com/acwmuseum/",
+      "https://www.tiktok.com/@acwmuseum?is_from_webapp=1&sender_device=pc"
+    ]
+  },
+  "type": "url",
+  "id": "2d2d59436b3cf32ae5dbf703483307973c8a1b9e511c8f1734d956ed56b9fe88",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/2d2d59436b3cf32ae5dbf703483307973c8a1b9e511c8f1734d956ed56b9fe88"
+  }
+}

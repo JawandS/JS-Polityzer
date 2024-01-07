@@ -1,0 +1,657 @@
+{
+  "attributes": {
+    "last_modification_date": 1704646778,
+    "times_submitted": 1254,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://va.gov/",
+      "https://va.gov/"
+    ],
+    "last_submission_date": 1704646778,
+    "last_http_response_content_length": 75961,
+    "last_http_response_headers": {
+      "X-XSS-Protection": "1; report=/csp-report",
+      "X-Content-Type-Options": "nosniff",
+      "x-amz-id-2": "QWFVgC8AaWq6qIlbV3NEv7UlB07Pxr6CxTJXPlLATewojDiL/jwUZISnYp0EuXkk61tKA2BtnbQ=",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "Content-Security-Policy-Report-Only": "script-src 'self' 'unsafe-inline' 'nonce-iotZ9Z5ROigavL9ILKI5Ohv6kXGTZe0c' http://www.google-analytics.com https://*.uservoice.com https://dap.digitalgov.gov https://designsystem.digital.gov https://maps.googleapis.com https://standards.usa.gov https://www.google-analytics.com https://www.googletagmanager.com https://tagmanager.google.com 'unsafe-eval' https://optimize.google.com https://gateway.foresee.com https://resources.digital-cloud-gov.voice.medallia.com https://resource.digital.voice.va.gov https://prod-va-gov-assets.s3-us-gov-west-1.amazonaws.com https://www.youtube.com https://*.ytimg.com https://cdn.botframework.com 'strict-dynamic' nonce-iotZ9Z5ROigavL9ILKI5Ohv6kXGTZe0c; img-src 'self' data: blob: https://*.gstatic.com https://api.mapbox.com https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://*.va.gov https://optimize.google.com https://gateway.foresee.com https://static.foresee.com https://cdn-prod.kampyle.com https://prod-va-gov-assets.s3-us-gov-west-1.amazonaws.com https://s3-us-gov-west-1.amazonaws.com https://ok6static.oktacdn.com https://dvp-oauth-application-directory-logos.s3-us-gov-west-1.amazonaws.com https://i.ytimg.com ; frame-ancestors 'none' ; manifest-src 'none' ; default-src 'self' ; frame-src https://dap.digitalgov.gov https://resource.digital.voice.va.gov https://www.googletagmanager.com https://prod-va-gov-assets.s3-us-gov-west-1.amazonaws.com https://www.youtube.com ; child-src https://*.uservoice.com https://www.googletagmanager.com https://www.youtube.com https://optimize.google.com https://resources.digital-cloud-gov.voice.medallia.com ; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com https://optimize.google.com https://fonts.googleapis.com https://gateway.foresee.com https://medallia.s3.amazonaws.com https://prod-va-gov-assets.s3-us-gov-west-1.amazonaws.com https://s3-us-gov-west-1.amazonaws.com ; connect-src 'self' http://localhost:4000 https://*.va.gov https://api.mapbox.com https://events.mapbox.com https://www.google-analytics.com https://stats.g.doubleclick.net http://*.vetsgov-internal https://secure.login.gov https://prod-va-gov-assets.s3-us-gov-west-1.amazonaws.com https://prod-va-gov-maintenance-windows.s3-us-gov-west-1.amazonaws.com https://analytics.foresee.com https://brain.foresee.com https://survey.foreseeresults.com https://device.4seeresults.com https://health.foresee.com https://gateway.foresee.com https://feedback.digital-cloud-gov.voice.medallia.com https://raw.githubusercontent.com wss://northamerica.directline.botframework.com https://northamerica.directline.botframework.com https://search.usa.gov https://rum.browser-intake-ddog-gov.com https://session-replay.browser-intake-ddog-gov.com ; object-src 'self' blob: ; media-src 'none' ; font-src 'self' data: https://fonts.gstatic.com https://gateway.foresee.com https://medallia.s3.amazonaws.com https://prod-va-gov-assets.s3-us-gov-west-1.amazonaws.com ; block-all-mixed-content  ; form-action 'self' https://vicbdc.vba.va.gov https://vaww.vicbdc.ppd.vba.va.gov https://vicbdc.prod.va.gov/ https://secure.login.gov https://feedback.digital-cloud-gov.voice.medallia.com https://public.govdelivery.com ; base-uri http://*.vetsgov-internal https://*.va.gov https://optimize.google.com ;",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "x-amz-request-id": "3WRHRGF2F1WQBDX3",
+      "Cache-Control": "public, no-cache",
+      "Date": "Thu, 07 Dec 2023 05:10:22 GMT",
+      "X-Frame-Options": "SAMEORIGIN, deny",
+      "Referrer-Policy": "no-referrer-when-downgrade",
+      "Content-Type": "text/html"
+    },
+    "reputation": 0,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1701925820,
+    "first_submission_date": 1332771790,
+    "categories": {
+      "Forcepoint ThreatSeeker": "government",
+      "Sophos": "government",
+      "Xcitium Verdict Cloud": "government & legal",
+      "BitDefender": "government"
+    },
+    "last_http_response_content_sha256": "0f5ea1181000502f96468536df9eec8263901ac5264a11aedb5ac3f250988941",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.va.gov/",
+    "trackers": {
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-WFJWBD",
+          "timestamp": 1701925820,
+          "id": "GTM-WFJWBD"
+        }
+      ]
+    },
+    "url": "http://va.gov/",
+    "title": "VA.gov Home | Veterans Affairs",
+    "last_analysis_stats": {
+      "harmless": 72,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 18,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "gov",
+    "html_meta": {
+      "og:url": [
+        "https://www.va.gov//"
+      ],
+      "msapplication-TileColor": [
+        "#144073"
+      ],
+      "og:site_name": [
+        "Veterans Affairs"
+      ],
+      "twitter:card": [
+        "Summary"
+      ],
+      "twitter:image": [
+        "https://www.va.gov/img/design/logo/va-og-twitter-image.png"
+      ],
+      "og:type": [
+        "website"
+      ],
+      "HandheldFriendly": [
+        "True"
+      ],
+      "twitter:site": [
+        "@DeptVetAffairs"
+      ],
+      "MobileOptimized": [
+        "320"
+      ],
+      "msapplication-TileImage": [
+        "/img/design/icons/apple-touch-icon-114x114"
+      ],
+      "og:title": [
+        "VA.gov Home | Veterans Affairs"
+      ],
+      "twitter:title": [
+        "VA.gov Home | Veterans Affairs"
+      ],
+      "og:image": [
+        "https://www.va.gov/img/design/logo/va-og-image.png"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1.0"
+      ]
+    }
+  },
+  "type": "url",
+  "id": "d6e166a155d4fe3603393a8a2ed0614ddc6dce5914b0d4a56c132b7a272518f0",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/d6e166a155d4fe3603393a8a2ed0614ddc6dce5914b0d4a56c132b7a272518f0"
+  }
+}

@@ -1,0 +1,803 @@
+{
+  "attributes": {
+    "last_modification_date": 1704593998,
+    "times_submitted": 884,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://wtop.com/",
+      "http://wtop.com/",
+      "https://wtop.com/480"
+    ],
+    "last_submission_date": 1704593997,
+    "last_http_response_content_length": 82395,
+    "last_http_response_headers": {
+      "X-XSS-Protection": "1; mode=block",
+      "X-Cache": "HIT, MISS",
+      "X-Powered-By": "PHP/7.4.33",
+      "transfer-encoding": "chunked",
+      "Accept-Ranges": "none",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Server": "Apache/2.4.54 (Debian)",
+      "host": "wtop.com",
+      "Via": "1.1 varnish, 1.1 varnish",
+      "X-Cache-Hits": "1, 0",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-url": "wtop.com/audio/480-managing-emotional-eating-movement-while-quarantining-with-dr-ashley-solomon-and-dr-sarah-crawford/",
+      "X-Served-By": "cache-iad-kjyo7100090-IAD, cache-chi-klot8100023-CHI",
+      "X-Content-Type-Options": "nosniff",
+      "content-encoding": "br",
+      "X-Timer": "S1703283930.223090,VS0,VE167",
+      "Vary": "Accept-Encoding",
+      "Connection": "keep-alive",
+      "Link": "<https://wtop.com/wp-json/>; rel=\"https://api.w.org/\", <https://wtop.com/wp-json/wp/v2/audio/20873507>; rel=\"alternate\"; type=\"application/json\", <https://wtop.com/?p=20873507>; rel=shortlink",
+      "X-UA-Compatible": "IE=edge",
+      "Cache-Control": "max-age=0",
+      "Date": "Fri, 22 Dec 2023 22:25:30 GMT",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Age": "0"
+    },
+    "reputation": 0,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1703283927,
+    "first_submission_date": 1294948965,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Sophos": "news",
+      "Xcitium Verdict Cloud": "news",
+      "BitDefender": "radiomusic"
+    },
+    "last_http_response_content_sha256": "2ae3737607a683e05cc5913d9b5ddbbe9bc8626b8f5e796bfbb9c5847d7165da",
+    "last_http_response_code": 200,
+    "last_final_url": "https://wtop.com/480",
+    "trackers": {
+      "Google Analytics": [
+        {
+          "url": "https://www.google-analytics.com/analytics.js",
+          "timestamp": 1703283927,
+          "id": "UA-23103174-10"
+        },
+        {
+          "url": "https://www.google-analytics.com/analytics.js",
+          "id": "UA-23103174-1"
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "//www.googletagmanager.com/ns.html?id=GTM-TZGJTC",
+          "timestamp": 1703283927,
+          "id": "GTM-TZGJTC"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-7DGXB37KZH",
+          "timestamp": 1703283927,
+          "id": "G-7DGXB37KZH"
+        }
+      ],
+      "Google Publisher Tags": [
+        {
+          "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+          "timestamp": 1703283927
+        }
+      ],
+      "Amazon Associates": [
+        {
+          "url": "https://c.amazon-adsystem.com/aax2/apstag.js",
+          "timestamp": 1703283927
+        }
+      ],
+      "New Relic": [
+        {
+          "url": "",
+          "timestamp": 1665938287
+        }
+      ],
+      "Quantcast": [
+        {
+          "url": "//pixel.quantserve.com/pixel/p-sgZGQjSAzUNrD.gif",
+          "timestamp": 1703283927,
+          "id": "p-sgZGQjSAzUNrD"
+        }
+      ]
+    },
+    "url": "http://wtop.com/",
+    "title": "480: Managing Emotional Eating & Movement While Quarantining With Dr. Ashley Solomon And Dr. Sarah Crawford - WTOP News",
+    "last_analysis_stats": {
+      "harmless": 72,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 19,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "smartbanner:price-suffix-google": [
+        "- In Google Play"
+      ],
+      "msapplication-TileColor": [
+        "#ffffff"
+      ],
+      "og:image:height": [
+        "500"
+      ],
+      "twitter:image": [
+        "https://wtop.com/wp-content/uploads/2019/08/Pound-This-Logo500-1.jpg"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "smartbanner:author": [
+        "News Traffic Weather"
+      ],
+      "og:url": [
+        "https://wtop.com/audio/480-managing-emotional-eating-movement-while-quarantining-with-dr-ashley-solomon-and-dr-sarah-crawford/"
+      ],
+      "og:image": [
+        "https://wtop.com/wp-content/uploads/2019/08/Pound-This-Logo500-1.jpg"
+      ],
+      "smartbanner:title": [
+        "WTOP News"
+      ],
+      "twitter:image:width": [
+        "500"
+      ],
+      "og:type": [
+        "article"
+      ],
+      "og:title": [
+        "480: Managing Emotional Eating & Movement While Quarantining With Dr. Ashley Solomon And Dr. Sarah Crawford - WTOP News"
+      ],
+      "twitter:title": [
+        "480: Managing Emotional Eating & Movement While Quarantining With Dr. Ashley Solomon And Dr. Sarah Crawford - WTOP News"
+      ],
+      "msapplication-config": [
+        "https://wtop.com/wp-content/themes/wtop-new/assets/img/favicons/browserconfig.xml"
+      ],
+      "sailthru.image.thumb": [
+        "https://wtop.com/wp-content/uploads/2019/08/Pound-This-Logo500-1-150x150.jpg",
+        "https://wtop.com/wp-content/uploads/2019/08/Pound-This-Logo500-1-150x150.jpg"
+      ],
+      "description": [
+        "A lot is going on in the world right now and it's having an impact on the way we eat and move. Dr. Ashley Solomon, clinical psychologist, and Dr. Sarah Crawford\u2026"
+      ],
+      "og:image:width": [
+        "500"
+      ],
+      "smartbanner:button": [
+        "VIEW"
+      ],
+      "msapplication-TileImage": [
+        "https://wtop.com/wp-content/themes/wtop-new/assets/img/favicons/mstile-144x144.png",
+        "https://wtop.com/wp-content/uploads/2021/05/WtopNewsLogo_500x500-300x300.png"
+      ],
+      "article:modified_time": [
+        "2020-03-19T03:00+00:00"
+      ],
+      "article:published_time": [
+        "2020-03-19T03:00+00:00"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1, maximum-scale=1"
+      ],
+      "og:updated_time": [
+        "2020-03-19T03:00+00:00"
+      ],
+      "twitter:image:height": [
+        "500"
+      ],
+      "og:site_name": [
+        "WTOP News"
+      ],
+      "smartbanner:button-url-google": [
+        "https://play.google.com/store/apps/details?id=com.audionowdigital.player.wtopradio"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "twitter:description": [
+        "A lot is going on in the world right now and it's having an impact on the way we eat and move. Dr. Ashley Solomon, clinical psychologist, and Dr. Sarah Crawford, physical therapist, and I have a\u2026"
+      ],
+      "og:description": [
+        "A lot is going on in the world right now and it's having an impact on the way we eat and move. Dr. Ashley Solomon, clinical psychologist, and Dr. Sarah Crawford, physical therapist, and I have a\u2026"
+      ],
+      "sailthru.image.full": [
+        "https://wtop.com/wp-content/uploads/2019/08/Pound-This-Logo500-1.jpg",
+        "https://wtop.com/wp-content/uploads/2019/08/Pound-This-Logo500-1.jpg"
+      ],
+      "sailthru.canonical": [
+        "https://wtop.com/audio/480-managing-emotional-eating-movement-while-quarantining-with-dr-ashley-solomon-and-dr-sarah-crawford/",
+        "https://wtop.com/audio/480-managing-emotional-eating-movement-while-quarantining-with-dr-ashley-solomon-and-dr-sarah-crawford/"
+      ],
+      "smartbanner:icon-google": [
+        "https://wtop.com/wp-content/themes/wtop-new/assets/img/app/Google-Play-Icon.png"
+      ],
+      "smartbanner:enabled-platforms": [
+        "android"
+      ],
+      "sailthru.date": [
+        "2020-03-18 11:00:00",
+        "2020-03-18 11:00:00"
+      ],
+      "smartbanner:price": [
+        "FREE"
+      ]
+    },
+    "outgoing_links": [
+      "https://anchorcincy.com/",
+      "https://www.instagram.com/youcanpoundthis/",
+      "https://twitter.com/WTOP",
+      "https://www.facebook.com/wtopnews/",
+      "http://corporate.hubbardradio.com/",
+      "http://corporate.hubbardradio.com/dmca-notice/",
+      "https://corporate.hubbardradio.com/data-request?site=wtopfm",
+      "http://corporate.hubbardradio.com/terms-of-use/",
+      "https://hubbardbroadcasting.com/",
+      "https://www.facebook.com/AmandaValentineBites",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwtop.com%2Faudio%2F480-managing-emotional-eating-movement-while-quarantining-with-dr-ashley-solomon-and-dr-sarah-crawford%2F",
+      "https://www.instagram.com/wtopnews/",
+      "https://twitter.com/intent/tweet?text= https%3A%2F%2Fwtop.com%2Faudio%2F480-managing-emotional-eating-movement-while-quarantining-with-dr-ashley-solomon-and-dr-sarah-crawford%2F",
+      "http://amandavalentinebites.com/",
+      "https://federalnewsnetwork.com/",
+      "https://galiacollaborative.com/",
+      "http://corporate.hubbardradio.com/privacy-policy/"
+    ]
+  },
+  "type": "url",
+  "id": "5ef3cdbf17c03a8101283463745324b4ec4595464b212a8cf4a667ef292aead5",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/5ef3cdbf17c03a8101283463745324b4ec4595464b212a8cf4a667ef292aead5"
+  }
+}

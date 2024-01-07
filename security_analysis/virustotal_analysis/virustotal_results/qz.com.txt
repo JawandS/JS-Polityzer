@@ -1,0 +1,744 @@
+{
+  "attributes": {
+    "last_modification_date": 1704564748,
+    "times_submitted": 1451,
+    "total_votes": {
+      "harmless": 1,
+      "malicious": 1
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://qz.com/"
+    ],
+    "last_submission_date": 1704564431,
+    "last_http_response_content_length": 506105,
+    "last_http_response_headers": {
+      "via": "1.1 varnish, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+      "X-Cache": "HIT, HIT, MISS, MISS",
+      "transfer-encoding": "chunked",
+      "accept-ranges": "none",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Connection": "keep-alive",
+      "X-Served-By": "cache-chi-klot8100035-CHI, cache-chi-klot8100035-CHI",
+      "X-Cache-Hits": "5, 1, 0, 0",
+      "x-ua-device": "mobile",
+      "x-xss-protection": "1; mode=block",
+      "x-kinja-server": "kinja-magma-kube02-5b8bf64c47-wnpqx",
+      "content-security-policy": "frame-ancestors 'self'; upgrade-insecure-requests",
+      "x-content-type-options": "nosniff",
+      "content-encoding": "br",
+      "age": "0",
+      "x-powered-by": "Express",
+      "Vary": "Accept-Encoding, X-Feature-Hash, X-Forwarded-Proto, X-Valid-Scroll-User, X-GoogleNews-Bot, X-Kinja-LoggedIn, X-Kinja-Req-Origin-US, X-Kinja-SuperHeroLoaded, X-QZ-User-Role, X-UA-Device, X-Kinja-GDPR, X-Kinja-CCPA, X-Kinja-Location, Authorization",
+      "x-kinja": "kinja-magma-kube02-5b8bf64c47-wnpqx #4680",
+      "x-kinja-build": "4680",
+      "X-Timer": "S1704564433.136323,VS0,VE17",
+      "etag": "W/\"7b8f9-fMyvJ+IfGtpETAiCsY4SRzNvCZw\"",
+      "x-kinja-revision": "25edc2d2f163d35346307ed2ef47d8d150fa7de2",
+      "cache-control": "stale-if-error=86400, stale-while-revalidate=300",
+      "Date": "Sat, 06 Jan 2024 18:07:13 GMT",
+      "link": "</x-kinja-static/assets/new-client/runtime~trackers.cab236ddab54d9b50be3.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~adEditor~biztoolsPage~capPage~capRoundupPage~celebrityPage~channelSectionPage~commerceDashboa~b189e30b.5748ad129ba9b9762b6d.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~adEditor~biztoolsPage~capPage~capRoundupPage~celebrityPage~channelSectionPage~commerceDashboa~06647799.e4b3a07564338f066601.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~adEditor~biztoolsPage~capPage~capRoundupPage~celebrityPage~channelSectionPage~commerceDashboa~c9a82382.854a5531214ad398a938.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~adEditor~biztoolsPage~capPage~capRoundupPage~celebrityPage~channelSectionPage~commerceDashboa~15c98287.faeca0d6fb3fdf0787a4.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~adEditor~biztoolsPage~capPage~capRoundupPage~celebrityPage~channelSectionPage~commerceDashboa~d04c7ea6.6e4bfb66d24ed4f999fa.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~adEditor~biztoolsPage~capPage~capRoundupPage~celebrityPage~channelSectionPage~commerceDashboa~edc57b41.aed3718d3ec01992ee2c.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~biztools~capPage~capRoundupPage~commerceDashboardClient~featureSwitchPageClient~specialSectio~cb9138e1.b6c88e4dd1766392675d.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~trackers.3c1df5cad1584161e519.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/adEditor~biztoolsPage~capRoundupPage~commerceDashboard~curatedHomepage~curatedPostsPage~datadog~edit~61827847.a3e15c2f7a9a94600c92.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/adEditor~biztoolsPage~commerceDashboard~curatedHomepage~curatedPostsPage~datadog~editorPage~errorPag~d18442d6.bc011eaec969cdad4be6.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/adEditor~biztoolsPage~commerceDashboard~curatedHomepage~curatedPostsPage~datadog~editorPage~errorPag~9ea4c651.7266f778dcb622186a96.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/adEditor~biztoolsPage~commerceDashboard~curatedHomepage~curatedPostsPage~editorPage~errorPage~featur~3e7ac47f.ccc85f13590a86ed9a9f.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/adEditor~biztoolsPage~commerceDashboard~curatedHomepage~editorPage~errorPage~featureSwitchPage~featu~bee4208f.28986a091ff248630a3e.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/second-scroll~slideshowPermalinkPage~trackers.65ce04a128678bf30636.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/trackers.edf9d1904923951da331.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/runtime~adManager.f894f6ef7478928ef4ff.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/adManager~video-html5-playlist~videoHtml5.f8ca5d1b7c1c3b8152c1.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/adManager.e998a43c3b3ee2ab7035.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~adEditor~biztoolsPage~capPage~capRoundupPage~celebrityPage~channelSectionPage~commerceDashboa~552bf273.744e80e1da663ff6f95a.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/runtime~videoHtml5.c599d1c1e428cf8d83d0.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/vendor~video-html5-playlist~videoHtml5.d8af3e4197ba529c0bd4.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/video-html5-playlist~videoHtml5.3b981b71c47137125e06.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/videoHtml5.7e905d045ce9e5beb88c.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/runtime~taboolaLoader.683b559fe2d66b7544b6.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/taboolaLoader.7e8e535ef7c399584de8.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/runtime~layoutShiftTrackerLoader.8c8d9aebe46b7a5b72ab.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/layoutShiftTrackerLoader.9e5e611f5dabeae54129.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/runtime~videoMediaQuerySupport.87053d08d5634a107c35.js>; rel=preload; as=script, </x-kinja-static/assets/new-client/videoMediaQuerySupport.b68e2424feab32dd0c91.js>; rel=preload; as=script",
+      "content-type": "text/html; charset=utf-8",
+      "x-cdn-fetch": "mantle-default",
+      "x-googlenews-bot": "false"
+    },
+    "reputation": 0,
+    "tags": [
+      "base64-embedded"
+    ],
+    "last_analysis_date": 1704564431,
+    "first_submission_date": 1351486438,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Sophos": "news",
+      "Xcitium Verdict Cloud": "news",
+      "BitDefender": "misc"
+    },
+    "last_http_response_content_sha256": "23131fe7abd219aa980c01e6384cd59864afed2aac79a828023ed1d2a0013e9c",
+    "last_http_response_code": 200,
+    "last_final_url": "https://qz.com/",
+    "trackers": {
+      "ScoreCard Research Beacon": [
+        {
+          "url": "https://sb.scorecardresearch.com/cs/6770184/beacon.js",
+          "timestamp": 1704564431
+        },
+        {
+          "url": "https://sb.scorecardresearch.com/p?c1=2&c2=6770184&cv=4.4.0&cj=1",
+          "timestamp": 1704564431,
+          "id": "6770184"
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "//www.googletagmanager.com/gtm.js?id='+i+dl",
+          "timestamp": 1704564431,
+          "id": "GTM-T73GPNQ"
+        },
+        {
+          "url": "//www.googletagmanager.com/gtm.js?id='+i+dl",
+          "timestamp": 1680924826,
+          "id": "GTM-TH42LHK"
+        },
+        {
+          "url": "//www.googletagmanager.com/gtm.js?id=\"+i+dl",
+          "timestamp": 1662196219,
+          "id": "GTM-MRD738C"
+        },
+        {
+          "url": "https://www.googletagservices.com/tag/js/gpt.js"
+        }
+      ],
+      "Google Publisher Tags": [
+        {
+          "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+          "timestamp": 1704564431
+        }
+      ],
+      "Doubleclick": [
+        {
+          "url": "",
+          "timestamp": 1662196219
+        }
+      ]
+    },
+    "url": "http://qz.com/",
+    "title": "Quartz | Make business better.\u2122\ufe0f",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 18,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "description": [
+        "Quartz is a guide to the new global economy for people who are excited by change. We cover business, finance, economics, technology, lifestyle, and leadership."
+      ],
+      "twitter:image": [
+        "https://i.kinja-img.com/image/upload/c_fill,h_200,q_80,w_200/4716932d29f4ef6064940c18eaab1f3d.png"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "msapplication-square70x70logo": [
+        "https://i.kinja-img.com/image/upload/c_fill,h_80,q_80,w_80/4716932d29f4ef6064940c18eaab1f3d.png"
+      ],
+      "ROBOTS": [
+        "INDEX, FOLLOW, max-image-preview:large"
+      ],
+      "keywords": [
+        "Quartz"
+      ],
+      "twitter:site": [
+        "qz"
+      ],
+      "og:image": [
+        "https://i.kinja-img.com/image/upload/c_fill,h_200,q_80,w_200/4716932d29f4ef6064940c18eaab1f3d.png"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0"
+      ],
+      "news_keywords": [
+        "Quartz"
+      ],
+      "og:url": [
+        "https://qz.com"
+      ],
+      "og:site_name": [
+        "Quartz"
+      ],
+      "fb:app_id": [
+        "602231513195606"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "twitter:description": [
+        "Quartz is a guide to the new global economy for people who are excited by change. We cover business, finance, economics, technology, lifestyle, and leadership."
+      ],
+      "og:type": [
+        "website"
+      ],
+      "og:description": [
+        "Quartz is a guide to the new global economy for people who are excited by change. We cover business, finance, economics, technology, lifestyle, and leadership."
+      ],
+      "og:title": [
+        "Quartz | Make business better.\u2122\ufe0f"
+      ],
+      "twitter:title": [
+        "Quartz | Make business better.\u2122\ufe0f"
+      ],
+      "google-site-verification": [
+        "Gw2dGJnVMI3pq0GKnZhuLcbWkaRm8IbZxjm2hHxn9YY",
+        "QDPLbDJXTQNT0n69mvNADCeRmwnbkYyL20OKJAVCKq8"
+      ],
+      "msapplication-square150x150logo": [
+        "https://i.kinja-img.com/image/upload/c_fill,h_200,q_80,w_200/4716932d29f4ef6064940c18eaab1f3d.png"
+      ]
+    },
+    "outgoing_links": [
+      "https://visit.ws/g/b27k",
+      "https://www.reddit.com/submit?url=https%3A%2F%2Fqz.com%2Fdid-the-market-get-too-far-ahead-of-itself-smart-inv-1851137043%3Futm_medium%3Dsharefromsite%26utm_source%3Dreddit&title=Did%20the%20market%20get%20too%20far%20ahead%20of%20itself%3F%20%7C%20Smart%20Investing",
+      "https://facebook.com/sharer.php?u=https%3A%2F%2Fqz.com%2Fdid-the-market-get-too-far-ahead-of-itself-smart-inv-1851137043%3Futm_medium%3Dsharefromsite%26utm_source%3Dfacebook",
+      "https://theinventory.com/",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fqz.com%2Fdid-the-market-get-too-far-ahead-of-itself-smart-inv-1851137043%3Futm_medium%3Dsharefromsite%26utm_source%3Dtwitter&text=Did%20the%20market%20get%20too%20far%20ahead%20of%20itself%3F%20%7C%20Smart%20Investing",
+      "https://www.stacksocial.com/sales/microsoft-windows-11-pro?aid=a-efnv1nsd&utm_source=theinventory.com&utm_medium=referral&utm_campaign=microsoft-windows-11-pro_122023&utm_term=scsf-586545&utm_content=a0xRn0000004qtHIAQ&scsonar=1",
+      "https://theinventory.com/best-deals-of-the-day-lg-tv-leantravel-packing-cubes-1847628359"
+    ]
+  },
+  "type": "url",
+  "id": "021e5725437a252022a84030202897cf7c2816db3d1fbaa812d78d73d874e4ed",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/021e5725437a252022a84030202897cf7c2816db3d1fbaa812d78d73d874e4ed"
+  }
+}

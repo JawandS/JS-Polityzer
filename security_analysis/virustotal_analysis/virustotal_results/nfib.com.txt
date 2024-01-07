@@ -1,0 +1,762 @@
+{
+  "attributes": {
+    "last_modification_date": 1686926735,
+    "times_submitted": 698,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://nfib.com/"
+    ],
+    "last_submission_date": 1686832963,
+    "last_http_response_content_length": 38723,
+    "last_http_response_headers": {
+      "Expires": "Mon, 17 Jul 2023 13:59:07 GMT",
+      "Content-Encoding": "gzip",
+      "Transfer-Encoding": "chunked",
+      "CF-Cache-Status": "DYNAMIC",
+      "Strict-Transport-Security": "max-age=63072000; includeSubDomains",
+      "Server": "cloudflare",
+      "Connection": "keep-alive",
+      "X-XSS-Protection": "1; mode=block",
+      "Link": "<https://www.nfib.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.nfib.com/wp-json/wp/v2/pages/4>; rel=\"alternate\"; type=\"application/json\", <https://www.nfib.com/>; rel=shortlink",
+      "Cache-Control": "max-age=2678400",
+      "Date": "Fri, 16 Jun 2023 13:59:07 GMT",
+      "X-Frame-Options": "SAMEORIGIN",
+      "cf-edge-cache": "cache,platform=wordpress",
+      "Content-Type": "text/html; charset=UTF-8",
+      "CF-RAY": "7d83924f9e822d01-ORD"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1686832963,
+    "first_submission_date": 1347977578,
+    "categories": {
+      "Forcepoint ThreatSeeker": "business and economy",
+      "Sophos": "general business",
+      "alphaMountain.ai": "Business/Economy",
+      "Xcitium Verdict Cloud": "mobile communications",
+      "BitDefender": "business"
+    },
+    "last_http_response_content_sha256": "3d91e7860fbbf982529ac886c73fc9ec134d3aa2c6d8ed7cae5cf4e5f19dc1d6",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.nfib.com/",
+    "trackers": {
+      "Facebook Custom Audience": [
+        {
+          "url": "https://www.facebook.com/tr?id=574994102611303&ev=NoScript",
+          "timestamp": 1686832963,
+          "id": "574994102611303"
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "//www.googletagmanager.com/ns.html?id=GTM-WQ2K9B",
+          "timestamp": 1686832963,
+          "id": "GTM-WQ2K9B"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-2VNMZ09PYP",
+          "timestamp": 1686832963,
+          "id": "G-2VNMZ09PYP"
+        }
+      ],
+      "Facebook Connect": [
+        {
+          "url": "//connect.facebook.net/en_US/fbds.js",
+          "timestamp": 1686832963
+        }
+      ],
+      "Google Analytics": [
+        {
+          "url": "https://www.google-analytics.com/analytics.js",
+          "timestamp": 1658899267,
+          "id": "UA-4035505-1"
+        }
+      ]
+    },
+    "url": "http://nfib.com/",
+    "title": "Small Business Association - Advocate for Owners | NFIB",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 17,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "SecureBrain": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SecureBrain"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "AICC (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AICC (MONITORAPP)"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "twitter:creator": [
+        "@NFIB"
+      ],
+      "geo.region": [
+        "US-TN"
+      ],
+      "og:image:height": [
+        "1080"
+      ],
+      "twitter:image": [
+        "https://strgnfibcom.blob.core.windows.net/nfibcom/2018-05-02.jpg"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "HandheldFriendly": [
+        "True"
+      ],
+      "ICBM": [
+        "36.146978,-86.683068"
+      ],
+      "twitter:site": [
+        "@nfib",
+        "@NFIB"
+      ],
+      "og:image:secure_url": [
+        "https://strgnfibcom.blob.core.windows.net/nfibcom/2018-05-02.jpg"
+      ],
+      "twitter:data2": [
+        "1 minute"
+      ],
+      "og:url": [
+        "https://www.nfib.com/",
+        "https://www.nfib.com/"
+      ],
+      "twitter:data1": [
+        "Joey Postma"
+      ],
+      "geo.position": [
+        "36.146978;-86.683068"
+      ],
+      "title": [
+        "Home | NFIB"
+      ],
+      "og:type": [
+        "article",
+        "activity"
+      ],
+      "og:title": [
+        "Home | NFIB",
+        "Small Business Association - Advocate for Owners | NFIB"
+      ],
+      "twitter:title": [
+        "Home",
+        "Small Business Association - Advocate for Owners | NFIB"
+      ],
+      "twitter:label1": [
+        "Written by"
+      ],
+      "twitter:label2": [
+        "Est. reading time"
+      ],
+      "geo.placename": [
+        "NFIB, Nashville"
+      ],
+      "description": [
+        "NFIB is the voice of small business, advocating on behalf of America\u2019s small and independent business owners, both in Washington, D.C. and each state capital.",
+        "NFIB is the voice of small business, advocating on behalf of America\u2019s small and independent business owners, both in Washington, D.C. and each state capital."
+      ],
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "og:image:width": [
+        "1920"
+      ],
+      "MobileOptimized": [
+        "320"
+      ],
+      "og:image": [
+        "https://www.nfib.com/wp-content/themes/nfib-2013/img/icon.png",
+        "https://strgnfibcom.blob.core.windows.net/nfibcom/2018-05-02.jpg"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1.0, maximum-scale=1.0",
+        "width=device-width, initial-scale=1.0"
+      ],
+      "og:site_name": [
+        "NFIB",
+        "NFIB - NFIB Small Business Association"
+      ],
+      "twitter:card": [
+        "summary_large_image",
+        "summary"
+      ],
+      "twitter:description": [
+        "NFIB is the voice of small business, advocating on behalf of America\u2019s small and independent business owners, both in Washington, D.C. and each state capital.",
+        "NFIB is the voice of small business, advocating on behalf of America\u2019s small and independent business owners, both in Washington, D.C. and each state capital."
+      ],
+      "generator": [
+        "All in One SEO Pro (AIOSEO) 4.3.8"
+      ],
+      "og:description": [
+        "NFIB is the voice of small business, advocating on behalf of America\u2019s small and independent business owners, both in Washington, D.C. and each state capital.",
+        "NFIB is the voice of small business, advocating on behalf of America\u2019s small and independent business owners, both in Washington, D.C. and each state capital."
+      ],
+      "twitter:image:src": [
+        "https://www.nfib.com/wp-content/themes/nfib-2013/img/icon.png"
+      ],
+      "google-site-verification": [
+        "jmQaIKijzCa9Zu1ZxcHuQ-DR7YGSNW34VGtlpxZNhq4",
+        "A0Fs9CB0hig1k7jAfZG_5Ch-mubev31YvG_uds5kBTM"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.linkedin.com/company/nfib",
+      "https://engage.nfib.org/account/surveys",
+      "https://engage.nfib.org/auth/login?returnUrl=https://www.nfib.com/",
+      "https://www.youtube.com/user/NFIBSmallBusiness",
+      "https://engage.nfib.org/events",
+      "https://www.facebook.com/NFIB/",
+      "https://twitter.com/NFIB",
+      "https://thehill.com/opinion/congress-blog/4046257-small-business-needs-leadership-from-congress-now/"
+    ]
+  },
+  "type": "url",
+  "id": "227fd57875c223186402c28f86f458cb4eeccadc62b2083d16ab1074f670a2a1",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/227fd57875c223186402c28f86f458cb4eeccadc62b2083d16ab1074f670a2a1"
+  }
+}

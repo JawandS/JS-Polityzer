@@ -1,0 +1,741 @@
+{
+  "attributes": {
+    "last_modification_date": 1704470637,
+    "times_submitted": 1365,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 1
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://cdc.gov/",
+      "https://cdc.gov/"
+    ],
+    "last_submission_date": 1704470322,
+    "last_http_response_content_length": 217899,
+    "last_http_response_headers": {
+      "Content-Length": "217899",
+      "Set-Cookie": "akamai_visit_id=6457b68.703256a78b62; expires=Sun, 04-Jan-2026 15:58:45 GMT; path=/; domain=.cdc.gov; secure, Akamai-Request-ID=6457b68.703256a78b62; path=/; domain=cdc.gov",
+      "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains ; preload",
+      "Vary": "Accept-Encoding",
+      "Connection": "keep-alive",
+      "SRV": "5",
+      "X-UA-Compatible": "IE=edge",
+      "Date": "Fri, 05 Jan 2024 15:58:45 GMT",
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/html"
+    },
+    "reputation": -4,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1704470322,
+    "first_submission_date": 1332549050,
+    "categories": {
+      "Forcepoint ThreatSeeker": "government",
+      "Sophos": "government",
+      "BitDefender": "health",
+      "Xcitium Verdict Cloud": "government & legal",
+      "alphaMountain.ai": "Government/Legal, Health"
+    },
+    "last_http_response_content_sha256": "40378c14f5919472e260b506d1ace2bc0667370de26ae19542e0b6de3a475c27",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.cdc.gov/",
+    "url": "http://cdc.gov/",
+    "title": "Centers for Disease Control and Prevention",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 18,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "gov",
+    "html_meta": {
+      "twitter:creator": [
+        "@CDCgov"
+      ],
+      "cdc:build": [
+        "2680"
+      ],
+      "twitter:domain": [
+        "https://t.cdc.gov/QK3RL"
+      ],
+      "cdc:page_type": [
+        "cdc_page"
+      ],
+      "cdc:maintained_by": [
+        "DIGITAL MEDIA BRANCH"
+      ],
+      "cdc:first_published": [
+        "September 10, 2018"
+      ],
+      "twitter:site": [
+        "@CDCgov"
+      ],
+      "cdc:page_origin": [
+        "wcms"
+      ],
+      "fb:app_id": [
+        "205691699516606"
+      ],
+      "apple-mobile-web-app-capable": [
+        "yes"
+      ],
+      "og:url": [
+        "https://www.cdc.gov/index.htm"
+      ],
+      "cdc:last_published": [
+        "2024-01-04T15:45:32Z"
+      ],
+      "og:type": [
+        "article"
+      ],
+      "cdc:wcms_build": [
+        "4.23.5 - b.2680"
+      ],
+      "DC.date": [
+        "2024-01-04T03:23:48Z"
+      ],
+      "theme-color": [
+        "#075290"
+      ],
+      "og:title": [
+        "CDC Works 24/7"
+      ],
+      "twitter:title": [
+        "CDC Works 24/7"
+      ],
+      "cdc:last_updated": [
+        "January 4, 2024"
+      ],
+      "cdc:version": [
+        "4.23.5"
+      ],
+      "description": [
+        "CDC is the nation\u2019s leading science-based, data-driven, service organization that protects the public\u2019s health. For more than 70 years, we\u2019ve put science into action to help children stay healthy so they can grow and learn; to help families, businesses, and communities fight disease and stay strong; and to protect the public\u2019s health."
+      ],
+      "cdc:content_source": [
+        "CENTERS FOR DISEASE CONTROL AND PREVENTION; OFFICE COMMUNICATIONS"
+      ],
+      "robots": [
+        "index, archive"
+      ],
+      "cdc:template_version": [
+        "4.0"
+      ],
+      "article:author": [
+        "CDC"
+      ],
+      "mobile-web-app-capable": [
+        "yes"
+      ],
+      "og:image": [
+        "https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png?_=78381"
+      ],
+      "article:published_time": [
+        "2024-01-04"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1, shrink-to-fit=no"
+      ],
+      "cdc:content_id": [
+        "21899"
+      ],
+      "og:site_name": [
+        "Centers for Disease Control and Prevention"
+      ],
+      "og:image:type": [
+        "image/png"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "twitter:description": [
+        "CDC works 24/7 saving lives and protecting people."
+      ],
+      "og:description": [
+        "CDC works 24/7 saving lives and protecting people."
+      ],
+      "cdc:last_reviewed": [
+        "January 4, 2024"
+      ],
+      "twitter:image:src": [
+        "https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png?_=78381"
+      ],
+      "og:author": [
+        "CDC"
+      ]
+    },
+    "outgoing_links": [
+      "https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&title=CDC%20Works%2024/7&description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&via=CDCgov&ct=0&media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png",
+      "https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&title=CDC%20Works%2024/7&description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&via=CDCgov&ct=0&media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png",
+      "https://www.hhs.gov/vulnerability-disclosure-policy/index.html",
+      "https://www.instagram.com/CDCgov/",
+      "https://oig.hhs.gov",
+      "https://www.usa.gov/",
+      "https://twitter.com/CDCgov",
+      "https://www.pinterest.com/cdcgov/",
+      "https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https%3A%2F%2Fwww.cdc.gov%2Findex.htm&title=CDC%20Works%2024/7&description=As%20the%20nation%27s%20health%20protection%20agency,%20CDC%20saves%20lives%20and%20protects%20people%20from%20health,%20safety,%20and%20security%20threats.&via=CDCgov&ct=0&media=https://www.cdc.gov/homepage/images/centers-for-disease-control-and-prevention.png",
+      "https://www.hhs.gov/",
+      "https://www.linkedin.com/company/centers-for-disease-control-and-prevention",
+      "https://www.hhs.gov",
+      "https://www.facebook.com/CDC",
+      "https://www.snapchat.com/add/cdcgov",
+      "https://www.youtube.com/user/CDCstreamingHealth"
+    ]
+  },
+  "type": "url",
+  "id": "0737e9887edf952e0ab17900ec11f09e62ca9cea8501eaf8228f4f01628ca61e",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/0737e9887edf952e0ab17900ec11f09e62ca9cea8501eaf8228f4f01628ca61e"
+  }
+}

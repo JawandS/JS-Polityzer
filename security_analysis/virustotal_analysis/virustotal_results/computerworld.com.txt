@@ -1,0 +1,746 @@
+{
+  "attributes": {
+    "last_modification_date": 1704457876,
+    "times_submitted": 943,
+    "total_votes": {
+      "harmless": 1,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://computerworld.com/",
+      "https://computerworld.com/"
+    ],
+    "last_submission_date": 1704457552,
+    "last_http_response_content_length": 141453,
+    "last_http_response_headers": {
+      "x-vcl-version": "131",
+      "Strict-Transport-Security": "max-age=300",
+      "X-Cache": "MISS, MISS, MISS, MISS",
+      "transfer-encoding": "chunked",
+      "Set-Cookie": "fastlyCountryCode=US",
+      "Accept-Ranges": "bytes",
+      "X-Via-Fastly": "Verdad",
+      "Connection": "keep-alive",
+      "Via": "1.1 varnish, 1.1 varnish",
+      "X-Cache-Hits": "0, 0, 0, 0",
+      "X-Frame-Options": "deny",
+      "X-Served-By": "cache-sjc10070-SJC, cache-sjc10070-SJC, cache-chi-klot8100068-CHI, cache-chi-klot8100068-CHI",
+      "X-Timer": "S1704457554.970845,VS0,VE1127",
+      "Vary": "accept-encoding,Cookie, Accept-Encoding",
+      "Date": "Fri, 05 Jan 2024 12:25:55 GMT",
+      "Content-Type": "text/html;charset=UTF-8"
+    },
+    "reputation": 1,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1704457552,
+    "first_submission_date": 1326669512,
+    "categories": {
+      "Forcepoint ThreatSeeker": "information technology",
+      "Sophos": "information technology",
+      "Xcitium Verdict Cloud": "news",
+      "BitDefender": "computersandsoftware"
+    },
+    "last_http_response_content_sha256": "0a17b99cc9587793cd2007ebf4ab99fe3b3c56ccc747ddbe6ccab1cad4f47983",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.computerworld.com/",
+    "trackers": {
+      "ScoreCard Research Beacon": [
+        {
+          "url": "https://sb.scorecardresearch.com/p?c1=2&c2=6035308&cv=2.0&cj=1",
+          "timestamp": 1704457552,
+          "id": "6035308"
+        }
+      ],
+      "Amazon Cloudfront": [
+        {
+          "url": "//d2zv5rkii46miq.cloudfront.net/0/latest/cmp_shim.js",
+          "timestamp": 1704457552,
+          "id": "d2zv5rkii46miq"
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "//www.googletagmanager.com/ns.html?GTM-WR6LD2P",
+          "timestamp": 1704457552
+        },
+        {
+          "url": "//www.googletagmanager.com/gtm.js?id='+i+dl",
+          "timestamp": 1704457552,
+          "id": "GTM-WR6LD2P"
+        }
+      ],
+      "Integral Ad Science": [
+        {
+          "url": "//cdn.adsafeprotected.com/iasPET.1.js",
+          "timestamp": 1670454490
+        }
+      ]
+    },
+    "url": "http://computerworld.com/",
+    "title": "IT news, careers, business technology, reviews | Computerworld",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 18,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "rating": [
+        "General"
+      ],
+      "description": [
+        "Computerworld covers a range of technology topics, with a focus on these core areas of IT: Windows, Mobile, Apple/enterprise, Office and productivity suites, collaboration, web browsers and blockchain, as well as relevant information about companies such as Microsoft, Apple and Google."
+      ],
+      "twitter:image": [
+        "https://idge.staticworld.net/ctw/computerworld-logo300x300.png"
+      ],
+      "robots": [
+        "NOODP,NOYDIR"
+      ],
+      "msvalidate.01": [
+        "04917178B598F0648B9BAD693FEC29A3"
+      ],
+      "twitter:site": [
+        "@computerworld"
+      ],
+      "og:image": [
+        "https://idge.staticworld.net/ctw/computerworld-logo300x300.png"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1.0"
+      ],
+      "og:url": [
+        "https://www.computerworld.com/"
+      ],
+      "og:site_name": [
+        "Computerworld"
+      ],
+      "fb:app_id": [
+        "123026274413041"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:description": [
+        "Computerworld covers a range of technology topics, with a focus on these core areas of IT: Windows, Mobile, Apple/enterprise, Office and productivity suites, collaboration, web browsers and blockchain, as well as relevant information about companies such as Microsoft, Apple and Google."
+      ],
+      "og:type": [
+        "website"
+      ],
+      "og:description": [
+        "Computerworld covers a range of technology topics, with a focus on these core areas of IT: Windows, Mobile, Apple/enterprise, Office and productivity suites, collaboration, web browsers and blockchain, as well as relevant information about companies such as Microsoft, Apple and Google."
+      ],
+      "og:title": [
+        "IT news, careers, business technology, reviews"
+      ],
+      "google-site-verification": [
+        "_JEYLpDBDU_w1eI6P77BYlB1lvpukoxFcYDS_-Aznko"
+      ],
+      "fb:pages": [
+        "103687894679"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3712020%2Fopenai-to-launch-gpt-store-next-week.html",
+      "https://foundryco.com/copyright-notice/",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3328830%2Fchromebook-tips-2023.html",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3229125%2Ftime-saving-android-shortcuts.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711864%2Fwindows-pc-resolutions-2024.html&via=computerworld&text=5+New+Year%27s+resolutions+for+Windows+users",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711844%2F2024-will-be-the-year-of-ai-glasses.html",
+      "https://www.facebook.com/Computerworld",
+      "https://foundryco.com/our-brands/computerworld/",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711861%2Fidc-expects-genai-spending-to-double-in-these-areas-in-24.html",
+      "https://www.csoonline.com",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711842%2Fthis-year-we-get-ready-for-the-apple-of-your-ai.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711464%2Ftech-luminaries-we-lost-in-2023-in-memoriam.html&via=computerworld&text=13+tech+luminaries+we+lost+in+2023",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711702%2Fmake-custom-business-templates-google-docs.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711844%2F2024-will-be-the-year-of-ai-glasses.html&via=computerworld&text=2024+will+be+%E2%80%98The+year+of+AI+glasses%E2%80%99+",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711500%2Fmicrosoft-windows-annoyances.html&via=computerworld&text=10+Windows+annoyances+and+how+to+fix+them",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3328830%2Fchromebook-tips-2023.html&via=computerworld&text=The+top+Chromebook+tips+of+2023",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711922%2Fgoogle-assistant-android-memory.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F2488194%2Fusb-c-explained-how-to-get-the-most-from-it-and-why-it-keeps-getting-better.html&via=computerworld&text=USB-C+explained%3A+How+to+get+the+most+from+it+%28and+why+it+keeps+on+getting",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F2488194%2Fusb-c-explained-how-to-get-the-most-from-it-and-why-it-keeps-getting-better.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3712020%2Fopenai-to-launch-gpt-store-next-week.html&via=computerworld&text=OpenAI+to+launch+GPT+Store+next+week",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3229125%2Ftime-saving-android-shortcuts.html&via=computerworld&text=17+time-saving+Android+shortcuts",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711861%2Fidc-expects-genai-spending-to-double-in-these-areas-in-24.html&via=computerworld&text=IDC+expects+genAI+spending+to+double+in+these+areas+in+%2724",
+      "https://www.cio.com",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711960%2Ftimely-apple-updates-must-be-in-your-supplier-slas.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711702%2Fmake-custom-business-templates-google-docs.html&via=computerworld&text=Make+your+own+business+templates+in+Google+Docs",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711464%2Ftech-luminaries-we-lost-in-2023-in-memoriam.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711903%2Fapple-is-a-big-noise-no-show-at-ces-2024.html&via=computerworld&text=Apple+is+a+big-noise+no-show+at+CES+2024",
+      "https://www.networkworld.com",
+      "https://foundryco.com/",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711762%2Fbig-workplace-changes-are-coming-in-2024-are-you-ready.html",
+      "https://www.linkedin.com/company/computerworld",
+      "https://events.foundryco.com/event-series/cio100-symposium-and-awards/?utm_source=brandsites&utm_medium=banner&utm_campaign=CIO1002024Noms_brandsites",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711842%2Fthis-year-we-get-ready-for-the-apple-of-your-ai.html&via=computerworld&text=This+year%2C+we+get+ready+for+the+Apple+of+your+AI",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711500%2Fmicrosoft-windows-annoyances.html",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711864%2Fwindows-pc-resolutions-2024.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711960%2Ftimely-apple-updates-must-be-in-your-supplier-slas.html&via=computerworld&text=Timely+Apple+updates+must+be+in+your+supplier+SLAs",
+      "https://foundryco.com/work-here/",
+      "https://twitter.com/computerworld",
+      "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711903%2Fapple-is-a-big-noise-no-show-at-ces-2024.html",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711762%2Fbig-workplace-changes-are-coming-in-2024-are-you-ready.html&via=computerworld&text=Big+workplace+changes+are+coming+in+2024.+Are+you+ready%3F",
+      "https://www.infoworld.com",
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.computerworld.com%2Farticle%2F3711922%2Fgoogle-assistant-android-memory.html&via=computerworld&text=Google+Assistant%27s+forgotten+memory+magic"
+    ]
+  },
+  "type": "url",
+  "id": "9fdbef339dfd3327265ec3143bc203ea89c0467e150e61ced905cdede299ac8a",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/9fdbef339dfd3327265ec3143bc203ea89c0467e150e61ced905cdede299ac8a"
+  }
+}

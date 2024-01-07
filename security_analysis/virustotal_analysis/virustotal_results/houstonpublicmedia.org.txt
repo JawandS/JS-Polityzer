@@ -1,0 +1,760 @@
+{
+  "attributes": {
+    "last_modification_date": 1704594547,
+    "times_submitted": 504,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://houstonpublicmedia.org/"
+    ],
+    "last_submission_date": 1704594546,
+    "last_http_response_content_length": 316480,
+    "last_http_response_headers": {
+      "X-Amz-Cf-Pop": "ORD51-C2",
+      "Via": "1.1 6970aae0c617a1b9b328fc27b7cb6e3c.cloudfront.net (CloudFront)",
+      "X-Cache": "Miss from cloudfront",
+      "Transfer-Encoding": "chunked",
+      "Vary": "Origin",
+      "Server": "Apache/2.4.57 () OpenSSL/1.0.2k-fips",
+      "Connection": "keep-alive",
+      "Link": "<https://www.houstonpublicmedia.org/wp-json/>; rel=\"https://api.w.org/\"",
+      "Date": "Wed, 02 Aug 2023 04:23:35 GMT",
+      "X-Amz-Cf-Id": "GAXwBOhptBxSC_Q5_fnN5L3aU44Ky4feFY6rvmiBDHvJ2vKf_PbeZw==",
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1690950212,
+    "first_submission_date": 1396876579,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Sophos": "ngos and non profits",
+      "BitDefender": "society"
+    },
+    "last_http_response_content_sha256": "ed4646f695bce037b3397b314e29c3cba58c2bd7c6a95e3ea5bb52153fc927da",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.houstonpublicmedia.org/",
+    "trackers": {
+      "Google Analytics": [
+        {
+          "url": "https://www.google-analytics.com/analytics.js",
+          "timestamp": 1686836256
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-M6H8NCG",
+          "timestamp": 1690950212,
+          "id": "GTM-M6H8NCG"
+        },
+        {
+          "url": "https://www.googletagservices.com/tag/js/gpt.js",
+          "timestamp": 1690950212
+        }
+      ],
+      "Facebook Connect": [
+        {
+          "url": "https://connect.facebook.net/en_US/sdk.js",
+          "timestamp": 1606514813,
+          "id": "523938487799321"
+        },
+        {
+          "url": "https://connect.facebook.net/en_US/sdk.js",
+          "id": "= function() { FB.init({ appId: '523938487799321"
+        }
+      ]
+    },
+    "url": "http://houstonpublicmedia.org/",
+    "title": "Houston Public Media \u2013 Houston Public Media is a non-profit organization broadcasting through a multi-media platform to deliver content with a focus on Arts and Culture, Education, News and Information. Join the Houston Public Media community today!",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 17,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "SecureBrain": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SecureBrain"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "AICC (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AICC (MONITORAPP)"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "org",
+    "html_meta": {
+      "twitter:creator": [
+        "@houstonpubmedia"
+      ],
+      "og:image:height": [
+        "630"
+      ],
+      "fb:admins": [
+        "37511993"
+      ],
+      "twitter:image": [
+        "https://cdn.houstonpublicmedia.org/assets/images/HPM-logo-OGimage-2.jpg"
+      ],
+      "keywords": [
+        "Houston Public Media, KUHT, TV 8, Houston Public Media Schedule, Educational TV Programs, independent program broadcasts, University of Houston, nonprofit, NPR News, KUHF, Classical Music, Arts & Culture, News 88.7"
+      ],
+      "twitter:partner": [
+        "tfwp"
+      ],
+      "twitter:site": [
+        "@houstonpubmedia"
+      ],
+      "og:image:secure_url": [
+        "https://cdn.houstonpublicmedia.org/assets/images/HPM-logo-OGimage-2.jpg"
+      ],
+      "og:url": [
+        "https://www.houstonpublicmedia.org"
+      ],
+      "og:image": [
+        "https://cdn.houstonpublicmedia.org/assets/images/HPM-logo-OGimage-2.jpg"
+      ],
+      "twitter:widgets:link-color": [
+        "#000000"
+      ],
+      "og:type": [
+        "website"
+      ],
+      "apple-itunes-app": [
+        "app-id=1549226694,app-argument=https://www.houstonpublicmedia.org"
+      ],
+      "og:image:url": [
+        "https://cdn.houstonpublicmedia.org/assets/images/HPM-logo-OGimage-2.jpg"
+      ],
+      "theme-color": [
+        "#f5f5f5"
+      ],
+      "og:title": [
+        "Houston Public Media"
+      ],
+      "twitter:title": [
+        "Houston Public Media"
+      ],
+      "fb:pages": [
+        "27589213702",
+        "183418875085596"
+      ],
+      "msapplication-config": [
+        "https://cdn.houstonpublicmedia.org/assets/images/favicon/config.xml"
+      ],
+      "description": [
+        "Houston Public Media provides informative, thought-provoking and entertaining content through a multi-media platform that includes TV 8, News 88.7 and HPM Classical and reaches a combined weekly audience of more than 1.5 million."
+      ],
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "og:image:width": [
+        "1200"
+      ],
+      "twitter:url": [
+        "https://www.houstonpublicmedia.org"
+      ],
+      "og:image:type": [
+        "image/jpeg"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1, maximum-scale=5"
+      ],
+      "og:site_name": [
+        "Houston Public Media"
+      ],
+      "fb:app_id": [
+        "523938487799321"
+      ],
+      "google-play-app": [
+        "app-id=com.jacobsmedia.KUHFV3"
+      ],
+      "twitter:description": [
+        "Houston Public Media provides informative, thought-provoking and entertaining content through a multi-media platform that includes TV 8, News 88.7 and HPM Classical and reaches a combined weekly audience of more than 1.5 million."
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "og:description": [
+        "Houston Public Media provides informative, thought-provoking and entertaining content through a multi-media platform that includes TV 8, News 88.7 and HPM Classical and reaches a combined weekly audience of more than 1.5 million."
+      ],
+      "twitter:widgets:border-color": [
+        "#000000"
+      ],
+      "google-site-verification": [
+        "WX07OGEaNirk2km8RjRBernE0mA7_QL6ywgu6NXl1TM"
+      ],
+      "bitly-verification": [
+        "7777946f1a0a"
+      ]
+    },
+    "outgoing_links": [
+      "http://www.uh.edu",
+      "http://www.texasstandard.org/",
+      "https://instagram.com/houstonpubmedia",
+      "http://www.uh.edu/academics/",
+      "https://www.uh.edu",
+      "http://www.uh.edu/admissions/",
+      "https://linkedin.com/company/houstonpublicmedia",
+      "https://houstonpublicmedia.careasy.org/home",
+      "https://www.facebook.com/houstonpublicmedia",
+      "https://iseeushow.org",
+      "http://www.uh.edu/uh-arts/",
+      "https://www.youtube.com/user/houstonpublicmedia",
+      "http://www.uh.edu/research/",
+      "https://publicfiles.fcc.gov/tv-profile/KUHT",
+      "http://www.uh.edu/athletics/",
+      "http://www.uhsystem.edu/privacy-notice/",
+      "https://publicfiles.fcc.gov/fm-profile/KUHF",
+      "http://www.uh.edu/news-events/",
+      "http://www.uh.edu/student-life/",
+      "http://www.uh.edu/about/",
+      "https://www.uh.edu/president/communications/communicae/20200608-commitment-to-the-city/index.php",
+      "http://sponsorhoustonpublicmedia.org",
+      "https://twitter.com/houstonpubmedia",
+      "https://www.callswithoutwalls.com/pledgeCart3/?campaign=15605107-AEB7-4016-898F-9287A03226E9&source=#/home",
+      "https://uh.edu/engines"
+    ]
+  },
+  "type": "url",
+  "id": "fd2de3fd32d3930d3ed7eed8c9705a523b4c7f77b27361a0e7ad43a3bafd03f6",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/fd2de3fd32d3930d3ed7eed8c9705a523b4c7f77b27361a0e7ad43a3bafd03f6"
+  }
+}

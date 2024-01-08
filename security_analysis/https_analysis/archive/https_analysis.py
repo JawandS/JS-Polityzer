@@ -3,7 +3,7 @@ import pandas as pd
 # read the csv
 candidate_df = pd.read_csv('candidate_htpps_test_12_12.csv')
 # drop rows that have error or 429
-candidate_df = candidate_df[(candidate_df['https_result'] != 'Error') & (candidate_df['https_result'] != '429') & (candidate_df['http_result'] != 'Error') & (candidate_df['http_result'] != '429')]
+candidate_df = candidate_df[(candidate_df['https_result'] != 'Error') and (candidate_df['https_result'] != '429') and (candidate_df['http_result'] != 'Error') and (candidate_df['http_result'] != '429')]
 # print out unique codes from https_result column
 print(f"Unique https_result codes: {candidate_df['https_result'].unique()}")
 # print out unique codes from http_result column

@@ -1,0 +1,686 @@
+{
+  "attributes": {
+    "last_modification_date": 1695605403,
+    "times_submitted": 897,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://sfchronicle.com/"
+    ],
+    "last_submission_date": 1695605086,
+    "last_http_response_content_length": 428080,
+    "last_http_response_headers": {
+      "Content-Length": "428080",
+      "X-Cache": "HIT",
+      "Set-Cookie": "_pxhd=5412ad7fee7253bd8b662dad1b854993087c07f55da73521a256ffd0a7554554:5158ee30-5b42-11ee-bd02-4c3ad508d044; Expires=Tue, 24 Sep 2024 01:24:48 GMT; path=/;, location_data={\"is_eu\":false,\"country_code\":\"US\",\"postal_code\":\"94043\"}; path=/; SameSite=Strict; Secure, hnpdiudpf1=ZK2c05xk/Yhm4FuBW0wSKldmPyT7UzhOSpfyE2hPALk=; domain=sfchronicle.com; expires=Tue, 24 Sep 2024 01:24:48 GMT; path=/; Secure; HttpOnly, hnpdiudpf2=wFf1sDnHGEUHAuYq+HFak0VMKU6RMq7+mv9n0ME/KFo=; domain=sfchronicle.com; path=/; Secure, hnpde=eyJ0aW1lc3RhbXAiOjE2OTU2MDUwODg1OTIsImZfa2IiOjEsImZfdHlwZSI6InciLCJmX2lkIjoiN2ViN2MzMDMtY2NmYy00M2E1LTkzYWYtNzhmZDg4YTIxNmUxIiwiZl9vcmlnaW4iOiJweCIsImlwY19pZCI6W119; domain=sfchronicle.com; path=/; Secure, ab_bucket=3; expires=Tue, 24 Sep 2024 01:24:48 GMT; path=/; SameSite=none; Secure",
+      "Accept-Ranges": "bytes",
+      "X-CDN-Rule": "fetch: set default TTL 0s, fetch: channels 5m, fetch: comics/poll/sitemaps/home 1m",
+      "Server": "Apache",
+      "Connection": "keep-alive",
+      "Via": "1.1 varnish",
+      "X-Cache-Hits": "1",
+      "X-Block-Status": "fresh",
+      "Access-Control-Allow-Origin": "*",
+      "X-vcl-version": "219",
+      "X-Served-By": "cache-chi-kigq8000105-CHI",
+      "Vary": "Accept-Encoding, X-hnp-px,Fastly-SSL, X-HNP-backend, X-is-eu, X-ab-scope",
+      "User-Cache-Control": "max-age=300",
+      "Cache-Control": "max-age=0, s-maxage=0",
+      "Fastly-Restarts": "1",
+      "Date": "Mon, 25 Sep 2023 01:24:48 GMT",
+      "X-Gen-Mode": "full",
+      "Referrer-Policy": "no-referrer-when-downgrade",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Age": "87"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1695605086,
+    "first_submission_date": 1375459260,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Sophos": "news",
+      "Xcitium Verdict Cloud": "mobile communications",
+      "BitDefender": "news"
+    },
+    "last_http_response_content_sha256": "5f493e065daef34798320f8282d4ceb671975c11fa009f7491fe7bc46349242b",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.sfchronicle.com/",
+    "url": "http://sfchronicle.com/",
+    "title": "San Francisco Chronicle - Bay Area news, sports, tech, food - San Francisco Chronicle",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 17,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "msapplication-TileColor": [
+        "#ffffff"
+      ],
+      "description": [
+        "Exclusive Bay Area and San Francisco breaking news, sports, tech, and food and wine coverage, plus enhanced coverage of Giants, 49ers and Warriors"
+      ],
+      "fb:admins": [
+        "100006394927810"
+      ],
+      "msvalidate.01": [
+        "9451CA04ABC9D1D5C6419C73B4C4F7B7"
+      ],
+      "twitter:site": [
+        "@sfchronicle"
+      ],
+      "internal:eid": [
+        "channel-8498"
+      ],
+      "og:image": [
+        "https://s.hdnux.com/photos/01/12/32/42/19507359/5/rawImage.jpg"
+      ],
+      "viewport": [
+        "width=device-width"
+      ],
+      "og:url": [
+        "https://www.sfchronicle.com/"
+      ],
+      "og:site_name": [
+        "San Francisco Chronicle"
+      ],
+      "fb:app_id": [
+        "137086563877087"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "og:type": [
+        "website"
+      ],
+      "og:description": [
+        "Exclusive Bay Area and San Francisco breaking news, sports, tech, and food and wine coverage, plus enhanced coverage of Giants, 49ers and Warriors"
+      ],
+      "apple-itunes-app": [
+        "app-id=423260205"
+      ],
+      "theme-color": [
+        "#ffffff"
+      ],
+      "og:title": [
+        "Home"
+      ],
+      "google-site-verification": [
+        "qO9HJM0WFVM8QQhqiKQK6MdtSKVFZNsHRuhHuyl6tHM"
+      ],
+      "fb:pages": [
+        "105702905593,307851324523,12852567813,480760515417232,288240529145,316774245761,984197758297116,7457442370,207033189701,207346283795,222959748728,207042068180,72983690774,339413234035,343689323559,345828366626,234821559861394,335699426867,10150105039485602,338983127562,364516539001,337922332042,115637335153191,372011535931,333376634908,127590790608884,141923885872653,655037391286291,320774811368833,1740489152861748,469700473093040,386754203367,556449374478585,340999853450,350771491032,1120648627959218,342017778245,338463361591,138772706196968,1641688532739111,326312697536,353120110016,343366744658,335009494554,347261603104,350924013892,257724773860,361203926417,367174215398,284154645394,334501182354,350279743224,154340691263654,147848678611852,361381078011,362831597677,10150095255780118"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.hearst.com/newspapers/san-francisco-chronicle",
+      "http://www.legacy.com/obituaries/sfgate/",
+      "https://marketing.sfgate.com/advertise-with-us-today",
+      "https://www.facebook.com/SFChronicle/",
+      "https://www.parsintl.com/publication/sfchronicle/",
+      "https://seasonofsharing.org/",
+      "https://eevd.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_11007",
+      "https://twitter.com/sfchronicle",
+      "https://sfchronicle.myshopify.com/",
+      "http://www.hearst.com/newspapers/san-francisco-chronicle",
+      "https://www.instagram.com/sfchronicle/",
+      "https://ezads.sfchron.com/sf-adportal/obits/",
+      "https://www.sfgate.com/",
+      "https://www.linkedin.com/company/sfchronicle",
+      "https://marketing.sfgate.com/advertise-with-us-today?utm_source=sfchronicle"
+    ]
+  },
+  "type": "url",
+  "id": "1eab24fa493bf63b3e5bd3956a46b8019ca9c76a4dbda521abaede65ce8a4847",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/1eab24fa493bf63b3e5bd3956a46b8019ca9c76a4dbda521abaede65ce8a4847"
+  }
+}

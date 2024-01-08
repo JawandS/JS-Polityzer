@@ -1,0 +1,748 @@
+{
+  "attributes": {
+    "last_modification_date": 1674527272,
+    "times_submitted": 7,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://keepourclinics.org/"
+    ],
+    "last_submission_date": 1674526889,
+    "last_http_response_content_length": 137639,
+    "last_http_response_headers": {
+      "Content-Encoding": "gzip",
+      "Transfer-Encoding": "chunked",
+      "CF-Cache-Status": "DYNAMIC",
+      "expires": "Tue, 24 Jan 2023 02:22:20 GMT",
+      "vary": "Accept-Encoding,User-Agent",
+      "Server": "cloudflare",
+      "last-modified": "Thu, 20 Oct 2022 21:04:22 GMT",
+      "Connection": "keep-alive",
+      "Cache-Control": "max-age=0",
+      "Date": "Tue, 24 Jan 2023 02:22:20 GMT",
+      "CF-RAY": "78e54d02de0b22e6-ORD",
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1674526889,
+    "first_submission_date": 1615413577,
+    "categories": {
+      "alphaMountain.ai": "Health, Society/Lifestyle",
+      "BitDefender": "health"
+    },
+    "last_http_response_content_sha256": "a2edb5b7acd197d01767e6e918800955c6851bc7af810c78c2737087b3e4c37e",
+    "last_http_response_code": 200,
+    "last_final_url": "https://keepourclinics.org/",
+    "trackers": {
+      "Facebook Custom Audience": [
+        {
+          "url": "https://www.facebook.com/tr?id=1350231042091082&ev=PageView&noscript=1",
+          "timestamp": 1674526889,
+          "id": "1350231042091082"
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-KZFV634",
+          "timestamp": 1674526889,
+          "id": "GTM-KZFV634"
+        },
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=UA-128096202-2",
+          "timestamp": 1674526889,
+          "id": "UA-128096202-2"
+        }
+      ],
+      "Facebook Connect": [
+        {
+          "url": "//connect.facebook.net/en_US/fbevents.js",
+          "timestamp": 1674526889
+        },
+        {
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "timestamp": 1674526889,
+          "id": "1350231042091082"
+        }
+      ]
+    },
+    "url": "http://keepourclinics.org/",
+    "title": "Keep Our Clinics | Abortion Network",
+    "last_analysis_stats": {
+      "harmless": 77,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 13,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "Web Security Guard": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Web Security Guard"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "CyberCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyberCrime"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "SecureBrain": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SecureBrain"
+      },
+      "Hoplite Industries": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Hoplite Industries"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Virusdie External Site Scan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Virusdie External Site Scan"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "AICC (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AICC (MONITORAPP)"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "MalSilo": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalSilo"
+      },
+      "Nucleon": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Nucleon"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "org",
+    "html_meta": {
+      "twitter:creator": [
+        "@abortioncare"
+      ],
+      "og:image:height": [
+        "642"
+      ],
+      "twitter:image": [
+        "https://keepourclinics.org/wp-content/uploads/2020/04/keepourclinics-logo.png"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "topic": [
+        "At Keep Our Clinics we know that we are stronger together and that abortion is essential health care. Your support is vital to our member\u2019s ability to meet every patient\u2019s needs and ensure that providers are fully equipped to provide care. Let\u2019s unite and show up as a country to keep our clinics!"
+      ],
+      "owner": [
+        "Keep Our Clinics"
+      ],
+      "twitter:site": [
+        "@abortioncare"
+      ],
+      "article:publisher": [
+        "https://www.facebook.com/abortioncarenetwork?fref=ts&d=u100029256847200f207799259245384t1642087120ed[]&s=AWU0yqvYdbegbcQB9Q0"
+      ],
+      "og:image:secure_url": [
+        "https://keepourclinics.org/wp-content/uploads/2020/04/keepourclinics-logo.png"
+      ],
+      "subject": [
+        "At Keep Our Clinics we know that we are stronger together and that abortion is essential health care. Your support is vital to our member\u2019s ability to meet every patient\u2019s needs and ensure that providers are fully equipped to provide care. Let\u2019s unite and show up as a country to keep our clinics!"
+      ],
+      "og:url": [
+        "https://keepourclinics.org/"
+      ],
+      "og:image": [
+        "https://keepourclinics.org/wp-content/uploads/2020/04/keepourclinics-logo.png"
+      ],
+      "Classification": [
+        "Business"
+      ],
+      "copyright": [
+        "Keep Our Clinics"
+      ],
+      "author": [
+        "Keep Our Clinics"
+      ],
+      "og:type": [
+        "article"
+      ],
+      "og:title": [
+        "Keep Our Clinics | Abortion Network"
+      ],
+      "twitter:title": [
+        "Keep Our Clinics | Abortion Network"
+      ],
+      "designer": [
+        "Partners For Choice"
+      ],
+      "description": [
+        "At Keep Our Clinics we know that we are stronger together and that abortion is essential health care. Your support is vital to our member's ability to meet every patient\u2019s needs and ensure that providers are fully equipped to provide care. Let\u2019s unite and show up as a country to keep our clinics!"
+      ],
+      "robots": [
+        "max-image-preview:large",
+        "index,follow"
+      ],
+      "og:image:width": [
+        "969"
+      ],
+      "msapplication-TileImage": [
+        "https://keepourclinics.org/wp-content/uploads/2020/04/icon-300x300.png"
+      ],
+      "article:modified_time": [
+        "2022-10-20T20:53:01+00:00"
+      ],
+      "article:published_time": [
+        "2020-04-29T13:23:22+00:00"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1",
+        "width=device-width, minimum-scale=1"
+      ],
+      "og:site_name": [
+        "Keep Our Clinics - Donate Now!"
+      ],
+      "language": [
+        "English"
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "url": [
+        "https://keepourclinics.org/"
+      ],
+      "twitter:description": [
+        "At Keep Our Clinics we know that we are stronger together and that abortion is essential health care. Your support is vital to our member's ability to meet every patient\u2019s needs and ensure that providers are fully equipped to provide care. Let\u2019s unite and show up as a country to keep our clinics!"
+      ],
+      "generator": [
+        "All in One SEO Pro (AIOSEO) 4.2.6.1",
+        "Site Kit by Google 1.85.0"
+      ],
+      "og:description": [
+        "At Keep Our Clinics we know that we are stronger together and that abortion is essential health care. Your support is vital to our member's ability to meet every patient\u2019s needs and ensure that providers are fully equipped to provide care. Let\u2019s unite and show up as a country to keep our clinics!"
+      ],
+      "summary": [
+        "At Keep Our Clinics we know that we are stronger together and that abortion is essential health care. Your support is vital to our member\u2019s ability to meet every patient\u2019s needs and ensure that providers are fully equipped to provide care. Let\u2019s unite and show up as a country to keep our clinics!"
+      ],
+      "keywords": [
+        "Keep Our Clinics - Abortion Network, Keep Our Clinics - Abortion Network Alabama, Keep Our Clinics - Abortion Network Alaska, Keep Our Clinics - Abortion Network Arizona, Keep Our Clinics - Abortion Network Arkansas, Keep Our Clinics - Abortion Network California, Keep Our Clinics - Abortion Network Colorado, Keep Our Clinics - Abortion Network Connecticut, Keep Our Clinics - Abortion Network Delaware, Keep Our Clinics - Abortion Network Florida, Keep Our Clinics - Abortion Network Georgia, Keep Our Clinics - Abortion Network Hawaii, Keep Our Clinics - Abortion Network Idaho, Keep Our Clinics - Abortion Network Illinois, Keep Our Clinics - Abortion Network Indiana, Keep Our Clinics - Abortion Network Iowa, Keep Our Clinics - Abortion Network Kansas, Keep Our Clinics - Abortion Network Kentucky, Keep Our Clinics - Abortion Network Louisiana, Keep Our Clinics - Abortion Network Maine, Keep Our Clinics - Abortion Network Maryland, Keep Our Clinics - Abortion Network Massachusetts, Keep Our Clinics - Abortion Net"
+      ]
+    },
+    "outgoing_links": [
+      "https://abortioncarenetwork.org/cnc2021/",
+      "https://twitter.com/abortioncare",
+      "https://partnersforchoice.com/",
+      "https://www.instagram.com/abortioncarenetwork",
+      "https://abortioncarenetwork.org/cnc2020/",
+      "https://www.facebook.com/abortioncarenetwork?fref=ts"
+    ]
+  },
+  "type": "url",
+  "id": "2a6725e6c184cfdfda352c8bcdab57f75e1036f1220b6f8566ec49bec327be53",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/2a6725e6c184cfdfda352c8bcdab57f75e1036f1220b6f8566ec49bec327be53"
+  }
+}

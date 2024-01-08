@@ -32,7 +32,7 @@ for link in already_done:
     all_links.remove(link)
 
 print(f"Total number of links: {len(all_links)}")
-exit()
+
 # use virustotal
 error_file = open("virustotal_error.log", "a")
 for link in all_links:

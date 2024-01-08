@@ -57,7 +57,7 @@ with open("virustotal_error.log", "r") as f:
     for line in f:
         link = line.split("\t")[0]
         err_msg = line.split("\t")[1]
-        if "404" in err_msg:
+        if "404" in err_msg: # note: other errors may occurr 
             already_done.add(link)
 for link in already_done:
     outbound_links.remove(link)

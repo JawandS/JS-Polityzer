@@ -1,0 +1,693 @@
+{
+  "attributes": {
+    "last_modification_date": 1701928271,
+    "times_submitted": 900,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://ucla.edu/",
+      "https://ucla.edu:443/"
+    ],
+    "last_submission_date": 1701927958,
+    "last_http_response_content_length": 98206,
+    "last_http_response_headers": {
+      "X-Amz-Cf-Pop": "ORD56-P4",
+      "Content-Length": "98206",
+      "X-Cache": "Hit from cloudfront",
+      "Set-Cookie": "XSRF-TOKEN=eyJpdiI6Ilh4eU1UUG9lczRNVmFYaTcyWGpPOFE9PSIsInZhbHVlIjoiZzExV29QWlMyVDVGSVRKbzlXcTFJeU1oV0dwNHNqSXBUYVY3MUIyeXlScGMzM1ZuOFhuV1VtcVd4Tkk4YURscCIsIm1hYyI6ImY1NDBiZjZhMmQ5ZDRmNmNhZGI3ZTcxNTEwN2FhYmM3ZmY2Y2E1OGU4MDEzMDk2NmNlZTVhNWEzZmM2YjYwMzYifQ%3D%3D; expires=Thu, 07-Dec-2023 07:15:53 GMT; Max-Age=7200; path=/; samesite=lax, gateway_session=eyJpdiI6InpXcnR4R3Rmem1ubk5NR01cL05NSmVRPT0iLCJ2YWx1ZSI6IjhDZG9VOG5sOG5DWnBTd20wTDRSZlYrdWprSHpEWDFuZ1wvYUtJRHhGTXhjSkJkd1ZzYUV5WFRqTzBZanlvOFBhIiwibWFjIjoiZGVlZDQ0YTE0ZjcyZTY4YTk2MDk1MzIwZWUyYThjNzlmZjViMDA2MTY1YzMwZWRlNmMyOGM5ZTBkMzM3YzhjMCJ9; expires=Thu, 07-Dec-2023 07:15:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax",
+      "Age": "1806",
+      "Server": "Apache/2.4.58 ()",
+      "Content-Security-Policy-Report-Only": "default-src 'self'; base-uri 'self'; font-src cdn.jsdelivr.net; frame-src 'self' cse.google.com www.google.com; img-src 'self' *.amazonaws.com  www.google.com cdn.jsdelivr.net clients1.google.com www.googleapis.com *.gstatic.com pbs.twimg.com *.hypemarks.com *.tintup.com www.google-analytics.com stats.g.doubleclick.net cdn.webcomponents.ucla.edu data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.google.com *.googletagmanager.com www.youtube.com cse.google.com cdn.jsdelivr.net *.ytimg.com cdnjs.cloudflare.com www.google-analytics.com *.amazonaws.com cdn.webcomponents.ucla.edu *.gstatic.com data:; style-src 'self' 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net cdn.webcomponents.ucla.edu cdnjs.cloudflare.com www.google.com; connect-src 'self' weather.atmos.ucla.edu www.google-analytics.com stats.g.doubleclick.net; report-uri /csp-hotline.php",
+      "Connection": "keep-alive",
+      "X-Amz-Cf-Id": "x4-6KyQoFCw9TPjAp2ky3pcliFRDqPR6bQvacEi-Ms40MNqv9vN1ag==",
+      "X-Frame-Options": "sameorigin",
+      "Via": "1.1 dab7c883f718ae0143b9d40675c00658.cloudfront.net (CloudFront)",
+      "X-Content-Type-Options": "nosniff",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "public",
+      "Date": "Thu, 07 Dec 2023 05:15:53 GMT",
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "reputation": 0,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1701927958,
+    "first_submission_date": 1330886462,
+    "categories": {
+      "Forcepoint ThreatSeeker": "educational institutions",
+      "Sophos": "educational institutions",
+      "Xcitium Verdict Cloud": "education & reference",
+      "BitDefender": "education"
+    },
+    "last_http_response_content_sha256": "abf313a34259b2f6f804de94efff819781ca8c5121be5c5c7f98555bf541beb1",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.ucla.edu/",
+    "trackers": {
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-PHDTBTH",
+          "timestamp": 1701927958,
+          "id": "GTM-PHDTBTH"
+        }
+      ],
+      "Doubleclick": [
+        {
+          "url": "http://4393665.fls.doubleclick.net/activityi;src=4393665;type=Prima0;cat=UCLAe0;ord=' + a + '?"
+        }
+      ]
+    },
+    "url": "http://ucla.edu/",
+    "title": "UCLA",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 17,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "edu",
+    "html_meta": {
+      "\u201ctwitter:id\"": [
+        "\u201c@ucla\u201d"
+      ],
+      "\u201cog:url\"": [
+        "\u201chttps://www.ucla.edu\u201d"
+      ],
+      "description": [
+        "UCLA advances knowledge, addresses pressing societal needs and creates a university enriched by diverse perspectives where all individuals can flourish."
+      ],
+      "\u201ctwitter:card\"": [
+        "\u201csummary\u201d"
+      ],
+      "\u201cog:type\"": [
+        "\u201cwebsite\u201d"
+      ],
+      "\u201cog:description\"": [
+        "\u201cUCLA"
+      ],
+      "\u201cog:title\"": [
+        "\u201cUCLA\u201d"
+      ],
+      "\u201cog:image:alt\"": [
+        "\u201cA"
+      ],
+      "\u201cog:image:secure_url\"": [
+        "\u201chttps://ucla.edu/img/ucla_gateway.jpg\u201d"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1, shrink-to-fit=no"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.instagram.com/p/CzzqBXcujeE/",
+      "https://www.tiktok.com/@ucla?lang=en",
+      "https://www.instagram.com/ucla/",
+      "https://www.threads.net/@ucla",
+      "https://ucla-gme-advocate.symplicity.com/public_report/index.php/pid031251",
+      "https://www.instagram.com/reel/CzULe9DPBLt/",
+      "https://www.instagram.com/p/CzND-Wkxu9G/",
+      "https://www.instagram.com/reel/CzonIdvRgFZ/",
+      "https://www.instagram.com/reel/Cz9wl8EPtny/",
+      "https://twitter.com/ucla",
+      "https://www.tiktok.com/@ucla/video/7305172913190128939?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "https://www.instagram.com/reel/CzZ9wtWJQfX/",
+      "https://www.linkedin.com/school/ucla",
+      "https://www.tiktok.com/@ucla/video/7301767233502514475?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "https://www.tiktok.com/@ucla/video/7295539606735326510?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "https://www.youtube.com/user/UCLA",
+      "https://www.tiktok.com/@ucla/video/7296555662753189166?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "https://www.instagram.com/reel/Cy6lF26SkhE/",
+      "https://www.uclastore.com",
+      "https://www.instagram.com/reel/CzCExolvtPo/",
+      "https://www.facebook.com/UCLA/",
+      "https://www.instagram.com/reel/CzSWCKpRerf/",
+      "https://www.instagram.com/p/CzuKKJAOlpV/",
+      "https://www.uclaextension.edu/",
+      "https://www.instagram.com/reel/Czw4Zu_SpO8/",
+      "https://www.tiktok.com/@ucla/video/7299168435429264682?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "http://www.universityofcalifornia.edu/",
+      "https://www.instagram.com/p/Czg-1sBOb_h/",
+      "https://www.instagram.com/p/CzMkaAdydX_/",
+      "https://www.tiktok.com/@ucla/video/7303019251995233582?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "https://www.uclaextension.edu/student-services/enrollment-services-support",
+      "https://www.tiktok.com/@ucla/video/7305634761752530207?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "https://www.tiktok.com/@ucla/video/7303990525604990239?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "https://www.tiktok.com/@ucla/video/7301049590625619246?utm_campaign=tt4d_open_api&utm_source=awdbe0aa3brf1r9q",
+      "https://uclabruins.com/",
+      "https://www.instagram.com/reel/CzUB6wERRku/",
+      "https://www.instagram.com/p/CzFQYxFPmSP/",
+      "https://www.uclahealth.org/?utm_source=ucla.edu"
+    ]
+  },
+  "type": "url",
+  "id": "37df608fcdab15aedb3a99fcfce8b85a6800b8fa1aefe010905e5887a8b03808",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/37df608fcdab15aedb3a99fcfce8b85a6800b8fa1aefe010905e5887a8b03808"
+  }
+}

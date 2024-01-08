@@ -1,0 +1,699 @@
+{
+  "attributes": {
+    "last_modification_date": 1704668786,
+    "times_submitted": 13002,
+    "total_votes": {
+      "harmless": 7,
+      "malicious": 34
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://amazonaws.com/",
+      "http://aws.amazon.com"
+    ],
+    "last_submission_date": 1704668469,
+    "last_http_response_content_length": 919473,
+    "last_http_response_headers": {
+      "X-Amz-Cf-Pop": "IAD89-C2",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Cache": "Miss from cloudfront",
+      "Transfer-Encoding": "chunked",
+      "Set-Cookie": "aws-priv=eyJ2IjoxLCJldSI6MCwic3QiOjB9; Version=1; Comment=\"Anonymous cookie for privacy regulations\"; Domain=.aws.amazon.com; Max-Age=31536000; Expires=Mon, 06 Jan 2025 23:01:14 GMT; Path=/; Secure, aws_lang=en; Domain=.amazon.com; Path=/",
+      "Strict-Transport-Security": "max-age=63072000",
+      "Server": "Server",
+      "x-amz-rid": "GR639794A8RPWCNQ9ZMT",
+      "Last-Modified": "Fri, 05 Jan 2024 17:56:44 GMT",
+      "Connection": "keep-alive",
+      "X-Amz-Cf-Id": "yr07fWzsUjAUkI3e4yOMuLd02t3N8_GPOvdOyRR27oe-jFp6BJZkgQ==",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Content-Security-Policy-Report-Only": "default-src *; connect-src *; font-src * data:; frame-src *; img-src * data:; media-src *; object-src *; script-src 'nonce-xsp7AIieRU2oQ8SMHCbQKA==' *; style-src 'unsafe-inline' *; report-uri https://prod-us-west-2.csp-report.marketing.aws.dev/submit",
+      "Via": "1.1 aa0ac259128059e949248e63a3b6767e.cloudfront.net (CloudFront)",
+      "X-Content-Type-Options": "nosniff",
+      "x-amz-id-1": "GR639794A8RPWCNQ9ZMT",
+      "Vary": "accept-encoding,Content-Type,Accept-Encoding,User-Agent",
+      "Date": "Sun, 07 Jan 2024 23:01:14 GMT",
+      "Content-Type": "text/html;charset=UTF-8"
+    },
+    "reputation": -93,
+    "tags": [
+      "multiple-redirects"
+    ],
+    "last_analysis_date": 1704668469,
+    "first_submission_date": 1282732865,
+    "categories": {
+      "Forcepoint ThreatSeeker": "information technology",
+      "Sophos": "information technology",
+      "Xcitium Verdict Cloud": "computing & technology",
+      "BitDefender": "computersandsoftware"
+    },
+    "last_http_response_content_sha256": "f6d0fbcaef4f4d0ca2f9d1728f7ab13c46f5449cc15aed76d39726f4c4415d70",
+    "last_http_response_code": 200,
+    "last_final_url": "https://aws.amazon.com/",
+    "url": "http://amazonaws.com/",
+    "title": "Cloud Computing Services - Amazon Web Services (AWS)",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 18,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "MalwareURL": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "MalwareURL"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "description": [
+        "Amazon Web Services offers reliable, scalable, and  inexpensive cloud computing services. Free to join, pay only for what you use."
+      ],
+      "twitter:image": [
+        "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_179x109.png"
+      ],
+      "sogou_site_verification": [
+        "Ow8cCy3Hgq"
+      ],
+      "baidu-site-verification": [
+        "pjxJUyWxae"
+      ],
+      "360-site-verification": [
+        "cbe5c6f0249e273e71fffd6d6580ce09"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "twitter:site": [
+        "@awscloud"
+      ],
+      "msvalidate.01": [
+        "6F92E52A288E266E30C2797ECB5FCCF3"
+      ],
+      "og:image": [
+        "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1.0"
+      ],
+      "og:url": [
+        "https://aws.amazon.com/"
+      ],
+      "og:site_name": [
+        "Amazon Web Services, Inc."
+      ],
+      "twitter:card": [
+        "summary"
+      ],
+      "twitter:description": [
+        "Amazon Web Services offers reliable, scalable, and  inexpensive cloud computing services. Free to join, pay only for what you use."
+      ],
+      "og:type": [
+        "company"
+      ],
+      "og:title": [
+        "Cloud Computing Services - Amazon Web Services (AWS)"
+      ],
+      "twitter:title": [
+        "Cloud Computing Services - Amazon Web Services (AWS)"
+      ],
+      "google-site-verification": [
+        "XHghG81ulgiW-3EylGcF48sG28tBW5EH0bNUhgo_DrU"
+      ],
+      "shenma-site-verification": [
+        "79b94bb338f010af876605819a332e19_1617844070"
+      ],
+      "fb:pages": [
+        "153063591397681"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.instagram.com/amazonwebservices/",
+      "https://partyrock.aws/?did=ap_card&trk=ap_card&nc2=hp",
+      "https://reinvent.awsevents.com/register/virtualregistration/?sc_icampaign=event_reinvent23-reinvent-takeover-virtual-reg-hero-footer&sc_ichannel=ha&sc_icontent=awssm-4773_event_reinvent23&sc_iplace=hero&trk=0733a3c9-50cf-4154-92b7-6f3892b20769~ha_awssm-4773_event_reinvent23",
+      "https://repost.aws/knowledge-center/?nc1=f_dr",
+      "https://press.aboutamazon.com/press-releases/aws",
+      "https://repost.aws/",
+      "https://www.linkedin.com/company/amazon-web-services/",
+      "https://reinvent.awsevents.com/?nc2=h_ql_reinv",
+      "https://www.facebook.com/amazonwebservices",
+      "https://www.twitch.tv/aws",
+      "https://repost.aws/?nc1=f_dr",
+      "https://twitter.com/awscloud",
+      "https://reinvent.awsevents.com/?nc2=h_ql_reinv23_mo",
+      "https://reinvent.awsevents.com/innovation-talks/?trk=0733a3c9-50cf-4154-92b7-6f3892b20769",
+      "https://www.youtube.com/user/AmazonWebServices/Cloud/",
+      "https://partyrock.aws/?sc_icampaign=launch_reinvent23-partyrock&sc_ichannel=ha&sc_icontent=awssm-4015_launch_reinvent23&sc_iplace=hero&trk=1b82ba73-553e-442b-87dc-6a2b7d4756b6~ha_awssm-4015_launch_reinvent23",
+      "https://pages.awscloud.com/communication-preferences?trk=homepage",
+      "https://reinvent.awsevents.com/on-demand/?sc_icampaign=event_reinvent23-reinvent-takeover-on-demand-header&sc_ichannel=ha&sc_icontent=awssm-4773_event_reinvent23&sc_iplace=hero&trk=0733a3c9-50cf-4154-92b7-6f3892b20769~ha_awssm-4773_event_reinvent23",
+      "https://repost.aws/knowledge-center/?nc2=h_m_ma"
+    ]
+  },
+  "type": "url",
+  "id": "3115cbac7c370ca2c7f0209dd2ea4867f6214adc714c615ae96865e999a05c2a",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/3115cbac7c370ca2c7f0209dd2ea4867f6214adc714c615ae96865e999a05c2a"
+  }
+}

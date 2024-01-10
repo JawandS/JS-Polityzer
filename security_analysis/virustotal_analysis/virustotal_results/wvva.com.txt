@@ -1,0 +1,771 @@
+{
+  "attributes": {
+    "last_modification_date": 1686888171,
+    "times_submitted": 491,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://wvva.com/"
+    ],
+    "last_submission_date": 1686838017,
+    "last_http_response_content_length": 1548902,
+    "last_http_response_headers": {
+      "Akamai-True-TTL": "130, -1",
+      "Content-Security-Policy": "upgrade-insecure-requests",
+      "Transfer-Encoding": "chunked",
+      "Set-Cookie": "AKA_A2=A; expires=Thu, 15-Jun-2023 19:28:10 GMT; path=/; domain=wvva.com; secure; HttpOnly",
+      "Server": "openresty",
+      "Last-Modified": "Thu, 15 Jun 2023 18:28:10 GMT",
+      "Connection": "keep-alive, Transfer-Encoding",
+      "X-Akamai-Transformed": "9 211342 0 pmb=mRUM,2",
+      "Content-Encoding": "gzip",
+      "Expires": "Thu, 15 Jun 2023 18:29:10 GMT",
+      "Vary": "Accept-Encoding",
+      "Server-Timing": "cdn-cache; desc=REVALIDATE, edge; dur=39, origin; dur=745, ak_p; desc=\"468570_1750836868_246574029_78212_5692_13_-_-\";dur=1",
+      "ETag": "W/\"17902f-iJ+fcYblXBdelkhTZD98gv42duE\"",
+      "Link": "<https://gray-wvva-prod.cdn.arcpublishing.com>;rel=\"preconnect\",<https://c.amazon-adsystem.com>;rel=\"preconnect\",<https://www.burst.com>;rel=\"preconnect\",<https://static.chartbeat.com>;rel=\"preconnect\",<https://www.queryly.com>;rel=\"preconnect\",<https://webpubcontent.gray.tv>;rel=\"preconnect\",<https://www.metv.com>;rel=\"preconnect\",<https://ads.pubmatic.com>;rel=\"preconnect\", <https://polyfill.io>;rel=\"preconnect\",<https://www.googletagmanager.com>;rel=\"preconnect\",<https://cdnjs.cloudflare.com>;rel=\"preconnect\",<https://www.google-analytics.com>;rel=\"preconnect\"",
+      "Cache-Control": "private, max-age=60",
+      "Date": "Thu, 15 Jun 2023 18:28:10 GMT",
+      "x-arc-pb-request-id": "0961a59c-0019-40e2-adca-2a29f90c831b",
+      "Content-Type": "text/html; charset=utf-8",
+      "x-arc-request-id": "0.84a65b68.1686853689.eb26bcd"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1686838017,
+    "first_submission_date": 1347705207,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Sophos": "news",
+      "alphaMountain.ai": "News",
+      "BitDefender": "news"
+    },
+    "last_http_response_content_sha256": "3bbdd4d77115e681ea0a530c9be3f708911f166102e8e30750f218f3e6eaf148",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.wvva.com/",
+    "trackers": {
+      "Amazon Cloudfront": [
+        {
+          "url": "https://gray-wvva-prod.cdn.arcpublishing.com/resizer/5ZYFA4ZUESC9wvY0o9x2dJzhugU=/800x450/smart/filters:quality(70)/do0bihdskp9dy.cloudfront.net/06-14-2023/t_325e41676f6547c9a39e5fe8885e3eab_name_file_1280x720_2000_v3_1_.jpg",
+          "timestamp": 1686838017,
+          "id": "gray-wvva-prod"
+        }
+      ],
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-M5QQ3JP",
+          "timestamp": 1686838017,
+          "id": "GTM-M5QQ3JP"
+        },
+        {
+          "url": "https://www.googletagmanager.com/ns.html?id=GTM-T7J729R",
+          "timestamp": 1625541432,
+          "id": "GTM-T7J729R"
+        },
+        {
+          "url": "https://www.googletagservices.com/tag/js/gpt.js",
+          "timestamp": 1625541432
+        }
+      ],
+      "Google Publisher Tags": [
+        {
+          "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+          "timestamp": 1625541432
+        }
+      ],
+      "Doubleclick": [
+        {
+          "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+        }
+      ],
+      "Amazon Associates": [
+        {
+          "url": "//c.amazon-adsystem.com/aax2/apstag.js",
+          "timestamp": 1686838017
+        }
+      ],
+      "New Relic": [
+        {
+          "url": "",
+          "timestamp": 1625541432
+        }
+      ]
+    },
+    "url": "http://wvva.com/",
+    "title": "WVVA | Bluefield - Beckley - Oak Hill Local News, Weather, Sports | Bluefield, WV",
+    "last_analysis_stats": {
+      "harmless": 73,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 17,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "SecureBrain": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SecureBrain"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "AICC (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AICC (MONITORAPP)"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "twitter:creator": [
+        "@WVVA"
+      ],
+      "rating": [
+        "general"
+      ],
+      "googlebot": [
+        "index"
+      ],
+      "burst": [
+        "wvva"
+      ],
+      "twitter:image": [
+        "https://www.wvva.com/pf/resources/images/logo-icons/wvva.svg?d=337"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "robots": [
+        "index,follow,noarchive"
+      ],
+      "google-play-app": [
+        "app-id=com.mobdub.channel.WVVA"
+      ],
+      "apple-mobile-web-app-status-bar-style": [
+        "black-translucent"
+      ],
+      "twitter:site": [
+        "@WVVA"
+      ],
+      "article:publisher": [
+        "https://www.facebook.com/wvvanews/"
+      ],
+      "og:image": [
+        "https://www.wvva.com/pf/resources/images/logo-icons/wvva.svg?d=337"
+      ],
+      "viewport": [
+        "width=device-width, minimum-scale=1, initial-scale=1"
+      ],
+      "news_keywords": [
+        "wvva,bluefield,west virginia,breaking news,sports,west virginia weather,west virginia news,beckley,oak hill"
+      ],
+      "og:url": [
+        "https://www.wvva.com"
+      ],
+      "og:description": [
+        "WVVA | Bluefield - Beckley - Oak Hill Local News, Weather, Sports | Bluefield, WV"
+      ],
+      "googlebot-news": [
+        "index"
+      ],
+      "og:site_name": [
+        "https://www.wvva.com"
+      ],
+      "copyright": [
+        "Copyright (c) 2023"
+      ],
+      "title": [
+        "WVVA | Bluefield - Beckley - Oak Hill Local News, Weather, Sports | Bluefield, WV"
+      ],
+      "description": [
+        "WVVA | Bluefield - Beckley - Oak Hill Local News, Weather, Sports | Bluefield, WV"
+      ],
+      "og:type": [
+        "website"
+      ],
+      "fb:admins": [
+        "644426401"
+      ],
+      "keywords": [
+        "wvva,bluefield,west virginia,breaking news,sports,west virginia weather,west virginia news,beckley,oak hill"
+      ],
+      "apple-itunes-app": [
+        "app-id=879476251"
+      ],
+      "og:title": [
+        "WVVA | Bluefield - Beckley - Oak Hill Local News, Weather, Sports | Bluefield, WV"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "twitter:title": [
+        "WVVA | Bluefield - Beckley - Oak Hill Local News, Weather, Sports | Bluefield, WV"
+      ],
+      "distribution": [
+        "global"
+      ],
+      "twitter:description": [
+        "WVVA | Bluefield - Beckley - Oak Hill Local News, Weather, Sports | Bluefield, WV"
+      ],
+      "fb:pages": [
+        "118970382876"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.metv.com/",
+      "https://www.instagram.com/wvvanews",
+      "https://wvva.graydigitalmedia.com",
+      "https://www.vuit.com/publishers/493/wvva",
+      "https://gray.tv/careers#currentopenings",
+      "https://www.twitter.com/WVVA",
+      "https://publicfiles.fcc.gov/api/manager/download/cb3487fe-fdd9-a21a-6167-a38c389a599d/9f39e8ef-105a-4c4c-8df2-39d0f9fac75e.pdf",
+      "https://gray.tv/payments",
+      "https://yourcwtv.com/partners/bluefield/",
+      "https://www.courttv.com/",
+      "https://publicfiles.fcc.gov/tv-profile/WVVA",
+      "https://www.graydc.com/",
+      "https://gray.tv/uploads/documents/Gray-Television-AI-Policy.pdf",
+      "https://www.facebook.com/wvvanews",
+      "https://www.investigatetv.com/",
+      "https://gray.tv/optout",
+      "https://www.circleallaccess.com/",
+      "https://www.starttv.com/",
+      "https://www.nbc.com/"
+    ]
+  },
+  "type": "url",
+  "id": "3c319166e31c0fd58ed050d6598d6ed62848a951fd7c7a3c7c5590bf6a1883ce",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/3c319166e31c0fd58ed050d6598d6ed62848a951fd7c7a3c7c5590bf6a1883ce"
+  }
+}

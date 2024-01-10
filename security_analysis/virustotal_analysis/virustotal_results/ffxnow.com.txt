@@ -1,0 +1,726 @@
+{
+  "attributes": {
+    "last_modification_date": 1696890661,
+    "times_submitted": 3,
+    "total_votes": {
+      "harmless": 0,
+      "malicious": 0
+    },
+    "threat_names": [],
+    "redirection_chain": [
+      "http://ffxnow.com/"
+    ],
+    "last_submission_date": 1696890343,
+    "last_http_response_content_length": 126409,
+    "last_http_response_headers": {
+      "X-Gateway-Cache-Status": "HIT",
+      "Permissions-Policy": "browsing-topics=(\"https://ads.adthrive.com\")",
+      "Transfer-Encoding": "chunked",
+      "X-Gateway-Request-Id": "d9f155bd4c49a97756c1fce1fef0e2ef",
+      "CF-Cache-Status": "DYNAMIC",
+      "Server": "cloudflare",
+      "Connection": "keep-alive",
+      "cf-edge-cache": "cache,platform=wordpress",
+      "X-Gateway-Skip-Cache": "0",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Link": "<https://www.ffxnow.com/wp-json/>; rel=\"https://api.w.org/\"",
+      "Cache-Control": "max-age=300",
+      "Date": "Mon, 09 Oct 2023 22:25:44 GMT",
+      "CF-RAY": "813a0a8b0a85c56c-ORD",
+      "Content-Type": "text/html; charset=UTF-8",
+      "X-Gateway-Cache-Key": "1696884188.175|standard|https|www.ffxnow.com|||/"
+    },
+    "reputation": 0,
+    "tags": [],
+    "last_analysis_date": 1696890343,
+    "first_submission_date": 1677732221,
+    "categories": {
+      "Forcepoint ThreatSeeker": "news and media",
+      "Xcitium Verdict Cloud": "media sharing",
+      "alphaMountain.ai": "News, Personal Sites/Blogs",
+      "BitDefender": "society"
+    },
+    "last_http_response_content_sha256": "e80e906735960990cb48ffe3f6702f86c3e04d052396647bbef519dfe914a72e",
+    "last_http_response_code": 200,
+    "last_final_url": "https://www.ffxnow.com/",
+    "trackers": {
+      "Google Tag Manager": [
+        {
+          "url": "https://www.googletagmanager.com/gtag/js?id=UA-8483161-12",
+          "timestamp": 1696890343,
+          "id": "UA-8483161-12"
+        }
+      ],
+      "Quantcast": [
+        {
+          "url": "//pixel.quantserve.com/pixel/p-8cTliheLNau3M.gif",
+          "timestamp": 1696890343,
+          "id": "p-8cTliheLNau3M"
+        }
+      ]
+    },
+    "url": "http://ffxnow.com/",
+    "title": "FFXnow - Fairfax County, Va. local news",
+    "last_analysis_stats": {
+      "harmless": 71,
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 19,
+      "timeout": 0
+    },
+    "last_analysis_results": {
+      "Bkav": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Bkav"
+      },
+      "CMC Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CMC Threat Intelligence"
+      },
+      "Snort IP sample list": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Snort IP sample list"
+      },
+      "VX Vault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "VX Vault"
+      },
+      "ViriBack": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ViriBack"
+      },
+      "PhishLabs": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishLabs"
+      },
+      "K7AntiVirus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "K7AntiVirus"
+      },
+      "CINS Army": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CINS Army"
+      },
+      "Quttera": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quttera"
+      },
+      "BlockList": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BlockList"
+      },
+      "PrecisionSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PrecisionSec"
+      },
+      "OpenPhish": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "OpenPhish"
+      },
+      "0xSI_f33d": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "0xSI_f33d"
+      },
+      "Feodo Tracker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Feodo Tracker"
+      },
+      "ADMINUSLabs": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ADMINUSLabs"
+      },
+      "Scantitan": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Scantitan"
+      },
+      "AlienVault": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AlienVault"
+      },
+      "Sophos": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sophos"
+      },
+      "Phishtank": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishtank"
+      },
+      "Cyan": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cyan"
+      },
+      "Spam404": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Spam404"
+      },
+      "CRDF": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CRDF"
+      },
+      "Rising": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Rising"
+      },
+      "Fortinet": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Fortinet"
+      },
+      "alphaMountain.ai": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "alphaMountain.ai"
+      },
+      "Lionic": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Lionic"
+      },
+      "Cyble": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Cyble"
+      },
+      "Seclookup": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Seclookup"
+      },
+      "Xcitium Verdict Cloud": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Xcitium Verdict Cloud"
+      },
+      "Artists Against 419": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Artists Against 419"
+      },
+      "Google Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Google Safebrowsing"
+      },
+      "SafeToOpen": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SafeToOpen"
+      },
+      "ArcSight Threat Intelligence": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "ArcSight Threat Intelligence"
+      },
+      "ESTsecurity": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESTsecurity"
+      },
+      "Juniper Networks": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Juniper Networks"
+      },
+      "Heimdal Security": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Heimdal Security"
+      },
+      "AutoShun": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AutoShun"
+      },
+      "Trustwave": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Trustwave"
+      },
+      "CyRadar": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "CyRadar"
+      },
+      "Dr.Web": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Dr.Web"
+      },
+      "Emsisoft": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Emsisoft"
+      },
+      "Abusix": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Abusix"
+      },
+      "Webroot": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Webroot"
+      },
+      "Avira": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Avira"
+      },
+      "securolytics": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "securolytics"
+      },
+      "Antiy-AVL": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Antiy-AVL"
+      },
+      "AlphaSOC": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "AlphaSOC"
+      },
+      "Acronis": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Acronis"
+      },
+      "Quick Heal": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Quick Heal"
+      },
+      "URLQuery": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "URLQuery"
+      },
+      "Ermes": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Ermes"
+      },
+      "Viettel Threat Intelligence": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Viettel Threat Intelligence"
+      },
+      "DNS8": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "DNS8"
+      },
+      "AILabs (MONITORAPP)": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "AILabs (MONITORAPP)"
+      },
+      "benkow.cc": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "benkow.cc"
+      },
+      "EmergingThreats": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "EmergingThreats"
+      },
+      "Chong Lua Dao": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Chong Lua Dao"
+      },
+      "Yandex Safebrowsing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Yandex Safebrowsing"
+      },
+      "Lumu": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Lumu"
+      },
+      "Kaspersky": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Kaspersky"
+      },
+      "Sucuri SiteCheck": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sucuri SiteCheck"
+      },
+      "desenmascara.me": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "desenmascara.me"
+      },
+      "CrowdSec": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "CrowdSec"
+      },
+      "Cluster25": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Cluster25"
+      },
+      "SOCRadar": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "SOCRadar"
+      },
+      "URLhaus": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "URLhaus"
+      },
+      "PREBYTES": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "PREBYTES"
+      },
+      "StopForumSpam": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "StopForumSpam"
+      },
+      "Blueliv": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Blueliv"
+      },
+      "Netcraft": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "Netcraft"
+      },
+      "ZeroCERT": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ZeroCERT"
+      },
+      "Phishing Database": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Phishing Database"
+      },
+      "MalwarePatrol": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "MalwarePatrol"
+      },
+      "Sangfor": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Sangfor"
+      },
+      "IPsum": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "IPsum"
+      },
+      "Malwared": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Malwared"
+      },
+      "BitDefender": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "BitDefender"
+      },
+      "GreenSnow": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "GreenSnow"
+      },
+      "G-Data": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "G-Data"
+      },
+      "VIPRE": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "VIPRE"
+      },
+      "SCUMWARE.org": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "SCUMWARE.org"
+      },
+      "PhishFort": {
+        "category": "undetected",
+        "result": "unrated",
+        "method": "blacklist",
+        "engine_name": "PhishFort"
+      },
+      "malwares.com URL checker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "malwares.com URL checker"
+      },
+      "Forcepoint ThreatSeeker": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Forcepoint ThreatSeeker"
+      },
+      "Criminal IP": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Criminal IP"
+      },
+      "Certego": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Certego"
+      },
+      "ESET": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ESET"
+      },
+      "Threatsourcing": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Threatsourcing"
+      },
+      "ThreatHive": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "ThreatHive"
+      },
+      "Bfore.Ai PreCrime": {
+        "category": "harmless",
+        "result": "clean",
+        "method": "blacklist",
+        "engine_name": "Bfore.Ai PreCrime"
+      }
+    },
+    "tld": "com",
+    "html_meta": {
+      "description": [
+        "Local news and info for Fairfax County, Virginia"
+      ],
+      "twitter:image": [
+        "https://www.ffxnow.com/files/2022/04/1296399_FFXnowSocialShareImages_Op1_040122.jpeg"
+      ],
+      "og:locale": [
+        "en_US"
+      ],
+      "robots": [
+        "max-image-preview:large"
+      ],
+      "msapplication-TileImage": [
+        "https://www.ffxnow.com/files/2021/07/cropped-ffxnow-site-logo-square-270x270.png"
+      ],
+      "twitter:site": [
+        "@ffxnow"
+      ],
+      "article:publisher": [
+        "https://www.facebook.com/ffxnow/"
+      ],
+      "og:image": [
+        "https://www.ffxnow.com/files/2022/04/1296399_FFXnowSocialShareImages_Op1_040122.jpeg"
+      ],
+      "og:image:secure_url": [
+        "https://www.ffxnow.com/files/2022/04/1296399_FFXnowSocialShareImages_Op1_040122.jpeg"
+      ],
+      "viewport": [
+        "width=device-width, initial-scale=1"
+      ],
+      "og:url": [
+        "https://www.ffxnow.com/"
+      ],
+      "og:site_name": [
+        "FFXnow | Fairfax County, Va. breaking news and local happenings"
+      ],
+      "generator": [
+        "All in One SEO (AIOSEO) 4.4.2",
+        "WordPress 6.3.1"
+      ],
+      "twitter:card": [
+        "summary_large_image"
+      ],
+      "twitter:description": [
+        "Local news and info for Fairfax County, Virginia"
+      ],
+      "og:type": [
+        "article"
+      ],
+      "og:description": [
+        "Local news and info for Fairfax County, Virginia"
+      ],
+      "og:title": [
+        "FFXnow | Fairfax County, Va. local news"
+      ],
+      "twitter:title": [
+        "FFXnow Fairfax County, Va. breaking news and local happenings Fairfax County, Va. local news"
+      ]
+    },
+    "outgoing_links": [
+      "https://www.virginiadot.org/newsroom/northern-virginia/2023/new-shared-use-path-along-route-29-in-merrifield10-06-2023.asp",
+      "https://www.fairfaxcounty.gov/planning-development/plan-amendments/att-oakton",
+      "https://form.jotform.com/222475836733160",
+      "https://video.fairfaxcounty.gov/player/clip/2802?meta_id=69190&redirect=true&h=feacdf70d3d3a1272c3a74db385ecc8f",
+      "https://twitter.com/hashtag/Merrifield?src=hash&ref_src=twsrc%5Etfw",
+      "https://www.novaparks.com/parks/meadowlark-botanical-gardens/events/meadowlarks-halloween-scavenger-hunt",
+      "https://www.oag.state.va.us/media-center/news-releases/2616-september-29-2023-attorney-general-miyares-files-notice-in-opposition-to-dulles-greenway-toll-increase",
+      "http://guidingyourmove.com/",
+      "https://www.eventbrite.com/e/dog-o-ween-tickets-690259854807",
+      "https://www.tysonsreporter.com/2019/03/05/new-lee-highway-path-to-complete-trail-currently-broken-by-ditch/",
+      "https://www.sarahmoorelpc.com",
+      "https://www.virginiadot.org/projects/northern-virginia/rt-29-nb-bike-ped.asp",
+      "https://locne.ws/3LRZpy5",
+      "https://static1.squarespace.com/static/63d297796012a346e248b482/t/651aee9b07c4bd4b8c67bac9/1696263837303/PA+2023-II-1F+Oct+2+Community+Mtg+Slides+FINAL.pdf",
+      "https://www.facebook.com/FestivalofLeaves/",
+      "https://www.fcrevite.org/sites/default/files/Assets/documents/PDFs/PR-004-web.pdf",
+      "https://firstwash.propertycapsule.com/p/commercial-real-estate-listings/Vienna-VA-22180/cedarpark",
+      "https://lis.virginia.gov/cgi-bin/legp604.exe?081+sum+SB778",
+      "https://form.jotform.com/222353258025147",
+      "https://www.facebook.com/events/701972214690481/?ref=newsfeed",
+      "https://form.jotform.com/222106445621143",
+      "https://www.tennessean.com/story/money/2018/12/20/hot-chicken-nashville-history-princes/2205083002/",
+      "https://www.bodyfittraining.com/about",
+      "https://form.jotform.com/221630757468058",
+      "https://washington.org/visit-dc/ghost-tours-washington-dc",
+      "https://www.alexcolonialtours.com/",
+      "https://www.dullesgreenway.com/toll-calculator/",
+      "https://facebook.com/GuidingYourMove",
+      "https://twitter.com/VaDOTNOVA/status/1710400958600028183",
+      "https://static1.squarespace.com/static/63d297796012a346e248b482/t/651aeb15ad84583d744b94da/1696262936067/3033+Chain+Bridge+Design+Update+October+2.pdf",
+      "https://www.facebook.com/ViennaHalloweenHorror/",
+      "https://form.jotform.com/222928568927170",
+      "https://www.instagram.com/p/CgwvMs-OTGc/",
+      "https://dcghosts.com/",
+      "https://www.virginiamercury.com/2023/02/06/dulles-greenway-bill-clears-house-but-faces-uncertainty-in-senate/",
+      "https://www.viennava.gov/residents/concerts-and-events/halloween-parade",
+      "https://t.co/YXq3jlHWhL",
+      "https://www.fairfaxcounty.gov/planning-development/plan-amendments/sspa/countywide/2022-2023/track-nomination",
+      "https://www.instagram.com/lauraschwartzrealtor/",
+      "http://outside.transform66.org/about_the_project/concession_fee_projects.asp",
+      "https://www.flagshipcarwash.com/locations/va/vienna/flag9/",
+      "https://www.hotredbird.com/",
+      "https://www.workhousearts.org/haunt"
+    ]
+  },
+  "type": "url",
+  "id": "1429d8228de30adaa1e2dcb262dd67c7f690473c62c74e10d24869084d714357",
+  "links": {
+    "self": "https://www.virustotal.com/api/v3/urls/1429d8228de30adaa1e2dcb262dd67c7f690473c62c74e10d24869084d714357"
+  }
+}

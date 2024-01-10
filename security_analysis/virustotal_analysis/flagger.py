@@ -1,1 +1,24 @@
-# go through virustotal results and find 
+# go through virustotal results and find any links to be flagged
+import json
+import os
+
+# go through each file in the virustotal_results folder
+flagged_links = {}
+for filename in os.listdir('virustotal_results'):
+    with open('virustotal_results/' + filename, 'r') as f:
+        data = json.load(f)
+        engines = data['attributes']['last_analysis_results']
+        sus_count = 0
+        for engine in engines:
+            category = engines[engine]['category']
+            result = engines[engine]['result']
+            if category == 'malicious' or category == 'phishing' or result == 'malicious' or result == 'phishing':
+                sus_count += 1
+        if sus_count > 0:
+            flagged_links[filename] = sus_count
+            
+
+with open('flagged.csv', 'w') as f:
+    f.write(f'link,flagged_count\n')
+    for link in flagged_links:
+        f.write(f'{link},{flagged_links[link]}\n')

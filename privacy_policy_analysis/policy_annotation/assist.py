@@ -74,7 +74,7 @@ def annotate_sentences(ANNOTATE=True):
     seen_setence_count = 0
     not_seen_count = 0
     # go throuhg seen sentences and add to dict
-    seen_sentences_df = pd.read_csv('seen_sentences.csv', sep='|')
+    seen_sentences_df = pd.read_csv('seen_sentences.csv', sep='|', quoting=3)
     for index, row in seen_sentences_df.iterrows():
         sentence = row['sentence']
         # if sentence in seen_sentences:
@@ -94,6 +94,7 @@ def annotate_sentences(ANNOTATE=True):
                             seen_setence_count += 1
                         continue
                     elif not ANNOTATE:
+                        print(line)
                         not_seen_count += 1
                     if ANNOTATE:
                         print("\n" + line)
@@ -110,10 +111,11 @@ def annotate_sentences(ANNOTATE=True):
                             seen_setence_count += 1
                         continue
                     elif not ANNOTATE:
+                        print(line)
                         not_seen_count += 1
                     if ANNOTATE:
                         print("\n" + line)
-                        should_keep = input("Keep?: ")
+                        should_keep = bool(input("Keep?: "))
                         seen_sentences[line] = should_keep
                         outfile.write(f"{line}|{should_keep}\n")
     except KeyboardInterrupt:
@@ -123,32 +125,28 @@ def annotate_sentences(ANNOTATE=True):
         print(f"not seen sentences: {not_seen_count}")
 
 def label_sentences():
-    # go through seen sentences and add them to the json
-    import json
+    import pandas as pd 
+    # go through seen sentences and label datatypes 
+    completed_df = pd.read_csv('annotated_sentences.csv', sep='|', quoting=3)
     seen_sentences = set()
-    with open('annotated_sentences.txt', 'a+') as record_f:
-        for line in record_f.readlines():
-            seen_sentences.add(line.strip())
-        try:
-            with open('data_types.json', 'r') as f:
-                annotation_data = json.load(f)
-            with open('seen_sentences.csv', 'r') as f:
-                sentences_to_do = f.readlines()
-            for data in sentences_to_do:
-                sentence = data.split("|")[0]
-                keep = eval(data.split("|")[1])
-                if sentence in seen_sentences or not keep:
-                    continue
-                print(f"\n{sentence}")
-                record_f.write(sentence + '\n')
-                collection_or_sharing = input("Collection(1) Sharing(2): ").strip()
-                if not collection_or_sharing:
-                    continue
-                data_types = input("Data Types: ").strip().split(', ')       
-                annotation_data[sentence] = {'collection_sharing': collection_or_sharing, 'data_types': data_types}
-        except KeyboardInterrupt:
-            with open('seen_sentences.json', 'w') as f:
-                json.dump(annotation_data, f, indent=2)    
+    for index, row in completed_df.iterrows():
+        seen_sentences.add(row['sentence'])
+    # go through text file and label each sentence
+    outfile = open('annotated_sentences.csv', 'a')
+    all_sentences_df = pd.read_csv('seen_sentences.csv', sep='|', quoting=3)
+    try:
+        for idx, row in all_sentences_df.iterrows():
+            sentence = row['sentence']
+            if not sentence or not row['keep']:
+                continue
+            if sentence in seen_sentences:
+                continue
+            print("\n" + sentence)
+            datum_type = input("Type: ") # 0 - other, 1 - collection, 2 - sharing, 3 - unknown
+            data = input("Data: ")
+            outfile.write(f"{sentence}|{datum_type}|{data}\n")
+    except KeyboardInterrupt:
+        outfile.close()
 
 def lower_file(file):
     # go through lines in the file and replace them with lower case 
@@ -158,10 +156,12 @@ def lower_file(file):
     with open(file, 'w') as f:
         f.writelines(lines)
 
+# filter �
+
 if __name__ == '__main__':
     # create_files()
     # process_files()
     # clean_files()
-    annotate_sentences(True)
-    # label_sentences()
+    # annotate_sentences(False)
+    label_sentences()
     # lower_file('seen_sentences.csv')

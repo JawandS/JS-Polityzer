@@ -1,6 +1,6 @@
 # count how many fields from results are not already in keyword_mapping.json
 import json
-with open("../results/form_extractor_result.json") as f:
+with open("../active_html/results/form_extractor_result.json") as f:
     data = json.load(f)
     fields = set()
     for candidate in data:

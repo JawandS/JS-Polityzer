@@ -156,6 +156,104 @@ def lower_file(file):
     with open(file, 'w') as f:
         f.writelines(lines)
 
+def sharing_map():
+    import pandas as pd
+    # sentence map
+    sentence_map = {}
+    seen_sentences_df = pd.read_csv('annotated_sentences.csv', sep='|', quoting=3)
+    for index, row in seen_sentences_df.iterrows():
+        sentence_map[row['sentence']] = (row['type'], row['data'])
+    # outfile
+    outfile = open('sharing_map.csv', 'a')
+    # go through each candidate and collect the types of data shared
+    seen_candidates = set()
+    sharing_df = pd.read_csv('sharing_map.csv', sep='|', quoting=3)
+    for index, row in sharing_df.iterrows():
+        seen_candidates.add(row['candidate'])
+    for candidate in os.listdir('processed_text/House'):
+        if candidate in seen_candidates:
+            continue
+        with open(f'processed_text/House/{candidate}', 'r') as f:
+            lines = f.readlines()
+            data_types = set()
+            for line in lines:
+                line = line.strip().lower().replace('�', '')
+                if line in sentence_map:
+                    sentence_type, sentence_data = sentence_map[line]
+                    if sentence_type == 2:
+                        for data in sentence_data.split(", "):
+                            data_types.add(data)
+                else:
+                    print(line)
+            # write to outfile
+            outfile.write(f"{candidate}|{', '.join(data_types)}\n")
+    for candidate in os.listdir('processed_text/Senate'):
+        if candidate in seen_candidates:
+            continue
+        with open(f'processed_text/Senate/{candidate}', 'r') as f:
+            lines = f.readlines()
+            data_types = set()
+            for line in lines:
+                line = line.strip().lower().replace('�', '')
+                if line in sentence_map:
+                    sentence_type, sentence_data = sentence_map[line]
+                    if sentence_type == 2:
+                        for data in sentence_data.split(", "):
+                            data_types.add(data)
+                else:
+                    print(line)
+            # write to outfile
+            outfile.write(f"{candidate}|{', '.join(data_types)}\n")
+
+def collection_map():
+    import pandas as pd
+    # sentence map
+    sentence_map = {}
+    seen_sentences_df = pd.read_csv('annotated_sentences.csv', sep='|', quoting=3)
+    for index, row in seen_sentences_df.iterrows():
+        sentence_map[row['sentence']] = (row['type'], row['data'])
+    # outfile
+    outfile = open('collection_map.csv', 'a')
+    # go through each candidate and collect the types of data shared
+    seen_candidates = set()
+    sharing_df = pd.read_csv('collection_map.csv', sep='|', quoting=3)
+    for index, row in sharing_df.iterrows():
+        seen_candidates.add(row['candidate'])
+    for candidate in os.listdir('processed_text/House'):
+        if candidate in seen_candidates:
+            continue
+        with open(f'processed_text/House/{candidate}', 'r') as f:
+            lines = f.readlines()
+            data_types = set()
+            for line in lines:
+                line = line.strip().lower().replace('�', '')
+                if line in sentence_map:
+                    sentence_type, sentence_data = sentence_map[line]
+                    if sentence_type == 1:
+                        for data in sentence_data.split(", "):
+                            data_types.add(data)
+                else:
+                    print(line)
+            # write to outfile
+            outfile.write(f"{candidate}|{', '.join(data_types)}\n")
+    for candidate in os.listdir('processed_text/Senate'):
+        if candidate in seen_candidates:
+            continue
+        with open(f'processed_text/Senate/{candidate}', 'r') as f:
+            lines = f.readlines()
+            data_types = set()
+            for line in lines:
+                line = line.strip().lower().replace('�', '')
+                if line in sentence_map:
+                    sentence_type, sentence_data = sentence_map[line]
+                    if sentence_type == 1:
+                        for data in sentence_data.split(", "):
+                            data_types.add(data)
+                else:
+                    print(line)
+            # write to outfile
+            outfile.write(f"{candidate}|{', '.join(data_types)}\n")
+
 # filter �
 
 if __name__ == '__main__':
@@ -163,5 +261,7 @@ if __name__ == '__main__':
     # process_files()
     # clean_files()
     # annotate_sentences(False)
-    label_sentences()
+    # label_sentences()
     # lower_file('seen_sentences.csv')
+    # sharing_map()
+    collection_map()

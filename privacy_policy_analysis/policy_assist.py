@@ -88,6 +88,22 @@ def generate_candidate_list():
             for file in os.listdir(f'./privacy_policies/{office}'):
                 f.write(f"{base_url}{office}/{file}\n")
 
+# print out the candidates that are missing html
+def print_misson_html():
+    # read json
+    with open("pruned_privacy_policy_result.json") as f:
+        all_candidates = json.load(f)
+        # create set of candidates that should have policis
+        candidates = set()
+        for candidate in all_candidates:
+            if all_candidates[candidate]["privacy_present"]:
+                candidates.add((all_candidates[candidate]["office"], candidate))
+        # print difference between sets
+        with open('missing_html.txt', 'w') as outfile:
+            for data in candidates:
+                if not os.path.exists(f"../html/{data[0]}/{data[1]}.html"):
+                    outfile.write(f"{data[0]}\n{data[1]}\n")
+
 # main method
 if __name__ == "__main__":
     # map_policies()

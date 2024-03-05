@@ -122,10 +122,20 @@ def gen_high_sim_clusters():
             for similarity in high_similarities:
                 f.write(f"{similarity}\n")
 
+# count the differences between cluster similarity and high cluter similarity
+def count_significant_clusters():
+    for idx, cluster in enumerate(os.listdir('./cluster_similarity')):
+        with open(f'./cluster_similarity/{cluster}', 'r') as f:
+            similarities_count = len(f.read().splitlines())
+        with open(f'./high_sim_clusters/{cluster}', 'r') as f:
+            high_similarities_count = len(f.read().splitlines())
+        print(f'cluster {cluster} difference: {(similarities_count - high_similarities_count) / (similarities_count + 1)}')
+
 if __name__ == "__main__":
     # gen_candidates_word_usage()
     # gen_similarity_index()
     # filter_high_similarity()
     # count_unique_candidates()
     # gen_cluster_similarity()
-    gen_high_sim_clusters()
+    # gen_high_sim_clusters()
+    count_significant_clusters()

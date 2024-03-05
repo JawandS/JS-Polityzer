@@ -83,8 +83,35 @@ def count_unique_candidates():
         candidates.add(index.split()[1])
     print(len(candidates))
 
+# generate the similarites between candidates in the clusters
+def gen_cluster_similarity():
+    # get the jaccard similarities between candidates
+    similarity_dict = {}
+    with open('./policy_annotation/similarity_indices.txt', 'r') as f:
+        similarity_indices = f.read().splitlines()
+        for index in similarity_indices:
+            candidate_one = index.split()[0]
+            candidate_two = index.split()[1]
+            similarity_index = index.split()[2]
+            similarity_dict[(candidate_one, candidate_two)] = similarity_index
+            similarity_dict[(candidate_two, candidate_one)] = similarity_index
+    # go through clusters
+    for cluster in os.listdir('./clusters'):
+        # get the candidates in the cluster
+        with open(f'./clusters/{cluster}', 'r') as f:
+            candidates = f.read().splitlines()
+        # write the similarities to a file
+        with open(f'./cluster_similarity/{cluster}', 'w') as f:
+            for i in range(len(candidates)):
+                for j in range(i + 1, len(candidates)):
+                    candidate_one = candidates[i]
+                    candidate_two = candidates[j]
+                    print(f"{candidate_one} {candidate_two} {similarity_dict[(candidate_one, candidate_two)]}")
+                    f.write(f"{candidate_one} {candidate_two} {similarity_dict[(candidate_one, candidate_two)]}\n")
+
 if __name__ == "__main__":
     # gen_candidates_word_usage()
     # gen_similarity_index()
     # filter_high_similarity()
-    count_unique_candidates()
+    # count_unique_candidates()
+    gen_cluster_similarity()

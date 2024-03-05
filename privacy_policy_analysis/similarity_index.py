@@ -109,9 +109,23 @@ def gen_cluster_similarity():
                     print(f"{candidate_one} {candidate_two} {similarity_dict[(candidate_one, candidate_two)]}")
                     f.write(f"{candidate_one} {candidate_two} {similarity_dict[(candidate_one, candidate_two)]}\n")
 
+# filter the similarity in clusters
+def gen_high_sim_clusters():
+    for cluster in os.listdir('./cluster_similarity'):
+        with open(f'./cluster_similarity/{cluster}', 'r') as f:
+            similarities = f.read().splitlines()
+        high_similarities = []
+        for similarity in similarities:
+            if float(similarity.split()[2]) > 0.9:
+                high_similarities.append(similarity)
+        with open(f'./high_sim_clusters/{cluster}', 'w') as f:
+            for similarity in high_similarities:
+                f.write(f"{similarity}\n")
+
 if __name__ == "__main__":
     # gen_candidates_word_usage()
     # gen_similarity_index()
     # filter_high_similarity()
     # count_unique_candidates()
-    gen_cluster_similarity()
+    # gen_cluster_similarity()
+    gen_high_sim_clusters()

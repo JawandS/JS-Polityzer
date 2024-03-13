@@ -3,9 +3,9 @@ import pandas as pd
 
 # get the list of html files in the directory
 candidates_with_html = []
-for file in os.listdir("../html/Senate"):
+for file in os.listdir("../../active_html/Senate"):
     candidates_with_html.append(file)
-for file in os.listdir("../html/House"):
+for file in os.listdir("../../active_html/House"):
     candidates_with_html.append(file)
 
 print(f"{len(candidates_with_html)} html files found")

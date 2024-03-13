@@ -14,7 +14,7 @@ with open('data/keyword_mapping.json') as f:
             reverse_mapping[label] = keyword
 
 # go through the form data
-with open("../results/form_extractor_result.json") as f:
+with open("../active_html/results/form_extractor_result.json") as f:
     data = json.load(f)
     house_candidates = 0
     senate_candidates = 0
@@ -22,6 +22,7 @@ with open("../results/form_extractor_result.json") as f:
         house = False
         senate = False
         for field in data[candidate]["form_fields"]:
+            field = field.lower().replace('\n', '').replace('\t', '').replace('*', '').strip()
             if reverse_mapping[field] not in ["ignore"]:
                 if data[candidate]["office"] == "House":
                     house = True

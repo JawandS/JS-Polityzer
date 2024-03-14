@@ -104,6 +104,15 @@ def print_misson_html():
                 if not os.path.exists(f"../html/{data[0]}/{data[1]}.html"):
                     outfile.write(f"{data[0]}\n{data[1]}\n")
 
+def find_suggested_text():
+    # go through policies and find any with suggested text
+    for office in os.listdir('./policy_annotation/policy_text'):
+        for file in os.listdir(f'./policy_annotation/policy_text/{office}'):
+            with open(f'./policy_annotation/policy_text/{office}/{file}', 'r') as f:
+                text = f.read()
+                if "suggested" in text:
+                    print(f"{office} {file}")
+
 # main method
 if __name__ == "__main__":
     # map_policies()
@@ -111,4 +120,5 @@ if __name__ == "__main__":
     # find_missing_candidates()
     # transfer_files()
     # analyze_downloads()
-    generate_candidate_list()
+    # generate_candidate_list()
+    find_suggested_text()

@@ -53,4 +53,33 @@ def analyze_candidates():
         for link in flagged_links:
             f.write(f'{link},{flagged_links[link]}\n')
 
-analyze_candidates()
+def finding_17a():
+    # number of candidates with malicious outbound links 
+    flagged_links = []
+    for filename in os.listdir('virustotal_results'):
+        with open('virustotal_results/' + filename, 'r') as f:
+            data = json.load(f)
+            engines = data['attributes']['last_analysis_results']
+            sus_count = 0
+            for engine in engines:
+                category = engines[engine]['category']
+                result = engines[engine]['result']
+                if category == 'malicious' or category == 'phishing' or result == 'malicious' or result == 'phishing':
+                    sus_count += 1
+            if sus_count > 1:
+                flagged_links.append(".".join(filename.split('.')[:-1]))
+                
+    with open('virustotal_mapping.json') as f:
+        sus_count = 0
+        data = json.load(f)
+        for candidate in data:
+            for link in candidate['links']:
+                if link in flagged_links:
+                    print(candidate['name'], link)
+                    sus_count += 1
+                    break
+        print(sus_count)
+
+# analyze_candidates()
+# analyze_all()
+finding_17a()

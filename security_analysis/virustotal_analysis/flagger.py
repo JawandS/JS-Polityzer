@@ -30,7 +30,10 @@ def analyze_candidates():
     candidate_links = []
     data = pandas.read_csv('../../active_html/database/final_candidates.csv')
     for link in data['website']:
-        candidate_links.append(link.split("//")[1])
+        parsed_link = link.split("//")[1]
+        if "www." in parsed_link:
+            parsed_link = parsed_link.split("www.")[1]
+        candidate_links.append(parsed_link)
 
     # go through and flag candidate sites
     flagged_links = {}
@@ -73,9 +76,9 @@ def finding_17a():
         sus_count = 0
         data = json.load(f)
         for candidate in data:
-            for link in candidate['links']:
+            for link in data[candidate]:
                 if link in flagged_links:
-                    print(candidate['name'], link)
+                    print(candidate, link)
                     sus_count += 1
                     break
         print(sus_count)

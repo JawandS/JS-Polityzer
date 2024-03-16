@@ -51,5 +51,19 @@ def finding_10a():
             if "retain" in policy or "retention" in policy.lower():
                 print(candidate)
 
+def finding_13a():
+    # look through all privacy policies for hte keywork retain or retention
+    for candidate in os.listdir('policy_annotation/policy_text/House'):
+        with open(f'policy_annotation/policy_text/House/{candidate}', 'r', encoding="utf8") as f:
+            policy = f.read()
+            if "winred" in policy.lower():
+                print(candidate)
+    for candidate in os.listdir('policy_annotation/policy_text/Senate'):
+        with open(f'policy_annotation/policy_text/Senate/{candidate}', 'r', encoding="utf8") as f:
+            policy = f.read()
+            if "winred" in policy.lower():
+                print(candidate)
+
 # finding_7a()
-finding_10a()
+# finding_10a()
+finding_13a()

@@ -47,7 +47,7 @@ def finding_12a_13():
     print(f'House candidates: {len([x for x in candidates_using_platform if x[1] == "House"])}')
 
     # check if these candidates have a privacy disclosure
-    privacy_data = json.load(open('../active_html/results/privacy_policy_result.json'))
+    privacy_data = json.load(open('../privacy_policy_analysis/pruned_privacy_policy_result.json'))
     p1_candidates = []
     missing_policy = 0
     for candidate in candidates_using_platform:
